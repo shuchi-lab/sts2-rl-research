@@ -1,0 +1,412 @@
+{
+  "schema": "sts2-release-runtime-origin/v1",
+  "files": [
+    {
+      "path": "runtime/act1_battle_finetune_v1/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/__init__.py",
+      "source_sha256": "c53b60ed76b9018866b00a55f2c8c1b36b438c8a5f83191eb9d8927fe210da11",
+      "packaged_sha256": "c53b60ed76b9018866b00a55f2c8c1b36b438c8a5f83191eb9d8927fe210da11",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/act1_battle_finetune_v1/battle_guard.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/battle_guard.py",
+      "source_sha256": "6b6d2793b90e44fe5d0647851b4971bef7dd0e235b1cd673a01470fc763b4a21",
+      "packaged_sha256": "6b6d2793b90e44fe5d0647851b4971bef7dd0e235b1cd673a01470fc763b4a21",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/act1_battle_finetune_v1/evaluate.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/evaluate.py",
+      "source_sha256": "a9e28ae4ed70746b229b469f604f5159b88b9df6da949f52301fb4754292ca0b",
+      "packaged_sha256": "31cf487daedd976f8a1005b5b9dbecc20829f67df5f7a1003405e3544582a97d",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/act1_battle_finetune_v1/isolation.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/isolation.py",
+      "source_sha256": "196d2678c2c3896f5eb3fd3758012a843d57ccb5378b66382bf769f33b9d1b6e",
+      "packaged_sha256": "196d2678c2c3896f5eb3fd3758012a843d57ccb5378b66382bf769f33b9d1b6e",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/act1_battle_finetune_v1/pins.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/pins.py",
+      "source_sha256": "81976b243adfedbe150f6cad75bc26e948dcdcbc1dea49ff700bcbf94dfcda8f",
+      "packaged_sha256": "81976b243adfedbe150f6cad75bc26e948dcdcbc1dea49ff700bcbf94dfcda8f",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/act1_battle_finetune_v1/reward.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/reward.py",
+      "source_sha256": "e82a4ed6b2e90277327d2a41a2c5ebe0f174f96412dca806be12e56d6e071f09",
+      "packaged_sha256": "e82a4ed6b2e90277327d2a41a2c5ebe0f174f96412dca806be12e56d6e071f09",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/battle_enemy_capacity_v1/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/bwc1_overlay/battle_enemy_capacity_v1/__init__.py",
+      "source_sha256": "1402117be39caa840c9ad55be7077b64604336ee0828482b796e67e031afb0dd",
+      "packaged_sha256": "1402117be39caa840c9ad55be7077b64604336ee0828482b796e67e031afb0dd",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/battle_enemy_capacity_v1/checkpoint.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/bwc1_overlay/battle_enemy_capacity_v1/checkpoint.py",
+      "source_sha256": "d50df163635ff56275e99f5b2052810fef81c54c8f43ac74767fc06d6b0e9385",
+      "packaged_sha256": "b8c23159b4fe36ffffdce97d55b38693a3d2d2c9bf90c973e9c63b1de1ca5953",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/battle_enemy_capacity_v1/model.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/bwc1_overlay/battle_enemy_capacity_v1/model.py",
+      "source_sha256": "9aba65b2fc9b7a5a10798685bd373ea00f1fa22eaef696fa18d0cf7f2597d012",
+      "packaged_sha256": "9aba65b2fc9b7a5a10798685bd373ea00f1fa22eaef696fa18d0cf7f2597d012",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/battle_enemy_capacity_v1/profiles.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/bwc1_overlay/battle_enemy_capacity_v1/profiles.py",
+      "source_sha256": "dfc4e471f8d7aa6711141098f4857b55f968e169da18d5c0be648a6b5208bf53",
+      "packaged_sha256": "dfc4e471f8d7aa6711141098f4857b55f968e169da18d5c0be648a6b5208bf53",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/battle_width_scan_v1/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/battle_width_scan_v1/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/battle_width_scan_v1/profiles.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/battle_width_scan_v1/profiles.py",
+      "source_sha256": "75064cdb954ad129439c9a35a35a653565079566d16eb96636b2d0dbe5da27fd",
+      "packaged_sha256": "75064cdb954ad129439c9a35a35a653565079566d16eb96636b2d0dbe5da27fd",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/checkpoint.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/checkpoint.py",
+      "source_sha256": "3b3ddcc1b19fd007fcbb3fe2c679373e93c995c90cc9fc914053f69be6a7ccfd",
+      "packaged_sha256": "b8adf5cc37de1ef71a978333ddabd107b8c7e2ffbf742202a146d43849ee6bc7",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/crl/dqn.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/dqn.py",
+      "source_sha256": "b02f84ae93c984bbaaab8a86afbcaafb8e1317e5d00fb62790e1e67c43f5472d",
+      "packaged_sha256": "b7d8a3fcda32ef0277a1e3934e438021505b895104cb08e625de63f2a0c0b104",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/crl/engine_source.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/engine_source.py",
+      "source_sha256": "115c9acff5a47c7e702111b40e282a79eccc4f4f18a7c1c956db7c76194709cc",
+      "packaged_sha256": "115c9acff5a47c7e702111b40e282a79eccc4f4f18a7c1c956db7c76194709cc",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/env.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/env.py",
+      "source_sha256": "14a35b03e0f59fbab5f58f171326f1b9f49f0473e2e36e09403f6a5d023f29be",
+      "packaged_sha256": "14a35b03e0f59fbab5f58f171326f1b9f49f0473e2e36e09403f6a5d023f29be",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/expansion.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/expansion.py",
+      "source_sha256": "f820ab839c253f9343c59a596e89e94e4de5a97ffa4ed3214148e9d3c99905b0",
+      "packaged_sha256": "f820ab839c253f9343c59a596e89e94e4de5a97ffa4ed3214148e9d3c99905b0",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/expansion_turn100_v1.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/expansion_turn100_v1.py",
+      "source_sha256": "6f8ba0fb272a88170fd8c5e739d57232e6d78aa5aa28bc827df5b4ea6b184230",
+      "packaged_sha256": "6f8ba0fb272a88170fd8c5e739d57232e6d78aa5aa28bc827df5b4ea6b184230",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/features.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/features.py",
+      "source_sha256": "34b39b71098afcffe8c40e55cace1a8181b4d21e5d455f8cc510ac027d70891c",
+      "packaged_sha256": "34b39b71098afcffe8c40e55cace1a8181b4d21e5d455f8cc510ac027d70891c",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/model.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/model.py",
+      "source_sha256": "fdaa6c0663c92032b73caeb1ad18030d1ab9f65aca634897d3eff97217b61ed1",
+      "packaged_sha256": "fdaa6c0663c92032b73caeb1ad18030d1ab9f65aca634897d3eff97217b61ed1",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/paths.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/paths.py",
+      "source_sha256": "5ca66d4d8003490b4e3df56ab6841cf8ef5351deb6f14deaebbbd2892a9ea5ec",
+      "packaged_sha256": "526b3555b205c98f991c78911bc654013e9e40d302f66bd45a126fcad5315a87",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/crl/potion_v1.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/potion_v1.py",
+      "source_sha256": "a74f6042cb276e4edd09afdd3220884222cd76543cb58142963b929d0522e8e4",
+      "packaged_sha256": "a74f6042cb276e4edd09afdd3220884222cd76543cb58142963b929d0522e8e4",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/replay.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/replay.py",
+      "source_sha256": "6e79006e1a68e4717eec882bac09dd51bd3b5627fcbbf3472d4638c00f38be68",
+      "packaged_sha256": "6e79006e1a68e4717eec882bac09dd51bd3b5627fcbbf3472d4638c00f38be68",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/reward.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/reward.py",
+      "source_sha256": "fcef4a26cca9b0dcb2c8f8b082796a1a505847a5987e1bfe804719865db9d43b",
+      "packaged_sha256": "fcef4a26cca9b0dcb2c8f8b082796a1a505847a5987e1bfe804719865db9d43b",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/templates.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/templates.py",
+      "source_sha256": "a3b4e422d9a7f404b7e6ddf50ba9ee2ef62cfb7c33cac4a1ed16815e2c0bf664",
+      "packaged_sha256": "a3b4e422d9a7f404b7e6ddf50ba9ee2ef62cfb7c33cac4a1ed16815e2c0bf664",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/three_act.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/three_act.py",
+      "source_sha256": "bd4c7a5b5f4255a810c5240b51391fc05c24786dd151a9f027875a5e56f97db9",
+      "packaged_sha256": "bd4c7a5b5f4255a810c5240b51391fc05c24786dd151a9f027875a5e56f97db9",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/vocab.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/vocab.py",
+      "source_sha256": "a8b0aa6496a6e9ebbee5493e4850956871c79cfa71e331f2a6d9f3da85fc007e",
+      "packaged_sha256": "a8b0aa6496a6e9ebbee5493e4850956871c79cfa71e331f2a6d9f3da85fc007e",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/crl/worker.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/crl/worker.py",
+      "source_sha256": "faff2d7032cd29b3a1300d4ce9d40f724f3d564075b4a6f279b44882e7e37c87",
+      "packaged_sha256": "faff2d7032cd29b3a1300d4ce9d40f724f3d564075b4a6f279b44882e7e37c87",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/data_preparation/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/data_preparation/__init__.py",
+      "source_sha256": "3b327a4efdc036951751f4b7442af0f8837950b77372e4841f56d531ac103a8f",
+      "packaged_sha256": "3b327a4efdc036951751f4b7442af0f8837950b77372e4841f56d531ac103a8f",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/data_preparation/reward_v2.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/data_preparation/reward_v2.py",
+      "source_sha256": "949890f2004078a06e62e6c0002349da86474a21530f35926d1720ba21d05321",
+      "packaged_sha256": "949890f2004078a06e62e6c0002349da86474a21530f35926d1720ba21d05321",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/evaluation_adapter.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/evaluation_adapter.py",
+      "source_sha256": "aadc0747fe30987b2e00570d5704a3885a8c3acb64973ebde487414f986ff145",
+      "packaged_sha256": "e07cbb8fc1f8b303e4c5d4f0c8ccfd52086ba11cc3588bd01077c05b7d74c152",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/evaluator_base.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/evaluator_base.py",
+      "source_sha256": "ac7474b6c39e71498f225469841a4d919e3b9631bd3eb6c5799a322a07fb23c1",
+      "packaged_sha256": "c4f327df86a085b35b3b4c0477ff7b9996ae824b08e53659c2128c49356eca84",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/finetune_metadata.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/finetune_metadata.py",
+      "source_sha256": "722b6f6b4f326abb10b32178478c505ce84102feab26b9efb3f352e449271a9b",
+      "packaged_sha256": "722b6f6b4f326abb10b32178478c505ce84102feab26b9efb3f352e449271a9b",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/fullrun_core.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/fullrun_core.py",
+      "source_sha256": "42779618f6b4e49f3990be1517cffd3c63c6a152d2f875e622ceb5608f3428dd",
+      "packaged_sha256": "e955717c9f90219253d8812ecd1932cb4d4ff44ec5cd93a0d34a057500b3a0fa",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/potion_quality_training_v1/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/potion_quality_training_v1/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/potion_quality_training_v1/reward.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/potion_quality_training_v1/reward.py",
+      "source_sha256": "a51f02195782f90d49bb9eaa6d05f8e9a25f6710139c16ffafb4e06f7e4dd2a2",
+      "packaged_sha256": "a51f02195782f90d49bb9eaa6d05f8e9a25f6710139c16ffafb4e06f7e4dd2a2",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_battle62p5_v1/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/run_strategy_battle62p5_v1/__init__.py",
+      "source_sha256": "8fcc41d36ff22bd50bff39c659129e04ca78e706f1e236bd35731225b853a728",
+      "packaged_sha256": "8fcc41d36ff22bd50bff39c659129e04ca78e706f1e236bd35731225b853a728",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_battle62p5_v1/battle62.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/run_strategy_battle62p5_v1/battle62.py",
+      "source_sha256": "1b3de393ca2906a7b0b8bed51ebec673e5167d3aabbcaec2b63973c4853da3d8",
+      "packaged_sha256": "eff11e1a99edf8c091e7acf627f1549294383068ad89ff04be23e9252b12fa85",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/run_strategy_battle62p5_v1/constants.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/run_strategy_battle62p5_v1/constants.py",
+      "source_sha256": "ee69638cab2b4085fcf1762485c9584c03d09e3d183ed74b2aedd5b5016c2c76",
+      "packaged_sha256": "ee69638cab2b4085fcf1762485c9584c03d09e3d183ed74b2aedd5b5016c2c76",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/__init__.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/__init__.py",
+      "source_sha256": "eb526517354eb89029b96be8dd4c6557e4cbb334ebdeaf81f4400d48b020abe5",
+      "packaged_sha256": "eb526517354eb89029b96be8dd4c6557e4cbb334ebdeaf81f4400d48b020abe5",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/artifacts.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/artifacts.py",
+      "source_sha256": "5f5774f0977791fb115468d0c39c10f1c8989446a372aad8df9deac969c3abd3",
+      "packaged_sha256": "70dd5565534427d0c7bd0455ea883d5736d00cc2354cfd2883485847674a8327",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/run_strategy_v1/bootstrap.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/bootstrap.py",
+      "source_sha256": "d599da5d9d2a9f02805a16bc0ca29d486111851de51684fad26857ab0ea91dae",
+      "packaged_sha256": "6d812286c8f328fca4958ed4429e13ab41ab579f327b5a05ce22d8232cf22fae",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/run_strategy_v1/build.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/build.py",
+      "source_sha256": "ab9d3a7c0cbbb3d157c8767a9a97ecf982a5c910736e9725535a377f7fa2b96e",
+      "packaged_sha256": "4665851d0d5a416dd2ac581009edcab0e1cc970787d70b7c5f54e6b03e2c89c5",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/run_strategy_v1/config.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/config.py",
+      "source_sha256": "48143e976c6777d31e50d0e215c29f05c081740f5173fa0db4eaca0f7f9937ef",
+      "packaged_sha256": "48143e976c6777d31e50d0e215c29f05c081740f5173fa0db4eaca0f7f9937ef",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/contracts.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/contracts.py",
+      "source_sha256": "a2177e478ce38b171aaecb5206e131841c95d77e773714dc17857ffd387ae8c6",
+      "packaged_sha256": "a2177e478ce38b171aaecb5206e131841c95d77e773714dc17857ffd387ae8c6",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/dispatcher.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/dispatcher.py",
+      "source_sha256": "88e3feb4ee8c7edc7cedb73e80707ba7b5197a7f34fb12c44ddacfcd428cdad8",
+      "packaged_sha256": "88e3feb4ee8c7edc7cedb73e80707ba7b5197a7f34fb12c44ddacfcd428cdad8",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/features.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/features.py",
+      "source_sha256": "375427fa4ec1e9baa5ea3ba1cf18923ce60ca57f6b778acb57878fd97dab4b6d",
+      "packaged_sha256": "375427fa4ec1e9baa5ea3ba1cf18923ce60ca57f6b778acb57878fd97dab4b6d",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/frozen_battle.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/frozen_battle.py",
+      "source_sha256": "4ce6a1a1918c0f38040eeb6030e085cc3187c262c749c982ddc3e234ae8c92cc",
+      "packaged_sha256": "4ce6a1a1918c0f38040eeb6030e085cc3187c262c749c982ddc3e234ae8c92cc",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/learner.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/learner.py",
+      "source_sha256": "7e6bb698030e10a048a0dd626abdacbce425e46ce8b8414c8ef8d5484b4103d5",
+      "packaged_sha256": "c751b2771b768df33357afec41328f6973bacbe40e6485d10d7630f79afcb396",
+      "unchanged": false
+    },
+    {
+      "path": "runtime/run_strategy_v1/map_features.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/map_features.py",
+      "source_sha256": "4363d2234e1e02fdab95fee42cacb741b271b00d79c75556fa67e0a70b68ac45",
+      "packaged_sha256": "4363d2234e1e02fdab95fee42cacb741b271b00d79c75556fa67e0a70b68ac45",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/metadata.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/metadata.py",
+      "source_sha256": "fd7b8efbed482bfbcc69b80a2ec5aeed7b5caa2367d2ff880693d3c48944ee7f",
+      "packaged_sha256": "fd7b8efbed482bfbcc69b80a2ec5aeed7b5caa2367d2ff880693d3c48944ee7f",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/model.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/model.py",
+      "source_sha256": "1a0dfafa5dec0488c1ee0f07926d0c2152bc006627045fc8ba250f4e32d1b0a9",
+      "packaged_sha256": "1a0dfafa5dec0488c1ee0f07926d0c2152bc006627045fc8ba250f4e32d1b0a9",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/restrictions.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/restrictions.py",
+      "source_sha256": "58594bc460580323fc561bf3022ad02fd00642f9d63211b4278c6b57e5de66ef",
+      "packaged_sha256": "58594bc460580323fc561bf3022ad02fd00642f9d63211b4278c6b57e5de66ef",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/reward.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/reward.py",
+      "source_sha256": "ea6f262bd16709bb32af6816a57729565707d42b885d18af5f61b0c0473e834d",
+      "packaged_sha256": "ea6f262bd16709bb32af6816a57729565707d42b885d18af5f61b0c0473e834d",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/seeds.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/seeds.py",
+      "source_sha256": "0e5b703d478c00e03080d25425372450e13e7d9fb9b18d9e41b462c5455c7e9d",
+      "packaged_sha256": "0e5b703d478c00e03080d25425372450e13e7d9fb9b18d9e41b462c5455c7e9d",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/trajectory.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/trajectory.py",
+      "source_sha256": "38064b21cc302924bc043856cf4f1a08e353696e255515963f200dcf6a14b92d",
+      "packaged_sha256": "38064b21cc302924bc043856cf4f1a08e353696e255515963f200dcf6a14b92d",
+      "unchanged": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/worker.py",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/run_strategy_v1/worker.py",
+      "source_sha256": "205a164126c6e46b5021bd1e8e7b782c46302aa4e04d16df43d44f3ba1f52ec2",
+      "packaged_sha256": "205a164126c6e46b5021bd1e8e7b782c46302aa4e04d16df43d44f3ba1f52ec2",
+      "unchanged": true
+    }
+  ],
+  "adaptation": "Extracted inference dependency closure; portable operational paths and local wrapper. Model weights, model math, encoders, action masks, greedy policy logic and dispatcher action flow unchanged."
+}

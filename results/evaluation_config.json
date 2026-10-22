@@ -1,0 +1,79 @@
+{
+  "schema": "sts2-ml/release-evaluation-config/v1",
+  "character": "Ironclad",
+  "ascension": 2,
+  "acts": 3,
+  "progression": "all_unlocked",
+  "environment": "Frozen build08 RunEngine simulator through FullRunWorker",
+  "result_scope": "Full persistent simulator runs",
+  "game_build_parity_claim": false,
+  "native_reference_game_replays": 0,
+  "policy": {
+    "choice": "greedy",
+    "battle": "greedy",
+    "evaluation_mode": true,
+    "gradients_enabled": false,
+    "device": "cpu"
+  },
+  "decision_flow": "rs1/decision_flow/v2-auto-reward",
+  "choice_feature_schema": "rs1/strategy_features/v3",
+  "limits": {
+    "battle_turns": 100,
+    "worker_max_turns": 99,
+    "battle_steps": 2000,
+    "strategic_decisions": 1000,
+    "auto_actions": 20000,
+    "repeated_public_state": 25
+  },
+  "cohort": {
+    "namespace": "validation",
+    "count": 256,
+    "same_seeds_reused_across_pairings": true,
+    "reserved_test_used": false,
+    "seed_file": "validation_seeds.json"
+  },
+  "metric": {
+    "name": "full_run_win_rate",
+    "numerator": "Natural endings whose recorded outcome won=true; agrees with Act 3 boss victory in all 256 records.",
+    "denominator": "All 256 planned seeds; battle-turn-limit endings remain non-wins.",
+    "undefined_reward": "null; undefined runs remain in win-rate denominator."
+  },
+  "choice_reward": {
+    "act": "CurrentActIndex + 1 (region ids Overgrowth/Underdocks/Hive/Glory are not acts)",
+    "boss_victory": {
+      "1": 1.0,
+      "2": 2.0,
+      "3": 5.0
+    },
+    "excluded": "E's combat reward and potion bill are never added",
+    "gamma": 1.0,
+    "once": "each fight id (run_id:fNNN) is paid at most once",
+    "ordinary_elite_event_victory": {
+      "1": 0.1,
+      "2": 0.2,
+      "3": 0.4
+    },
+    "reward_id": "run-strategy-act-win-v1",
+    "zero": [
+      "death",
+      "event_escape (Battleworn Dummy DEFEAT page)",
+      "every noncombat transition",
+      "The Architect HP-0 completion",
+      "run completion bonus: none"
+    ]
+  },
+  "battle_reward_contract": "all-boss-free",
+  "frozen_bridge_identity": {
+    "schema": "rs1/bridge_build_manifest/v1",
+    "source_digest": "afd2400f4e0ebed2405ffb0b2210ebdb9c9477753d84178735b99e3a0b4690b6",
+    "bridge_assembly_sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+    "dependencies": {
+      "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+      "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+      "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+      "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+    },
+    "dotnet_sdk_version": "9.0.318",
+    "manifest_sha256": "3941d50c487dc9aa7c1b9606bf3a43cf7cf7766ba80ef7262473a43d11a95c61"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "RlCombatWorker/1.0.0": {
+        "dependencies": {
+          "CombatWorker": "1.0.0",
+          "Sts2Emulator": "1.0.0"
+        },
+        "runtime": {
+          "RlCombatWorker.dll": {}
+        }
+      },
+      "System.IO.Hashing/9.0.0": {
+        "runtime": {
+          "lib/net9.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
+      },
+      "CombatWorker/1.0.0": {
+        "dependencies": {
+          "Sts2Emulator": "1.0.0"
+        },
+        "runtime": {
+          "CombatWorker.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Sts2Emulator/1.0.0": {
+        "dependencies": {
+          "System.IO.Hashing": "9.0.0"
+        },
+        "runtime": {
+          "Sts2Emulator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RlCombatWorker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Hashing/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-seeO8icDfED/Qwl9PDFUx2Gf/7xv7dPsMnw5PnRwNZuz4EWMpy0wIVohC4MfCcTIoJgp+KUrWG4WH3NPSusQOA==",
+      "path": "system.io.hashing/9.0.0",
+      "hashPath": "system.io.hashing.9.0.0.nupkg.sha512"
+    },
+    "CombatWorker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sts2Emulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

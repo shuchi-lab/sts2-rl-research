@@ -1,0 +1,114 @@
+{
+  "schema": "sts2-ml/release-source-provenance/v1",
+  "hash_algorithm": "sha256",
+  "source_reference_base": "Original research repository root; these provenance source files are not required to verify the packaged result arithmetic.",
+  "source_files": [
+    {
+      "role": "selected_raw_outcomes",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/results/cells/n1-half-blue90-original-mac_a090000__enemy_wide_deep_act3_ft_e032500__b00/records.jsonl",
+      "bytes": 1978873,
+      "sha256": "693b4f75b1365f3ddac25633f9bd3d644b3bf383a2eb31632830133bebe2ba1f"
+    },
+    {
+      "role": "selected_admission_ledger",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/results/cells/n1-half-blue90-original-mac_a090000__enemy_wide_deep_act3_ft_e032500__b00/admissions.jsonl",
+      "bytes": 82907,
+      "sha256": "a39ea050f2b50a9a4403624a3973965e3fa85778a86fe1faeb5ccf43a09bfe5b"
+    },
+    {
+      "role": "selected_original_summary",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/results/cells/n1-half-blue90-original-mac_a090000__enemy_wide_deep_act3_ft_e032500__b00/SUMMARY.json",
+      "bytes": 5798,
+      "sha256": "0c2b15906f64d77f856a97bde849beb80777d3f0b7923cdb83346dddcdfea348"
+    },
+    {
+      "role": "validation_seed_manifest",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_battle_swap_crosscheck_20261010_v1/inputs/validation_seeds.json",
+      "bytes": 6459,
+      "sha256": "b61e7db0694a6f53b3c9a61a8f98554a27235bf5f8b9c82a9de5754dcfd1bb46"
+    },
+    {
+      "role": "study_matrix",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/CROSSPLAY_CELLS.csv",
+      "bytes": 463067,
+      "sha256": "00592f6960691984363bd91831fbfa884fec996156d24f4bd746eb64816ab037"
+    },
+    {
+      "role": "study_completion_receipt",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/FINAL_ACCEPTANCE_RECEIPT.json",
+      "bytes": 17116,
+      "sha256": "df2a68e2624ade9c2a6b48d07dfdcd2fba2bff3005abed78f631229b4b5e956b"
+    },
+    {
+      "role": "evaluation_manifest",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/manifest.json",
+      "bytes": 9123373,
+      "sha256": "6a06c12aa5237412982b08cffbacab06a91fa34a8554560ec40cd7f8559851f5"
+    },
+    {
+      "role": "choice_config",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/inputs/strategy/n1-half-blue90-original-mac/config.json",
+      "bytes": 1970,
+      "sha256": "e4678d5db6808f968c2b02cbdcefc037e8f0f43c57cf520fb7204293132df9c1"
+    },
+    {
+      "role": "choice_training_source_manifest",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/inputs/strategy/n1-half-blue90-original-mac/source_manifest.json",
+      "bytes": 67110,
+      "sha256": "a12b70ef827a01bc55b71f1189de0245dc1e8e41c4d5c14e58a3d128b2d5b690"
+    },
+    {
+      "role": "choice_checkpoint",
+      "repository_relative_path": "combat_rl/mac_choice_blue90_n1_half_v1/runs/n1_half_100k_blue90_20261011_v1/output/checkpoints/a090000.pt",
+      "bytes": 5839012,
+      "sha256": "fa57a5594394232de0894cff516a12998287d24de5bba5aecc00e2fb1430707e"
+    },
+    {
+      "role": "battle_checkpoint",
+      "repository_relative_path": "combat_rl/experiments/trials/battle-enemy-act3-finetune50k-20261012-v1/retained/win-gpu/closed/arms/enemy_wide_deep/output/checkpoints/ft_e032500_drained.pt",
+      "bytes": 15112043,
+      "sha256": "034105f82c732ae000d821aa83ebdb795ce6fc8fe8468da21a82527fbb9c03bc"
+    },
+    {
+      "role": "evaluator",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/evaluator_base.py",
+      "bytes": 44803,
+      "sha256": "ac7474b6c39e71498f225469841a4d919e3b9631bd3eb6c5799a322a07fb23c1"
+    },
+    {
+      "role": "evaluation_adapter",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/evaluation_adapter.py",
+      "bytes": 9416,
+      "sha256": "aadc0747fe30987b2e00570d5704a3885a8c3acb64973ebde487414f986ff145"
+    },
+    {
+      "role": "aggregation_reference",
+      "repository_relative_path": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1/package/fullrun_core.py",
+      "bytes": 34197,
+      "sha256": "42779618f6b4e49f3990be1517cffd3c63c6a152d2f875e622ceb5608f3428dd"
+    }
+  ],
+  "transformation": "Allowlisted projection of per-run records; exact seeds converted from integers to decimal strings; progression flags computed from original outcome and battle records; no run excluded or re-evaluated. Absolute paths, process identifiers, host fields, elapsed timing and operational receipts are not copied into the per-run dataset. Source references below locate evidence but do not expose source content.",
+  "packaged_files": {
+    "evaluation_config.json": {
+      "bytes": 2856,
+      "sha256": "90ccbf789877c94e1ded6a98133eb15850789c4a8464dce2f5099540a7366900"
+    },
+    "model_identities.json": {
+      "bytes": 1437,
+      "sha256": "fcf63289330e5f9fd86a9624b2af363b38ca39ffcf000b85b7c5981c84a32dbe"
+    },
+    "runs.jsonl": {
+      "bytes": 138510,
+      "sha256": "e4463136aa8777e097fbcf23aa1a025adc49fa91945dbe5dd2d12478e4752fc6"
+    },
+    "summary.json": {
+      "bytes": 3273,
+      "sha256": "c29b112d7c2ff6d3ce30d913d781cb20e88880008196988b2d2eea69ea046636"
+    },
+    "validation_seeds.json": {
+      "bytes": 7209,
+      "sha256": "5df5e01dce5ccd6068924f55d9cea2461e98011d728422d1f8241dac031a02cb"
+    }
+  }
+}

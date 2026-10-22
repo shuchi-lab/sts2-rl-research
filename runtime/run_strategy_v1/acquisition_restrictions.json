@@ -1,0 +1,139 @@
+{
+ "schema": "rs1/acquisition_restrictions/v1",
+ "version": 3,
+ "principle": "Restrict only a proven unrepresentable state or a forced non-roster grant under the unchanged build08 rules, applied to the identity the screen itself displays. No hidden map/event outcome is inspected; residual unavoidable states end the run as an explicit unsupported outcome.",
+ "card_rule": {
+  "rule": "a displayed card outside frozen E's exact 214-card identity set (crl.vocab/v3-three-act-214) is never taken: card reward, shop, grid, bundle, special reward",
+  "alternative": "the screen's genuine skip/other options; shared/colorless generators are NOT banned (E's opt_admissible mask declines off-roster GeneratedCardToHand offers inside combat)",
+  "source": "crl/potion_v1.py PotionAdapter._select_candidate_row; crl/features.py ForeignCardState"
+ },
+ "forced_named_grants": {
+  "rule": "an event option that unconditionally adds a named card outside the roster is declined (worker EventOptions.Grants table, resolved with RunNonCombatEffects.NamedCard)",
+  "source": "worker/FullRunWorker/EventOptions.cs; engine RunEngine.StepEvent"
+ },
+ "declined_ancient_relics": [
+  {
+   "relic_id": 124,
+   "entry": "KALEIDOSCOPE",
+   "reason": "two card rewards drawn only from other characters' pools",
+   "source": "RunRewardGenerator.cs:457-489,527-547 (CLAUDE_REVIEW.md section 4)"
+  },
+  {
+   "relic_id": 232,
+   "entry": "SEA_GLASS",
+   "reason": "Orobas option: a grid of another character's cards",
+   "source": "RunNonCombatEffects.cs:927-952"
+  }
+ ],
+ "declined_event_options": [
+  {
+   "event_id": 50,
+   "entry": "TheLanternKey",
+   "page": 0,
+   "option": 1,
+   "reason": "KEEP THE KEY leads only to the Mysterious Knight fight (encounter 58); enemy id 110 is outside E's enemy vocabulary (crl/vocab.py BUILD08_ENEMIES_OUTSIDE_VOCAB)",
+   "alternative": "RETURN THE KEY (option 0, 100 gold)",
+   "source": "RunEngine.cs:4428-4469"
+  }
+ ],
+ "capacity_relics": [
+  {
+   "relic_id": 2,
+   "entry": "ALCHEMICAL_COFFER",
+   "slots": 4,
+   "source": "RunNonCombatEffects.cs:719-725"
+  },
+  {
+   "relic_id": 195,
+   "entry": "PHIAL_HOLSTER",
+   "slots": 1,
+   "source": "RunNonCombatEffects.cs:676-688"
+  },
+  {
+   "relic_id": 202,
+   "entry": "POTION_BELT",
+   "slots": 2,
+   "source": "RunNonCombatEffects.cs:376-378"
+  }
+ ],
+ "capacity_rule": "a displayed relic acquisition is declined when MaxPotionSlots + its slots would exceed the six-slot representation (crl.potion_v1.inventory refuses capacity beyond the slot array)",
+ "potion_rule": {
+  "rule": "acquiring a potion with no modelled in-combat effect (crl.potion_v1.UNMODELLED_COMBAT_POTIONS minus the Automatic Fairy in a Bottle) is declined; automatic Fairy stays supported",
+  "source": "crl/potion_v1.py UNMODELLED_COMBAT_POTIONS; PotionAdapter raises on a manual use of one"
+ },
+ "compatible_continuations": [
+  {
+   "event_id": 44,
+   "entry": "ColorfulPhilosophers",
+   "rule": "no initial leave exists (decompiled ColorfulPhilosophers.cs); open the first displayed pool, whose three card rewards are skippable, and decline the foreign cards. Zero reward, recorded as a deterministic continuation."
+  }
+ ],
+ "loop_suppressions": [
+  "a card-reward row declined (skip) is not offered again until the run's public persistent state changes",
+  "a potion-row claim on a full belt without Sozu is a no-op and is not offered",
+  "the smith screen's cancel is never offered: smith is one committed choice (open + upgrade one card)",
+  "bundle highlight + confirm is one committed choice",
+  "the generic event skip (engine action 3) is offered only where the game displays it (Wongos LEAVE; Self-Help Book NO_OPTIONS)"
+ ],
+ "neows_bones_dead_end_relics": {
+  "rule": "while Neow's Bones' TWO rows are still on the reward screen (PendingNeowsBonesCurse), a row whose relic pickup opens a card grid or deck selection is declined: RunRewardGenerator.ClaimRewardAtIndex promotes the other row (OfferNextBonusRelic) and the grid/selection's completion returns straight to Neow (RunEngine.CloseOfferGrid / StepTransformSelect with NeowAwaitingProceed); the promoted row is abandoned on map travel and PendingNeowsBonesCurse stays set, so every later reward screen has no legal action (WriteActionMask withholds leave). Claimed LAST, OfferNextBonusRelic settles the curse (AddNeowsBonesCurse) before the screen opens and the pickup is safe, so the genuine alternative is to claim the other row first. If both rows are such relics the run is an explicit unsupported state. Deterministic from the displayed identities.",
+  "relics": [
+   {
+    "relic_id": 5,
+    "entry": "ARCANE_SCROLL",
+    "pickup": "SetOfferGrid",
+    "source": "RunNonCombatEffects.cs:649-657"
+   },
+   {
+    "relic_id": 111,
+    "entry": "HEFTY_TABLET",
+    "pickup": "SetOfferGrid",
+    "source": "RunNonCombatEffects.cs:625-645"
+   },
+   {
+    "relic_id": 133,
+    "entry": "LEAD_PAPERWEIGHT",
+    "pickup": "SetOfferGrid",
+    "source": "RunNonCombatEffects.cs:658-675"
+   },
+   {
+    "relic_id": 134,
+    "entry": "LEAFY_POULTICE",
+    "pickup": "BeginDeckSelection",
+    "source": "RunNonCombatEffects.cs:1025-1033"
+   },
+   {
+    "relic_id": 164,
+    "entry": "NEW_LEAF",
+    "pickup": "BeginDeckSelection",
+    "source": "RunNonCombatEffects.cs:1096-1099"
+   },
+   {
+    "relic_id": 201,
+    "entry": "POMANDER",
+    "pickup": "BeginDeckSelection",
+    "source": "RunNonCombatEffects.cs:595-603"
+   },
+   {
+    "relic_id": 205,
+    "entry": "PRECARIOUS_SHEARS",
+    "pickup": "BeginDeckSelection",
+    "source": "RunNonCombatEffects.cs:1034-1046"
+   },
+   {
+    "relic_id": 206,
+    "entry": "PRECISE_SCISSORS",
+    "pickup": "BeginDeckSelection",
+    "source": "RunNonCombatEffects.cs:1003-1011"
+   },
+   {
+    "relic_id": 298,
+    "entry": "NEOWS_SACRIFICE",
+    "pickup": "SetOfferGrid",
+    "source": "RunNonCombatEffects.cs:619-624"
+   }
+  ],
+  "evidence": "engine: phase=RelicReward neows_bones_curse_pending=True has_pending_rewards=False mask [] (diagnostic runs m0/m82, 2026-10-05)",
+  "engine_repair_note": "a genuine unchanged-engine semantic defect; no engine edit is made. A scoped repair (return the grid/selection to the Bones reward screen) would remove the need for this restriction."
+ }
+}

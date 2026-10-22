@@ -1,0 +1,122 @@
+{
+  "schema": "sts2-release-runtime-mismatch-investigation/v1",
+  "scope": "Two seeds only, no retraining or full-cohort replay",
+  "method": "Original study evaluator_base/evaluation_adapter/fullrun_core with original frozen module roots and original checkpoints; .NET and Python same as packaged Mac run. Only reporting BLOCK_SIZE changed from256 to2. Compared against packaged-two and packaged256 after normalizing run IDs.",
+  "comparisons": [
+    {
+      "seed": "6658505373016834173",
+      "original_same_mac_equals_packaged_two": true,
+      "original_same_mac_equals_packaged_full256": true,
+      "original_same_mac": {
+        "return": 12.500000000000004,
+        "strategy_decisions": 75,
+        "battle_decisions": 446
+      },
+      "won": true
+    },
+    {
+      "seed": "74879731935361116",
+      "original_same_mac_equals_packaged_two": true,
+      "original_same_mac_equals_packaged_full256": true,
+      "original_same_mac": {
+        "return": 12.100000000000003,
+        "strategy_decisions": 74,
+        "battle_decisions": 528
+      },
+      "won": true
+    }
+  ],
+  "byte_checks": [
+    {
+      "path": "runtime/battle_enemy_capacity_v1/model.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/battle_enemy_capacity_v1/profiles.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/crl/features.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/crl/vocab.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/dispatcher.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/features.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/frozen_battle.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/map_features.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/metadata.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/model.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/restrictions.py",
+      "byte_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_v1/trajectory.py",
+      "byte_identical": true
+    }
+  ],
+  "ast_checks": [
+    {
+      "path": "runtime/run_strategy_v1/learner.py",
+      "definition": "StrategyPolicy",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/battle_enemy_capacity_v1/checkpoint.py",
+      "definition": "load",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/act1_battle_finetune_v1/evaluate.py",
+      "definition": "FineTunedBattlePolicy",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_battle62p5_v1/battle62.py",
+      "definition": "context_problems",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_battle62p5_v1/battle62.py",
+      "definition": "make_context",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/run_strategy_battle62p5_v1/battle62.py",
+      "definition": "policy_problems",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/evaluation_adapter.py",
+      "definition": "strategy",
+      "ast_identical": true
+    },
+    {
+      "path": "runtime/evaluation_adapter.py",
+      "definition": "battle",
+      "ast_identical": true
+    }
+  ],
+  "conclusion": "Both affected seeds reproduce the packaged Mac outcomes under the original evaluator and frozen source runtime. No discrepancy between original and packaged inference observed in these probes. Historical cross-environment divergence remains; numerical near-tie/platform mechanism not proven."
+}

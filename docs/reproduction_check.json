@@ -1,0 +1,65 @@
+{
+  "release_version": "1.0.0",
+  "date_local": "2026-10-21",
+  "timezone": "America/Chicago",
+  "method": "All 256 retained validation seeds rerun from a separate temporary copy outside the research workspace, with PYTHONPATH unset.",
+  "status": "complete_with_historical_differences",
+  "runtime_completed": true,
+  "exact_historical_record_match": false,
+  "runs": 256,
+  "wins": 69,
+  "win_rate": 0.26953125,
+  "comparison": {
+    "paired_seeds": 256,
+    "record_fields": [
+      "outcome",
+      "return",
+      "strategy_decisions",
+      "battle_decisions",
+      "policy"
+    ],
+    "outcome_scope": "Full recorded outcome object including per-battle summaries; not an action-by-action replay comparison.",
+    "mismatches": [
+      {
+        "seed": "74879731935361116",
+        "field": "outcome"
+      },
+      {
+        "seed": "74879731935361116",
+        "field": "battle_decisions"
+      },
+      {
+        "seed": "6658505373016834173",
+        "field": "outcome"
+      },
+      {
+        "seed": "6658505373016834173",
+        "field": "return"
+      },
+      {
+        "seed": "6658505373016834173",
+        "field": "battle_decisions"
+      }
+    ],
+    "fully_matching_runs": 254,
+    "matching_win_flags": 255
+  },
+  "elapsed_seconds": 113.58557470794767,
+  "platform": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.13.15",
+    "torch": "2.12.0",
+    "numpy": "2.4.6"
+  },
+  "identities": {
+    "choice_sha256": "fa57a5594394232de0894cff516a12998287d24de5bba5aecc00e2fb1430707e",
+    "battle_sha256": "034105f82c732ae000d821aa83ebdb795ce6fc8fe8468da21a82527fbb9c03bc"
+  },
+  "raw_reproduction_records_sha256": "cb694563152e8a25f5840508d32266368339c74a47d0c1a037769318fc71a79b",
+  "limitations": [
+    "Uses the original reused validation cohort, not a new held-out test.",
+    "Model weights and simulator assemblies were reused unchanged; source was not rebuilt.",
+    "Only the reported macOS CPU environment was exercised during packaging."
+  ]
+}

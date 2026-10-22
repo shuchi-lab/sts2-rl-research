@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    run_strategy_v1 full-run bridge (rs1). Drives one persistent build08 RunEngine per run over
+    JSON lines. It REFERENCES the exact prebuilt, closed Windows build08 assemblies (engine,
+    collector, RL worker) by HintPath and never rebuilds them: assembly bytes are not reproducible
+    across hosts, and frozen battle policy E's provenance names these exact bytes.
+
+    Build (any host with the .NET 9 SDK):
+      dotnet build worker/FullRunWorker/FullRunWorker.csproj -c Release -o build_run_strategy_v1/FullRunWorker
+    Run with the pinned runtime: dotnet build_run_strategy_v1/FullRunWorker/FullRunWorker.dll
+    Override the dependency directory with -p:Rs1FrozenDependencies=PATH (must hold the same bytes).
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <TieredPGO>true</TieredPGO>
+    <ServerGarbageCollector>false</ServerGarbageCollector>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <UseSharedCompilation>false</UseSharedCompilation>
+    <UseAppHost>false</UseAppHost>
+    <Deterministic>true</Deterministic>
+    <AssemblyName>FullRunWorker</AssemblyName>
+    <RootNamespace>FullRunWorker</RootNamespace>
+    <Rs1FrozenDependencies Condition="'$(Rs1FrozenDependencies)' == ''">$(MSBuildThisFileDirectory)../../experiments/trials/run-strategy-e-fixed-v1/frozen_e_dependencies/worker_build08</Rs1FrozenDependencies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sts2Emulator">
+      <HintPath>$(Rs1FrozenDependencies)/Sts2Emulator.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="CombatWorker">
+      <HintPath>$(Rs1FrozenDependencies)/CombatWorker.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="RlCombatWorker">
+      <HintPath>$(Rs1FrozenDependencies)/RlCombatWorker.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>$(Rs1FrozenDependencies)/System.IO.Hashing.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

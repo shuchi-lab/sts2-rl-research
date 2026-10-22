@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Interactive reset/step worker for combat_rl on the owned build08 training engine
+    (engine/whole_game_build08). Unlike worker/RlWorker, which references the collector's
+    frozen compiled assemblies, everything here is compiled from combat_rl's own copies:
+    the engine, then worker/CollectorWorker, then this project. Build output goes to
+    combat_rl/build/worker_build08; worker/RlWorker and build/worker stay the frozen line.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <TieredPGO>true</TieredPGO>
+    <ServerGarbageCollector>false</ServerGarbageCollector>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <UseSharedCompilation>false</UseSharedCompilation>
+    <AssemblyName>RlCombatWorker</AssemblyName>
+    <RootNamespace>RlCombatWorker</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../CollectorWorker/CombatWorker.csproj" />
+    <ProjectReference Include="../../engine/whole_game_build08/Sts2Emulator/Sts2Emulator.csproj" />
+  </ItemGroup>
+</Project>

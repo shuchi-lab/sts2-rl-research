@@ -1,0 +1,6 @@
+<Project>
+  <!-- Keep intermediate files inside this wrapper's own _build/ (outputs go to _build/out). -->
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)_build/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

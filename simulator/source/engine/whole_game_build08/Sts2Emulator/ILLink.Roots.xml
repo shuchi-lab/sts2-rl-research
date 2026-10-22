@@ -1,0 +1,6 @@
+<linker>
+  <assembly fullname="Sts2Emulator" preserve="nothing">
+    <type fullname="Sts2Emulator.Interop.NativeExports" preserve="all" />
+    <type fullname="Sts2Emulator.Interop.RunNativeExports" preserve="all" />
+  </assembly>
+</linker>

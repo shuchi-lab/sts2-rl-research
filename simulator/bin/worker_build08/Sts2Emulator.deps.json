@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Sts2Emulator/1.0.0": {
+        "dependencies": {
+          "Microsoft.DotNet.ILCompiler": "9.0.20",
+          "Microsoft.NET.ILLink.Tasks": "9.0.20",
+          "System.IO.Hashing": "9.0.0"
+        },
+        "runtime": {
+          "Sts2Emulator.dll": {}
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/9.0.20": {},
+      "Microsoft.NET.ILLink.Tasks/9.0.20": {},
+      "System.IO.Hashing/9.0.0": {
+        "runtime": {
+          "lib/net9.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52809"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sts2Emulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.ILCompiler/9.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p1T44gqUSFGVaRpVSoCgIA3DbWPo2qmlj9lBGMWgI4xK6qJsoi8y5TMjLZ6n6tasWIH9use2yQZ48uX3DbwjQA==",
+      "path": "microsoft.dotnet.ilcompiler/9.0.20",
+      "hashPath": "microsoft.dotnet.ilcompiler.9.0.20.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oPFydtjCgow3DXnL8z5gPbq3R1zGvBpcypgRhW172Hn8asJcI8oy7isudAnAAALIWyK+uRWCDP+/+om3s0PZHA==",
+      "path": "microsoft.net.illink.tasks/9.0.20",
+      "hashPath": "microsoft.net.illink.tasks.9.0.20.nupkg.sha512"
+    },
+    "System.IO.Hashing/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-seeO8icDfED/Qwl9PDFUx2Gf/7xv7dPsMnw5PnRwNZuz4EWMpy0wIVohC4MfCcTIoJgp+KUrWG4WH3NPSusQOA==",
+      "path": "system.io.hashing/9.0.0",
+      "hashPath": "system.io.hashing.9.0.0.nupkg.sha512"
+    }
+  }
+}

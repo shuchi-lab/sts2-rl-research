@@ -1,0 +1,93 @@
+{
+  "schema": "sts2-ml/release-result-summary/v1",
+  "claim": "Best observed validation full-run win rate for this completed 30-by-42 checkpoint screen",
+  "evaluation_finished_utc": "2026-10-13T18:17:15.005638+00:00",
+  "choice_model_id": "n1-half-blue90-original-mac_a090000",
+  "battle_model_id": "enemy_wide_deep_act3_ft_e032500",
+  "character": "Ironclad",
+  "ascension": 2,
+  "acts": 3,
+  "counts": {
+    "planned": 256,
+    "admitted": 256,
+    "observed": 256,
+    "run_victories": 68,
+    "natural_deaths": 184,
+    "natural_endings": 252,
+    "undefined_endings": 4,
+    "battle_turn_limits": 4,
+    "unsupported": 0,
+    "errors": 0,
+    "missing": 0,
+    "never_admitted": 0,
+    "admitted_unresolved": 0
+  },
+  "win_rate": 0.265625,
+  "win_rate_percent": 26.5625,
+  "outcomes_by_kind_and_reason": {
+    "limit:battle_turn_limit": 4,
+    "natural:death_in_combat": 184,
+    "natural:run_victory": 68
+  },
+  "progression": {
+    "reached_act2": 195,
+    "reached_act3": 133,
+    "boss1_entered": 222,
+    "boss1_won": 195,
+    "boss2_entered": 160,
+    "boss2_won": 133,
+    "boss3_entered": 118,
+    "boss3_won": 68
+  },
+  "reward": {
+    "natural_only": {
+      "denominator": 252,
+      "mean": 6.353968253968256
+    },
+    "undefined_rewards": 4,
+    "note": "Descriptive on natural endings only; no undefined reward imputation."
+  },
+  "remaining_hp": {
+    "source": "last battle hp_terminal/max_hp_terminal, when the last battle is closed",
+    "natural_endings": {
+      "denominator": 252,
+      "mean_hp": 6.48015873015873,
+      "median_hp": 0.0,
+      "mean_hp_fraction": 0.07272179411739134
+    },
+    "victories": {
+      "denominator": 68,
+      "mean_hp": 24.014705882352942,
+      "median_hp": 22.5,
+      "mean_hp_fraction": 0.26949841349386205
+    },
+    "note": "The raw run-level hp field is zero on victories after run completion; reported_run_hp preserves that value but is not a meaningful victory-HP measure. Limit endings have null last-battle terminal HP."
+  },
+  "selection_context": {
+    "choice_checkpoints": 30,
+    "battle_checkpoints": 42,
+    "pairings": 1260,
+    "planned_runs_per_pairing": 256,
+    "retained_table_outcomes": 322560,
+    "reused_pairings": 60,
+    "new_pairings": 1200,
+    "best_observed_wins_in_screen": 68,
+    "pairings_tied_at_best": 1,
+    "cohort": "same reused validation seeds",
+    "independent_final_test": false
+  },
+  "caveats": [
+    "Selected maximum among 1260 pairings on reused validation seeds; selection can inflate observed performance.",
+    "Not an independent held-out test estimate or native-game win-rate claim.",
+    "Cross-host action parity was not tested for this evaluation; native reference-game replay count is zero.",
+    "Four 100-turn combat-limit outcomes are included as non-wins in the 256-run denominator."
+  ],
+  "verification": {
+    "method": "Read-only recomputation from original per-run outcomes, admission ledger, exact seed manifest, completed study CSV and source checkpoint bytes; no gameplay or model evaluation.",
+    "seed_join": "256 unique planned = 256 unique admitted = 256 unique observed seeds; matching run IDs between admissions and outcomes.",
+    "source_model_matches_evaluation_copy": {
+      "choice": true,
+      "battle": true
+    }
+  }
+}

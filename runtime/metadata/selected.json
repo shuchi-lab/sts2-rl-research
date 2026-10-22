@@ -1,0 +1,326 @@
+{
+  "schema": "sts2-ml-release-runtime/v1",
+  "choice": {
+    "id": "n1-half-blue90-original-mac_a090000",
+    "arm": "n1-half-blue90-original-mac",
+    "display_label": "N=1 \u00b7 Mac original rewards",
+    "trial": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/mac_choice_blue90_n1_half_v1/runs/n1_half_100k_blue90_20261011_v1",
+    "source_run_id": "n1_half_100k_blue90_20261011_v1",
+    "source_host": "macmini",
+    "training_host": "macmini",
+    "new_resolved": 90000,
+    "cumulative_attempts": 90000,
+    "source_offset": 0,
+    "label": "a090000",
+    "path": "models/choice.pt",
+    "file_sha256": "fa57a5594394232de0894cff516a12998287d24de5bba5aecc00e2fb1430707e",
+    "bytes": 5839012,
+    "config": "runtime/metadata/choice_config.json",
+    "source_manifest": "runtime/metadata/choice_source_manifest.json",
+    "config_sha256": null,
+    "receipt": {
+      "drained": true,
+      "path": "checkpoints/a090000.pt",
+      "sha256": "fa57a5594394232de0894cff516a12998287d24de5bba5aecc00e2fb1430707e",
+      "train_resolved": 90000,
+      "updates": 225057
+    },
+    "format": "mac-training-only/v1",
+    "checkpoint_format": "mac-training-only/v1",
+    "n_step": 1,
+    "learning_profile": "n1-half-tiered-blue90000-mac100k",
+    "training_battle_episodes": 90000,
+    "identity_mode": "published-identity+literal-config/no-new-hash",
+    "protected_source_root": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/mac_choice_blue90_n1_half_v1/runs/n1_half_100k_blue90_20261011_v1"
+  },
+  "battle": {
+    "id": "enemy_wide_deep_act3_ft_e032500",
+    "host": "win-gpu",
+    "profile": "enemy_wide_deep",
+    "display_label": "Wide + deep enemy",
+    "path": "models/battle.pt",
+    "file_sha256": "034105f82c732ae000d821aa83ebdb795ce6fc8fe8468da21a82527fbb9c03bc",
+    "state_sha256": null,
+    "recorded_identity": {
+      "path": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act3-finetune50k-20261012-v1/retained/win-gpu/closed/arms/enemy_wide_deep/output/checkpoints/ft_e032500_drained.pt",
+      "sha256": null,
+      "bytes": 15112043,
+      "replay": {
+        "path": "ft_e032500_drained.replay.pkl.gz",
+        "sha256": null,
+        "bytes": 108731074
+      },
+      "stage": 2,
+      "counters": {
+        "stage1_online": 20000,
+        "stage2_online": 77500,
+        "act1_finetune_online": 20000,
+        "act2_finetune_online": 27500,
+        "act3_finetune_online": 32500,
+        "act3_finetune_env_steps": 851810
+      },
+      "source_contribution": "resumed_closed"
+    },
+    "receipt": {
+      "path": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act3-finetune50k-20261012-v1/retained/win-gpu/closed/arms/enemy_wide_deep/output/checkpoints/ft_e032500_drained.pt",
+      "sha256": null,
+      "bytes": 15112043,
+      "replay": {
+        "path": "ft_e032500_drained.replay.pkl.gz",
+        "sha256": null,
+        "bytes": 108731074
+      },
+      "stage": 2,
+      "counters": {
+        "stage1_online": 20000,
+        "stage2_online": 77500,
+        "act1_finetune_online": 20000,
+        "act2_finetune_online": 27500,
+        "act3_finetune_online": 32500,
+        "act3_finetune_env_steps": 851810
+      },
+      "source_contribution": "resumed_closed"
+    },
+    "bytes": 15112043,
+    "parameters": 929653,
+    "stage": 2,
+    "stage2_online": 77500,
+    "additional_fights": 32500,
+    "cumulative_online_fights": 177500,
+    "source_host": "win-gpu",
+    "training_host": "win-gpu",
+    "source_trial": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act3-finetune50k-20261012-v1",
+    "roster": {
+      "row_id": "enemy_wide_deep_act3_ft_e032500",
+      "host": "win-gpu",
+      "profile": "enemy_wide_deep",
+      "arm": "enemy_wide_deep",
+      "seed": 2026101225,
+      "source_seed": 2026101123,
+      "source_host": "win-gpu",
+      "parameters": 929653,
+      "stage": 2,
+      "original_stage1_fights": 20000,
+      "original_stage2_fights": 77500,
+      "prior_act1_finetune_fights": 20000,
+      "prior_act2_finetune_fights": 27500,
+      "source_cumulative_online_fights": 145000,
+      "additional_fights": 32500,
+      "total_online_fights": 177500,
+      "metadata_boundary": "drained",
+      "checkpoint_local": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act3-finetune50k-20261012-v1/retained/win-gpu/closed/arms/enemy_wide_deep/output/checkpoints/ft_e032500_drained.pt",
+      "checkpoint_windows": "C:/Users/Chi/Projects/STS2_ML/combat_rl_choice_n1_n2_act3_20261013_v1/package/inputs/battle/enemy_wide_deep_act3_ft_e032500.pt",
+      "model_identity": {
+        "candidate_input": 486,
+        "enemy_layers": [
+          512,
+          512
+        ],
+        "model_class": "battle_enemy_capacity_v1.model.WidthQNet",
+        "model_schema": "bec1/model/v1",
+        "parameters": 929653,
+        "player_dim": 81,
+        "profile": "enemy_wide_deep",
+        "state_input": 1013,
+        "widths": {
+          "card_dim": 64,
+          "card_hidden": 128,
+          "eff_dim": 64,
+          "eff_hidden": 128,
+          "enemy_dim": 128,
+          "enemy_hidden": 512,
+          "head": 128,
+          "pile_dim": 64,
+          "state_dim": 256
+        }
+      },
+      "source_identity": {
+        "profile": "enemy_wide_deep",
+        "checkpoint_local": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act2-finetune30k-20261011-v1/retained/win-gpu/closed/arms/enemy_wide_deep/output/checkpoints/ft_e027500_drained.pt",
+        "checkpoint_windows": "C:/Users/Chi/Projects/STS2_ML/combat_rl_battle_enemy_act3_ft50k_20261012_v1/code/sources/enemy_wide_deep.pt",
+        "original_checkpoint_windows": "C:/Users/Chi/Projects/STS2_ML/combat_rl_battle_enemy_act2_ft30k_20261011_v1/results/arms/enemy_wide_deep/output/checkpoints/ft_e027500_drained.pt",
+        "bound_source_replay": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act2-finetune30k-20261011-v1/retained/win-gpu/closed/arms/enemy_wide_deep/output/checkpoints/ft_e027500_drained.replay.pkl.gz",
+        "original_stage1_fights": 20000,
+        "original_stage2_fights": 77500,
+        "prior_act1_finetune_fights": 20000,
+        "prior_act2_finetune_fights": 27500,
+        "source_cumulative_online_fights": 145000,
+        "final_cumulative_online_fights": 195000,
+        "model_identity": {
+          "candidate_input": 486,
+          "enemy_layers": [
+            512,
+            512
+          ],
+          "model_class": "battle_enemy_capacity_v1.model.WidthQNet",
+          "model_schema": "bec1/model/v1",
+          "parameters": 929653,
+          "player_dim": 81,
+          "profile": "enemy_wide_deep",
+          "state_input": 1013,
+          "widths": {
+            "card_dim": 64,
+            "card_hidden": 128,
+            "eff_dim": 64,
+            "eff_hidden": 128,
+            "enemy_dim": 128,
+            "enemy_hidden": 512,
+            "head": 128,
+            "pile_dim": 64,
+            "state_dim": 256
+          }
+        },
+        "original_source_retention_receipt": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/experiments/trials/battle-enemy-act2-finetune30k-20261011-v1/retained/win-gpu/LOCAL_DURABLE_RECEIPT.json",
+        "initialization": "strict online weights; fresh Adam/target copy/empty online replay"
+      },
+      "initialization": "exact_closed_state_resume",
+      "source_contribution": "resumed_closed",
+      "source_process_exit_unknown": false,
+      "resumed_from_fights": 25000
+    },
+    "identity_mode": "canonical-retained-inventory-and-source-transfer/no-new-hash"
+  },
+  "windows_additional_profiles": {
+    "n1-half-blue90-original-mac": {
+      "schema": "choice-n1-mac-win/source-profile/v1",
+      "n_step": 1,
+      "learning_profile": "n1-half-tiered-blue90000-mac100k",
+      "pilot_id": "rs1-mac-blue90000-n1half-s2026101012",
+      "literal_config": {
+        "schema": "rs1/pilot_config/v3",
+        "pilot": false,
+        "pilot_id": "rs1-mac-blue90000-n1half-s2026101012",
+        "seed": 2026101012,
+        "character": "Ironclad",
+        "ascension": 2,
+        "progression": "all_unlocked",
+        "reward_id": "run-strategy-act-win-v1",
+        "decision_flow": "rs1/decision_flow/v2-auto-reward",
+        "max_training_attempts": 100000,
+        "max_elapsed_hours": null,
+        "validation_seeds": 256,
+        "validation_every": 5000,
+        "diagnostic_seeds": 12,
+        "reserved_test_seeds": 512,
+        "workers": 2,
+        "runs_per_worker": 4,
+        "host_reserve_gib": 0.5,
+        "device": "cpu",
+        "battle_device": "cpu",
+        "torch_threads": 4,
+        "batch_deadline_ms": 5,
+        "purity_check": false,
+        "admission_start_epoch": null,
+        "session_deadline_epoch": null,
+        "learning_profile": "n1-half-tiered-blue90000-mac100k",
+        "learner": {
+          "gamma": 1.0,
+          "n_step": 1,
+          "replay_capacity": 100000,
+          "gradient_gate": 2000,
+          "batch_size": 128,
+          "lr": 0.00025,
+          "huber_delta": 1.0,
+          "grad_clip": 10.0,
+          "target_sync": 1000,
+          "update_every": 16,
+          "adam_eps": 1e-08
+        },
+        "replay": {
+          "policy": "quality-tiers/v1",
+          "batch_counts": [
+            84,
+            16,
+            12,
+            8,
+            8
+          ],
+          "tier_capacities": [
+            20000,
+            30000,
+            40000,
+            50000
+          ]
+        },
+        "exploration": {
+          "epsilon_start": 0.6,
+          "epsilon_end": 0.05,
+          "decay_attempts": 3000,
+          "random_before_gate": true
+        },
+        "model": {
+          "state_dim": 256,
+          "candidate_dim": 64,
+          "head_hidden": 128,
+          "map_dim": 64,
+          "map_passes": 2,
+          "card_embed": 32,
+          "card_dim": 64,
+          "relic_embed": 16,
+          "potion_embed": 16,
+          "kind_embed": 16,
+          "event_embed": 16
+        },
+        "limits": {
+          "battle_turns": 100,
+          "worker_max_turns": 99,
+          "battle_steps": 2000,
+          "strategic_decisions": 1000,
+          "auto_actions": 20000,
+          "repeated_public_state": 25
+        },
+        "abort": {
+          "undefined_rate": 0.05,
+          "min_resolved": 1000,
+          "stop_on_undefined_rate": false
+        }
+      },
+      "config": "runtime/metadata/choice_config.json",
+      "source_manifest": "runtime/metadata/choice_source_manifest.json",
+      "source_offset_attempts": 0,
+      "initial_weights_sha256": "7c5ead642fac45e1b8309e740e54c1a203781765a8ed52b00f17f3fa33f0dd92",
+      "training_battle_file_sha256": "df8c52330d493298263d4fd66992ac98752f3111a589c7acc72de29451a14a98",
+      "training_reward": {
+        "act": "CurrentActIndex + 1 (region ids Overgrowth/Underdocks/Hive/Glory are not acts)",
+        "boss_victory": {
+          "1": 1.0,
+          "2": 2.0,
+          "3": 5.0
+        },
+        "excluded": "E's combat reward and potion bill are never added",
+        "gamma": 1.0,
+        "once": "each fight id (run_id:fNNN) is paid at most once",
+        "ordinary_elite_event_victory": {
+          "1": 0.1,
+          "2": 0.2,
+          "3": 0.4
+        },
+        "reward_id": "run-strategy-act-win-v1",
+        "zero": [
+          "death",
+          "event_escape (Battleworn Dummy DEFEAT page)",
+          "every noncombat transition",
+          "The Architect HP-0 completion",
+          "run completion bonus: none"
+        ]
+      },
+      "training_host": "macmini",
+      "training_reward_id": "run-strategy-act-win-v1"
+    }
+  },
+  "trusted_bridge": {
+    "schema": "rs1/bridge_build_manifest/v1",
+    "source_digest": "afd2400f4e0ebed2405ffb0b2210ebdb9c9477753d84178735b99e3a0b4690b6",
+    "bridge_assembly_sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+    "dependencies": {
+      "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+      "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+      "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+      "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+    },
+    "dotnet_sdk_version": "9.0.318",
+    "manifest_sha256": "3941d50c487dc9aa7c1b9606bf3a43cf7cf7766ba80ef7262473a43d11a95c61"
+  },
+  "native_workers": 1,
+  "slots_per_worker": 8
+}

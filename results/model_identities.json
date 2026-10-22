@@ -1,0 +1,32 @@
+{
+  "schema": "sts2-ml/release-model-identities/v1",
+  "hash_algorithm": "sha256",
+  "checkpoint_hash_scope": "Original serialized checkpoint bytes; not a re-export or weight-only hash.",
+  "choice": {
+    "id": "n1-half-blue90-original-mac_a090000",
+    "release_file": "models/choice.pt",
+    "sha256": "fa57a5594394232de0894cff516a12998287d24de5bba5aecc00e2fb1430707e",
+    "bytes": 5839012,
+    "role": "Strategic decisions between combats and choices exposed by the full-run dispatcher",
+    "training_attempts": 90000,
+    "n_step": 1,
+    "learning_profile": "n1-half-tiered-blue90000-mac100k",
+    "training_battle_episodes": 90000,
+    "training_reward_id": "run-strategy-act-win-v1",
+    "original_evaluation_published_hash": "fa57a5594394232de0894cff516a12998287d24de5bba5aecc00e2fb1430707e"
+  },
+  "battle": {
+    "id": "enemy_wide_deep_act3_ft_e032500",
+    "release_file": "models/battle.pt",
+    "sha256": "034105f82c732ae000d821aa83ebdb795ce6fc8fe8468da21a82527fbb9c03bc",
+    "bytes": 15112043,
+    "role": "Legal combat action scoring",
+    "profile": "enemy_wide_deep",
+    "parameters": 929653,
+    "cumulative_online_fights": 177500,
+    "act3_finetune_fights": 32500,
+    "boundary": "drained",
+    "original_evaluation_published_hash": null,
+    "hash_note": "Hash computed while preparing this release; the original evaluation retained canonical checkpoint identity and size without a published file hash."
+  }
+}

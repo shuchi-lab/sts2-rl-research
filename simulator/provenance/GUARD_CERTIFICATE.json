@@ -1,0 +1,97 @@
+{
+ "schema": "act1ft/battle_guard_certificate/v1",
+ "created_utc": "2026-10-08T04:58:43.779976+00:00",
+ "purpose": "isolated-battle guard facade over the original prebuilt build08 RlCombatWorker.dll (act1ft)",
+ "command": [
+  "dotnet",
+  "build",
+  "/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/act1_battle_finetune_v1/worker/GuardedBattleWorker/GuardedBattleWorker.csproj",
+  "-c",
+  "Release",
+  "-nodeReuse:false",
+  "-p:UseSharedCompilation=false",
+  "-p:Act1ftFrozenDependencies=/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/experiments/trials/run-strategy-e-fixed-v1/frozen_e_dependencies/worker_build08",
+  "-o",
+  "/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out"
+ ],
+ "dotnet_sdk_version": "9.0.318",
+ "sources": {
+  "AutoplayLoopGuard.cs": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+  "GuardedProgram.cs": "576d9966d91c95652b81dd98286328f68fae040adc78df3492b1342935e79134",
+  "SelfTest.cs": "f6eccd72f4a0dccf984829c843027d3e927741d083695cd85ee38a2759ac4966",
+  "GuardedBattleWorker.csproj": "a7b251ed41223a87cb8454a03821c61fa285df6d2a46e4f71f6e176eb5b779e2",
+  "Directory.Build.props": "f65d42aef3035b5ccb4295aa048f4c7008a8a448b70130f3b079190c3b11d9f8"
+ },
+ "reviewed_guard": {
+  "source_sha256": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+  "certificate_sha256": "6a84fd9e40ca8550dfa9a51befafba464faa2c72bf138decf4bf3d2d34d423f5",
+  "certificate_present_at_build": true,
+  "classes": [
+   "A:sentinel_hp",
+   "B:steam_eruption_revive"
+  ]
+ },
+ "original_dependencies_sha256": {
+  "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+  "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+  "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+  "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+ },
+ "build_files": {
+  "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+  "GuardedBattleWorker.deps.json": "452fe02d913ff1617ae645718496af47098558c62fb5d0f48e91dab4d33bb8b9",
+  "GuardedBattleWorker.dll": "556878cadf9461b30695eabecdeb82da10c8f2ad0a05ae4773638619a5dba3e4",
+  "GuardedBattleWorker.pdb": "1e62d14a75bbd83ee42ca62b1f118c14642c7c92dfbe89ac9b4dee3dffd105d9",
+  "GuardedBattleWorker.runtimeconfig.json": "ce89e77c20c776116297efa6ecd0d7454f4566455cc0821cb7f9fcbffd1e6ae1",
+  "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+  "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+  "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+ },
+ "facade_assembly_sha256": "556878cadf9461b30695eabecdeb82da10c8f2ad0a05ae4773638619a5dba3e4",
+ "reflection_contract": [
+  "type RlCombatWorker.Program public static",
+  "type RlCombatWorker.Session internal sealed",
+  "type RlCombatWorker.StepInfo internal sealed",
+  "method RlCombatWorker.Program::Dispatch private static System.Void (System.String, System.Text.Json.JsonElement, System.Text.Json.Utf8JsonWriter)",
+  "field RlCombatWorker.Program::Sessions private static readonly System.Collections.Generic.Dictionary`2<System.Int32, RlCombatWorker.Session>",
+  "field RlCombatWorker.Session::_status private System.String",
+  "field RlCombatWorker.Session::_reason private System.String",
+  "field RlCombatWorker.Session::_error private System.String",
+  "field RlCombatWorker.Session::_legal private System.Collections.Generic.List`1<CombatWorker.Option>",
+  "field RlCombatWorker.Session::_decision private System.Int32",
+  "field RlCombatWorker.Session::_steps private System.Int32",
+  "property RlCombatWorker.Session::Fight public Sts2Emulator.Training.TrainingCombat",
+  "property Sts2Emulator.Training.TrainingCombat::State public Sts2Emulator.Core.CombatState",
+  "method RlCombatWorker.Session::Step public RlCombatWorker.StepInfo (System.Int32, System.Int32)",
+  "method RlCombatWorker.Session::WriteResponse public System.Void (System.Text.Json.Utf8JsonWriter, System.String, RlCombatWorker.StepInfo)",
+  "ctor RlCombatWorker.StepInfo(System.Int32 Decision, System.Int32 Option, System.String Kind, System.Int32 Action, System.Int32 Target, System.Int32 TurnBefore, System.Int32 TurnAfter, System.Boolean Terminal, System.Boolean PlayerWon, System.Single EngineReward)",
+  "method FullRunWorker.AutoplayLoopGuard::Check public static System.String (Sts2Emulator.Core.CombatState, CombatWorker.Option)"
+ ],
+ "reflection_contract_sha256": "aae036b19063c4096382d3d7fe846c49c9f59415c16d7f796aef9d7cb4c30961",
+ "original_il_sha256": {
+  "FullRunWorker.AutoplayLoopGuard::Check": "cbbf8dc57a3968b4c614273c3f2aa96d7c0bf332dd4ba3a08322f08f54c0f41c",
+  "RlCombatWorker.Program::Dispatch": "e7f320487cdce1e1325fb732531a9649504b87579ba8eaa94374fac25d795af9",
+  "RlCombatWorker.Session::Step": "02384634d7b8f45d69af515efc075eb7082a1a3f6fa07fe7e46e2babdd47c82f",
+  "RlCombatWorker.Session::WriteResponse": "40f5ebef3be7273802a169f6a628fc7196cc1d95a087119ad1dce93d913dd4ff"
+ },
+ "rl_worker_assembly_mvid": "d7a3166a-9fcd-4535-b375-5555be001b00",
+ "refusal_contract": {
+  "status": "unsupported",
+  "reason": "limit:battle_unbounded_autoplay_loop",
+  "limit_reason": "battle_unbounded_autoplay_loop",
+  "engine_call": false,
+  "rng_use": false,
+  "mask_or_option_changed": false,
+  "substitute_action": false,
+  "session_steps_incremented": false
+ },
+ "native_selftest": {
+  "passed": 50,
+  "failed": 0,
+  "gameplay": false,
+  "output_sha256": "25fd1501669622b899710aa6642de1a798b86afd510207bb835d1ef2c942c0a2"
+ },
+ "deployment_rule": "deploy these exact build_files bytes (do not rebuild on the target host)",
+ "gameplay_performed": false,
+ "production_go": false
+}

@@ -1,0 +1,1511 @@
+{
+  "counts": {
+    "Ironclad": 85,
+    "Colorless": 53,
+    "Curse": 18,
+    "Status": 12,
+    "Token": 14,
+    "Event": 28,
+    "Quest": 4
+  },
+  "rows": [
+    {
+      "entry_id": "AGGRESSION",
+      "class_name": "Aggression",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Aggression.cs"
+    },
+    {
+      "entry_id": "ANGER",
+      "class_name": "Anger",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Anger.cs"
+    },
+    {
+      "entry_id": "ARMAMENTS",
+      "class_name": "Armaments",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Armaments.cs"
+    },
+    {
+      "entry_id": "ASHEN_STRIKE",
+      "class_name": "AshenStrike",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/AshenStrike.cs"
+    },
+    {
+      "entry_id": "BARRICADE",
+      "class_name": "Barricade",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Barricade.cs"
+    },
+    {
+      "entry_id": "BASH",
+      "class_name": "Bash",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bash.cs"
+    },
+    {
+      "entry_id": "BATTLE_TRANCE",
+      "class_name": "BattleTrance",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BattleTrance.cs"
+    },
+    {
+      "entry_id": "BLOOD_WALL",
+      "class_name": "BloodWall",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BloodWall.cs"
+    },
+    {
+      "entry_id": "BLOODLETTING",
+      "class_name": "Bloodletting",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bloodletting.cs"
+    },
+    {
+      "entry_id": "BLUDGEON",
+      "class_name": "Bludgeon",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bludgeon.cs"
+    },
+    {
+      "entry_id": "BODY_SLAM",
+      "class_name": "BodySlam",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BodySlam.cs"
+    },
+    {
+      "entry_id": "BRAND",
+      "class_name": "Brand",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Brand.cs"
+    },
+    {
+      "entry_id": "BREAK",
+      "class_name": "Break",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Break.cs"
+    },
+    {
+      "entry_id": "BREAKTHROUGH",
+      "class_name": "Breakthrough",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Breakthrough.cs"
+    },
+    {
+      "entry_id": "BULLY",
+      "class_name": "Bully",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bully.cs"
+    },
+    {
+      "entry_id": "BURNING_PACT",
+      "class_name": "BurningPact",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BurningPact.cs"
+    },
+    {
+      "entry_id": "CASCADE",
+      "class_name": "Cascade",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Cascade.cs"
+    },
+    {
+      "entry_id": "CINDER",
+      "class_name": "Cinder",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Cinder.cs"
+    },
+    {
+      "entry_id": "COLOSSUS",
+      "class_name": "Colossus",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Colossus.cs"
+    },
+    {
+      "entry_id": "CONFLAGRATION",
+      "class_name": "Conflagration",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs"
+    },
+    {
+      "entry_id": "CORRUPTION",
+      "class_name": "Corruption",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Corruption.cs"
+    },
+    {
+      "entry_id": "CRIMSON_MANTLE",
+      "class_name": "CrimsonMantle",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/CrimsonMantle.cs"
+    },
+    {
+      "entry_id": "CRUELTY",
+      "class_name": "Cruelty",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Cruelty.cs"
+    },
+    {
+      "entry_id": "DARK_EMBRACE",
+      "class_name": "DarkEmbrace",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DarkEmbrace.cs"
+    },
+    {
+      "entry_id": "DEFEND_IRONCLAD",
+      "class_name": "DefendIronclad",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DefendIronclad.cs"
+    },
+    {
+      "entry_id": "DEMON_FORM",
+      "class_name": "DemonForm",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DemonForm.cs"
+    },
+    {
+      "entry_id": "DISMANTLE",
+      "class_name": "Dismantle",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dismantle.cs"
+    },
+    {
+      "entry_id": "DOMINATE",
+      "class_name": "Dominate",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dominate.cs"
+    },
+    {
+      "entry_id": "DRUM_OF_BATTLE",
+      "class_name": "DrumOfBattle",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DrumOfBattle.cs"
+    },
+    {
+      "entry_id": "EVIL_EYE",
+      "class_name": "EvilEye",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/EvilEye.cs"
+    },
+    {
+      "entry_id": "EXPECT_A_FIGHT",
+      "class_name": "ExpectAFight",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ExpectAFight.cs"
+    },
+    {
+      "entry_id": "FEED",
+      "class_name": "Feed",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Feed.cs"
+    },
+    {
+      "entry_id": "FEEL_NO_PAIN",
+      "class_name": "FeelNoPain",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FeelNoPain.cs"
+    },
+    {
+      "entry_id": "FIEND_FIRE",
+      "class_name": "FiendFire",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FiendFire.cs"
+    },
+    {
+      "entry_id": "FIGHT_ME",
+      "class_name": "FightMe",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FightMe.cs"
+    },
+    {
+      "entry_id": "FLAME_BARRIER",
+      "class_name": "FlameBarrier",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FlameBarrier.cs"
+    },
+    {
+      "entry_id": "FORGOTTEN_RITUAL",
+      "class_name": "ForgottenRitual",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ForgottenRitual.cs"
+    },
+    {
+      "entry_id": "HAVOC",
+      "class_name": "Havoc",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Havoc.cs"
+    },
+    {
+      "entry_id": "HEADBUTT",
+      "class_name": "Headbutt",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Headbutt.cs"
+    },
+    {
+      "entry_id": "HELLRAISER",
+      "class_name": "Hellraiser",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Hellraiser.cs"
+    },
+    {
+      "entry_id": "HEMOKINESIS",
+      "class_name": "Hemokinesis",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Hemokinesis.cs"
+    },
+    {
+      "entry_id": "HOWL_FROM_BEYOND",
+      "class_name": "HowlFromBeyond",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HowlFromBeyond.cs"
+    },
+    {
+      "entry_id": "IMPERVIOUS",
+      "class_name": "Impervious",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Impervious.cs"
+    },
+    {
+      "entry_id": "INFERNAL_BLADE",
+      "class_name": "InfernalBlade",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/InfernalBlade.cs"
+    },
+    {
+      "entry_id": "INFERNO",
+      "class_name": "Inferno",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Inferno.cs"
+    },
+    {
+      "entry_id": "INFLAME",
+      "class_name": "Inflame",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Inflame.cs"
+    },
+    {
+      "entry_id": "IRON_WAVE",
+      "class_name": "IronWave",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/IronWave.cs"
+    },
+    {
+      "entry_id": "JUGGERNAUT",
+      "class_name": "Juggernaut",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Juggernaut.cs"
+    },
+    {
+      "entry_id": "JUGGLING",
+      "class_name": "Juggling",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Juggling.cs"
+    },
+    {
+      "entry_id": "MANGLE",
+      "class_name": "Mangle",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Mangle.cs"
+    },
+    {
+      "entry_id": "MOLTEN_FIST",
+      "class_name": "MoltenFist",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MoltenFist.cs"
+    },
+    {
+      "entry_id": "NOT_YET",
+      "class_name": "NotYet",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/NotYet.cs"
+    },
+    {
+      "entry_id": "OFFERING",
+      "class_name": "Offering",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Offering.cs"
+    },
+    {
+      "entry_id": "ONE_TWO_PUNCH",
+      "class_name": "OneTwoPunch",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/OneTwoPunch.cs"
+    },
+    {
+      "entry_id": "PACTS_END",
+      "class_name": "PactsEnd",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PactsEnd.cs"
+    },
+    {
+      "entry_id": "PERFECTED_STRIKE",
+      "class_name": "PerfectedStrike",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PerfectedStrike.cs"
+    },
+    {
+      "entry_id": "PILLAGE",
+      "class_name": "Pillage",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Pillage.cs"
+    },
+    {
+      "entry_id": "POMMEL_STRIKE",
+      "class_name": "PommelStrike",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PommelStrike.cs"
+    },
+    {
+      "entry_id": "PRIMAL_FORCE",
+      "class_name": "PrimalForce",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PrimalForce.cs"
+    },
+    {
+      "entry_id": "PYRE",
+      "class_name": "Pyre",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Pyre.cs"
+    },
+    {
+      "entry_id": "RAGE",
+      "class_name": "Rage",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rage.cs"
+    },
+    {
+      "entry_id": "RAMPAGE",
+      "class_name": "Rampage",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rampage.cs"
+    },
+    {
+      "entry_id": "RUPTURE",
+      "class_name": "Rupture",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rupture.cs"
+    },
+    {
+      "entry_id": "SECOND_WIND",
+      "class_name": "SecondWind",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SecondWind.cs"
+    },
+    {
+      "entry_id": "SETUP_STRIKE",
+      "class_name": "SetupStrike",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SetupStrike.cs"
+    },
+    {
+      "entry_id": "SHRUG_IT_OFF",
+      "class_name": "ShrugItOff",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ShrugItOff.cs"
+    },
+    {
+      "entry_id": "SPITE",
+      "class_name": "Spite",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Spite.cs"
+    },
+    {
+      "entry_id": "STAMPEDE",
+      "class_name": "Stampede",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stampede.cs"
+    },
+    {
+      "entry_id": "STOKE",
+      "class_name": "Stoke",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stoke.cs"
+    },
+    {
+      "entry_id": "STOMP",
+      "class_name": "Stomp",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stomp.cs"
+    },
+    {
+      "entry_id": "STONE_ARMOR",
+      "class_name": "StoneArmor",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/StoneArmor.cs"
+    },
+    {
+      "entry_id": "STRIKE_IRONCLAD",
+      "class_name": "StrikeIronclad",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/StrikeIronclad.cs"
+    },
+    {
+      "entry_id": "SWORD_BOOMERANG",
+      "class_name": "SwordBoomerang",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SwordBoomerang.cs"
+    },
+    {
+      "entry_id": "TAUNT",
+      "class_name": "Taunt",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Taunt.cs"
+    },
+    {
+      "entry_id": "TEAR_ASUNDER",
+      "class_name": "TearAsunder",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TearAsunder.cs"
+    },
+    {
+      "entry_id": "THRASH",
+      "class_name": "Thrash",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Thrash.cs"
+    },
+    {
+      "entry_id": "THUNDERCLAP",
+      "class_name": "Thunderclap",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Thunderclap.cs"
+    },
+    {
+      "entry_id": "TREMBLE",
+      "class_name": "Tremble",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Tremble.cs"
+    },
+    {
+      "entry_id": "TRUE_GRIT",
+      "class_name": "TrueGrit",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TrueGrit.cs"
+    },
+    {
+      "entry_id": "TWIN_STRIKE",
+      "class_name": "TwinStrike",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TwinStrike.cs"
+    },
+    {
+      "entry_id": "UNMOVABLE",
+      "class_name": "Unmovable",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Unmovable.cs"
+    },
+    {
+      "entry_id": "UNRELENTING",
+      "class_name": "Unrelenting",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Unrelenting.cs"
+    },
+    {
+      "entry_id": "UPPERCUT",
+      "class_name": "Uppercut",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Uppercut.cs"
+    },
+    {
+      "entry_id": "VICIOUS",
+      "class_name": "Vicious",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Vicious.cs"
+    },
+    {
+      "entry_id": "WHIRLWIND",
+      "class_name": "Whirlwind",
+      "pool": "Ironclad",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Whirlwind.cs"
+    },
+    {
+      "entry_id": "ALCHEMIZE",
+      "class_name": "Alchemize",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Alchemize.cs"
+    },
+    {
+      "entry_id": "ANOINTED",
+      "class_name": "Anointed",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Anointed.cs"
+    },
+    {
+      "entry_id": "AUTOMATION",
+      "class_name": "Automation",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Automation.cs"
+    },
+    {
+      "entry_id": "BEAT_DOWN",
+      "class_name": "BeatDown",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BeatDown.cs"
+    },
+    {
+      "entry_id": "BOLAS",
+      "class_name": "Bolas",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bolas.cs"
+    },
+    {
+      "entry_id": "CALAMITY",
+      "class_name": "Calamity",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Calamity.cs"
+    },
+    {
+      "entry_id": "CATASTROPHE",
+      "class_name": "Catastrophe",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Catastrophe.cs"
+    },
+    {
+      "entry_id": "DARK_SHACKLES",
+      "class_name": "DarkShackles",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DarkShackles.cs"
+    },
+    {
+      "entry_id": "DISCOVERY",
+      "class_name": "Discovery",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Discovery.cs"
+    },
+    {
+      "entry_id": "DRAMATIC_ENTRANCE",
+      "class_name": "DramaticEntrance",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DramaticEntrance.cs"
+    },
+    {
+      "entry_id": "ENTROPY",
+      "class_name": "Entropy",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Entropy.cs"
+    },
+    {
+      "entry_id": "EQUILIBRIUM",
+      "class_name": "Equilibrium",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Equilibrium.cs"
+    },
+    {
+      "entry_id": "ETERNAL_ARMOR",
+      "class_name": "EternalArmor",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/EternalArmor.cs"
+    },
+    {
+      "entry_id": "FASTEN",
+      "class_name": "Fasten",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Fasten.cs"
+    },
+    {
+      "entry_id": "FINESSE",
+      "class_name": "Finesse",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Finesse.cs"
+    },
+    {
+      "entry_id": "FISTICUFFS",
+      "class_name": "Fisticuffs",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Fisticuffs.cs"
+    },
+    {
+      "entry_id": "FLASH_OF_STEEL",
+      "class_name": "FlashOfSteel",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FlashOfSteel.cs"
+    },
+    {
+      "entry_id": "GOLD_AXE",
+      "class_name": "GoldAxe",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs"
+    },
+    {
+      "entry_id": "HAND_OF_GREED",
+      "class_name": "HandOfGreed",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HandOfGreed.cs"
+    },
+    {
+      "entry_id": "HIDDEN_GEM",
+      "class_name": "HiddenGem",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HiddenGem.cs"
+    },
+    {
+      "entry_id": "IMPATIENCE",
+      "class_name": "Impatience",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Impatience.cs"
+    },
+    {
+      "entry_id": "JACK_OF_ALL_TRADES",
+      "class_name": "JackOfAllTrades",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/JackOfAllTrades.cs"
+    },
+    {
+      "entry_id": "JACKPOT",
+      "class_name": "Jackpot",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Jackpot.cs"
+    },
+    {
+      "entry_id": "MASTER_OF_STRATEGY",
+      "class_name": "MasterOfStrategy",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MasterOfStrategy.cs"
+    },
+    {
+      "entry_id": "MAYHEM",
+      "class_name": "Mayhem",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Mayhem.cs"
+    },
+    {
+      "entry_id": "MIND_BLAST",
+      "class_name": "MindBlast",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MindBlast.cs"
+    },
+    {
+      "entry_id": "NOSTALGIA",
+      "class_name": "Nostalgia",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Nostalgia.cs"
+    },
+    {
+      "entry_id": "OMNISLICE",
+      "class_name": "Omnislice",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Omnislice.cs"
+    },
+    {
+      "entry_id": "PANACHE",
+      "class_name": "Panache",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Panache.cs"
+    },
+    {
+      "entry_id": "PANIC_BUTTON",
+      "class_name": "PanicButton",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PanicButton.cs"
+    },
+    {
+      "entry_id": "PREP_TIME",
+      "class_name": "PrepTime",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PrepTime.cs"
+    },
+    {
+      "entry_id": "PRODUCTION",
+      "class_name": "Production",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Production.cs"
+    },
+    {
+      "entry_id": "PROLONG",
+      "class_name": "Prolong",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Prolong.cs"
+    },
+    {
+      "entry_id": "PROWESS",
+      "class_name": "Prowess",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Prowess.cs"
+    },
+    {
+      "entry_id": "PURITY",
+      "class_name": "Purity",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Purity.cs"
+    },
+    {
+      "entry_id": "REND",
+      "class_name": "Rend",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rend.cs"
+    },
+    {
+      "entry_id": "RESTLESSNESS",
+      "class_name": "Restlessness",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Restlessness.cs"
+    },
+    {
+      "entry_id": "ROLLING_BOULDER",
+      "class_name": "RollingBoulder",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/RollingBoulder.cs"
+    },
+    {
+      "entry_id": "SALVO",
+      "class_name": "Salvo",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Salvo.cs"
+    },
+    {
+      "entry_id": "SCRAWL",
+      "class_name": "Scrawl",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Scrawl.cs"
+    },
+    {
+      "entry_id": "SECRET_TECHNIQUE",
+      "class_name": "SecretTechnique",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SecretTechnique.cs"
+    },
+    {
+      "entry_id": "SECRET_WEAPON",
+      "class_name": "SecretWeapon",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SecretWeapon.cs"
+    },
+    {
+      "entry_id": "SEEKER_STRIKE",
+      "class_name": "SeekerStrike",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SeekerStrike.cs"
+    },
+    {
+      "entry_id": "SHOCKWAVE",
+      "class_name": "Shockwave",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Shockwave.cs"
+    },
+    {
+      "entry_id": "SPLASH",
+      "class_name": "Splash",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Splash.cs"
+    },
+    {
+      "entry_id": "STRATAGEM",
+      "class_name": "Stratagem",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stratagem.cs"
+    },
+    {
+      "entry_id": "THE_BOMB",
+      "class_name": "TheBomb",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TheBomb.cs"
+    },
+    {
+      "entry_id": "THE_GAMBIT",
+      "class_name": "TheGambit",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TheGambit.cs"
+    },
+    {
+      "entry_id": "THINKING_AHEAD",
+      "class_name": "ThinkingAhead",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ThinkingAhead.cs"
+    },
+    {
+      "entry_id": "THRUMMING_HATCHET",
+      "class_name": "ThrummingHatchet",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ThrummingHatchet.cs"
+    },
+    {
+      "entry_id": "ULTIMATE_DEFEND",
+      "class_name": "UltimateDefend",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/UltimateDefend.cs"
+    },
+    {
+      "entry_id": "ULTIMATE_STRIKE",
+      "class_name": "UltimateStrike",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/UltimateStrike.cs"
+    },
+    {
+      "entry_id": "VOLLEY",
+      "class_name": "Volley",
+      "pool": "Colorless",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Volley.cs"
+    },
+    {
+      "entry_id": "ASCENDERS_BANE",
+      "class_name": "AscendersBane",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/AscendersBane.cs"
+    },
+    {
+      "entry_id": "BAD_LUCK",
+      "class_name": "BadLuck",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BadLuck.cs"
+    },
+    {
+      "entry_id": "CLUMSY",
+      "class_name": "Clumsy",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Clumsy.cs"
+    },
+    {
+      "entry_id": "CURSE_OF_THE_BELL",
+      "class_name": "CurseOfTheBell",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/CurseOfTheBell.cs"
+    },
+    {
+      "entry_id": "DEBT",
+      "class_name": "Debt",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Debt.cs"
+    },
+    {
+      "entry_id": "DECAY",
+      "class_name": "Decay",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Decay.cs"
+    },
+    {
+      "entry_id": "DOUBT",
+      "class_name": "Doubt",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Doubt.cs"
+    },
+    {
+      "entry_id": "ENTHRALLED",
+      "class_name": "Enthralled",
+      "pool": "Curse",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs"
+    },
+    {
+      "entry_id": "FOLLY",
+      "class_name": "Folly",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Folly.cs"
+    },
+    {
+      "entry_id": "GREED",
+      "class_name": "Greed",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Greed.cs"
+    },
+    {
+      "entry_id": "GUILTY",
+      "class_name": "Guilty",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Guilty.cs"
+    },
+    {
+      "entry_id": "INJURY",
+      "class_name": "Injury",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Injury.cs"
+    },
+    {
+      "entry_id": "NORMALITY",
+      "class_name": "Normality",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Normality.cs"
+    },
+    {
+      "entry_id": "POOR_SLEEP",
+      "class_name": "PoorSleep",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PoorSleep.cs"
+    },
+    {
+      "entry_id": "REGRET",
+      "class_name": "Regret",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Regret.cs"
+    },
+    {
+      "entry_id": "SHAME",
+      "class_name": "Shame",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Shame.cs"
+    },
+    {
+      "entry_id": "SPORE_MIND",
+      "class_name": "SporeMind",
+      "pool": "Curse",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SporeMind.cs"
+    },
+    {
+      "entry_id": "WRITHE",
+      "class_name": "Writhe",
+      "pool": "Curse",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Writhe.cs"
+    },
+    {
+      "entry_id": "BECKON",
+      "class_name": "Beckon",
+      "pool": "Status",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Beckon.cs"
+    },
+    {
+      "entry_id": "BURN",
+      "class_name": "Burn",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Burn.cs"
+    },
+    {
+      "entry_id": "DAZED",
+      "class_name": "Dazed",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dazed.cs"
+    },
+    {
+      "entry_id": "DEBRIS",
+      "class_name": "Debris",
+      "pool": "Status",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Debris.cs"
+    },
+    {
+      "entry_id": "FRANTIC_ESCAPE",
+      "class_name": "FranticEscape",
+      "pool": "Status",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FranticEscape.cs"
+    },
+    {
+      "entry_id": "INFECTION",
+      "class_name": "Infection",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Infection.cs"
+    },
+    {
+      "entry_id": "SLIMED",
+      "class_name": "Slimed",
+      "pool": "Status",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Slimed.cs"
+    },
+    {
+      "entry_id": "SOOT",
+      "class_name": "Soot",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Soot.cs"
+    },
+    {
+      "entry_id": "TOXIC",
+      "class_name": "Toxic",
+      "pool": "Status",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Toxic.cs"
+    },
+    {
+      "entry_id": "VOID",
+      "class_name": "Void",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Void.cs"
+    },
+    {
+      "entry_id": "WITHER",
+      "class_name": "Wither",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Wither.cs"
+    },
+    {
+      "entry_id": "WOUND",
+      "class_name": "Wound",
+      "pool": "Status",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Wound.cs"
+    },
+    {
+      "entry_id": "DISINTEGRATION",
+      "class_name": "Disintegration",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Disintegration.cs"
+    },
+    {
+      "entry_id": "FUEL",
+      "class_name": "Fuel",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Fuel.cs"
+    },
+    {
+      "entry_id": "GIANT_ROCK",
+      "class_name": "GiantRock",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/GiantRock.cs"
+    },
+    {
+      "entry_id": "LUMINESCE",
+      "class_name": "Luminesce",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Luminesce.cs"
+    },
+    {
+      "entry_id": "MIND_ROT",
+      "class_name": "MindRot",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MindRot.cs"
+    },
+    {
+      "entry_id": "MINION_DIVE_BOMB",
+      "class_name": "MinionDiveBomb",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MinionDiveBomb.cs"
+    },
+    {
+      "entry_id": "MINION_SACRIFICE",
+      "class_name": "MinionSacrifice",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MinionSacrifice.cs"
+    },
+    {
+      "entry_id": "MINION_STRIKE",
+      "class_name": "MinionStrike",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MinionStrike.cs"
+    },
+    {
+      "entry_id": "SHIV",
+      "class_name": "Shiv",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Shiv.cs"
+    },
+    {
+      "entry_id": "SLOTH",
+      "class_name": "Sloth",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Sloth.cs"
+    },
+    {
+      "entry_id": "SOUL",
+      "class_name": "Soul",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Soul.cs"
+    },
+    {
+      "entry_id": "SOVEREIGN_BLADE",
+      "class_name": "SovereignBlade",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SovereignBlade.cs"
+    },
+    {
+      "entry_id": "SWEEPING_GAZE",
+      "class_name": "SweepingGaze",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SweepingGaze.cs"
+    },
+    {
+      "entry_id": "WASTE_AWAY",
+      "class_name": "WasteAway",
+      "pool": "Token",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/WasteAway.cs"
+    },
+    {
+      "entry_id": "ABUNDANCE",
+      "class_name": "Abundance",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Abundance.cs"
+    },
+    {
+      "entry_id": "APOTHEOSIS",
+      "class_name": "Apotheosis",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Apotheosis.cs"
+    },
+    {
+      "entry_id": "APPARITION",
+      "class_name": "Apparition",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Apparition.cs"
+    },
+    {
+      "entry_id": "BRIGHTEST_FLAME",
+      "class_name": "BrightestFlame",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BrightestFlame.cs"
+    },
+    {
+      "entry_id": "BYRD_SWOOP",
+      "class_name": "ByrdSwoop",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ByrdSwoop.cs"
+    },
+    {
+      "entry_id": "CALTROPS",
+      "class_name": "Caltrops",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Caltrops.cs"
+    },
+    {
+      "entry_id": "CLASH",
+      "class_name": "Clash",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Clash.cs"
+    },
+    {
+      "entry_id": "DISTRACTION",
+      "class_name": "Distraction",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Distraction.cs"
+    },
+    {
+      "entry_id": "DUAL_WIELD",
+      "class_name": "DualWield",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DualWield.cs"
+    },
+    {
+      "entry_id": "ENLIGHTENMENT",
+      "class_name": "Enlightenment",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Enlightenment.cs"
+    },
+    {
+      "entry_id": "ENTRENCH",
+      "class_name": "Entrench",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Entrench.cs"
+    },
+    {
+      "entry_id": "EXTERMINATE",
+      "class_name": "Exterminate",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Exterminate.cs"
+    },
+    {
+      "entry_id": "FEEDING_FRENZY",
+      "class_name": "FeedingFrenzy",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FeedingFrenzy.cs"
+    },
+    {
+      "entry_id": "HELLO_WORLD",
+      "class_name": "HelloWorld",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HelloWorld.cs"
+    },
+    {
+      "entry_id": "MAD_SCIENCE",
+      "class_name": "MadScience",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MadScience.cs"
+    },
+    {
+      "entry_id": "MAUL",
+      "class_name": "Maul",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Maul.cs"
+    },
+    {
+      "entry_id": "METAMORPHOSIS",
+      "class_name": "Metamorphosis",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Metamorphosis.cs"
+    },
+    {
+      "entry_id": "NEOWS_FURY",
+      "class_name": "NeowsFury",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/NeowsFury.cs"
+    },
+    {
+      "entry_id": "OUTMANEUVER",
+      "class_name": "Outmaneuver",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Outmaneuver.cs"
+    },
+    {
+      "entry_id": "PECK",
+      "class_name": "Peck",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Peck.cs"
+    },
+    {
+      "entry_id": "REBOUND",
+      "class_name": "Rebound",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rebound.cs"
+    },
+    {
+      "entry_id": "RELAX",
+      "class_name": "Relax",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Relax.cs"
+    },
+    {
+      "entry_id": "RIP_AND_TEAR",
+      "class_name": "RipAndTear",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/RipAndTear.cs"
+    },
+    {
+      "entry_id": "SQUASH",
+      "class_name": "Squash",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Squash.cs"
+    },
+    {
+      "entry_id": "STACK",
+      "class_name": "Stack",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stack.cs"
+    },
+    {
+      "entry_id": "TORIC_TOUGHNESS",
+      "class_name": "ToricToughness",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ToricToughness.cs"
+    },
+    {
+      "entry_id": "WHISTLE",
+      "class_name": "Whistle",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Whistle.cs"
+    },
+    {
+      "entry_id": "WISH",
+      "class_name": "Wish",
+      "pool": "Event",
+      "unplayable_keyword": false,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Wish.cs"
+    },
+    {
+      "entry_id": "BYRDONIS_EGG",
+      "class_name": "ByrdonisEgg",
+      "pool": "Quest",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ByrdonisEgg.cs"
+    },
+    {
+      "entry_id": "DOWSING",
+      "class_name": "Dowsing",
+      "pool": "Quest",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dowsing.cs"
+    },
+    {
+      "entry_id": "LANTERN_KEY",
+      "class_name": "LanternKey",
+      "pool": "Quest",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/LanternKey.cs"
+    },
+    {
+      "entry_id": "SPOILS_MAP",
+      "class_name": "SpoilsMap",
+      "pool": "Quest",
+      "unplayable_keyword": true,
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SpoilsMap.cs"
+    }
+  ]
+}

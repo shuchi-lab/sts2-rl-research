@@ -1,0 +1,50 @@
+diff -ruN -x bin -x obj base/Core/Effects/CardEffects.cs owned/Core/Effects/CardEffects.cs
+--- base/Core/Effects/CardEffects.cs
++++ owned/Core/Effects/CardEffects.cs
+@@ -5776,10 +5776,46 @@
+             if (target != null)
+             {
+                 DealUnpoweredDamageToEnemy(state, target, jug);
++                SettleJuggernautKill(state, target, rng);
+             }
+         }
+ 
+         return gained;
++    }
++
++    /// <summary>
++    /// The `await Kill(killed)` that ends Juggernaut's `CreatureCmd.Damage`: the creature it
++    /// kills has its AfterDeath hooks (Gremlin Horn, Stock's next Axebot) before the block
++    /// gain returns. Left to the enclosing play's pass, a kill in a Hellraiser play's tail
++    /// (Rage, Ornamental Fan) was pruned unhandled by the next sibling play's pass, and the
++    /// Axebot either vanished as a false win or was respawned into a roster it had left.
++    /// </summary>
++    /// <remarks>
++    /// Settled as <see cref="PoweredAttackCommand.SettleAwaitedDeaths" /> settles a hit: not
++    /// once the combat is ending, which the enclosing pass settles as before, and under a
++    /// depth bump so any corpse stays in the roster and the enclosing play's indices hold.
++    /// With no RNG to hand it falls back to the enclosing pass.
++    /// </remarks>
++    private static void SettleJuggernautKill(CombatState state, EnemyState target, Random? rng)
++    {
++        if (
++            target.Hp > 0
++            || target.DeathHooksHandled
++            || state.PlayerHp <= 0
++            || CombatEngine.NoPrimaryEnemyLeft(state)
++            || (rng ?? state.CardEffectRng) is not { } deathRng
++        )
++            return;
++        state.AwaitedDeathPrePass?.Record(state);
++        state.EnemyDeathDispatchDepth++;
++        try
++        {
++            CombatEngine.ResolveAwaitedEnemyDeaths(state, [target], deathRng);
++        }
++        finally
++        {
++            state.EnemyDeathDispatchDepth--;
++        }
+     }
+ 
+     /// <summary>

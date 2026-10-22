@@ -1,0 +1,18 @@
+{
+ "files": {
+  "catalog.json": "dc10843c006a752a6738bfbcc0f0991a04946dd274c9fe8fce87253696f88c31",
+  "roster.json": "bbe81edc3220a204a58c769ca3f3d3ba6123ff5ebb06b1bb56966bbc5779e5ce",
+  "runs.json": "0f7b049ec9fb31a7e9b7e87f852f2ebb92417c6cf9c90a6717a421fa69665216",
+  "selection_audit.json": "349691b2e3965c50ce3ac1bb77db9d9777199a1957df28d0c2e2b829f4c94f9e",
+  "splits.json": "f5fc72d2ca7dd41a14bb60fce3fb250e2f4ce8ac0abf174c328a839548d3ef61",
+  "statistics.json": "b5896b94d7ec1dab6aefc0abde2d0ad63922ff6f6de144e002fc0bedc0f2ffd3",
+  "status_schema.json": "d2cfa5c0c30e1ea642b7d7a932b81a09db1e86b8f24a32898ab55e12a768330b",
+  "templates.csv": "e4f74eae201ff931ea7f4ba36bf1c8a5945ffd98070e2ee49b26c390e90cdd45",
+  "templates.jsonl.gz": "2fadedbfb57878c2bca184623028de715765ec1a5f2048a6a43c9e01ee2e6845"
+ },
+ "parent_manifest_sha256": "16a663c97f8314f8464525b2a6c583896b366cd5b01f8f19903974642969c71e",
+ "parent_selection_digest": "ee6ce64f8ab182c171c34a9b6a23d3c94a4fd6d8e28cdf1e20b8a28488ea381b",
+ "schema": "crl.three_act_214_derived_inputs/v1",
+ "selection_digest": "3391d96e2a836c60b5a89c3b2911b770268d7dc4fee38a86d5f3be1cfdca6f7f",
+ "split_digest": "58decd934042eb90ff9909b7a469d30cee06f21a056de06fca88a0bf3829ce5c"
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "rs1/pilot_config/v3",
+  "pilot": false,
+  "pilot_id": "rs1-mac-blue90000-n1half-s2026101012",
+  "seed": 2026101012,
+  "character": "Ironclad",
+  "ascension": 2,
+  "progression": "all_unlocked",
+  "reward_id": "run-strategy-act-win-v1",
+  "decision_flow": "rs1/decision_flow/v2-auto-reward",
+  "max_training_attempts": 100000,
+  "max_elapsed_hours": null,
+  "validation_seeds": 256,
+  "validation_every": 5000,
+  "diagnostic_seeds": 12,
+  "reserved_test_seeds": 512,
+  "workers": 2,
+  "runs_per_worker": 4,
+  "host_reserve_gib": 0.5,
+  "device": "cpu",
+  "battle_device": "cpu",
+  "torch_threads": 4,
+  "batch_deadline_ms": 5,
+  "purity_check": false,
+  "admission_start_epoch": null,
+  "session_deadline_epoch": null,
+  "learning_profile": "n1-half-tiered-blue90000-mac100k",
+  "learner": {
+    "gamma": 1.0,
+    "n_step": 1,
+    "replay_capacity": 100000,
+    "gradient_gate": 2000,
+    "batch_size": 128,
+    "lr": 0.00025,
+    "huber_delta": 1.0,
+    "grad_clip": 10.0,
+    "target_sync": 1000,
+    "update_every": 16,
+    "adam_eps": 1e-08
+  },
+  "replay": {
+    "policy": "quality-tiers/v1",
+    "batch_counts": [
+      84,
+      16,
+      12,
+      8,
+      8
+    ],
+    "tier_capacities": [
+      20000,
+      30000,
+      40000,
+      50000
+    ]
+  },
+  "exploration": {
+    "epsilon_start": 0.6,
+    "epsilon_end": 0.05,
+    "decay_attempts": 3000,
+    "random_before_gate": true
+  },
+  "model": {
+    "state_dim": 256,
+    "candidate_dim": 64,
+    "head_hidden": 128,
+    "map_dim": 64,
+    "map_passes": 2,
+    "card_embed": 32,
+    "card_dim": 64,
+    "relic_embed": 16,
+    "potion_embed": 16,
+    "kind_embed": 16,
+    "event_embed": 16
+  },
+  "limits": {
+    "battle_turns": 100,
+    "worker_max_turns": 99,
+    "battle_steps": 2000,
+    "strategic_decisions": 1000,
+    "auto_actions": 20000,
+    "repeated_public_state": 25
+  },
+  "abort": {
+    "undefined_rate": 0.05,
+    "min_resolved": 1000,
+    "stop_on_undefined_rate": false
+  }
+}

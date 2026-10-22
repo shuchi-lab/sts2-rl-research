@@ -1,0 +1,85 @@
+{
+ "schema": "crl.worker_build_manifest/owned-engine-v1",
+ "engine_line": "build08",
+ "engine_version": "sts2emulator-whole-game-build08-v0.111.0+crl-training-overlay/v1+p2-juggernaut-await-kill",
+ "built_at_utc": "2026-10-03T22:07:18.413541+00:00",
+ "command": [
+  "/Users/chi/.codex/worktrees/sts2-v0111-parity/STS2_ML/.tools/dotnet/dotnet",
+  "build",
+  "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/worker/RlWorkerBuild08/RlWorker.csproj",
+  "-c",
+  "Release",
+  "-m:2",
+  "-nodeReuse:false",
+  "-p:UseSharedCompilation=false",
+  "-o",
+  "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/build/worker_build08"
+ ],
+ "dotnet_sdk_version": "9.0.318",
+ "source": {
+  "engine": {
+   "path": "engine/whole_game_build08/Sts2Emulator",
+   "digest": "929b97cd24be4acddf8bec382f405ca65e099dc2e00bdf5460466c8fc6fb478e"
+  },
+  "engine_source_manifest_sha256": "3e1440b13cf65cb43fc9a65a4e5b9a824a0ceb6187c77777a15efe359084c469",
+  "collector_worker": {
+   "path": "worker/CollectorWorker",
+   "files": {
+    "CombatWorker.csproj": "a4a5b0a8a403ec5ef8e2ccc881cab8f667b1f53674bc46efdc39fa5dc325badc",
+    "EngineDump.cs": "324b84c3d5c7d3b2087950fe45efacb2bce8520c387dfef906bd36c97202c1d0",
+    "Episode.cs": "b4c7d24f8c90a296c1e13fc33707096e66296d16cb71a749ca08c4d205fbd162",
+    "Import.cs": "8a34ef75b4923d61b56ba609aa2679dc516f214ede668b2f0a12599927c50db9",
+    "Program.cs": "ee00cd3a4ffdeba1c5cf456a17eaf4cc61ae194d50bbcaf534de91a8501b7b8c",
+    "SelfTest.cs": "ea9a9ce3139c02487469c25e9949ae7065c34c2b73970f19d6a8e741a6fe17e4",
+    "TemplateCodec.cs": "954bee66ac2cc9335b064d4d1c00ce4d22eb7328fa22e95f7dfe48be7e81a4ea"
+   }
+  },
+  "rl_worker": {
+   "path": "worker/RlWorkerBuild08",
+   "files": {
+    "Program.cs": "d749aa8b7521e2ebdc7dd24a0480f640f07aa4ba04af518db1162559557dfeb7",
+    "RlWorker.csproj": "c32e16721ffdcebc373a6c2dbac4a64774294a8f342c17200e3b65298bc97cd7"
+   }
+  }
+ },
+ "upstream": {
+  "description": "accepted whole-game simulator, build 08, game v0.111.0 (output/ACTIVE_SIMULATOR.json)",
+  "active_simulator_sha256": "1dd6c3068d91c1d60dd92288ef6085cfbbb8da1fe0d915a96173c3fb8bfb2d5c",
+  "accepted_workspace": "/Volumes/SSD_macmini/Projects/STS2_ML/output/abb69-79-parity-20261002/candidate-workspace",
+  "source_path": "/Volumes/SSD_macmini/Projects/STS2_ML/output/abb69-79-parity-20261002/candidate-workspace/src/Sts2Emulator",
+  "build": 8,
+  "game_version": "v0.111.0",
+  "native_sha256": "52adb8f095852b1be73158e1ac9e063d00f1c3c6c84ebbfff10c20245ec5e3cf",
+  "matched_observations_at_completed_boundaries": 38544,
+  "parity_report_sha256": "80ca38d83802253c571d8d6ebbd2a08086f354019fb76000831e446299e22a32",
+  "files": 70,
+  "digest": "7178009ccb515f07bc93607a925f7b6cebbcab43c1033d88d12bf2abd218d1f2"
+ },
+ "training_overlay_patch_sha256": "9e5dd7c5f5f9cfe48ce8e4443db9340a692375d29cc37e31d1f810fd76150cd9",
+ "combat_rl_engine_changes": {
+  "patch": "combat_rl_sync.patch",
+  "patch_sha256": "661c1feb85a77a41507d79b9a08fe71218b4975872d14b89f65dd34a87175695",
+  "paths": [
+   "Core/Effects/CardEffects.cs"
+  ],
+  "origin": [
+   {
+    "change": "Juggernaut's Unpowered hit awaits its kill (CardEffects.SettleJuggernautKill), as PoweredAttackCommand.SettleAwaitedDeaths settles a hit",
+    "patch": "parameter_scan_v1/recovery/axebot_stale_reference_v1/integration_p2/assets/p2_juggernaut_await_kill.patch",
+    "patch_sha256": "52c9a62f1069d5bb66d77b5eda0586fb035c5e36a01e3423b632ecfb0fa544c1",
+    "not_included": [
+     "p1_invariants.patch",
+     "p3_crimson_mantle_inferno_kill.patch"
+    ],
+    "reproduced_on_build08_before_fix": "engine_tests/Build08Regression/Owned/AxebotP2 (crash + 3 silent false wins + broken Stock chain)"
+   }
+  ]
+ },
+ "output": {
+  "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+  "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+  "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+  "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+ },
+ "not_referenced": "combat_data_simulator build outputs; every assembly here is compiled from combat_rl sources"
+}

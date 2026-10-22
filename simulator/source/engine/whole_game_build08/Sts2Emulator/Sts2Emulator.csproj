@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <NativeLib>Shared</NativeLib>
+    <TargetFramework>net9.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PublishAot>true</PublishAot>
+    <!-- The original game uses full .NET globalization. Invariant mode changes
+         Unicode seed casing and the legacy-prefix comparison in NativeAOT. -->
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Hashing" Version="9.0.0" />
+    <!-- Tests assert on generated card/relic data, which is internal to keep it off the
+         native surface. Without this the test would have to hand-copy ids instead. -->
+    <InternalsVisibleTo Include="Sts2Emulator.Tests" />
+    <!-- combat_data_simulator fork: the worker dumps internal combat fields as engine truth. -->
+    <InternalsVisibleTo Include="CombatWorker" />
+    <TrimmerRootDescriptor Include="ILLink.Roots.xml" />
+    <!--
+      Native exports are named via [UnmanagedCallersOnly(EntryPoint = "...")] in
+      Interop/NativeExports.cs. ILC honors EntryPoint on every platform (Windows,
+      macOS, Linux), so no per-platform linker alias args are needed. Verified on
+      ILC 9.0.317: nm -gU shows all 33 friendly symbols exported from the .dylib.
+    -->
+    <UnmanagedEntryPointsAssembly Include="Sts2Emulator" />
+  </ItemGroup>
+</Project>

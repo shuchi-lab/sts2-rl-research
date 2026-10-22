@@ -1,0 +1,851 @@
+{
+  "schema": "sts2-release/simulator-provenance/v1",
+  "release": "v1.0.0",
+  "study": "choice_n1_n2_30kmax_act3_battle_crossplay_20261013_v1",
+  "engine_identity": "sts2emulator-whole-game-build08-v0.111.0+crl-training-overlay/v1+p2-juggernaut-await-kill",
+  "dotnet_sdk_at_original_build": "9.0.318",
+  "selected_study_manifest_sha256": "6a06c12aa5237412982b08cffbacab06a91fa34a8554560ec40cd7f8559851f5",
+  "trusted_bridge": {
+    "schema": "rs1/bridge_build_manifest/v1",
+    "source_digest": "afd2400f4e0ebed2405ffb0b2210ebdb9c9477753d84178735b99e3a0b4690b6",
+    "bridge_assembly_sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+    "dependencies": {
+      "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+      "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+      "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+      "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+    },
+    "dotnet_sdk_version": "9.0.318",
+    "manifest_sha256": "3941d50c487dc9aa7c1b9606bf3a43cf7cf7766ba80ef7262473a43d11a95c61"
+  },
+  "source_verification": {
+    "engine_source_manifest_matches_recorded_build": true,
+    "engine_manifest_files_checked": 73,
+    "collector_files_checked": 7,
+    "rl_worker_files_checked": 2,
+    "full_run_bridge_files_checked": 14,
+    "guard_files_checked": 5,
+    "all_source_files_match_original_manifests": true,
+    "bitwise_source_rebuild_claim": false,
+    "builds_performed_for_release": 0
+  },
+  "binary_verification": {
+    "all_selected_dependencies_match": true,
+    "full_run_bridge_matches": true,
+    "guard_certificate_sha256": "aed708b66bdd06f1f28668f9560b938f38c539bd62fc1fd728b9e61a18541bee",
+    "guard_files_match_certificate": true
+  },
+  "historical_path_note": "Original source/build manifests are preserved byte for byte and contain historical local build paths. Those paths are provenance, not release runtime dependencies.",
+  "files": [
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Ascension.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Ascension.cs",
+      "sha256": "64739bc6ea53ebc390cb41bfdc83fd4b63740d44296ce152c669b0380555aeea",
+      "bytes": 2403
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/BuffState.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/BuffState.cs",
+      "sha256": "479e376dfe3fbc37664351a76af836efde75ca7a09f55929a7a8d657ea480d1e",
+      "bytes": 44038
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/BuffSystem.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/BuffSystem.cs",
+      "sha256": "fe9991f44d7856f59cefeeebdf4a3967fef2d13e1ceeb5152983ace37bc3e9ff",
+      "bytes": 25619
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Card.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Card.cs",
+      "sha256": "dc0ff881f4c52b71f487048dd1ac1ce6c69f2ca4469efe5dc458f60cd06d9a62",
+      "bytes": 30443
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CardBlockHistory.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CardBlockHistory.cs",
+      "sha256": "94585aba29f77790b878b7bf647b3df6b99a49415741de8b679155aedd20dd88",
+      "bytes": 4108
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CharacterCatalog.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CharacterCatalog.cs",
+      "sha256": "ea44e5facdc6d7df024693bd0b0dae7639f237f59cfef834fa5a5c279626501b",
+      "bytes": 4009
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CombatEngine.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CombatEngine.cs",
+      "sha256": "2842a08eb594cca935f2388aec12af3f2eef967eec82fadc64125145a21142e8",
+      "bytes": 333231
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CombatFactory.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CombatFactory.cs",
+      "sha256": "23a0ed8d5173d7382954cc19f2ac63c24eb7b6db671da9df8058415efb70078f",
+      "bytes": 88576
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CombatObservation.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CombatObservation.cs",
+      "sha256": "0bc78502cfb269dfe198a23dbf9612e1133cffc5cccd2d3b38c844c1ce2995ce",
+      "bytes": 15134
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CombatState.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CombatState.cs",
+      "sha256": "99965546c5af15458299fd4293ccb96deb1621a3ed5a9a909ad6374c5b61e15c",
+      "bytes": 38497
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/CountingRandom.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/CountingRandom.cs",
+      "sha256": "496931e220c0f45752b0d828dfa0cc5a9f2db646e4f6f535a7792e1e9d177dd5",
+      "bytes": 2646
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/EffectTail.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/EffectTail.cs",
+      "sha256": "964095b81c24ec636b968630dda25d2870718973c68a9a44e23e9be5fb794bdc",
+      "bytes": 1479
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Effects/CardEffects.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Effects/CardEffects.cs",
+      "sha256": "d3d401b3e05ec6d5dc0c2023fd8b3c48c68c2bb474871405f995c898d3643d48",
+      "bytes": 514810
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Effects/CardEffects.cs.orig",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Effects/CardEffects.cs.orig",
+      "sha256": "0a66bada8a0a6ec185ba02bc64c42d1a129978e087bac074daa3b0aa731de3f5",
+      "bytes": 489922
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Effects/PotionEffects.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Effects/PotionEffects.cs",
+      "sha256": "6f2ef2f7da209a6788190a23718b56b4ceb45283252e9b71bda3888117a8bc44",
+      "bytes": 39539
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Effects/RelicEffects.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Effects/RelicEffects.cs",
+      "sha256": "7cf25c90f5e921fbc9962f0e0e0d4acd72c6c2547b33fddc8443d6989ca142e8",
+      "bytes": 146502
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Effects/RelicEffects.cs.orig",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Effects/RelicEffects.cs.orig",
+      "sha256": "6b38ea87a6fe38e639c4629db72a1d677fcbb69d108f0d9df3563a47f2663adf",
+      "bytes": 142409
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Enemy.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Enemy.cs",
+      "sha256": "0d551355992f0e8da53e44bea55ae217686fc56cf08429f0a15bbc8c47a72b04",
+      "bytes": 11678
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/EnemyAI.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/EnemyAI.cs",
+      "sha256": "5dcc877c6d7bd827c3402ef7a75a0ea55d16229c308ceef03555aaaa8923e89a",
+      "bytes": 284021
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/EnergyXResources.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/EnergyXResources.cs",
+      "sha256": "7037c4efe5c78024003b952c86c6c8c3c83ca163bb828d4c37a41eac4c7fb6d4",
+      "bytes": 3799
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/GameState.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/GameState.cs",
+      "sha256": "649ec92fbb76594ca2d89d5565146f464170dab8b5b47e4954f6f1c5162555b0",
+      "bytes": 360
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/OrbState.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/OrbState.cs",
+      "sha256": "2fbcba0cf987ea3fc73afa4e31c9ca3c6c7300ae9c437094f5d20b4a241e6f7f",
+      "bytes": 977
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/PendingCardPlay.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/PendingCardPlay.cs",
+      "sha256": "7b38a5b3f284ce0dd456bb111e048c96254196849a9f9c038fd2ba99d23fd3ca",
+      "bytes": 3692
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/PendingCardSelection.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/PendingCardSelection.cs",
+      "sha256": "2a4dad79cb57f4703b733ce18c9dc7394ae17b9a622d4db73541a078ebc22498",
+      "bytes": 13829
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/PendingEnemyTurn.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/PendingEnemyTurn.cs",
+      "sha256": "afc275d141a129c5f60b2755924ff9f4e9ee199202512353f6de4bfd86a5d7d8",
+      "bytes": 427
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/PendingPotionAutoPlays.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/PendingPotionAutoPlays.cs",
+      "sha256": "1605feedb933eea39c10bcfc287d87d8ad39bede7d921c58dd7a3d8906331f15",
+      "bytes": 4957
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/PlayerTurnSetup.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/PlayerTurnSetup.cs",
+      "sha256": "7078d10fb22ed370d21f3ddfb4c5d00cf55bb1dee9536e2ee83897771bb50bc5",
+      "bytes": 10967
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Potion.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Potion.cs",
+      "sha256": "4fdd0fa4a69a590c297d18f2678228cf80e905db1e551163b9d4aa98805cfab9",
+      "bytes": 662
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Power.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Power.cs",
+      "sha256": "a2968fc9165b1a10b427fa7ab40649a4940998076606de7d1f7b1e321891a7c4",
+      "bytes": 160
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/PoweredAttackDamage.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/PoweredAttackDamage.cs",
+      "sha256": "173d226684981104553cfd126c92a684258af8ca56e9c2b10a4eb72f8f9f6ca9",
+      "bytes": 870
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Relic.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Relic.cs",
+      "sha256": "7d5143e4c865210ea4b0ef8f52c3ada47c514f67dea9982029ed1bd4799e9718",
+      "bytes": 2169
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/DeterministicHash.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/DeterministicHash.cs",
+      "sha256": "fc03e3bad67597c6e1a3494c59e64578d0f75c20ece5a88683701f00fd2be385",
+      "bytes": 964
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/GameRng.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/GameRng.cs",
+      "sha256": "024377bf44369e38f9fe63ae22bc767a3817f5703aca0b17951bab19e715ffeb",
+      "bytes": 7236
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/MegaRandom.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/MegaRandom.cs",
+      "sha256": "f5bbb3465d36aa3b9954a3ac385eb782ae665ac0b7fad2ca17d36995b8a7e80a",
+      "bytes": 6125
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/PlayerRngSet.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/PlayerRngSet.cs",
+      "sha256": "b847e218103e90b9b2939167724251051f16e9fbca7a59a6d37aa4fd656de05b",
+      "bytes": 1033
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/RngState.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/RngState.cs",
+      "sha256": "13f2d560213c38f4d4d7e204918e37c4dccad772b546863b1540f4fa78ccd1f0",
+      "bytes": 532
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/RunRngSet.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/RunRngSet.cs",
+      "sha256": "b8534ffd9104c806a03c495c6bd1803fb5da7c16de354be16fd52f004e0f0a3c",
+      "bytes": 3304
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/SeedHelper.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/SeedHelper.cs",
+      "sha256": "061e4de617f789285ad55bc59e553fa9096c9370e673586c9609765b162f58c4",
+      "bytes": 1069
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Rng/TrainingRng.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Rng/TrainingRng.cs",
+      "sha256": "796c5602ffe9f99a005d07504fbea7154b6d9c848720dde6e9b0eff94f781493",
+      "bytes": 4507
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/CardRewardOffer.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/CardRewardOffer.cs",
+      "sha256": "aa0ec51e93d039f424f85860c92c440e4a25cc6f2797df9c1490b92880883465",
+      "bytes": 1930
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/CrystalSphereGame.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/CrystalSphereGame.cs",
+      "sha256": "1c82f26a0dfa3bdbf09073c55ab6dde2262b0468f2b16df66282606e85c31c11",
+      "bytes": 16408
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/EncounterRng.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/EncounterRng.cs",
+      "sha256": "906774910ba3f06f71ecad165623f0e0283c7687d826e6844411829f21763497",
+      "bytes": 5217
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/ProgressionContext.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/ProgressionContext.cs",
+      "sha256": "ce64591c6648ec196ff16ef29f1b74f04f6b44b893d149f448aa5b6b0181c5d7",
+      "bytes": 5900
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RelicGrabBag.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RelicGrabBag.cs",
+      "sha256": "5e16bb1f580b4772d180adce79bc68ac8222e843094ece24456d072f3ed6eb9d",
+      "bytes": 10878
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RewardScreenSnapshot.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RewardScreenSnapshot.cs",
+      "sha256": "10eb8f26e87b343d1ea32f883356511d310d9e65a7014c7c7fb93aeeae62570d",
+      "bytes": 3863
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunConstants.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunConstants.cs",
+      "sha256": "38457d7c8192f86eea97a66aeedabef82e60ecc8d59c6de3b8310a9b28c76048",
+      "bytes": 47051
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunEngine.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunEngine.cs",
+      "sha256": "ae31964e3d98edff3c486d46eb4d60723ddd2e8411cda1562f2b657ab7081ce3",
+      "bytes": 255017
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunMapGenerator.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunMapGenerator.cs",
+      "sha256": "a438bd6aa6debf5beab43a0d5e47e94697611fa817483fbde6a60ec6f091f0c2",
+      "bytes": 69666
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunNonCombatEffects.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunNonCombatEffects.cs",
+      "sha256": "f57bada531997703bd739e8da9086c9e71e9a33ac56ed134d914a80cd310fd39",
+      "bytes": 175718
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunPhase.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunPhase.cs",
+      "sha256": "97c363db6f910f66b53c04d88dd8c2d52416f0dd4d399556a6affab7687ba121",
+      "bytes": 1037
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunRewardGenerator.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunRewardGenerator.cs",
+      "sha256": "1f8183d114e89e4ac73b76a606bddf243552eeae2f485415ba3b115b46bc160e",
+      "bytes": 105430
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/RunState.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/RunState.cs",
+      "sha256": "0ec3d157b18f2b0326f331e049885942269bc0344fa23bbe9535bb969d19c92b",
+      "bytes": 36459
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/Run/SpoilsActMapGenerator.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/Run/SpoilsActMapGenerator.cs",
+      "sha256": "55360b7e5ddaffa6496c68fb2f357aa05829a8e65691b87a9c847d5f84485b30",
+      "bytes": 30044
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Core/StateCloning.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Core/StateCloning.cs",
+      "sha256": "69ad6b03bc3756a9886327c9bd7d49a9fdf0e6167a306b3b46e15bd346aceba6",
+      "bytes": 35242
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/BetaProgression.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/BetaProgression.g.cs",
+      "sha256": "4aef89f99ff1dd850ba196e4e0639aafc008799081901828f851dfd0001a6980",
+      "bytes": 35089
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/CardIds.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/CardIds.g.cs",
+      "sha256": "b09dd9bd7cde2806f3d40688644f44acac741d69b87d980075ad931ae842b0cd",
+      "bytes": 11219
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/CardPools.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/CardPools.g.cs",
+      "sha256": "02ba664f6c729c6089135e5e69166237396af91f9a3d84c5bce84d023a672bc6",
+      "bytes": 4166
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/Cards.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/Cards.g.cs",
+      "sha256": "8e7ea9fa176bafc2c14bfe61b03ed92d56c835a88b3aca087936a1a5f486e448",
+      "bytes": 150963
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/EncounterTags.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/EncounterTags.g.cs",
+      "sha256": "e2f73e1e47172be97158cf4677f52198451bbdc8beebb5bb629ebc7ab90209a3",
+      "bytes": 7035
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/Enemies.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/Enemies.g.cs",
+      "sha256": "2f6b4145a87f2f7da1ddc1ca8b19f074b0328caa08552e831b629961a431103f",
+      "bytes": 19469
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/EventOptions.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/EventOptions.g.cs",
+      "sha256": "2126bffeff9aeda00dd43ffc380d92b7f2da48ce53069837beadbb92a5798c40",
+      "bytes": 3074
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/IroncladEffectValues.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/IroncladEffectValues.g.cs",
+      "sha256": "df1cbb52e8c4c8dcb8380ad506c15f65425a09cfa49f84f82c15cb629d82033b",
+      "bytes": 2957
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/PotionPools.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/PotionPools.g.cs",
+      "sha256": "316d3ad565962ae6d3a69f236fef83c3b41abcb354c27ceed8000ff2b0aed78e",
+      "bytes": 1450
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/Potions.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/Potions.g.cs",
+      "sha256": "8ae5ea69b6781f8afd577aee910e0a31a750dd42b74e4d0416e6285d1582e713",
+      "bytes": 8129
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/Powers.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/Powers.g.cs",
+      "sha256": "ae08ea95b689d14273fcd120fd9ce03ab8a6fe0f7d4e02869caecf5d830a99dc",
+      "bytes": 26891
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/RelicPools.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/RelicPools.g.cs",
+      "sha256": "31f3878a522e42d4114f61acf06fe4e687b9d83416a37f941b73f91a43a0af18",
+      "bytes": 1995
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Generated/Relics.g.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Generated/Relics.g.cs",
+      "sha256": "80bae438d52e33eecca574eeef8082d66ee0198f5fadc7e61c0d3e84d4f852de",
+      "bytes": 33651
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/ILLink.Roots.xml",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/ILLink.Roots.xml",
+      "sha256": "bc7fa5059878eba78ba60dec36c8cec13195625901aab5c82e69fcceae245d82",
+      "bytes": 240
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Interop/NativeExports.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Interop/NativeExports.cs",
+      "sha256": "1f686291b44670831d0a309e72278f0d9bc13dff0ba20e6a4d9f2fd162a0a066",
+      "bytes": 47380
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Interop/RunNativeExports.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Interop/RunNativeExports.cs",
+      "sha256": "0e1fc84e40d87f60771646c1ffb8f55e7fded58841bf998dbe6177812b643897",
+      "bytes": 36845
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Sts2Emulator.csproj",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Sts2Emulator.csproj",
+      "sha256": "a8b985e349770efa53585a1cd268fd580d88986f366c1fadf791a7f9d2eaf8b9",
+      "bytes": 1517
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Training/CombatEntryCapture.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Training/CombatEntryCapture.cs",
+      "sha256": "677625c9121abf56fb595117504cf292d64405c42a77da922db3121b48968632",
+      "bytes": 3395
+    },
+    {
+      "path": "source/engine/whole_game_build08/Sts2Emulator/Training/TrainingCombatFactory.cs",
+      "source": "combat_rl/engine/whole_game_build08/Sts2Emulator/Training/TrainingCombatFactory.cs",
+      "sha256": "cf3ba0248f20e3f1b0433d3c14b5085cc46f071dfa99d28044f113e4d3486c59",
+      "bytes": 7617
+    },
+    {
+      "path": "source/engine/whole_game_build08/SOURCE.json",
+      "source": "combat_rl/engine/whole_game_build08/SOURCE.json",
+      "sha256": "3e1440b13cf65cb43fc9a65a4e5b9a824a0ceb6187c77777a15efe359084c469",
+      "bytes": 10840
+    },
+    {
+      "path": "source/engine/whole_game_build08/training_overlay.patch",
+      "source": "combat_rl/engine/whole_game_build08/training_overlay.patch",
+      "sha256": "9e5dd7c5f5f9cfe48ce8e4443db9340a692375d29cc37e31d1f810fd76150cd9",
+      "bytes": 28278
+    },
+    {
+      "path": "source/engine/whole_game_build08/combat_rl_sync.patch",
+      "source": "combat_rl/engine/whole_game_build08/combat_rl_sync.patch",
+      "sha256": "661c1feb85a77a41507d79b9a08fe71218b4975872d14b89f65dd34a87175695",
+      "bytes": 2008
+    },
+    {
+      "path": "source/worker/CollectorWorker/CombatWorker.csproj",
+      "source": "combat_rl/worker/CollectorWorker/CombatWorker.csproj",
+      "sha256": "a4a5b0a8a403ec5ef8e2ccc881cab8f667b1f53674bc46efdc39fa5dc325badc",
+      "bytes": 927
+    },
+    {
+      "path": "source/worker/CollectorWorker/EngineDump.cs",
+      "source": "combat_rl/worker/CollectorWorker/EngineDump.cs",
+      "sha256": "324b84c3d5c7d3b2087950fe45efacb2bce8520c387dfef906bd36c97202c1d0",
+      "bytes": 17248
+    },
+    {
+      "path": "source/worker/CollectorWorker/Episode.cs",
+      "source": "combat_rl/worker/CollectorWorker/Episode.cs",
+      "sha256": "b4c7d24f8c90a296c1e13fc33707096e66296d16cb71a749ca08c4d205fbd162",
+      "bytes": 23708
+    },
+    {
+      "path": "source/worker/CollectorWorker/Import.cs",
+      "source": "combat_rl/worker/CollectorWorker/Import.cs",
+      "sha256": "8a34ef75b4923d61b56ba609aa2679dc516f214ede668b2f0a12599927c50db9",
+      "bytes": 8702
+    },
+    {
+      "path": "source/worker/CollectorWorker/Program.cs",
+      "source": "combat_rl/worker/CollectorWorker/Program.cs",
+      "sha256": "ee00cd3a4ffdeba1c5cf456a17eaf4cc61ae194d50bbcaf534de91a8501b7b8c",
+      "bytes": 10698
+    },
+    {
+      "path": "source/worker/CollectorWorker/SelfTest.cs",
+      "source": "combat_rl/worker/CollectorWorker/SelfTest.cs",
+      "sha256": "ea9a9ce3139c02487469c25e9949ae7065c34c2b73970f19d6a8e741a6fe17e4",
+      "bytes": 13889
+    },
+    {
+      "path": "source/worker/CollectorWorker/TemplateCodec.cs",
+      "source": "combat_rl/worker/CollectorWorker/TemplateCodec.cs",
+      "sha256": "954bee66ac2cc9335b064d4d1c00ce4d22eb7328fa22e95f7dfe48be7e81a4ea",
+      "bytes": 14454
+    },
+    {
+      "path": "source/worker/RlWorkerBuild08/Program.cs",
+      "source": "combat_rl/worker/RlWorkerBuild08/Program.cs",
+      "sha256": "d749aa8b7521e2ebdc7dd24a0480f640f07aa4ba04af518db1162559557dfeb7",
+      "bytes": 69307
+    },
+    {
+      "path": "source/worker/RlWorkerBuild08/RlWorker.csproj",
+      "source": "combat_rl/worker/RlWorkerBuild08/RlWorker.csproj",
+      "sha256": "c32e16721ffdcebc373a6c2dbac4a64774294a8f342c17200e3b65298bc97cd7",
+      "bytes": 1265
+    },
+    {
+      "path": "source/worker/FullRunWorker/AutoplayLoopGuard.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/AutoplayLoopGuard.cs",
+      "sha256": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+      "bytes": 18655
+    },
+    {
+      "path": "source/worker/FullRunWorker/BattleEvents.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/BattleEvents.cs",
+      "sha256": "55c2651d2a7024bde6848b416b5f5818a7001a826cc8a8b990a6c19a9137bfb2",
+      "bytes": 9475
+    },
+    {
+      "path": "source/worker/FullRunWorker/CombatFacade.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/CombatFacade.cs",
+      "sha256": "67f48bb6dff1ec32a86629ac6b34cfa285fe5e36000255a5b5ceda909e395c77",
+      "bytes": 10680
+    },
+    {
+      "path": "source/worker/FullRunWorker/Compatibility.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/Compatibility.cs",
+      "sha256": "948651a4d4f342a3f9a7aa463d73c36189907452f5742c4952cdeb497de24226",
+      "bytes": 4750
+    },
+    {
+      "path": "source/worker/FullRunWorker/DeckInstances.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/DeckInstances.cs",
+      "sha256": "c581a513043f5a7244dd1d24bc96aeba87632175ce36b8b20dbb4930b9ffc9ad",
+      "bytes": 3956
+    },
+    {
+      "path": "source/worker/FullRunWorker/Directory.Build.props",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/Directory.Build.props",
+      "sha256": "21e7b321e228d17fde3a7e4a2c1d392700603349ab895d52fdda6f220eb37842",
+      "bytes": 299
+    },
+    {
+      "path": "source/worker/FullRunWorker/EventOptions.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/EventOptions.cs",
+      "sha256": "dcce285ddb21caa5614e142b2664b3f2be7e90685709a003c9fcf88ec24d7fc9",
+      "bytes": 19259
+    },
+    {
+      "path": "source/worker/FullRunWorker/FacadeAudit.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/FacadeAudit.cs",
+      "sha256": "64e548423af12e80d621f68c05f3a6464b3b15a527f1b4a8af13c7ebaa6cf4c0",
+      "bytes": 5713
+    },
+    {
+      "path": "source/worker/FullRunWorker/FullRunWorker.csproj",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/FullRunWorker.csproj",
+      "sha256": "f5ce013e88b1fa097c4af05ea3060a52f6d1d9025644c1da17ddbd5ff8add57b",
+      "bytes": 2287
+    },
+    {
+      "path": "source/worker/FullRunWorker/ParityProbe.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/ParityProbe.cs",
+      "sha256": "387b35ea1281a14de1c32d01ba5c19880b715e1f49d48ee06947f987f5d5fdb3",
+      "bytes": 6280
+    },
+    {
+      "path": "source/worker/FullRunWorker/Program.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/Program.cs",
+      "sha256": "09e0c94b334e5143e10d4121cfe5ca61d9419cbd78fa36f4acce1b64c533fac0",
+      "bytes": 24916
+    },
+    {
+      "path": "source/worker/FullRunWorker/PublicProjection.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/PublicProjection.cs",
+      "sha256": "c7e818d6b78392341d480a65422aa118762a9cf53dfca6a0e4112bc2cb24d467",
+      "bytes": 20684
+    },
+    {
+      "path": "source/worker/FullRunWorker/RunSession.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/RunSession.cs",
+      "sha256": "1eeba8ca4ee91739fe107f5f16fc56a0d5e6595d2fb1d3a60e90e98e394de082",
+      "bytes": 28476
+    },
+    {
+      "path": "source/worker/FullRunWorker/StrategicActions.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/worker/FullRunWorker/StrategicActions.cs",
+      "sha256": "73b8303150620bd609f5a2df2770c3d0e7ef3de8fb71a14f9b16e002ceaa25d1",
+      "bytes": 46905
+    },
+    {
+      "path": "bin/worker_build08/CombatWorker.deps.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/CombatWorker.deps.json",
+      "sha256": "4a46c3af78220044ada161e1f3592d5d5af23b395e758f7d99dcef6954694aa5",
+      "bytes": 1377
+    },
+    {
+      "path": "bin/worker_build08/CombatWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/CombatWorker.dll",
+      "sha256": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+      "bytes": 90112
+    },
+    {
+      "path": "bin/worker_build08/CombatWorker.runtimeconfig.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/CombatWorker.runtimeconfig.json",
+      "sha256": "ce89e77c20c776116297efa6ecd0d7454f4566455cc0821cb7f9fcbffd1e6ae1",
+      "bytes": 452
+    },
+    {
+      "path": "bin/worker_build08/RlCombatWorker.deps.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/RlCombatWorker.deps.json",
+      "sha256": "1f5c5ccf11264226e972605a42ec81ea509b83536c84386a6fd65f4aef2646ca",
+      "bytes": 1789
+    },
+    {
+      "path": "bin/worker_build08/RlCombatWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/RlCombatWorker.dll",
+      "sha256": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+      "bytes": 82944
+    },
+    {
+      "path": "bin/worker_build08/RlCombatWorker.runtimeconfig.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/RlCombatWorker.runtimeconfig.json",
+      "sha256": "ce89e77c20c776116297efa6ecd0d7454f4566455cc0821cb7f9fcbffd1e6ae1",
+      "bytes": 452
+    },
+    {
+      "path": "bin/worker_build08/Sts2Emulator.deps.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/Sts2Emulator.deps.json",
+      "sha256": "5502f6d2de2144c27394495a59dc5d6f2792566f3ff00e490872630d74eef99e",
+      "bytes": 1875
+    },
+    {
+      "path": "bin/worker_build08/Sts2Emulator.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/Sts2Emulator.dll",
+      "sha256": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+      "bytes": 815616
+    },
+    {
+      "path": "bin/worker_build08/System.IO.Hashing.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08/System.IO.Hashing.dll",
+      "sha256": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664",
+      "bytes": 56104
+    },
+    {
+      "path": "bin/FullRunWorker/CombatWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/CombatWorker.dll",
+      "sha256": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+      "bytes": 90112
+    },
+    {
+      "path": "bin/FullRunWorker/FullRunWorker.deps.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/FullRunWorker.deps.json",
+      "sha256": "9cdb6dbda923aa448272e661e64305541b3f7ef0d3e42837e71f913ea6b2aa70",
+      "bytes": 1850
+    },
+    {
+      "path": "bin/FullRunWorker/FullRunWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/FullRunWorker.dll",
+      "sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+      "bytes": 169472
+    },
+    {
+      "path": "bin/FullRunWorker/FullRunWorker.runtimeconfig.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/FullRunWorker.runtimeconfig.json",
+      "sha256": "ce89e77c20c776116297efa6ecd0d7454f4566455cc0821cb7f9fcbffd1e6ae1",
+      "bytes": 452
+    },
+    {
+      "path": "bin/FullRunWorker/RlCombatWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/RlCombatWorker.dll",
+      "sha256": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+      "bytes": 82944
+    },
+    {
+      "path": "bin/FullRunWorker/Sts2Emulator.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/Sts2Emulator.dll",
+      "sha256": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+      "bytes": 815616
+    },
+    {
+      "path": "bin/FullRunWorker/System.IO.Hashing.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker/System.IO.Hashing.dll",
+      "sha256": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664",
+      "bytes": 56104
+    },
+    {
+      "path": "provenance/worker_build08_manifest.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build/worker_build08_manifest.json",
+      "sha256": "a8f26eeaac6924eaec36bb02bbfabe1eb370021bd28971e1ce95a53268a8303c",
+      "bytes": 4164
+    },
+    {
+      "path": "provenance/FullRunWorker_manifest.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/simulator/build_run_strategy_v1/FullRunWorker_manifest.json",
+      "sha256": "3941d50c487dc9aa7c1b9606bf3a43cf7cf7766ba80ef7262473a43d11a95c61",
+      "bytes": 3882
+    },
+    {
+      "path": "source/worker/GuardedBattleWorker/AutoplayLoopGuard.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/AutoplayLoopGuard.cs",
+      "sha256": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+      "bytes": 18655
+    },
+    {
+      "path": "source/worker/GuardedBattleWorker/GuardedProgram.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/GuardedProgram.cs",
+      "sha256": "576d9966d91c95652b81dd98286328f68fae040adc78df3492b1342935e79134",
+      "bytes": 27221
+    },
+    {
+      "path": "source/worker/GuardedBattleWorker/SelfTest.cs",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/SelfTest.cs",
+      "sha256": "f6eccd72f4a0dccf984829c843027d3e927741d083695cd85ee38a2759ac4966",
+      "bytes": 22805
+    },
+    {
+      "path": "source/worker/GuardedBattleWorker/GuardedBattleWorker.csproj",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/GuardedBattleWorker.csproj",
+      "sha256": "a7b251ed41223a87cb8454a03821c61fa285df6d2a46e4f71f6e176eb5b779e2",
+      "bytes": 2628
+    },
+    {
+      "path": "source/worker/GuardedBattleWorker/Directory.Build.props",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/Directory.Build.props",
+      "sha256": "f65d42aef3035b5ccb4295aa048f4c7008a8a448b70130f3b079190c3b11d9f8",
+      "bytes": 255
+    },
+    {
+      "path": "bin/GuardedBattleWorker/CombatWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/CombatWorker.dll",
+      "sha256": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+      "bytes": 90112
+    },
+    {
+      "path": "bin/GuardedBattleWorker/GuardedBattleWorker.deps.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/GuardedBattleWorker.deps.json",
+      "sha256": "452fe02d913ff1617ae645718496af47098558c62fb5d0f48e91dab4d33bb8b9",
+      "bytes": 1868
+    },
+    {
+      "path": "bin/GuardedBattleWorker/GuardedBattleWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/GuardedBattleWorker.dll",
+      "sha256": "556878cadf9461b30695eabecdeb82da10c8f2ad0a05ae4773638619a5dba3e4",
+      "bytes": 87552
+    },
+    {
+      "path": "bin/GuardedBattleWorker/GuardedBattleWorker.pdb",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/GuardedBattleWorker.pdb",
+      "sha256": "1e62d14a75bbd83ee42ca62b1f118c14642c7c92dfbe89ac9b4dee3dffd105d9",
+      "bytes": 21596
+    },
+    {
+      "path": "bin/GuardedBattleWorker/GuardedBattleWorker.runtimeconfig.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/GuardedBattleWorker.runtimeconfig.json",
+      "sha256": "ce89e77c20c776116297efa6ecd0d7454f4566455cc0821cb7f9fcbffd1e6ae1",
+      "bytes": 452
+    },
+    {
+      "path": "bin/GuardedBattleWorker/RlCombatWorker.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/RlCombatWorker.dll",
+      "sha256": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+      "bytes": 82944
+    },
+    {
+      "path": "bin/GuardedBattleWorker/Sts2Emulator.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/Sts2Emulator.dll",
+      "sha256": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+      "bytes": 815616
+    },
+    {
+      "path": "bin/GuardedBattleWorker/System.IO.Hashing.dll",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/_build/out/System.IO.Hashing.dll",
+      "sha256": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664",
+      "bytes": 56104
+    },
+    {
+      "path": "provenance/GUARD_CERTIFICATE.json",
+      "source": "combat_rl/outputs/01a113d0-ecc7-7801-84aa-972357181933/checkpoint_validation_e47p5_mix20_v1/mac_offload_qualification_20261009_v1/native_runtime/overlay/act1_battle_finetune_v1/worker/GuardedBattleWorker/GUARD_CERTIFICATE.json",
+      "sha256": "aed708b66bdd06f1f28668f9560b938f38c539bd62fc1fd728b9e61a18541bee",
+      "bytes": 5883
+    },
+    {
+      "path": "licenses/Sts2Emulator-MIT.txt",
+      "source": "output/abb69-79-parity-20261002/candidate-workspace/LICENSE",
+      "sha256": "1ce3ad0839217423c16fda4eff1300a861aa0e89ff0c76777b08bba54f73ca1b",
+      "bytes": 1092
+    },
+    {
+      "path": "licenses/System.IO.Hashing/LICENSE.TXT",
+      "source": "local NuGet cache: System.IO.Hashing/9.0.0/LICENSE.TXT",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b",
+      "bytes": 1139
+    },
+    {
+      "path": "licenses/System.IO.Hashing/THIRD-PARTY-NOTICES.TXT",
+      "source": "local NuGet cache: System.IO.Hashing/9.0.0/THIRD-PARTY-NOTICES.TXT",
+      "sha256": "40686c6447a7d5b5d3693068e4571b5f483d7ed335aeee773ef662440de4c5d5",
+      "bytes": 75640
+    },
+    {
+      "path": "licenses/System.IO.Hashing/system.io.hashing.nuspec",
+      "source": "local NuGet cache: System.IO.Hashing/9.0.0/system.io.hashing.nuspec",
+      "sha256": "4483bc5a13ac12a4f0e5daf8f7aab7a073ec79017332aa9419f4f8f69253fa85",
+      "bytes": 1552
+    }
+  ]
+}

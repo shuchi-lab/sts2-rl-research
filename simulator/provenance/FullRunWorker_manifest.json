@@ -1,0 +1,53 @@
+{
+ "schema": "rs1/bridge_build_manifest/v1",
+ "built_at_utc": "2026-10-07T16:40:43.036204+00:00",
+ "command": [
+  "/Users/chi/.codex/worktrees/sts2-v0111-parity/STS2_ML/.tools/dotnet/dotnet",
+  "build",
+  "/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/experiments/trials/run-strategy-quality-n4-n5-20k-v1/cpu_utilization_amendment_v1/debug_worker_timeout_20261007_v1/guard_candidate/worker/FullRunWorker/FullRunWorker.csproj",
+  "-c",
+  "Release",
+  "-nodeReuse:false",
+  "-p:UseSharedCompilation=false",
+  "-p:Rs1FrozenDependencies=/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/experiments/trials/run-strategy-e-fixed-v1/frozen_e_dependencies/worker_build08",
+  "-p:BaseIntermediateOutputPath=/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/experiments/trials/run-strategy-quality-n4-n5-20k-v1/cpu_utilization_amendment_v1/debug_worker_timeout_20261007_v1/guard_candidate/build/obj/candidate/",
+  "-o",
+  "/Users/chi/.codex/worktrees/run-strategy-v1/STS2_ML/combat_rl/experiments/trials/run-strategy-quality-n4-n5-20k-v1/cpu_utilization_amendment_v1/debug_worker_timeout_20261007_v1/guard_candidate/build/candidate/FullRunWorker"
+ ],
+ "exit_code": 0,
+ "dotnet_sdk_version": "9.0.318",
+ "source": {
+  "AutoplayLoopGuard.cs": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+  "BattleEvents.cs": "55c2651d2a7024bde6848b416b5f5818a7001a826cc8a8b990a6c19a9137bfb2",
+  "CombatFacade.cs": "67f48bb6dff1ec32a86629ac6b34cfa285fe5e36000255a5b5ceda909e395c77",
+  "Compatibility.cs": "948651a4d4f342a3f9a7aa463d73c36189907452f5742c4952cdeb497de24226",
+  "DeckInstances.cs": "c581a513043f5a7244dd1d24bc96aeba87632175ce36b8b20dbb4930b9ffc9ad",
+  "Directory.Build.props": "21e7b321e228d17fde3a7e4a2c1d392700603349ab895d52fdda6f220eb37842",
+  "EventOptions.cs": "dcce285ddb21caa5614e142b2664b3f2be7e90685709a003c9fcf88ec24d7fc9",
+  "FacadeAudit.cs": "64e548423af12e80d621f68c05f3a6464b3b15a527f1b4a8af13c7ebaa6cf4c0",
+  "FullRunWorker.csproj": "f5ce013e88b1fa097c4af05ea3060a52f6d1d9025644c1da17ddbd5ff8add57b",
+  "ParityProbe.cs": "387b35ea1281a14de1c32d01ba5c19880b715e1f49d48ee06947f987f5d5fdb3",
+  "Program.cs": "09e0c94b334e5143e10d4121cfe5ca61d9419cbd78fa36f4acce1b64c533fac0",
+  "PublicProjection.cs": "c7e818d6b78392341d480a65422aa118762a9cf53dfca6a0e4112bc2cb24d467",
+  "RunSession.cs": "1eeba8ca4ee91739fe107f5f16fc56a0d5e6595d2fb1d3a60e90e98e394de082",
+  "StrategicActions.cs": "73b8303150620bd609f5a2df2770c3d0e7ef3de8fb71a14f9b16e002ceaa25d1"
+ },
+ "source_digest": "afd2400f4e0ebed2405ffb0b2210ebdb9c9477753d84178735b99e3a0b4690b6",
+ "bridge_assembly_sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+ "output": {
+  "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+  "FullRunWorker.dll": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+  "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+  "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+  "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+ },
+ "dependencies": {
+  "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+  "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+  "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+  "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+ },
+ "dependency_manifest_sha256": "a8f26eeaac6924eaec36bb02bbfabe1eb370021bd28971e1ce95a53268a8303c",
+ "original_worker_build_digest": "aad649aff28c01f512ddcd4b86678d467d26beafc2bc0d08cd7703a2ebf47d37",
+ "note": "isolated guard-candidate build; dependencies are the prebuilt closed build08 assemblies (HintPath), never rebuilt"
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <TieredPGO>true</TieredPGO>
+    <ServerGarbageCollector>false</ServerGarbageCollector>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <UseSharedCompilation>false</UseSharedCompilation>
+    <AssemblyName>CombatWorker</AssemblyName>
+    <RootNamespace>CombatWorker</RootNamespace>
+  </PropertyGroup>
+  <!--
+    combat_rl owned copy of combat_data_simulator/worker/CombatWorker (sources unchanged).
+    It builds against combat_rl's owned build08 engine copy, never the collector's fork.
+  -->
+  <ItemGroup>
+    <ProjectReference Include="../../engine/whole_game_build08/Sts2Emulator/Sts2Emulator.csproj" />
+  </ItemGroup>
+</Project>

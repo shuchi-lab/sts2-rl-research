@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    act1ft isolated-battle guard facade. It wraps the ORIGINAL prebuilt build08 RlCombatWorker.dll
+    (referenced by HintPath, never rebuilt or edited) and compiles exactly one extra source besides
+    its own facade: the reviewed AutoplayLoopGuard.cs (class A + class B), byte-identical to
+    sha256 8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546.
+
+    Build (driven by act1_battle_finetune_v1.battle_guard build):
+      dotnet build GuardedBattleWorker.csproj -c Release -o _build/out
+    Override the dependency directory with -p:Act1ftFrozenDependencies=PATH (must hold the same bytes;
+    the facade refuses to start on any other RlCombatWorker/CombatWorker/Sts2Emulator bytes).
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <TieredPGO>true</TieredPGO>
+    <ServerGarbageCollector>false</ServerGarbageCollector>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <UseSharedCompilation>false</UseSharedCompilation>
+    <UseAppHost>false</UseAppHost>
+    <Deterministic>true</Deterministic>
+    <AssemblyName>GuardedBattleWorker</AssemblyName>
+    <RootNamespace>GuardedBattleWorker</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Act1ftFrozenDependencies Condition="'$(Act1ftFrozenDependencies)' == ''">$(MSBuildThisFileDirectory)../../../experiments/trials/run-strategy-e-fixed-v1/frozen_e_dependencies/worker_build08</Act1ftFrozenDependencies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AutoplayLoopGuard.cs" />
+    <Compile Include="GuardedProgram.cs" />
+    <Compile Include="SelfTest.cs" />
+    <EmbeddedResource Include="AutoplayLoopGuard.cs" LogicalName="act1ft.AutoplayLoopGuard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Sts2Emulator">
+      <HintPath>$(Act1ftFrozenDependencies)/Sts2Emulator.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="CombatWorker">
+      <HintPath>$(Act1ftFrozenDependencies)/CombatWorker.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="RlCombatWorker">
+      <HintPath>$(Act1ftFrozenDependencies)/RlCombatWorker.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="System.IO.Hashing">
+      <HintPath>$(Act1ftFrozenDependencies)/System.IO.Hashing.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

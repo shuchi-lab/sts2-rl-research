@@ -1,0 +1,6 @@
+<Project>
+  <!-- Keep intermediate files out of the owned source tree (outputs live in build_run_strategy_v1/). -->
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../../build_run_strategy_v1/obj/FullRunWorker/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>

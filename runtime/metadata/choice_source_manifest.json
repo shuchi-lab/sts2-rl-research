@@ -1,0 +1,4390 @@
+{
+ "battle_updates": "none (E frozen)",
+ "bridge": {
+  "bridge_assembly_sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+  "dependencies": {
+   "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+   "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+   "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+   "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+  },
+  "dotnet_sdk_version": "9.0.318",
+  "manifest_sha256": "3941d50c487dc9aa7c1b9606bf3a43cf7cf7766ba80ef7262473a43d11a95c61",
+  "schema": "rs1/bridge_build_manifest/v1",
+  "source_digest": "afd2400f4e0ebed2405ffb0b2210ebdb9c9477753d84178735b99e3a0b4690b6"
+ },
+ "bridge_hello": {
+  "bridge": {
+   "assembly": "FullRunWorker",
+   "assembly_mvid": "f5ed7e26-c98d-45fc-aeea-24a3c9e32510",
+   "assembly_sha256": "7c25fc96002672e87dbfe5554ce24930c721cefe21b979f1a2cb298c84b6c0d6",
+   "engine_entry_points": [
+    "Sts2Emulator.Core.Run.RunEngine.Reset(string,ProgressionContext,int,CharacterId)",
+    "Sts2Emulator.Core.Run.RunEngine.Step(int,int,out float,out bool,out bool)",
+    "Sts2Emulator.Core.Run.RunEngine.UsePotionOutsideCombat(int)"
+   ],
+   "forbidden_members": [
+    "RlCombatWorker.Session.Step",
+    "RlCombatWorker.Session.Reset",
+    "Sts2Emulator.Training.TrainingCombatFactory.Build",
+    "Sts2Emulator.Training.TrainingCombatFactory.Step",
+    "Sts2Emulator.Core.Run.RunEngine.ConfirmRestUpgradeSelection",
+    "Sts2Emulator.Core.CombatEngine.PlayerIsDead"
+   ],
+   "pid": 22038,
+   "reflected_members": [
+    "RlCombatWorker.Session..ctor(int,string,BattleInput,ulong,EnvironmentRngMode,int,int,bool,bool)",
+    "RlCombatWorker.Session.set_Fight(TrainingCombat) [private setter]",
+    "RlCombatWorker.Session.Refresh() [private, read-only enumeration + truncation status]",
+    "RlCombatWorker.Session.WriteResponse(Utf8JsonWriter,string,StepInfo?) [writer]",
+    "RlCombatWorker.Session._steps:int [bridge-owned battle step counter, written before Refresh]",
+    "RlCombatWorker.Session._decision:int [read]",
+    "RlCombatWorker.Session._status:string [read]",
+    "RlCombatWorker.Session._reason:string [read]",
+    "RlCombatWorker.Session._error:string [read]",
+    "RlCombatWorker.Session._legal:List<Option> [read: ordinal -> engine action/target]",
+    "RlCombatWorker.Session._status/_reason/_legal/_decision [written ONCE when the run engine closes the fight: the original terminal bookkeeping values, so the writer emits the original terminal reply]",
+    "RlCombatWorker.Program.Hello(Utf8JsonWriter) [private, nested original identity]"
+   ],
+   "runtime": ".NET 9.0.20"
+  },
+  "debug_enabled": false,
+  "decision_flow": "rs1/decision_flow/v2-auto-reward",
+  "dependencies": {
+   "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+   "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+   "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+   "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+  },
+  "event_table_schema": "rs1/event_page_options/v1",
+  "observation_schema": "rs1/public_run_observation/v2",
+  "ok": true,
+  "protocol": "rs1/worker_protocol/v2",
+  "reply_schema": "rs1/step_reply/v1",
+  "type": "hello"
+ },
+ "code_sha256": {
+  "README.md": "d1b2d920ab7064133aacb17a837256071fc61de28e5a246280a6756afbf599b5",
+  "__init__.py": "eb526517354eb89029b96be8dd4c6557e4cbb334ebdeaf81f4400d48b020abe5",
+  "acquisition_restrictions.json": "554161dfea66204e9afdf8e435e31c1c1607b6f70e409d75bb00098313068ea8",
+  "artifacts.py": "5f5774f0977791fb115468d0c39c10f1c8989446a372aad8df9deac969c3abd3",
+  "bootstrap.py": "d599da5d9d2a9f02805a16bc0ca29d486111851de51684fad26857ab0ea91dae",
+  "build.py": "ab9d3a7c0cbbb3d157c8767a9a97ecf982a5c910736e9725535a377f7fa2b96e",
+  "chain_acceptance.py": "9af1d4aaa6220174f1392c63680036ad82749f1c08808a8f2058d521ab21363a",
+  "chain_complete.py": "62508b5f61949bc1c6c9e113742f759ed19f8912b5425d663322121200acbb73",
+  "chain_resume.py": "c0459a6f41cf9346c710ee3117553ef93e708deb5646ec8dfd632f81e7756608",
+  "chain_train.py": "08c08ce93c0deae49a944f23d39183ab240278f8415e3b169748c8b24fd81224",
+  "complete.py": "b17bcbd41eef3923b3aee3df0ed7f7a3cd9e7597556c3b4e6b526309910e1889",
+  "complete_stage.py": "93a8b758c04fe052263f8077eb4a7d64bc22627fc901162d4a7e1265f6e93009",
+  "config.py": "13d011746cfc85b2f0f5e818c2a72895c3ccabf9b5d656d49a19c3455ad24812",
+  "continue_train.py": "f13c1b06c3e5bad65fb9f688aee1cc5471f45bf64b65dce23e114f1f53115c71",
+  "contracts.py": "a2177e478ce38b171aaecb5206e131841c95d77e773714dc17857ffd387ae8c6",
+  "dispatcher.py": "88e3feb4ee8c7edc7cedb73e80707ba7b5197a7f34fb12c44ddacfcd428cdad8",
+  "features.py": "375427fa4ec1e9baa5ea3ba1cf18923ce60ca57f6b778acb57878fd97dab4b6d",
+  "frozen_battle.py": "4ce6a1a1918c0f38040eeb6030e085cc3187c262c749c982ddc3e234ae8c92cc",
+  "learner.py": "7e6bb698030e10a048a0dd626abdacbce425e46ce8b8414c8ef8d5484b4103d5",
+  "map_features.py": "4363d2234e1e02fdab95fee42cacb741b271b00d79c75556fa67e0a70b68ac45",
+  "metadata.py": "fd7b8efbed482bfbcc69b80a2ec5aeed7b5caa2367d2ff880693d3c48944ee7f",
+  "model.py": "1a0dfafa5dec0488c1ee0f07926d0c2152bc006627045fc8ba250f4e32d1b0a9",
+  "performance.py": "5bbaa2ba0592799f13bf9bb07c8d4cd5c83b8e91ed495118583eecbf6e979fe7",
+  "preflight.py": "795273dd9c55cbc4761a95d82e9d62db9b09e085bbd9c854a574dfc6a581bca0",
+  "reference_model.py": "5ba6eba598c4c9387a1efa08fdb8de1f17b61bd1ff348288a13d5c0b6ffbb040",
+  "replay.py": "ba39362fb13c265a5e4b02c93a65c413309de8b18a319c70360944d96ce5a8ff",
+  "replay_audit.py": "3136043bb388a81cb6aa17765d1ffcae8cabc1f3fc1caf6f6599edffd06346f8",
+  "resources.py": "6872673235a0fa1ab543eb1b982fe94b5653d7a995909c4e9064f73ed92e14bd",
+  "restrictions.py": "58594bc460580323fc561bf3022ad02fd00642f9d63211b4278c6b57e5de66ef",
+  "resume.py": "2c44436309f05a571493afb5b1fd98b8ec9adb54c0b41cca78b4e3ffd08bd3ef",
+  "reward.py": "ea6f262bd16709bb32af6816a57729565707d42b885d18af5f61b0c0473e834d",
+  "seeds.py": "0e5b703d478c00e03080d25425372450e13e7d9fb9b18d9e41b462c5455c7e9d",
+  "source_acceptance.py": "e9c17d2e81803f07636fe4b1dbcad9b8d202a7b50d9bc7715f06e96097c28eed",
+  "train.py": "24a07e11a76b9b25e13e9667e1f5dd2b00a909c788b0a35ba7a1b8281c8d68dd",
+  "trajectory.py": "38064b21cc302924bc043856cf4f1a08e353696e255515963f200dcf6a14b92d",
+  "validation.py": "37234a14fc3273086e3bd6bd03c2880687f791c640e18adfa9c8bd4e3fd05dd6",
+  "worker.py": "205a164126c6e46b5021bd1e8e7b782c46302aa4e04d16df43d44f3ba1f52ec2"
+ },
+ "decision_flow": "rs1/decision_flow/v2-auto-reward",
+ "demonstrations": "none",
+ "encoder": {
+  "candidate_numeric": [
+   "gold",
+   "cost",
+   "hp_cost",
+   "max_hp_cost",
+   "gold_cost",
+   "starts_fight",
+   "slot",
+   "page",
+   "option",
+   "heal",
+   "row",
+   "col",
+   "tool_big",
+   "tool_small",
+   "x",
+   "y",
+   "grants",
+   "upgraded",
+   "gold_gain",
+   "card_type",
+   "tinker_rider",
+   "chosen_card_type",
+   "dish",
+   "removes_card"
+  ],
+  "dag_features": [
+   "reaches_boss",
+   "distance_to_boss",
+   "log_paths",
+   "min_normal",
+   "min_elite",
+   "min_rest",
+   "min_shop",
+   "min_treasure",
+   "min_unknown",
+   "max_normal",
+   "max_elite",
+   "max_rest",
+   "max_shop",
+   "max_treasure",
+   "max_unknown",
+   "rest_before_elite",
+   "reachable_from_current"
+  ],
+  "decision_flow": "rs1/decision_flow/v2-auto-reward",
+  "deck_feats": [
+   "upgraded",
+   "enchant_amount",
+   "tinker_type",
+   "tinker_rider",
+   "served"
+  ],
+  "metadata": "220d067752002d7361cb27775830a0d8edcbe1c6c4295e221453fca90564a64b",
+  "node_dynamic": 4,
+  "node_static": 29,
+  "schema": "rs1/strategy_features/v3",
+  "screen": 45
+ },
+ "exploration": {
+  "decay_attempts": 3000,
+  "epsilon_end": 0.05,
+  "epsilon_start": 0.6,
+  "random_before_gate": true
+ },
+ "frozen_e": {
+  "boundary": "drained",
+  "candidate_input": 486,
+  "checkpoint": "/Volumes/SSD_macmini/Projects/STS2_ML/combat_rl/mac_choice_blue90_n1_half_v1/inputs/blue_e090000.pt",
+  "checkpoint_sha256": "df8c52330d493298263d4fd66992ac98752f3111a589c7acc72de29451a14a98",
+  "configuration": "E",
+  "contract": "all-boss-free",
+  "episodes": 90000,
+  "file_sha256": "df8c52330d493298263d4fd66992ac98752f3111a589c7acc72de29451a14a98",
+  "kind": "frozen_battle_blue90k",
+  "label": "e090000",
+  "model_class": "battle_width_scan_v1.model.WidthQNet",
+  "model_schema": "bw1/model/v1",
+  "new_fights": 27500,
+  "parameters": 597365,
+  "reward_id": "combat-potion-turn100-boss-act-v2-victory-bill-all-boss-free-v1",
+  "runtime_guard": "completed Mac FullRunWorker AutoplayLoopGuard; no Windows facade",
+  "selected_by": "authorized Blue90k win_q25_r30 scheduled training checkpoint; no selection in this run",
+  "source": "bw1/model/v1",
+  "source_arm": "win_q25_r30",
+  "source_checkpoint_sha256": "593955d3872bd4e93af418d323eea76f80701391e5e37fae0ad08d5f9a25e35e",
+  "source_start_battle_fights": 62500,
+  "source_state_sha256": "11bbcc19c003a48c1187f37b2dc124eeacf5187ab7fa201f68d1450700d22e70",
+  "source_training_guard": {
+   "battle_guard_module_sha256": "6b6d2793b90e44fe5d0647851b4971bef7dd0e235b1cd673a01470fc763b4a21",
+   "certificate_sha256": "aed708b66bdd06f1f28668f9560b938f38c539bd62fc1fd728b9e61a18541bee",
+   "facade_assembly_sha256": "556878cadf9461b30695eabecdeb82da10c8f2ad0a05ae4773638619a5dba3e4",
+   "guard_hello_digest": "eec97b9826d8d8a709aacf63401016d8fa77b81828a208c4b10880cc2252d1f5",
+   "guard_source_sha256": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+   "guarded_pid": 9068,
+   "installed_utc": "2026-10-09T23:01:44.111436+00:00",
+   "original_hello_digest": "cbbe43bb3c60371f424d7d4c6b89679ba44e116d8efc5f1c138f2079ba34921b",
+   "provenance_digest_unchanged": "33006aa412213d75f0f65db583d596eb4491cbd02e0aae9bd1dfce0d962a8601",
+   "reflection_contract_sha256": "aae036b19063c4096382d3d7fe846c49c9f59415c16d7f796aef9d7cb4c30961",
+   "replaced_worker": {
+    "fresh_slot_probe": 256,
+    "games_played": 0,
+    "pid": 23804,
+    "returncode": 0
+   },
+   "schema": "act1ft/battle_guard_record/v1",
+   "scope": {
+    "applies_to": [
+     "isolated battle contexts of every act1ft stage",
+     "vocab-only contexts of full-run stages"
+    ],
+    "battle_guard_module_sha256": "6b6d2793b90e44fe5d0647851b4971bef7dd0e235b1cd673a01470fc763b4a21",
+    "effect": "a chosen legal option matching reviewed class A/B is refused BEFORE native execution (no engine call, no RNG, no step counter); the session closes unsupported with reason limit:battle_unbounded_autoplay_loop; every other request is delegated to the original Session.Step unchanged",
+    "episode_rule": "a refused episode is unsupported: the whole episode is never stored (zero replay prefix) and is counted separately as guard_refusals",
+    "facade_assembly_sha256": "556878cadf9461b30695eabecdeb82da10c8f2ad0a05ae4773638619a5dba3e4",
+    "full_run_battles": "played inside the owned FullRunWorker with its own byte-identical AutoplayLoopGuard copy",
+    "guard_certificate_sha256": "aed708b66bdd06f1f28668f9560b938f38c539bd62fc1fd728b9e61a18541bee",
+    "guard_source_sha256": "8a43e794432ebf2d0e8aad88d3150596be15bb523f9bfd1f5b9e3c4c49c64546",
+    "guarded_commands": [
+     "step",
+     "step_many"
+    ],
+    "original_dependencies_sha256": {
+     "CombatWorker.dll": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+     "RlCombatWorker.dll": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+     "Sts2Emulator.dll": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+     "System.IO.Hashing.dll": "fbe8c2fcb4adc01da5c3c8ed0d727903b8fda1e6b84da3c447c9794615f30664"
+    },
+    "reflection_contract_sha256": "aae036b19063c4096382d3d7fe846c49c9f59415c16d7f796aef9d7cb4c30961",
+    "refusal_contract": {
+     "engine_call": false,
+     "limit_reason": "battle_unbounded_autoplay_loop",
+     "mask_or_option_changed": false,
+     "reason": "limit:battle_unbounded_autoplay_loop",
+     "rng_use": false,
+     "session_steps_incremented": false,
+     "status": "unsupported",
+     "substitute_action": false
+    },
+    "reviewed_guard_certificate_sha256": "6a84fd9e40ca8550dfa9a51befafba464faa2c72bf138decf4bf3d2d34d423f5",
+    "schema": "act1ft/battle_guard_scope/v1",
+    "unchanged": [
+     "rules",
+     "rng",
+     "legal masks",
+     "chosen actions",
+     "observations",
+     "features",
+     "roster",
+     "engine",
+     "original hello fields",
+     "ctx.provenance()"
+    ]
+   },
+   "scope_sha256": "c6609d343f8175ad771bfdea9f45f8788a9be65aaa956014794e83ac6d100345"
+  },
+  "source_updates": 41836,
+  "state_input": 1013,
+  "used": "online state_dict only; source target/Adam/replay ignored",
+  "widths": {
+   "card_dim": 64,
+   "card_hidden": 128,
+   "eff_dim": 64,
+   "eff_hidden": 128,
+   "enemy_dim": 128,
+   "enemy_hidden": 256,
+   "head": 128,
+   "pile_dim": 64,
+   "state_dim": 256
+  }
+ },
+ "initial_weights_rule": "torch.manual_seed(config.seed) at setup, then StrategyQNet construction; sha256 over the sorted state_dict names/dtypes/shapes/bytes (artifacts.state_dict_sha256)",
+ "initial_weights_sha256": "7c5ead642fac45e1b8309e740e54c1a203781765a8ed52b00f17f3fa33f0dd92",
+ "learner": {
+  "adam_eps": 1e-08,
+  "batch_size": 128,
+  "gamma": 1.0,
+  "grad_clip": 10.0,
+  "gradient_gate": 2000,
+  "huber_delta": 1.0,
+  "lr": 0.00025,
+  "n_step": 1,
+  "replay_capacity": 100000,
+  "target_sync": 1000,
+  "update_every": 16
+ },
+ "learning_contract": {
+  "batch_counts": [
+   84,
+   16,
+   12,
+   8,
+   8
+  ],
+  "batch_size": 128,
+  "distinct_row_bound": 240000,
+  "empty_tier_fallback": "an empty tier's quota moves one tier lower, recursively",
+  "gamma": 1.0,
+  "n_step": 1,
+  "objective": "explicitly success-weighted Huber over the sampled mixture; no importance correction; no TD-error priority",
+  "profile": "n1-half-tiered-blue90000-mac100k",
+  "replay_policy": "quality-tiers/v1",
+  "retention": "tier 0 recent-row ring; tiers 1-4 whole-trajectory FIFO references within their row capacities, oldest first",
+  "return": "sum of rewards over up to 1 real strategy decisions; bootstrap only at the next real decision; stop at a natural terminal; undefined runs contribute no rows",
+  "sampling": "tier 0 uniform rows; each quality tier a uniform retained trajectory, then a uniform row; with replacement; never consumed",
+  "schema": "rs1/learning_contract/v1",
+  "tier0_capacity_rows": 100000,
+  "tier_capacities_rows": [
+   20000,
+   30000,
+   40000,
+   50000
+  ],
+  "tier_names": [
+   "general",
+   "act2",
+   "act3",
+   "act3_boss",
+   "run_victory"
+  ],
+  "tiers": "nested, from the resolved natural training outcome: 0 every valid trace; 1 actual act >= 2; 2 actual act 3; 3 an actual Act 3 room=boss combat entry; 4 native run victory",
+  "update_credit": "each unique valid online row once; memberships and draws add no credit"
+ },
+ "learning_profile": "n1-half-tiered-blue90000-mac100k",
+ "limits": {
+  "auto_actions": 20000,
+  "battle_steps": 2000,
+  "battle_turns": 100,
+  "repeated_public_state": 25,
+  "strategic_decisions": 1000,
+  "worker_max_turns": 99
+ },
+ "metadata": {
+  "catalog_sha256": "dc10843c006a752a6738bfbcc0f0991a04946dd274c9fe8fce87253696f88c31",
+  "digest": "220d067752002d7361cb27775830a0d8edcbe1c6c4295e221453fca90564a64b",
+  "roster_cards": 214,
+  "schema": "rs1/public_metadata/v1",
+  "sizes": {
+   "ancients": 8,
+   "card_static": 48,
+   "cards": 596,
+   "events": 61,
+   "kinds": 41,
+   "node_types": 9,
+   "phases": 14,
+   "potion_static": 10,
+   "potions": 64,
+   "relic_static": 12,
+   "relics": 298
+  },
+  "source": "frozen catalog definitions + rs1 categorical vocabularies; no recorded choices"
+ },
+ "model": {
+  "candidate_dim": 64,
+  "card_dim": 64,
+  "card_embed": 32,
+  "decision_flow": "rs1/decision_flow/v2-auto-reward",
+  "encoding_schema": "rs1/strategy_features/v3",
+  "event_embed": 16,
+  "head": [
+   320,
+   128,
+   1
+  ],
+  "kind_embed": 16,
+  "map_dim": 64,
+  "map_passes": 2,
+  "parameters": 344609,
+  "potion_embed": 16,
+  "relic_embed": 16,
+  "schema": "rs1/strategy_qnet/v2",
+  "state_dim": 256
+ },
+ "original_worker_hello_nested": {
+  "buff_ids": [
+   "Strength",
+   "Dexterity",
+   "Vulnerable",
+   "Weak",
+   "Frail",
+   "Poison",
+   "Burn",
+   "Ritual",
+   "DemonForm",
+   "Aggression",
+   "Hellraiser",
+   "Rage",
+   "FeelNoPain",
+   "DarkEmbrace",
+   "Barricade",
+   "Colossus",
+   "Corruption",
+   "Inferno",
+   "InfernoSelfDamage",
+   "Metallicize",
+   "FlameBarrier",
+   "Juggernaut",
+   "RupturePower",
+   "Juggling",
+   "Stampede",
+   "Vicious",
+   "OneTwoPunch",
+   "CrueltyPower",
+   "PyrePower",
+   "UnmovablePower",
+   "CrimsonMantleBlock",
+   "CrimsonMantleSelfDamage",
+   "SetupStrikePower",
+   "EntropyPower",
+   "FastenPower",
+   "AutomationPower",
+   "CalamityPower",
+   "MayhemPower",
+   "PanachePower",
+   "PanacheArmed",
+   "PrepTimePower",
+   "RollingBoulderPower",
+   "StratagemPower",
+   "TheBombPower",
+   "TheBombDamage",
+   "Vigor",
+   "NoBlock",
+   "NoDraw",
+   "TheGambitPower",
+   "ClawDamage",
+   "Focus",
+   "Slow",
+   "SlowCount",
+   "Buffer",
+   "EchoForm",
+   "Loop",
+   "MachineLearning",
+   "Storm",
+   "Thunder",
+   "CreativeAi",
+   "Coolant",
+   "Feral",
+   "FeralUsed",
+   "Hailstorm",
+   "SignalBoost",
+   "Smokestack",
+   "Spinner",
+   "Subroutine",
+   "TemporaryFocus",
+   "TrashToTreasure",
+   "ConsumingShadow",
+   "Envenom",
+   "InfiniteBlades",
+   "NoxiousFumes",
+   "NextTurnEnergy",
+   "NextTurnDraw",
+   "ToolsOfTheTrade",
+   "ShivDamage",
+   "Afterimage",
+   "FranticEscapePlayedCountUnused",
+   "RetainHand",
+   "BlockNextTurn",
+   "Nostalgia",
+   "TemporaryStrength",
+   "Artifact",
+   "HardToKill",
+   "Thorns",
+   "Shrink",
+   "Ravenous",
+   "Stunned",
+   "Slippery",
+   "Skittish",
+   "SkittishSpent",
+   "Surprise",
+   "SummonCooldown",
+   "Shriek",
+   "TerrorQueued",
+   "BackupCount",
+   "Plating",
+   "Suck",
+   "Stock",
+   "HardenedShell",
+   "Hatch",
+   "HighVoltage",
+   "Territorial",
+   "PersonalHive",
+   "Galvanic",
+   "Rampart",
+   "CurlUp",
+   "Infested",
+   "BattlewornDummyTimeLimit",
+   "PainfulStabs",
+   "Nemesis",
+   "Soar",
+   "VitalSpark",
+   "Tainted",
+   "PossessSpeed",
+   "PossessStrength",
+   "Accelerant",
+   "CorrosiveWave",
+   "Outbreak",
+   "OutbreakCounter",
+   "Burst",
+   "MasterPlanner",
+   "WraithForm",
+   "Speedster",
+   "Tracking",
+   "PhantomBlades",
+   "SerpentForm",
+   "TheHunt",
+   "TemporaryDexterity",
+   "Blur",
+   "FanOfKnives",
+   "Tangled",
+   "Constrict",
+   "Smoggy",
+   "Illusion",
+   "Minion",
+   "PaperCuts",
+   "Hex",
+   "Dampen",
+   "Adaptable",
+   "Asleep",
+   "ChainsOfBinding",
+   "Ebb",
+   "Enrage",
+   "Intangible",
+   "Plow",
+   "Sandpit",
+   "SteamEruption",
+   "Disintegration",
+   "FreeAttackPower",
+   "FreeSkillPower",
+   "Doom",
+   "Reviving",
+   "Slumber",
+   "Reattach",
+   "Surrounded",
+   "BackAttackLeft",
+   "BackAttackRight",
+   "CrabRage",
+   "MindRot",
+   "Sloth",
+   "WasteAway",
+   "Burrowed",
+   "WellLaidPlans",
+   "LightningRod",
+   "ShadowStep",
+   "DoubleDamage",
+   "Shadowmeld",
+   "FreePowerPower",
+   "Iteration",
+   "BiasedCognition",
+   "BlackHole",
+   "NoEnergyGain",
+   "Orbit",
+   "NecroMastery",
+   "Strangle",
+   "SicEm",
+   "Veilpiercer",
+   "Hang",
+   "SleightOfFlesh",
+   "Demesne",
+   "Oblivion",
+   "Pagestorm",
+   "ReaperForm",
+   "SentryMode",
+   "Shroud",
+   "Countdown",
+   "DevourLife",
+   "ForbiddenGrimoire",
+   "Lethality",
+   "SpiritOfAsh",
+   "CallOfTheVoid",
+   "DanseMacabre",
+   "Haunt",
+   "Calcify",
+   "Debilitate",
+   "Friendship",
+   "SummonNextTurn",
+   "Neurosurge",
+   "BorrowedTime",
+   "Arsenal",
+   "ChildOfTheStars",
+   "SeekingEdge",
+   "Parry",
+   "Conqueror",
+   "StarNextTurn",
+   "ForegoneConclusion",
+   "Furnace",
+   "Genesis",
+   "HammerTime",
+   "MonarchsGaze",
+   "Monologue",
+   "MonologueApplied",
+   "PaleBlueDot",
+   "PillarOfCreation",
+   "Reflect",
+   "Royalties",
+   "SpectrumShift",
+   "SwordSage",
+   "Tyranny",
+   "TheSealedThrone",
+   "VoidForm",
+   "Confused",
+   "Rebound",
+   "HelloWorld",
+   "ToricToughness",
+   "Nightmare",
+   "WitheringPresence",
+   "WitherIntensity",
+   "Tender",
+   "Curious",
+   "Improvement",
+   "Flutter",
+   "EscapeArtist",
+   "Imbalanced",
+   "Swipe",
+   "DiamondDiadem",
+   "Ringing",
+   "Clarity",
+   "Demise",
+   "Duplication",
+   "Gigantification",
+   "Radiance",
+   "Regen",
+   "HyperbeamFocusDown",
+   "Hotfix",
+   "FocusedStrike",
+   "Synchronize",
+   "Thievery",
+   "Heist",
+   "Ambergris"
+  ],
+  "card_fields": [
+   "DefId",
+   "Upgraded",
+   "FreeThisTurn",
+   "Retain",
+   "Enchantment",
+   "EnchantAmount",
+   "CostBump",
+   "ReplayCount",
+   "EnchantSpent",
+   "CostForCombat",
+   "BonusDamage",
+   "MomentumDamage",
+   "TinkerType",
+   "TinkerRider",
+   "PlayedThisTurn",
+   "SlyThisTurn",
+   "SlyForCombat",
+   "EtherealForCombat",
+   "RetainForCombat",
+   "DampenedUpgrade",
+   "Bound",
+   "RetainThisTurn",
+   "CostThisTurn",
+   "FreeUntilPlayed",
+   "BonusBlock",
+   "CostOverrideThisTurn",
+   "CostOverrideBaseline",
+   "CostOverrideSetUpgraded"
+  ],
+  "card_types": {
+   "Attack": 0,
+   "Curse": 4,
+   "None": 6,
+   "Power": 2,
+   "Quest": 5,
+   "Skill": 1,
+   "Status": 3
+  },
+  "cds_worker_assembly_sha256": "ab408a807b1837c5da2e17b6785ca7ce18e49a78452271538bf33a1cbbe7cfb9",
+  "enchantments": {
+   "Adroit": 15,
+   "Clone": 11,
+   "Corrupted": 7,
+   "Glam": 21,
+   "Goopy": 12,
+   "Imbued": 10,
+   "Inky": 14,
+   "Instinct": 20,
+   "Momentum": 16,
+   "Nimble": 2,
+   "None": 0,
+   "PerfectFit": 18,
+   "RoyallyApproved": 17,
+   "Sharp": 1,
+   "Slither": 8,
+   "SoulsPower": 19,
+   "Sown": 6,
+   "Spiral": 5,
+   "Steady": 4,
+   "Swift": 3,
+   "TezcatarasEmber": 13,
+   "Vigorous": 9
+  },
+  "enemy_extra_fields": [
+   "curl_up_pending",
+   "possessed_player_strength",
+   "possessed_player_dexterity",
+   "steam_eruption_phase",
+   "steam_eruption_damage",
+   "nemesis_intangible_on",
+   "at_player_back",
+   "is_dampen_caster",
+   "stolen_gold",
+   "has_stolen_card",
+   "escaped",
+   "off_balance",
+   "powered_hits_this_turn",
+   "slot",
+   "strangle_before_play",
+   "has_secondary_intent",
+   "is_parked_play_target",
+   "is_parked_autoplay_target"
+  ],
+  "engine_assembly_mvid": "5a7af833-c083-4050-9bda-39047d2cb20b",
+  "engine_assembly_sha256": "11d614a31ea796f5631cf163d876db56b5129c38b9a5e98e7ee7f1632f6b2b9b",
+  "engine_cards": [
+   [
+    1,
+    "ABRASIVE"
+   ],
+   [
+    2,
+    "ACCELERANT"
+   ],
+   [
+    3,
+    "ACCURACY"
+   ],
+   [
+    4,
+    "ACROBATICS"
+   ],
+   [
+    5,
+    "ADAPTIVE_STRIKE"
+   ],
+   [
+    6,
+    "ADRENALINE"
+   ],
+   [
+    7,
+    "AFTERIMAGE"
+   ],
+   [
+    8,
+    "AFTERLIFE"
+   ],
+   [
+    9,
+    "AGGRESSION"
+   ],
+   [
+    10,
+    "ALCHEMIZE"
+   ],
+   [
+    11,
+    "ALIGNMENT"
+   ],
+   [
+    12,
+    "ALL_FOR_ONE"
+   ],
+   [
+    13,
+    "ANGER"
+   ],
+   [
+    14,
+    "ANOINTED"
+   ],
+   [
+    15,
+    "ANTICIPATE"
+   ],
+   [
+    16,
+    "APOTHEOSIS"
+   ],
+   [
+    17,
+    "APPARITION"
+   ],
+   [
+    18,
+    "ARMAMENTS"
+   ],
+   [
+    19,
+    "ARSENAL"
+   ],
+   [
+    20,
+    "ASHEN_STRIKE"
+   ],
+   [
+    21,
+    "ASSASSINATE"
+   ],
+   [
+    22,
+    "ASTRAL_PULSE"
+   ],
+   [
+    23,
+    "AUTOMATION"
+   ],
+   [
+    24,
+    "BACKFLIP"
+   ],
+   [
+    25,
+    "BACKSTAB"
+   ],
+   [
+    26,
+    "BALL_LIGHTNING"
+   ],
+   [
+    27,
+    "BANSHEES_CRY"
+   ],
+   [
+    28,
+    "BARRAGE"
+   ],
+   [
+    29,
+    "BARRICADE"
+   ],
+   [
+    30,
+    "BASH"
+   ],
+   [
+    31,
+    "BATTLE_TRANCE"
+   ],
+   [
+    32,
+    "BEACON_OF_HOPE"
+   ],
+   [
+    33,
+    "BEAM_CELL"
+   ],
+   [
+    34,
+    "BEAT_DOWN"
+   ],
+   [
+    35,
+    "BEAT_INTO_SHAPE"
+   ],
+   [
+    36,
+    "BECKON"
+   ],
+   [
+    37,
+    "BEGONE"
+   ],
+   [
+    38,
+    "BELIEVE_IN_YOU"
+   ],
+   [
+    39,
+    "BIASED_COGNITION"
+   ],
+   [
+    40,
+    "BIG_BANG"
+   ],
+   [
+    41,
+    "BLACK_HOLE"
+   ],
+   [
+    42,
+    "BLADE_DANCE"
+   ],
+   [
+    43,
+    "BLADE_OF_INK"
+   ],
+   [
+    44,
+    "BLIGHT_STRIKE"
+   ],
+   [
+    45,
+    "BLOODLETTING"
+   ],
+   [
+    46,
+    "BLOOD_WALL"
+   ],
+   [
+    47,
+    "BLUDGEON"
+   ],
+   [
+    48,
+    "BLUR"
+   ],
+   [
+    49,
+    "BODYGUARD"
+   ],
+   [
+    50,
+    "BODY_SLAM"
+   ],
+   [
+    51,
+    "BOLAS"
+   ],
+   [
+    52,
+    "BOMBARDMENT"
+   ],
+   [
+    53,
+    "BONE_SHARDS"
+   ],
+   [
+    54,
+    "BOOST_AWAY"
+   ],
+   [
+    55,
+    "BOOT_SEQUENCE"
+   ],
+   [
+    56,
+    "BORROWED_TIME"
+   ],
+   [
+    57,
+    "BOUNCING_FLASK"
+   ],
+   [
+    58,
+    "BRAND"
+   ],
+   [
+    59,
+    "BREAK"
+   ],
+   [
+    60,
+    "BREAKTHROUGH"
+   ],
+   [
+    61,
+    "BRIGHTEST_FLAME"
+   ],
+   [
+    62,
+    "BUBBLE_BUBBLE"
+   ],
+   [
+    63,
+    "BUFFER"
+   ],
+   [
+    64,
+    "BULK_UP"
+   ],
+   [
+    65,
+    "BULLET_TIME"
+   ],
+   [
+    66,
+    "BULLY"
+   ],
+   [
+    67,
+    "BULWARK"
+   ],
+   [
+    68,
+    "BUNDLE_OF_JOY"
+   ],
+   [
+    69,
+    "BURNING_PACT"
+   ],
+   [
+    70,
+    "BURST"
+   ],
+   [
+    71,
+    "BURY"
+   ],
+   [
+    72,
+    "BYRD_SWOOP"
+   ],
+   [
+    73,
+    "CALAMITY"
+   ],
+   [
+    74,
+    "CALCIFY"
+   ],
+   [
+    75,
+    "CALCULATED_GAMBLE"
+   ],
+   [
+    76,
+    "CALL_OF_THE_VOID"
+   ],
+   [
+    77,
+    "CALTROPS"
+   ],
+   [
+    78,
+    "CAPACITOR"
+   ],
+   [
+    79,
+    "CAPTURE_SPIRIT"
+   ],
+   [
+    80,
+    "CATASTROPHE"
+   ],
+   [
+    81,
+    "CELESTIAL_MIGHT"
+   ],
+   [
+    82,
+    "CHAOS"
+   ],
+   [
+    83,
+    "CHARGE"
+   ],
+   [
+    84,
+    "CHARGE_BATTERY"
+   ],
+   [
+    85,
+    "CHILD_OF_THE_STARS"
+   ],
+   [
+    86,
+    "CHILL"
+   ],
+   [
+    87,
+    "CINDER"
+   ],
+   [
+    88,
+    "CLASH"
+   ],
+   [
+    89,
+    "CLAW"
+   ],
+   [
+    90,
+    "CLEANSE"
+   ],
+   [
+    91,
+    "CLOAK_AND_DAGGER"
+   ],
+   [
+    92,
+    "CLOAK_OF_STARS"
+   ],
+   [
+    93,
+    "COLD_SNAP"
+   ],
+   [
+    94,
+    "COLLISION_COURSE"
+   ],
+   [
+    95,
+    "COLOSSUS"
+   ],
+   [
+    96,
+    "COMET"
+   ],
+   [
+    97,
+    "COMPACT"
+   ],
+   [
+    98,
+    "COMPILE_DRIVER"
+   ],
+   [
+    99,
+    "CONFLAGRATION"
+   ],
+   [
+    100,
+    "CONQUEROR"
+   ],
+   [
+    101,
+    "CONSUMING_SHADOW"
+   ],
+   [
+    102,
+    "CONVERGENCE"
+   ],
+   [
+    103,
+    "COOLANT"
+   ],
+   [
+    104,
+    "COOLHEADED"
+   ],
+   [
+    105,
+    "COORDINATE"
+   ],
+   [
+    106,
+    "CORROSIVE_WAVE"
+   ],
+   [
+    107,
+    "CORRUPTION"
+   ],
+   [
+    108,
+    "COSMIC_INDIFFERENCE"
+   ],
+   [
+    109,
+    "COUNTDOWN"
+   ],
+   [
+    110,
+    "CRASH_LANDING"
+   ],
+   [
+    111,
+    "CREATIVE_AI"
+   ],
+   [
+    112,
+    "CRESCENT_SPEAR"
+   ],
+   [
+    113,
+    "CRIMSON_MANTLE"
+   ],
+   [
+    114,
+    "CRUELTY"
+   ],
+   [
+    115,
+    "CRUSH_UNDER"
+   ],
+   [
+    116,
+    "DAGGER_SPRAY"
+   ],
+   [
+    117,
+    "DAGGER_THROW"
+   ],
+   [
+    118,
+    "DANSE_MACABRE"
+   ],
+   [
+    119,
+    "DARK_EMBRACE"
+   ],
+   [
+    120,
+    "DARKNESS"
+   ],
+   [
+    121,
+    "DARK_SHACKLES"
+   ],
+   [
+    122,
+    "DASH"
+   ],
+   [
+    123,
+    "DEADLY_POISON"
+   ],
+   [
+    124,
+    "DEATHBRINGER"
+   ],
+   [
+    125,
+    "DEATH_MARCH"
+   ],
+   [
+    126,
+    "DEATHS_DOOR"
+   ],
+   [
+    127,
+    "DEBILITATE"
+   ],
+   [
+    128,
+    "DEBRIS"
+   ],
+   [
+    129,
+    "DECISIONS_DECISIONS"
+   ],
+   [
+    130,
+    "DEFEND_DEFECT"
+   ],
+   [
+    131,
+    "DEFEND_IRONCLAD"
+   ],
+   [
+    132,
+    "DEFEND_NECROBINDER"
+   ],
+   [
+    133,
+    "DEFEND_REGENT"
+   ],
+   [
+    134,
+    "DEFEND_SILENT"
+   ],
+   [
+    135,
+    "DEFILE"
+   ],
+   [
+    136,
+    "DEFLECT"
+   ],
+   [
+    137,
+    "DEFRAGMENT"
+   ],
+   [
+    138,
+    "DEFY"
+   ],
+   [
+    139,
+    "DELAY"
+   ],
+   [
+    140,
+    "DEMESNE"
+   ],
+   [
+    141,
+    "DEMON_FORM"
+   ],
+   [
+    142,
+    "DEMONIC_SHIELD"
+   ],
+   [
+    143,
+    "DEVASTATE"
+   ],
+   [
+    144,
+    "DEVOUR_LIFE"
+   ],
+   [
+    145,
+    "DIRGE"
+   ],
+   [
+    146,
+    "DISCOVERY"
+   ],
+   [
+    147,
+    "DISMANTLE"
+   ],
+   [
+    148,
+    "DISTRACTION"
+   ],
+   [
+    149,
+    "DODGE_AND_ROLL"
+   ],
+   [
+    150,
+    "DOMINATE"
+   ],
+   [
+    151,
+    "DOUBLE_ENERGY"
+   ],
+   [
+    152,
+    "DRAIN_POWER"
+   ],
+   [
+    153,
+    "DRAMATIC_ENTRANCE"
+   ],
+   [
+    154,
+    "DREDGE"
+   ],
+   [
+    155,
+    "DRUM_OF_BATTLE"
+   ],
+   [
+    156,
+    "DUALCAST"
+   ],
+   [
+    157,
+    "DUAL_WIELD"
+   ],
+   [
+    158,
+    "DYING_STAR"
+   ],
+   [
+    159,
+    "ECHO_FORM"
+   ],
+   [
+    160,
+    "ECHOING_SLASH"
+   ],
+   [
+    161,
+    "EIDOLON"
+   ],
+   [
+    162,
+    "END_OF_DAYS"
+   ],
+   [
+    163,
+    "ENERGY_SURGE"
+   ],
+   [
+    164,
+    "ENFEEBLING_TOUCH"
+   ],
+   [
+    165,
+    "ENLIGHTENMENT"
+   ],
+   [
+    166,
+    "ENTHRALLED"
+   ],
+   [
+    167,
+    "ENTRENCH"
+   ],
+   [
+    168,
+    "ENTROPY"
+   ],
+   [
+    169,
+    "ENVENOM"
+   ],
+   [
+    170,
+    "EQUILIBRIUM"
+   ],
+   [
+    171,
+    "ERADICATE"
+   ],
+   [
+    172,
+    "ESCAPE_PLAN"
+   ],
+   [
+    173,
+    "ETERNAL_ARMOR"
+   ],
+   [
+    174,
+    "EVIL_EYE"
+   ],
+   [
+    175,
+    "EXPECT_A_FIGHT"
+   ],
+   [
+    176,
+    "EXPERTISE"
+   ],
+   [
+    177,
+    "EXPOSE"
+   ],
+   [
+    178,
+    "EXTERMINATE"
+   ],
+   [
+    179,
+    "FALLING_STAR"
+   ],
+   [
+    180,
+    "FAN_OF_KNIVES"
+   ],
+   [
+    181,
+    "FASTEN"
+   ],
+   [
+    182,
+    "FEAR"
+   ],
+   [
+    183,
+    "FEED"
+   ],
+   [
+    184,
+    "FEEDING_FRENZY"
+   ],
+   [
+    185,
+    "FEEL_NO_PAIN"
+   ],
+   [
+    186,
+    "FERAL"
+   ],
+   [
+    187,
+    "FETCH"
+   ],
+   [
+    188,
+    "FIEND_FIRE"
+   ],
+   [
+    189,
+    "FIGHT_ME"
+   ],
+   [
+    190,
+    "FIGHT_THROUGH"
+   ],
+   [
+    191,
+    "FINESSE"
+   ],
+   [
+    192,
+    "FINISHER"
+   ],
+   [
+    193,
+    "FISTICUFFS"
+   ],
+   [
+    194,
+    "FLAK_CANNON"
+   ],
+   [
+    195,
+    "FLAME_BARRIER"
+   ],
+   [
+    196,
+    "FLANKING"
+   ],
+   [
+    197,
+    "FLASH_OF_STEEL"
+   ],
+   [
+    198,
+    "FLATTEN"
+   ],
+   [
+    199,
+    "FLECHETTES"
+   ],
+   [
+    200,
+    "FLICK_FLACK"
+   ],
+   [
+    201,
+    "FOCUSED_STRIKE"
+   ],
+   [
+    202,
+    "FOOTWORK"
+   ],
+   [
+    203,
+    "FORBIDDEN_GRIMOIRE"
+   ],
+   [
+    204,
+    "FOREGONE_CONCLUSION"
+   ],
+   [
+    205,
+    "FORGOTTEN_RITUAL"
+   ],
+   [
+    206,
+    "FRANTIC_ESCAPE"
+   ],
+   [
+    207,
+    "FRIENDSHIP"
+   ],
+   [
+    208,
+    "FTL"
+   ],
+   [
+    209,
+    "FUEL"
+   ],
+   [
+    210,
+    "FURNACE"
+   ],
+   [
+    211,
+    "FUSION"
+   ],
+   [
+    212,
+    "GAMMA_BLAST"
+   ],
+   [
+    213,
+    "GANG_UP"
+   ],
+   [
+    214,
+    "GATHER_LIGHT"
+   ],
+   [
+    215,
+    "GENESIS"
+   ],
+   [
+    216,
+    "GENETIC_ALGORITHM"
+   ],
+   [
+    217,
+    "GIANT_ROCK"
+   ],
+   [
+    218,
+    "GLACIER"
+   ],
+   [
+    219,
+    "GLASSWORK"
+   ],
+   [
+    220,
+    "GLIMMER"
+   ],
+   [
+    221,
+    "GLIMPSE_BEYOND"
+   ],
+   [
+    222,
+    "GLITTERSTREAM"
+   ],
+   [
+    223,
+    "GLOW"
+   ],
+   [
+    224,
+    "GO_FOR_THE_EYES"
+   ],
+   [
+    225,
+    "GOLD_AXE"
+   ],
+   [
+    226,
+    "GRAND_FINALE"
+   ],
+   [
+    227,
+    "GRAVEBLAST"
+   ],
+   [
+    228,
+    "GRAVE_WARDEN"
+   ],
+   [
+    229,
+    "GUARDS"
+   ],
+   [
+    230,
+    "GUIDING_STAR"
+   ],
+   [
+    231,
+    "GUNK_UP"
+   ],
+   [
+    232,
+    "HAILSTORM"
+   ],
+   [
+    233,
+    "HAMMER_TIME"
+   ],
+   [
+    234,
+    "HAND_OF_GREED"
+   ],
+   [
+    235,
+    "HAND_TRICK"
+   ],
+   [
+    236,
+    "HANG"
+   ],
+   [
+    237,
+    "HAUNT"
+   ],
+   [
+    238,
+    "HAVOC"
+   ],
+   [
+    239,
+    "HAZE"
+   ],
+   [
+    240,
+    "HEADBUTT"
+   ],
+   [
+    241,
+    "HEAVENLY_DRILL"
+   ],
+   [
+    242,
+    "HEGEMONY"
+   ],
+   [
+    243,
+    "HEIRLOOM_HAMMER"
+   ],
+   [
+    244,
+    "HELIX_DRILL"
+   ],
+   [
+    245,
+    "HELLO_WORLD"
+   ],
+   [
+    246,
+    "HELLRAISER"
+   ],
+   [
+    247,
+    "HEMOKINESIS"
+   ],
+   [
+    248,
+    "HIDDEN_CACHE"
+   ],
+   [
+    249,
+    "HIDDEN_DAGGERS"
+   ],
+   [
+    250,
+    "HIDDEN_GEM"
+   ],
+   [
+    251,
+    "HIGH_FIVE"
+   ],
+   [
+    252,
+    "HOLOGRAM"
+   ],
+   [
+    253,
+    "HOTFIX"
+   ],
+   [
+    254,
+    "HOWL_FROM_BEYOND"
+   ],
+   [
+    255,
+    "HUDDLE_UP"
+   ],
+   [
+    256,
+    "HYPERBEAM"
+   ],
+   [
+    257,
+    "I_AM_INVINCIBLE"
+   ],
+   [
+    258,
+    "ICE_LANCE"
+   ],
+   [
+    259,
+    "IGNITION"
+   ],
+   [
+    260,
+    "IMPATIENCE"
+   ],
+   [
+    261,
+    "IMPERVIOUS"
+   ],
+   [
+    262,
+    "INFERNAL_BLADE"
+   ],
+   [
+    263,
+    "INFERNO"
+   ],
+   [
+    264,
+    "INFINITE_BLADES"
+   ],
+   [
+    265,
+    "INFLAME"
+   ],
+   [
+    266,
+    "INTERCEPT"
+   ],
+   [
+    267,
+    "INVOKE"
+   ],
+   [
+    268,
+    "IRON_WAVE"
+   ],
+   [
+    269,
+    "ITERATION"
+   ],
+   [
+    270,
+    "JACK_OF_ALL_TRADES"
+   ],
+   [
+    271,
+    "JACKPOT"
+   ],
+   [
+    272,
+    "JUGGERNAUT"
+   ],
+   [
+    273,
+    "JUGGLING"
+   ],
+   [
+    274,
+    "KINGLY_KICK"
+   ],
+   [
+    275,
+    "KINGLY_PUNCH"
+   ],
+   [
+    276,
+    "KNIFE_TRAP"
+   ],
+   [
+    277,
+    "KNOCKDOWN"
+   ],
+   [
+    278,
+    "KNOCKOUT_BLOW"
+   ],
+   [
+    279,
+    "KNOW_THY_PLACE"
+   ],
+   [
+    280,
+    "LARGESSE"
+   ],
+   [
+    281,
+    "LEADING_STRIKE"
+   ],
+   [
+    282,
+    "LEAP"
+   ],
+   [
+    283,
+    "LEGION_OF_BONE"
+   ],
+   [
+    284,
+    "LEG_SWEEP"
+   ],
+   [
+    285,
+    "LETHALITY"
+   ],
+   [
+    286,
+    "LIFT"
+   ],
+   [
+    287,
+    "LIGHTNING_ROD"
+   ],
+   [
+    288,
+    "LOOP"
+   ],
+   [
+    289,
+    "LUMINESCE"
+   ],
+   [
+    290,
+    "LUNAR_BLAST"
+   ],
+   [
+    291,
+    "MACHINE_LEARNING"
+   ],
+   [
+    292,
+    "MAD_SCIENCE"
+   ],
+   [
+    293,
+    "MAKE_IT_SO"
+   ],
+   [
+    294,
+    "MALAISE"
+   ],
+   [
+    295,
+    "MANGLE"
+   ],
+   [
+    296,
+    "MANIFEST_AUTHORITY"
+   ],
+   [
+    297,
+    "MASTER_OF_STRATEGY"
+   ],
+   [
+    298,
+    "MASTER_PLANNER"
+   ],
+   [
+    299,
+    "MAUL"
+   ],
+   [
+    300,
+    "MAYHEM"
+   ],
+   [
+    301,
+    "MELANCHOLY"
+   ],
+   [
+    302,
+    "MEMENTO_MORI"
+   ],
+   [
+    303,
+    "METAMORPHOSIS"
+   ],
+   [
+    304,
+    "METEOR_SHOWER"
+   ],
+   [
+    305,
+    "METEOR_STRIKE"
+   ],
+   [
+    306,
+    "MIMIC"
+   ],
+   [
+    307,
+    "MIND_BLAST"
+   ],
+   [
+    308,
+    "MINION_DIVE_BOMB"
+   ],
+   [
+    309,
+    "MINION_SACRIFICE"
+   ],
+   [
+    310,
+    "MINION_STRIKE"
+   ],
+   [
+    311,
+    "MIRAGE"
+   ],
+   [
+    312,
+    "MISERY"
+   ],
+   [
+    313,
+    "MOLTEN_FIST"
+   ],
+   [
+    314,
+    "MOMENTUM_STRIKE"
+   ],
+   [
+    315,
+    "MONARCHS_GAZE"
+   ],
+   [
+    316,
+    "MONOLOGUE"
+   ],
+   [
+    317,
+    "MULTI_CAST"
+   ],
+   [
+    318,
+    "MURDER"
+   ],
+   [
+    319,
+    "NECRO_MASTERY"
+   ],
+   [
+    320,
+    "NEGATIVE_PULSE"
+   ],
+   [
+    321,
+    "NEOWS_FURY"
+   ],
+   [
+    322,
+    "NEUROSURGE"
+   ],
+   [
+    323,
+    "NEUTRALIZE"
+   ],
+   [
+    324,
+    "NEUTRON_AEGIS"
+   ],
+   [
+    325,
+    "NIGHTMARE"
+   ],
+   [
+    326,
+    "NO_ESCAPE"
+   ],
+   [
+    327,
+    "NOSTALGIA"
+   ],
+   [
+    328,
+    "NOT_YET"
+   ],
+   [
+    329,
+    "NOXIOUS_FUMES"
+   ],
+   [
+    330,
+    "NULL"
+   ],
+   [
+    331,
+    "OBLIVION"
+   ],
+   [
+    332,
+    "OFFERING"
+   ],
+   [
+    333,
+    "OMNISLICE"
+   ],
+   [
+    334,
+    "ONE_TWO_PUNCH"
+   ],
+   [
+    335,
+    "ORBIT"
+   ],
+   [
+    336,
+    "OUTBREAK"
+   ],
+   [
+    337,
+    "OUTMANEUVER"
+   ],
+   [
+    338,
+    "OVERCLOCK"
+   ],
+   [
+    339,
+    "PACTS_END"
+   ],
+   [
+    340,
+    "PAGESTORM"
+   ],
+   [
+    341,
+    "PALE_BLUE_DOT"
+   ],
+   [
+    342,
+    "PANACHE"
+   ],
+   [
+    343,
+    "PANIC_BUTTON"
+   ],
+   [
+    344,
+    "PARRY"
+   ],
+   [
+    345,
+    "PARSE"
+   ],
+   [
+    346,
+    "PARTICLE_WALL"
+   ],
+   [
+    347,
+    "PATTER"
+   ],
+   [
+    348,
+    "PECK"
+   ],
+   [
+    349,
+    "PERFECTED_STRIKE"
+   ],
+   [
+    350,
+    "PHANTOM_BLADES"
+   ],
+   [
+    351,
+    "PHOTON_CUT"
+   ],
+   [
+    352,
+    "PIERCING_WAIL"
+   ],
+   [
+    353,
+    "PILLAGE"
+   ],
+   [
+    354,
+    "PILLAR_OF_CREATION"
+   ],
+   [
+    355,
+    "PINPOINT"
+   ],
+   [
+    356,
+    "POISONED_STAB"
+   ],
+   [
+    357,
+    "POKE"
+   ],
+   [
+    358,
+    "POMMEL_STRIKE"
+   ],
+   [
+    359,
+    "POUNCE"
+   ],
+   [
+    360,
+    "PRECISE_CUT"
+   ],
+   [
+    361,
+    "PREDATOR"
+   ],
+   [
+    362,
+    "PREPARED"
+   ],
+   [
+    363,
+    "PREP_TIME"
+   ],
+   [
+    364,
+    "PRIMAL_FORCE"
+   ],
+   [
+    365,
+    "PRODUCTION"
+   ],
+   [
+    366,
+    "PROLONG"
+   ],
+   [
+    367,
+    "PROPHESIZE"
+   ],
+   [
+    368,
+    "PROTECTOR"
+   ],
+   [
+    369,
+    "PROWESS"
+   ],
+   [
+    370,
+    "PULL_AGGRO"
+   ],
+   [
+    371,
+    "PULL_FROM_BELOW"
+   ],
+   [
+    372,
+    "PURITY"
+   ],
+   [
+    373,
+    "PUTREFY"
+   ],
+   [
+    374,
+    "PYRE"
+   ],
+   [
+    375,
+    "QUADCAST"
+   ],
+   [
+    376,
+    "QUASAR"
+   ],
+   [
+    377,
+    "RADIATE"
+   ],
+   [
+    378,
+    "RAGE"
+   ],
+   [
+    379,
+    "RAINBOW"
+   ],
+   [
+    380,
+    "RALLY"
+   ],
+   [
+    381,
+    "RAMPAGE"
+   ],
+   [
+    382,
+    "RATTLE"
+   ],
+   [
+    383,
+    "REANIMATE"
+   ],
+   [
+    384,
+    "REAP"
+   ],
+   [
+    385,
+    "REAPER_FORM"
+   ],
+   [
+    386,
+    "REAVE"
+   ],
+   [
+    387,
+    "REBOOT"
+   ],
+   [
+    388,
+    "REBOUND"
+   ],
+   [
+    389,
+    "REFINE_BLADE"
+   ],
+   [
+    390,
+    "REFLECT"
+   ],
+   [
+    391,
+    "REFLEX"
+   ],
+   [
+    392,
+    "REFRACT"
+   ],
+   [
+    393,
+    "RELAX"
+   ],
+   [
+    394,
+    "REND"
+   ],
+   [
+    395,
+    "RESONANCE"
+   ],
+   [
+    396,
+    "RESTLESSNESS"
+   ],
+   [
+    397,
+    "RICOCHET"
+   ],
+   [
+    398,
+    "RIGHT_HAND_HAND"
+   ],
+   [
+    399,
+    "RIP_AND_TEAR"
+   ],
+   [
+    400,
+    "ROCKET_PUNCH"
+   ],
+   [
+    401,
+    "ROLLING_BOULDER"
+   ],
+   [
+    402,
+    "ROYAL_GAMBLE"
+   ],
+   [
+    403,
+    "ROYALTIES"
+   ],
+   [
+    404,
+    "RUPTURE"
+   ],
+   [
+    405,
+    "SACRIFICE"
+   ],
+   [
+    406,
+    "SALVO"
+   ],
+   [
+    407,
+    "SCARE"
+   ],
+   [
+    408,
+    "SCAVENGE"
+   ],
+   [
+    409,
+    "SCOURGE"
+   ],
+   [
+    410,
+    "SCRAPE"
+   ],
+   [
+    411,
+    "SCRAWL"
+   ],
+   [
+    412,
+    "SCULPTING_STRIKE"
+   ],
+   [
+    413,
+    "SEANCE"
+   ],
+   [
+    414,
+    "SECOND_WIND"
+   ],
+   [
+    415,
+    "SECRET_TECHNIQUE"
+   ],
+   [
+    416,
+    "SECRET_WEAPON"
+   ],
+   [
+    417,
+    "SEEKER_STRIKE"
+   ],
+   [
+    418,
+    "SEEKING_EDGE"
+   ],
+   [
+    419,
+    "SENTRY_MODE"
+   ],
+   [
+    420,
+    "SERPENT_FORM"
+   ],
+   [
+    421,
+    "SETUP_STRIKE"
+   ],
+   [
+    422,
+    "SEVEN_STARS"
+   ],
+   [
+    423,
+    "SEVERANCE"
+   ],
+   [
+    424,
+    "SHADOWMELD"
+   ],
+   [
+    425,
+    "SHADOW_SHIELD"
+   ],
+   [
+    426,
+    "SHADOW_STEP"
+   ],
+   [
+    427,
+    "SHARED_FATE"
+   ],
+   [
+    428,
+    "SHATTER"
+   ],
+   [
+    429,
+    "SHINING_STRIKE"
+   ],
+   [
+    430,
+    "SHIV"
+   ],
+   [
+    431,
+    "SHOCKWAVE"
+   ],
+   [
+    432,
+    "SHROUD"
+   ],
+   [
+    433,
+    "SHRUG_IT_OFF"
+   ],
+   [
+    434,
+    "SIC_EM"
+   ],
+   [
+    435,
+    "SIGNAL_BOOST"
+   ],
+   [
+    436,
+    "SKEWER"
+   ],
+   [
+    437,
+    "SKIM"
+   ],
+   [
+    438,
+    "SLEIGHT_OF_FLESH"
+   ],
+   [
+    439,
+    "SLICE"
+   ],
+   [
+    440,
+    "SLIMED"
+   ],
+   [
+    441,
+    "SMOKESTACK"
+   ],
+   [
+    442,
+    "SNAKEBITE"
+   ],
+   [
+    443,
+    "SNAP"
+   ],
+   [
+    444,
+    "SNEAKY"
+   ],
+   [
+    445,
+    "SOLAR_STRIKE"
+   ],
+   [
+    446,
+    "SOUL"
+   ],
+   [
+    447,
+    "SOUL_STORM"
+   ],
+   [
+    448,
+    "SOVEREIGN_BLADE"
+   ],
+   [
+    449,
+    "SOW"
+   ],
+   [
+    450,
+    "SPECTRUM_SHIFT"
+   ],
+   [
+    451,
+    "SPEEDSTER"
+   ],
+   [
+    452,
+    "SPINNER"
+   ],
+   [
+    453,
+    "SPIRIT_OF_ASH"
+   ],
+   [
+    454,
+    "SPITE"
+   ],
+   [
+    455,
+    "SPLASH"
+   ],
+   [
+    456,
+    "SPOILS_OF_BATTLE"
+   ],
+   [
+    457,
+    "SPORE_MIND"
+   ],
+   [
+    458,
+    "SPUR"
+   ],
+   [
+    459,
+    "SQUASH"
+   ],
+   [
+    460,
+    "SQUEEZE"
+   ],
+   [
+    461,
+    "STACK"
+   ],
+   [
+    462,
+    "STAMPEDE"
+   ],
+   [
+    463,
+    "STARDUST"
+   ],
+   [
+    464,
+    "STOKE"
+   ],
+   [
+    465,
+    "STOMP"
+   ],
+   [
+    466,
+    "STONE_ARMOR"
+   ],
+   [
+    467,
+    "STORM"
+   ],
+   [
+    468,
+    "STORM_OF_STEEL"
+   ],
+   [
+    469,
+    "STRANGLE"
+   ],
+   [
+    470,
+    "STRATAGEM"
+   ],
+   [
+    471,
+    "STRIKE_DEFECT"
+   ],
+   [
+    472,
+    "STRIKE_IRONCLAD"
+   ],
+   [
+    473,
+    "STRIKE_NECROBINDER"
+   ],
+   [
+    474,
+    "STRIKE_REGENT"
+   ],
+   [
+    475,
+    "STRIKE_SILENT"
+   ],
+   [
+    476,
+    "SUBROUTINE"
+   ],
+   [
+    477,
+    "SUCKER_PUNCH"
+   ],
+   [
+    478,
+    "SUMMON_FORTH"
+   ],
+   [
+    479,
+    "SUNDER"
+   ],
+   [
+    480,
+    "SUPERCRITICAL"
+   ],
+   [
+    481,
+    "SUPERMASSIVE"
+   ],
+   [
+    482,
+    "SUPPRESS"
+   ],
+   [
+    483,
+    "SURVIVOR"
+   ],
+   [
+    484,
+    "SWEEPING_BEAM"
+   ],
+   [
+    485,
+    "SWEEPING_GAZE"
+   ],
+   [
+    486,
+    "SWORD_BOOMERANG"
+   ],
+   [
+    487,
+    "SWORD_SAGE"
+   ],
+   [
+    488,
+    "SYNCHRONIZE"
+   ],
+   [
+    489,
+    "SYNTHESIS"
+   ],
+   [
+    490,
+    "TACTICIAN"
+   ],
+   [
+    491,
+    "TAG_TEAM"
+   ],
+   [
+    492,
+    "TANK"
+   ],
+   [
+    493,
+    "TAUNT"
+   ],
+   [
+    494,
+    "TEAR_ASUNDER"
+   ],
+   [
+    495,
+    "TEMPEST"
+   ],
+   [
+    496,
+    "TERRAFORMING"
+   ],
+   [
+    497,
+    "TESLA_COIL"
+   ],
+   [
+    498,
+    "THE_BOMB"
+   ],
+   [
+    499,
+    "THE_GAMBIT"
+   ],
+   [
+    500,
+    "THE_HUNT"
+   ],
+   [
+    501,
+    "THE_SCYTHE"
+   ],
+   [
+    502,
+    "THE_SEALED_THRONE"
+   ],
+   [
+    503,
+    "THE_SMITH"
+   ],
+   [
+    504,
+    "THINKING_AHEAD"
+   ],
+   [
+    505,
+    "THRASH"
+   ],
+   [
+    506,
+    "THRUMMING_HATCHET"
+   ],
+   [
+    507,
+    "THUNDER"
+   ],
+   [
+    508,
+    "THUNDERCLAP"
+   ],
+   [
+    509,
+    "TIMES_UP"
+   ],
+   [
+    510,
+    "TOOLS_OF_THE_TRADE"
+   ],
+   [
+    511,
+    "TORIC_TOUGHNESS"
+   ],
+   [
+    512,
+    "TOXIC"
+   ],
+   [
+    513,
+    "TRACKING"
+   ],
+   [
+    514,
+    "TRANSFIGURE"
+   ],
+   [
+    515,
+    "TRASH_TO_TREASURE"
+   ],
+   [
+    516,
+    "TREMBLE"
+   ],
+   [
+    517,
+    "TRUE_GRIT"
+   ],
+   [
+    518,
+    "TURBO"
+   ],
+   [
+    519,
+    "TWIN_STRIKE"
+   ],
+   [
+    520,
+    "TYRANNY"
+   ],
+   [
+    521,
+    "ULTIMATE_DEFEND"
+   ],
+   [
+    522,
+    "ULTIMATE_STRIKE"
+   ],
+   [
+    523,
+    "UNDEATH"
+   ],
+   [
+    524,
+    "UNLEASH"
+   ],
+   [
+    525,
+    "UNMOVABLE"
+   ],
+   [
+    526,
+    "UNRELENTING"
+   ],
+   [
+    527,
+    "UNTOUCHABLE"
+   ],
+   [
+    528,
+    "UP_MY_SLEEVE"
+   ],
+   [
+    529,
+    "UPPERCUT"
+   ],
+   [
+    530,
+    "UPROAR"
+   ],
+   [
+    531,
+    "VEILPIERCER"
+   ],
+   [
+    532,
+    "VENERATE"
+   ],
+   [
+    533,
+    "VICIOUS"
+   ],
+   [
+    534,
+    "VOID_FORM"
+   ],
+   [
+    535,
+    "VOLLEY"
+   ],
+   [
+    536,
+    "VOLTAIC"
+   ],
+   [
+    537,
+    "WELL_LAID_PLANS"
+   ],
+   [
+    538,
+    "WHIRLWIND"
+   ],
+   [
+    539,
+    "WHISTLE"
+   ],
+   [
+    540,
+    "WHITE_NOISE"
+   ],
+   [
+    541,
+    "WISH"
+   ],
+   [
+    542,
+    "WISP"
+   ],
+   [
+    543,
+    "WRAITH_FORM"
+   ],
+   [
+    544,
+    "WROUGHT_IN_WAR"
+   ],
+   [
+    545,
+    "ZAP"
+   ],
+   [
+    546,
+    "CASCADE"
+   ],
+   [
+    547,
+    "MODDED"
+   ],
+   [
+    548,
+    "ABUNDANCE"
+   ],
+   [
+    549,
+    "BLADE_SYMPHONY"
+   ],
+   [
+    550,
+    "BLAZE"
+   ],
+   [
+    551,
+    "CACOPHONY"
+   ],
+   [
+    552,
+    "CONCOCT"
+   ],
+   [
+    553,
+    "CONSTELLATION"
+   ],
+   [
+    554,
+    "FADE"
+   ],
+   [
+    555,
+    "HIBERNATE"
+   ],
+   [
+    556,
+    "IMITATION_LEARNING"
+   ],
+   [
+    557,
+    "MIDNIGHT"
+   ],
+   [
+    558,
+    "ONE_FOR_ALL"
+   ],
+   [
+    559,
+    "OUTRAGE"
+   ],
+   [
+    560,
+    "PLOT"
+   ],
+   [
+    561,
+    "SIDESTEP"
+   ],
+   [
+    562,
+    "SOULBOUND"
+   ],
+   [
+    563,
+    "THE_BALL"
+   ],
+   [
+    564,
+    "TUTOR"
+   ],
+   [
+    565,
+    "UNDERWORLD"
+   ],
+   [
+    566,
+    "DOWSING"
+   ],
+   [
+    10001,
+    "ASCENDERS_BANE"
+   ],
+   [
+    10002,
+    "DAZED"
+   ],
+   [
+    10008,
+    "INFECTION"
+   ],
+   [
+    10009,
+    "BURN"
+   ],
+   [
+    10010,
+    "DISINTEGRATION"
+   ],
+   [
+    10011,
+    "WOUND"
+   ],
+   [
+    10012,
+    "WITHER"
+   ],
+   [
+    10020,
+    "SPOILS_MAP"
+   ],
+   [
+    10021,
+    "BAD_LUCK"
+   ],
+   [
+    10022,
+    "BYRDONIS_EGG"
+   ],
+   [
+    10023,
+    "CLUMSY"
+   ],
+   [
+    10024,
+    "CURSE_OF_THE_BELL"
+   ],
+   [
+    10025,
+    "DEBT"
+   ],
+   [
+    10026,
+    "DECAY"
+   ],
+   [
+    10027,
+    "DOUBT"
+   ],
+   [
+    10028,
+    "FOLLY"
+   ],
+   [
+    10029,
+    "GREED"
+   ],
+   [
+    10030,
+    "GUILTY"
+   ],
+   [
+    10031,
+    "INJURY"
+   ],
+   [
+    10032,
+    "LANTERN_KEY"
+   ],
+   [
+    10033,
+    "MIND_ROT"
+   ],
+   [
+    10034,
+    "NORMALITY"
+   ],
+   [
+    10035,
+    "POOR_SLEEP"
+   ],
+   [
+    10036,
+    "REGRET"
+   ],
+   [
+    10037,
+    "SHAME"
+   ],
+   [
+    10038,
+    "SLOTH"
+   ],
+   [
+    10039,
+    "SOOT"
+   ],
+   [
+    10040,
+    "VOID"
+   ],
+   [
+    10041,
+    "WASTE_AWAY"
+   ],
+   [
+    10042,
+    "WRITHE"
+   ]
+  ],
+  "engine_enemies": [
+   [
+    1,
+    "Aeonglass"
+   ],
+   [
+    2,
+    "Architect"
+   ],
+   [
+    3,
+    "AssassinRubyRaider"
+   ],
+   [
+    4,
+    "Axebot"
+   ],
+   [
+    5,
+    "AxeRubyRaider"
+   ],
+   [
+    6,
+    "BowlbugEgg"
+   ],
+   [
+    7,
+    "BowlbugNectar"
+   ],
+   [
+    8,
+    "BowlbugRock"
+   ],
+   [
+    9,
+    "BowlbugSilk"
+   ],
+   [
+    10,
+    "BruteRubyRaider"
+   ],
+   [
+    11,
+    "BygoneEffigy"
+   ],
+   [
+    12,
+    "Byrdonis"
+   ],
+   [
+    13,
+    "Byrdpip"
+   ],
+   [
+    14,
+    "CalcifiedCultist"
+   ],
+   [
+    15,
+    "CeremonialBeast"
+   ],
+   [
+    16,
+    "Chomper"
+   ],
+   [
+    17,
+    "CorpseSlug"
+   ],
+   [
+    18,
+    "CrossbowRubyRaider"
+   ],
+   [
+    19,
+    "Crusher"
+   ],
+   [
+    20,
+    "CubexConstruct"
+   ],
+   [
+    21,
+    "DampCultist"
+   ],
+   [
+    22,
+    "DecimillipedeSegment"
+   ],
+   [
+    23,
+    "DevotedSculptor"
+   ],
+   [
+    24,
+    "Entomancer"
+   ],
+   [
+    25,
+    "Exoskeleton"
+   ],
+   [
+    26,
+    "EyeWithTeeth"
+   ],
+   [
+    27,
+    "Fabricator"
+   ],
+   [
+    28,
+    "FatGremlin"
+   ],
+   [
+    29,
+    "FlailKnight"
+   ],
+   [
+    30,
+    "Flyconid"
+   ],
+   [
+    31,
+    "Fogmog"
+   ],
+   [
+    32,
+    "FossilStalker"
+   ],
+   [
+    33,
+    "FrogKnight"
+   ],
+   [
+    34,
+    "FuzzyWurmCrawler"
+   ],
+   [
+    35,
+    "GasBomb"
+   ],
+   [
+    36,
+    "GlobeHead"
+   ],
+   [
+    37,
+    "GremlinMerc"
+   ],
+   [
+    38,
+    "Guardbot"
+   ],
+   [
+    39,
+    "HauntedShip"
+   ],
+   [
+    40,
+    "HunterKiller"
+   ],
+   [
+    41,
+    "InfestedPrism"
+   ],
+   [
+    42,
+    "Inklet"
+   ],
+   [
+    43,
+    "KinFollower"
+   ],
+   [
+    44,
+    "KinPriest"
+   ],
+   [
+    45,
+    "KnowledgeDemon"
+   ],
+   [
+    46,
+    "LagavulinMatriarch"
+   ],
+   [
+    47,
+    "LeafSlimeM"
+   ],
+   [
+    48,
+    "LeafSlimeS"
+   ],
+   [
+    49,
+    "LivingFog"
+   ],
+   [
+    50,
+    "LivingShield"
+   ],
+   [
+    51,
+    "LouseProgenitor"
+   ],
+   [
+    52,
+    "MagiKnight"
+   ],
+   [
+    53,
+    "Mawler"
+   ],
+   [
+    54,
+    "MechaKnight"
+   ],
+   [
+    55,
+    "Myte"
+   ],
+   [
+    56,
+    "Nibbit"
+   ],
+   [
+    57,
+    "Noisebot"
+   ],
+   [
+    58,
+    "Osty"
+   ],
+   [
+    59,
+    "Ovicopter"
+   ],
+   [
+    60,
+    "OwlMagistrate"
+   ],
+   [
+    61,
+    "PaelsLegion"
+   ],
+   [
+    62,
+    "Parafright"
+   ],
+   [
+    63,
+    "PhantasmalGardener"
+   ],
+   [
+    64,
+    "PhrogParasite"
+   ],
+   [
+    65,
+    "PunchConstruct"
+   ],
+   [
+    66,
+    "Queen"
+   ],
+   [
+    67,
+    "Rocket"
+   ],
+   [
+    68,
+    "ScrollOfBiting"
+   ],
+   [
+    69,
+    "Seapunk"
+   ],
+   [
+    70,
+    "SewerClam"
+   ],
+   [
+    71,
+    "ShrinkerBeetle"
+   ],
+   [
+    72,
+    "SkulkingColony"
+   ],
+   [
+    73,
+    "SlimedBerserker"
+   ],
+   [
+    74,
+    "SlitheringStrangler"
+   ],
+   [
+    75,
+    "SludgeSpinner"
+   ],
+   [
+    76,
+    "SlumberingBeetle"
+   ],
+   [
+    77,
+    "SnappingJaxfruit"
+   ],
+   [
+    78,
+    "SneakyGremlin"
+   ],
+   [
+    79,
+    "SoulFysh"
+   ],
+   [
+    80,
+    "SoulNexus"
+   ],
+   [
+    81,
+    "SpectralKnight"
+   ],
+   [
+    82,
+    "SpinyToad"
+   ],
+   [
+    83,
+    "Stabbot"
+   ],
+   [
+    84,
+    "TerrorEel"
+   ],
+   [
+    85,
+    "TheAdversaryMkOne"
+   ],
+   [
+    86,
+    "TheAdversaryMkThree"
+   ],
+   [
+    87,
+    "TheAdversaryMkTwo"
+   ],
+   [
+    88,
+    "TheForgotten"
+   ],
+   [
+    89,
+    "TheInsatiable"
+   ],
+   [
+    90,
+    "TheLost"
+   ],
+   [
+    91,
+    "TheObscura"
+   ],
+   [
+    92,
+    "ThievingHopper"
+   ],
+   [
+    93,
+    "Toadpole"
+   ],
+   [
+    94,
+    "TorchHeadAmalgam"
+   ],
+   [
+    95,
+    "ToughEgg"
+   ],
+   [
+    96,
+    "TrackerRubyRaider"
+   ],
+   [
+    97,
+    "Tunneler"
+   ],
+   [
+    98,
+    "TurretOperator"
+   ],
+   [
+    99,
+    "TwigSlimeM"
+   ],
+   [
+    100,
+    "TwigSlimeS"
+   ],
+   [
+    101,
+    "TwoTailedRat"
+   ],
+   [
+    102,
+    "Vantom"
+   ],
+   [
+    103,
+    "VineShambler"
+   ],
+   [
+    104,
+    "WaterfallGiant"
+   ],
+   [
+    105,
+    "Wriggler"
+   ],
+   [
+    106,
+    "Zapbot"
+   ],
+   [
+    107,
+    "DecimillipedeSegmentBack"
+   ],
+   [
+    108,
+    "DecimillipedeSegmentFront"
+   ],
+   [
+    109,
+    "DecimillipedeSegmentMiddle"
+   ],
+   [
+    110,
+    "MysteriousKnight"
+   ],
+   [
+    10003,
+    "FakeMerchantMonster"
+   ],
+   [
+    10004,
+    "BattleFriendV1"
+   ],
+   [
+    10005,
+    "BattleFriendV2"
+   ],
+   [
+    10006,
+    "BattleFriendV3"
+   ],
+   [
+    10007,
+    "TestSubject"
+   ]
+  ],
+  "engine_input_schema": "cds.engine_input/v1",
+  "engine_line": "sts2emulator-whole-game-build08-v0.111.0+crl-training-overlay/v1+p2-juggernaut-await-kill",
+  "history_course_relic_id": 113,
+  "intent_types": [
+   "Attack",
+   "Defend",
+   "Buff",
+   "Debuff",
+   "Unknown",
+   "DebuffStrong",
+   "Escape",
+   "Heal",
+   "Hidden",
+   "Summon",
+   "Sleep",
+   "Stun",
+   "StatusCard",
+   "CardDebuff",
+   "DeathBlow"
+  ],
+  "magi_knight_def_id": 52,
+  "observation_schema": "crl.raw_observation/v3",
+  "ok": true,
+  "orb_types": [
+   "Lightning",
+   "Frost",
+   "Dark",
+   "Plasma",
+   "Glass"
+  ],
+  "pid": 22038,
+  "player_counter_fields": [
+   "ascension_level",
+   "max_energy",
+   "max_potion_slots",
+   "is_elite_combat",
+   "is_elite_room",
+   "fur_coat_bites",
+   "end_turn_awaiting_selection",
+   "pending_card_play",
+   "parked_play_extra_plays",
+   "parked_play_index",
+   "parked_play_energy_spent",
+   "nested_autoplay_depth",
+   "autoplay_batch_pending",
+   "autoplay_batch_resumes_turn_start",
+   "autoplay_batch_resumes_end_turn",
+   "stampede_remaining",
+   "defer_card_rupture",
+   "card_rupture_strength",
+   "completed_card_rupture_strength",
+   "afterimage_before_play",
+   "storm_before_play",
+   "subroutine_before_play",
+   "serpent_form_snapshot_count",
+   "serpent_form_snapshot_innermost",
+   "status_cards_drawn_this_turn",
+   "resolving_defend_card",
+   "played_card_cost_for_combat_set",
+   "played_card_cost_for_combat",
+   "played_card_bonus_damage",
+   "played_card_momentum_damage",
+   "played_card_bonus_block",
+   "played_card_enchant_spent",
+   "played_card_enchant_grew",
+   "played_card_cost_bump",
+   "played_card_stars_spent",
+   "lethal_attack_play",
+   "end_turn_after_play",
+   "energy_spent_this_turn",
+   "orbit_energy_spent",
+   "void_form_cards_played_this_turn",
+   "cards_played_this_turn",
+   "attack_or_skill_cards_played_this_turn",
+   "card_plays_this_turn",
+   "skill_cards_played_this_turn",
+   "shivs_played_this_turn",
+   "card_plays_last_turn",
+   "cards_drawn_this_combat",
+   "extra_cards_drawn_this_turn",
+   "cards_generated_this_combat",
+   "cards_exhausted_this_turn",
+   "cards_discarded_this_turn",
+   "ethereal_exhausts_this_turn",
+   "ethereal_exhaust_count",
+   "ethereal_card_plays_this_combat",
+   "player_hp_lost_this_turn",
+   "unblocked_damage_this_turn",
+   "took_unblocked_damage",
+   "lightning_orbs_channeled_this_combat",
+   "doom_applied_this_turn",
+   "osty_attacks_this_turn",
+   "stars_gained_this_turn",
+   "skill_played_while_smoggy",
+   "pen_nib_armed",
+   "vambrace_spent",
+   "vambrace_claimed_by_play",
+   "paels_legion_cooldown",
+   "paels_legion_claimed_by_play",
+   "rainbow_ring_attacks",
+   "rainbow_ring_skills",
+   "rainbow_ring_powers",
+   "rainbow_ring_paid_this_turn",
+   "unsettling_lamp_spent",
+   "unsettling_lamp_card",
+   "gambling_chip_discarded",
+   "gambling_chip_owed",
+   "burning_sticks_used",
+   "belt_buckle_applied",
+   "whispering_earring_spent",
+   "music_box_used_this_turn"
+  ],
+  "player_history_fields": [
+   "card_starts_turn",
+   "attack_starts_turn",
+   "attack_skill_starts_turn",
+   "attack_finishes_turn",
+   "exhausted_any_turn",
+   "damaged_any_turn",
+   "damage_events_combat",
+   "eligible_block_gains_turn",
+   "card_finishes_combat"
+  ],
+  "potion_actions": {
+   "automatic_usage": "excluded: automatic_potion_not_manually_usable",
+   "default": false,
+   "legal_fields": "use_potion: potion_slot (physical), potion_id, target",
+   "observation_fields": "round_number, allow_potions, potion_capacity, potion_slot_array (potion mode only)",
+   "potions": [
+    [
+     1,
+     "Ashwater",
+     "CombatOnly",
+     false
+    ],
+    [
+     2,
+     "AttackPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     3,
+     "BeetleJuice",
+     "CombatOnly",
+     true
+    ],
+    [
+     4,
+     "BlessingOfTheForge",
+     "CombatOnly",
+     false
+    ],
+    [
+     5,
+     "BlockPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     6,
+     "BloodPotion",
+     "AnyTime",
+     false
+    ],
+    [
+     7,
+     "BoneBrew",
+     "CombatOnly",
+     false
+    ],
+    [
+     8,
+     "BottledPotential",
+     "CombatOnly",
+     false
+    ],
+    [
+     9,
+     "Clarity",
+     "CombatOnly",
+     false
+    ],
+    [
+     10,
+     "ColorlessPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     11,
+     "CosmicConcoction",
+     "CombatOnly",
+     false
+    ],
+    [
+     12,
+     "CunningPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     13,
+     "CureAll",
+     "CombatOnly",
+     false
+    ],
+    [
+     14,
+     "DexterityPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     15,
+     "DistilledChaos",
+     "CombatOnly",
+     false
+    ],
+    [
+     16,
+     "DropletOfPrecognition",
+     "CombatOnly",
+     false
+    ],
+    [
+     17,
+     "Duplicator",
+     "CombatOnly",
+     false
+    ],
+    [
+     18,
+     "EnergyPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     19,
+     "EntropicBrew",
+     "AnyTime",
+     false
+    ],
+    [
+     20,
+     "EssenceOfDarkness",
+     "CombatOnly",
+     false
+    ],
+    [
+     21,
+     "ExplosiveAmpoule",
+     "CombatOnly",
+     false
+    ],
+    [
+     22,
+     "FairyInABottle",
+     "Automatic",
+     false
+    ],
+    [
+     23,
+     "FirePotion",
+     "CombatOnly",
+     true
+    ],
+    [
+     24,
+     "FlexPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     25,
+     "FocusPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     26,
+     "Fortifier",
+     "CombatOnly",
+     false
+    ],
+    [
+     27,
+     "FoulPotion",
+     "AnyTime",
+     false
+    ],
+    [
+     28,
+     "FruitJuice",
+     "AnyTime",
+     false
+    ],
+    [
+     29,
+     "FyshOil",
+     "CombatOnly",
+     false
+    ],
+    [
+     30,
+     "GamblersBrew",
+     "CombatOnly",
+     false
+    ],
+    [
+     31,
+     "GhostInAJar",
+     "CombatOnly",
+     false
+    ],
+    [
+     32,
+     "GigantificationPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     33,
+     "GlowwaterPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     34,
+     "HeartOfIron",
+     "CombatOnly",
+     false
+    ],
+    [
+     35,
+     "KingsCourage",
+     "CombatOnly",
+     false
+    ],
+    [
+     36,
+     "LiquidBronze",
+     "CombatOnly",
+     false
+    ],
+    [
+     37,
+     "LiquidMemories",
+     "CombatOnly",
+     false
+    ],
+    [
+     38,
+     "LuckyTonic",
+     "CombatOnly",
+     false
+    ],
+    [
+     39,
+     "MazalethsGift",
+     "CombatOnly",
+     false
+    ],
+    [
+     40,
+     "OrobicAcid",
+     "CombatOnly",
+     false
+    ],
+    [
+     41,
+     "PoisonPotion",
+     "CombatOnly",
+     true
+    ],
+    [
+     42,
+     "PotionOfBinding",
+     "CombatOnly",
+     false
+    ],
+    [
+     43,
+     "PotionOfCapacity",
+     "CombatOnly",
+     false
+    ],
+    [
+     44,
+     "PotionOfDoom",
+     "CombatOnly",
+     true
+    ],
+    [
+     45,
+     "PotionShapedRock",
+     "CombatOnly",
+     true
+    ],
+    [
+     46,
+     "PotOfGhouls",
+     "CombatOnly",
+     false
+    ],
+    [
+     47,
+     "PowderedDemise",
+     "CombatOnly",
+     true
+    ],
+    [
+     48,
+     "PowerPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     49,
+     "RadiantTincture",
+     "CombatOnly",
+     false
+    ],
+    [
+     50,
+     "RegenPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     51,
+     "ShacklingPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     52,
+     "ShipInABottle",
+     "CombatOnly",
+     false
+    ],
+    [
+     53,
+     "SkillPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     54,
+     "SneckoOil",
+     "CombatOnly",
+     false
+    ],
+    [
+     55,
+     "SoldiersStew",
+     "CombatOnly",
+     false
+    ],
+    [
+     56,
+     "SpeedPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     57,
+     "StableSerum",
+     "CombatOnly",
+     false
+    ],
+    [
+     58,
+     "StarPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     59,
+     "StrengthPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     60,
+     "SwiftPotion",
+     "CombatOnly",
+     false
+    ],
+    [
+     61,
+     "TouchOfInsanity",
+     "CombatOnly",
+     false
+    ],
+    [
+     62,
+     "VulnerablePotion",
+     "CombatOnly",
+     true
+    ],
+    [
+     63,
+     "WeakPotion",
+     "CombatOnly",
+     true
+    ],
+    [
+     64,
+     "Ambergris",
+     "AnyTime",
+     false
+    ]
+   ],
+   "reset_flag": "allow_potions",
+   "schema": "crl.potion_actions/v2"
+  },
+  "protocol": "crl.worker_protocol/v1",
+  "rl_worker_assembly_sha256": "b49a635d51cfc68c5e0997342e96ee2a21fb2076e5f406c150194198ff018369",
+  "rng_training_version": "sts2-training-pcg64-xslrr-128-64/v1",
+  "runtime": ".NET 9.0.20",
+  "seed_derivation": "sts2-training-seed-splitmix-xxh64/v1: seed(name) = splitmix64 pair of (env_seed ^ xxh64(version) ^ xxh64(name)*golden)",
+  "selection_kinds": [
+   "None",
+   "DiscardToDrawPileTop",
+   "ExhaustFromHand",
+   "ExhaustFromHandThenDraw",
+   "DrawPileToHand",
+   "HandToDrawPileTop",
+   "ExhaustFromHandRepeated",
+   "GeneratedCardToHand",
+   "CurseOfKnowledge",
+   "DiscardFromHandRepeated",
+   "MarkHandCardSly",
+   "QueueHandCardCopies",
+   "RetainForNextTurn",
+   "DiscardToHand",
+   "DiscardAnyThenDraw",
+   "UpgradeInHand",
+   "TransformDrawPileToSoul",
+   "ExhaustFromDrawPile",
+   "GrantEtherealInHand",
+   "TransfigureInHand",
+   "TransformHandToMinionStrike",
+   "TransformDrawToMinionDiveBomb",
+   "TransformHandToMinionSacrifice",
+   "AutoPlaySkillThrice",
+   "CloneColorlessInHand",
+   "DualWield",
+   "FreeThisCombatInHand",
+   "ExhaustAnyFromHand"
+  ],
+  "state_field_classes": {
+   "CombatState": {
+    "ActiveAttackCommand": "transient",
+    "ActiveBlockPlay": "engine_bookkeeping",
+    "ActiveCardResources": "engine_bookkeeping",
+    "AfterimageBeforePlay": "counter",
+    "AiRng": "hidden_rng",
+    "AllTargetDamageDepth": "transient",
+    "AscensionLevel": "counter",
+    "AttackCardsPlayedThisTurn": "exposed",
+    "AttackOrSkillCardsPlayedThisTurn": "counter",
+    "AttackOrSkillPlaysStartedThisTurn": "exposed",
+    "AttackPlaysStartedThisTurn": "exposed",
+    "AutoPlayMayPause": "transient",
+    "AutoPlayQueue": "exposed",
+    "AutoPlayTargetIndex": "transient",
+    "AutoPlaying": "transient",
+    "AwaitedDeathPrePass": "transient",
+    "BaseOrbSlots": "exposed",
+    "BattlewornDummyRanOutOfTime": "reward_bookkeeping",
+    "BeltBuckleApplied": "counter",
+    "BlockGainsThisTurn": "exposed",
+    "BlockHistoryEpoch": "engine_bookkeeping",
+    "BlockHistoryPlayerTurn": "engine_bookkeeping",
+    "BlockHistoryTurn": "engine_bookkeeping",
+    "BoundCardPlayedThisTurn": "exposed",
+    "BoundCardsThisTurn": "exposed",
+    "BurningSticksUsed": "counter",
+    "CardEffectRng": "transient",
+    "CardGenerationRng": "hidden_rng",
+    "CardPlaysLastTurn": "counter",
+    "CardPlaysStartedThisTurn": "exposed",
+    "CardPlaysThisTurn": "counter",
+    "CardRuptureStrength": "counter",
+    "CardSelectionRng": "hidden_rng",
+    "CardsDiscardedThisTurn": "counter",
+    "CardsDrawnThisCombat": "counter",
+    "CardsExhaustedThisTurn": "counter",
+    "CardsGeneratedThisCombat": "counter",
+    "CardsPlayedSincePanacheProc": "exposed",
+    "CardsPlayedThisCombat": "exposed",
+    "CardsPlayedThisTurn": "counter",
+    "Character": "exposed",
+    "CompletedCardRuptureStrength": "counter",
+    "CopiesToHandBeforeDraw": "exposed",
+    "DeferCardRupture": "counter",
+    "DiscardPile": "exposed",
+    "DoomAppliedThisTurn": "counter",
+    "DrawPile": "hidden_order",
+    "DrawnCardsSinceAutomationProc": "exposed",
+    "EncounterId": "engine_bookkeeping",
+    "EndTurnAfterPlay": "counter",
+    "EndTurnAwaitingSelection": "counter",
+    "Enemies": "exposed",
+    "EnemyDeathDispatchDepth": "transient",
+    "Energy": "exposed",
+    "EnergyCostRng": "hidden_rng",
+    "EnergySpentThisTurn": "counter",
+    "EtherealCardPlaysThisCombat": "counter",
+    "EtherealExhaustCount": "counter",
+    "EtherealExhaustsThisTurn": "counter",
+    "ExecutedThisEnemyTurn": "engine_bookkeeping",
+    "ExhaustPile": "exposed",
+    "ExtraCardRewards": "reward_bookkeeping",
+    "ExtraCardsDrawnThisTurn": "counter",
+    "FatGremlinEscaped": "reward_bookkeeping",
+    "FurCoatBites": "counter",
+    "GamblingChipDiscarded": "counter",
+    "GamblingChipOwed": "counter",
+    "Hand": "exposed",
+    "HexApplier": "exposed",
+    "IsEliteCombat": "counter",
+    "IsEliteRoom": "counter",
+    "KnownBottomCount": "exposed",
+    "KnownTopCount": "exposed",
+    "LastAttackCommand": "engine_bookkeeping",
+    "LastAttackLastTurn": "unsupported_if_used",
+    "LastAttackThisTurn": "unsupported_if_used",
+    "LethalAttackPlay": "counter",
+    "LightningOrbsChanneledThisCombat": "counter",
+    "MaxEnergy": "counter",
+    "MaxPotionSlots": "counter",
+    "MercGoldWasStolen": "reward_bookkeeping",
+    "MusicBoxUsedThisTurn": "counter",
+    "NextBlockPlayIdentity": "engine_bookkeeping",
+    "NicheHpRng": "hidden_rng",
+    "OrbCapacity": "exposed",
+    "OrbGenerationRng": "hidden_rng",
+    "OrbitEnergySpent": "counter",
+    "Orbs": "exposed",
+    "OstyAttacksThisTurn": "counter",
+    "OstyHp": "exposed",
+    "OstyMaxHp": "exposed",
+    "PaelsLegionAffectedPlayId": "counter",
+    "PaelsLegionCooldown": "counter",
+    "PenNibArmed": "counter",
+    "PendingCardPlay": "counter",
+    "PendingEffectTail": "engine_bookkeeping",
+    "PendingEnemyTurn": "engine_bookkeeping",
+    "PendingNestedAutoPlays": "exposed",
+    "PendingPotionAutoPlays": "exposed",
+    "PendingSelection": "exposed",
+    "PendingTurnSetup": "engine_bookkeeping",
+    "PlayTarget": "transient",
+    "PlayedCardBonusBlock": "counter",
+    "PlayedCardBonusDamage": "counter",
+    "PlayedCardCostBump": "counter",
+    "PlayedCardCostForCombat": "counter",
+    "PlayedCardEnchantGrew": "counter",
+    "PlayedCardEnchantSpent": "counter",
+    "PlayedCardMomentumDamage": "counter",
+    "PlayedCardStarsSpent": "counter",
+    "PlayerBlock": "exposed",
+    "PlayerBuffs": "exposed",
+    "PlayerDebuffsAtRoundStart": "exposed",
+    "PlayerGold": "exposed",
+    "PlayerHp": "exposed",
+    "PlayerHpLostThisTurn": "counter",
+    "PlayerMaxHp": "exposed",
+    "PlayerTurn": "exposed",
+    "PotionGenerationRng": "hidden_rng",
+    "PotionSlots": "exposed",
+    "PresetEnemyHps": "engine_bookkeeping",
+    "Progression": "engine_bookkeeping",
+    "RainbowRingAttacks": "counter",
+    "RainbowRingPaidThisTurn": "counter",
+    "RainbowRingPowers": "counter",
+    "RainbowRingSkills": "counter",
+    "Relics": "exposed",
+    "ResolvingDefendCard": "counter",
+    "ReturnToHandBeforeDraw": "exposed",
+    "RoundNumber": "unsupported_if_used",
+    "RoyaltiesGold": "reward_bookkeeping",
+    "SerpentFormSnapshots": "counter",
+    "ShivsPlayedThisTurn": "counter",
+    "ShrinkApplier": "exposed",
+    "ShuffleRng": "hidden_rng",
+    "SkillCardsPlayedThisTurn": "counter",
+    "SkillPlayedWhileSmoggy": "counter",
+    "SlothCardsPlayedThisTurn": "exposed",
+    "Stars": "exposed",
+    "StarsGainedThisTurn": "counter",
+    "StatusCardsDrawnThisTurn": "counter",
+    "StolenBackCards": "reward_bookkeeping",
+    "StolenBackGold": "reward_bookkeeping",
+    "StolenFromDeck": "reward_bookkeeping",
+    "StormBeforePlay": "counter",
+    "StrangleBeforePlay": "exposed",
+    "SubroutineBeforePlay": "counter",
+    "TargetEnemyIndex": "inert_at_decision",
+    "TargetRng": "hidden_rng",
+    "TenderCardsPlayedThisTurn": "exposed",
+    "TookUnblockedDamage": "counter",
+    "ToricToughnessBlock": "exposed",
+    "TracksRunDeck": "reward_bookkeeping",
+    "Turn": "exposed",
+    "UnblockedDamageHitCount": "exposed",
+    "UnblockedDamageThisTurn": "counter",
+    "UnsettlingLampCard": "counter",
+    "UnsettlingLampSpent": "counter",
+    "VambraceSpent": "counter",
+    "VambraceTriggerSourceId": "counter",
+    "VoidFormCardsPlayedThisTurn": "counter",
+    "WhisperingEarringSpent": "counter"
+   },
+   "EnemyState": {
+    "Block": "exposed",
+    "BranchCooldown": "hidden_ai",
+    "Buffs": "exposed",
+    "CurlUpCardSourceId": "exposed",
+    "CurrentIntent": "exposed",
+    "DeathHooksHandled": "engine_bookkeeping",
+    "DefId": "exposed",
+    "Escaped": "exposed",
+    "HardenedShellHpLostThisSide": "exposed",
+    "Hp": "exposed",
+    "LastBranch": "hidden_ai",
+    "LastMove": "hidden_ai",
+    "LastMoveRepeats": "hidden_ai",
+    "LastSpawnedDefId": "hidden_ai",
+    "MaxHp": "exposed",
+    "MoveHistory": "hidden_ai",
+    "MoveIndex": "hidden_ai",
+    "NemesisIntangibleOn": "exposed",
+    "OffBalance": "exposed",
+    "OnceOnlyMoveUsed": "hidden_ai",
+    "PossessedPlayerDexterity": "exposed",
+    "PossessedPlayerStrength": "exposed",
+    "PoweredHitsThisTurn": "exposed",
+    "RepeatStreak": "hidden_ai",
+    "ResumePreparedMoveAfterStun": "hidden_ai",
+    "RollsNextMove": "hidden_ai",
+    "SecondaryIntent": "exposed",
+    "SkittishFirstHitCommand": "inert_at_decision",
+    "SkittishFirstHitUnblocked": "inert_at_decision",
+    "Slot": "exposed",
+    "StarterMove": "hidden_ai",
+    "StartsOnBranch": "hidden_ai",
+    "SteamEruptionDamage": "exposed",
+    "SteamEruptionPhase": "exposed",
+    "StolenCard": "exposed",
+    "StolenGold": "exposed",
+    "StunReturnsToPreparedMove": "hidden_ai"
+   }
+  },
+  "terminal_boundary": "CombatEngine.Step terminal, before RunEngine.FinishCombatStep and reward-time hooks: Burning Blood / Chosen Cheese heals, Improvement upgrades, Pumpkin Candle, Toy Box, Royalties and similar run mutations are NOT applied",
+  "tinker_riders": {
+   "Chaos": 6,
+   "Choking": 3,
+   "Curious": 8,
+   "Energized": 4,
+   "Expertise": 7,
+   "Improvement": 9,
+   "None": 0,
+   "Sapping": 1,
+   "Violence": 2,
+   "Wisdom": 5
+  },
+  "type": "hello"
+ },
+ "pilot": false,
+ "pilot_id": "rs1-mac-blue90000-n1half-s2026101012",
+ "replay": {
+  "batch_counts": [
+   84,
+   16,
+   12,
+   8,
+   8
+  ],
+  "policy": "quality-tiers/v1",
+  "tier_capacities": [
+   20000,
+   30000,
+   40000,
+   50000
+  ]
+ },
+ "replay_row_bound": 240000,
+ "reward": {
+  "act": "CurrentActIndex + 1 (region ids Overgrowth/Underdocks/Hive/Glory are not acts)",
+  "boss_victory": {
+   "1": 1.0,
+   "2": 2.0,
+   "3": 5.0
+  },
+  "excluded": "E's combat reward and potion bill are never added",
+  "gamma": 1.0,
+  "once": "each fight id (run_id:fNNN) is paid at most once",
+  "ordinary_elite_event_victory": {
+   "1": 0.1,
+   "2": 0.2,
+   "3": 0.4
+  },
+  "reward_id": "run-strategy-act-win-v1",
+  "zero": [
+   "death",
+   "event_escape (Battleworn Dummy DEFEAT page)",
+   "every noncombat transition",
+   "The Architect HP-0 completion",
+   "run completion bonus: none"
+  ]
+ },
+ "reward_id": "run-strategy-act-win-v1",
+ "schema": "rs1/run_manifest/v2",
+ "test_learner_override": false,
+ "test_replay_override": false
+}
