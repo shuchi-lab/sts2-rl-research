@@ -4,7 +4,15 @@
 
 Two learned agents play together. The **Battle agent** chooses combat actions and targets. The **Choice agent** makes decisions between combats, including route, rewards, shops and events.
 
-This release contains one selected agent pair, its recorded benchmark evidence, and the matching simulator runtime. It is intended to make the result easy to inspect and repeat.
+This release contains the selected agent pair, its recorded benchmark evidence, and the matching simulator runtime.
+
+## Overview
+
+![STS2 system architecture](docs/figures/system-overview.png)
+
+![Battle agent architecture](docs/figures/battle-agent-architecture.png)
+
+![Choice agent architecture](docs/figures/choice-agent-architecture.png)
 
 ## Result
 
@@ -13,18 +21,14 @@ This release contains one selected agent pair, its recorded benchmark evidence, 
 | Character / difficulty | Ironclad / Ascension 2 |
 | Run length | Three acts |
 | Victories | **68 / 256 (26.5625%)** |
-| Deaths | 184 |
 | Battle turn limits | 4, counted as nonwins |
-| Errors / unsupported / missing outcomes | 0 / 0 / 0 |
-| Choice checkpoint | N1, 90,000 training attempts |
-| Battle checkpoint | Wide/deep, 177,500 cumulative training fights |
-| Evaluation | Greedy frozen policies on 256 retained validation seeds |
+ |
 
-The pair was selected from a **30 × 42 checkpoint comparison on the same validation seeds**. This is a selected validation result. It is not an independent held-out estimate or a result measured in the native game. No new training is included in v1.0.0.
+
 
 See [the result report](docs/RESULTS.md), [per-run outcomes](results/runs.jsonl), [evaluation conditions](results/evaluation_config.json), and [checkpoint identities](results/model_identities.json).
 
-**Reproduction note:** the packaging check on macOS arm64 completed all 256 seeds with zero errors and produced 69 wins (26.95%). Fully compared run records matched the historical evaluation for 254 seeds; one win/loss outcome changed. The 26.6% headline remains the original selected result. See [verification details](docs/VERIFICATION.md); identical results across platforms are not guaranteed.
+**Reproduction note:** the macOS arm64 replay produced 69/256 wins (26.95%); the headline remains the original 68/256 result. See [verification details](docs/VERIFICATION.md) for the differences and platform limitations.
 
 ## What is included
 
@@ -37,19 +41,56 @@ scripts/      Artifact verification and evaluation entry points
 docs/         Results, execution instructions and verification record
 ```
 
-The supported release scope is Ironclad. Shared simulator components may contain other character definitions required by the existing engine. This package does not claim evaluated support for those characters.
+The evaluated release scope is Ironclad only.
 
-## Use
+## Quick start
 
-Start with [the running instructions](docs/RUNNING.md) for dependencies, one example run and the 256-seed benchmark. Frozen evidence lives in `results/`; new evaluations write to a separate output directory.
+### Prerequisites
 
-You can inspect the recorded outcomes and verify their counts without installing the machine-learning runtime:
+- Python 3.11+ and pip; locally verified with Python 3.13.15.
+- The [.NET 9 runtime](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) for your operating system and processor.
+- Git to clone the repository, or download and extract its ZIP.
+
+Evaluation runs on CPU with the included checkpoints and prebuilt simulator. Python dependencies are pinned in [requirements.txt](requirements.txt).
+
+### Install
 
 ```sh
-python scripts/verify_release.py
+git clone https://github.com/shuchi-lab/sts2-rl-research.git
+cd sts2-rl-research
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-The verifier checks release hashes, the two checkpoint identities, unique seed coverage and the 68/256 result. [The release verification record](docs/VERIFICATION.md) states what was actually exercised during packaging.
+On Windows, create the environment with `py -3 -m venv .venv`, then activate it with `.venv\Scripts\activate.bat` in Command Prompt or `.\.venv\Scripts\Activate.ps1` in PowerShell.
+
+### Run
+
+Check the models and isolated Battle runtime, then play one complete Ironclad A2 game using the first retained validation seed:
+
+```sh
+python scripts/evaluate.py --check --output-dir runs/check
+python scripts/evaluate.py --episodes 1 --output-dir runs/example
+```
+
+The game outcome is saved in `runs/example/summary.json`. To replay the full 256-seed validation benchmark:
+
+```sh
+python scripts/evaluate.py --all --output-dir runs/validation-256
+```
+
+Each evaluation requires a new output directory; choose a different `--output-dir` when repeating a command. See [the running instructions](docs/RUNNING.md) for runtime discovery, output files and evaluation details.
+
+### Check recorded results
+
+To check the recorded evidence with only Python's standard library:
+
+```sh
+python scripts/verify_release.py --evidence-only
+```
+
+This checks result-file provenance, unique seed coverage and the 68/256 result. [The release verification record](docs/VERIFICATION.md) states what was exercised during packaging.
 
 ## Scope and limitations
 
