@@ -1,0 +1,24 @@
+{
+  "schema": "semantic_card.research_snapshot/v1",
+  "snapshot_date": "2026-10-27",
+  "origin": "STS2_ML development snapshot; combat_rl/semantic_card_v1",
+  "source_version": "v0.111.0-24724944",
+  "files": {
+    "schema.py": {
+      "source_sha256": "b53f0ec2068e5e54c42433a26c6e6b582b10d5229748516ada4264be90e99c42",
+      "packaged_sha256": "b53f0ec2068e5e54c42433a26c6e6b582b10d5229748516ada4264be90e99c42"
+    },
+    "catalog.py": {
+      "source_sha256": "052cacd397d92cd31ccb49b11ae155fd2b2f38a442d9582aea1eabbadd07f567",
+      "packaged_sha256": "112a049a206a83b819bef29bae10f7cb854f6b2fdfcf5b560171fb1283a3b376"
+    },
+    "source_metadata.json": {
+      "source_sha256": "b73051882a6d136736b2ee81232af10a140d10c957663edc36c7608b903fa231",
+      "packaged_sha256": "b73051882a6d136736b2ee81232af10a140d10c957663edc36c7608b903fa231"
+    }
+  },
+  "adaptations": [
+    "catalog.py: replace private crl.features.UnsupportedState with a local ValueError subclass; mechanics programs unchanged."
+  ],
+  "scope": "Representation and examples; no trained semantic policy or live simulator adapter."
+}

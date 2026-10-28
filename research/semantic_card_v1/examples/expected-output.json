@@ -1,0 +1,298 @@
+{
+  "schema": "semantic_card.schema/v1",
+  "source_version": "v0.111.0-24724944",
+  "card": "Bash",
+  "upgraded": false,
+  "input_note": "Explicit example values, not a simulator preview. Omitted current numeric values are unknown; upgrade_level comes from the selected variant.",
+  "supplied_current_values": {
+    "current_cost": 2.0,
+    "damage": 8.0,
+    "hits": 1.0
+  },
+  "context": {
+    "in_hand": true,
+    "playable": true
+  },
+  "widths": {
+    "card": 84,
+    "step": 278,
+    "term": 83,
+    "preview": 15,
+    "continuation": 20,
+    "selection": 31
+  },
+  "current_card": {
+    "width": 84,
+    "nonzero_features": [
+      {
+        "index": 0,
+        "name": "current_cost",
+        "value": 1.098612
+      },
+      {
+        "index": 1,
+        "name": "current_cost_known",
+        "value": 1.0
+      },
+      {
+        "index": 4,
+        "name": "damage",
+        "value": 2.197225
+      },
+      {
+        "index": 5,
+        "name": "damage_known",
+        "value": 1.0
+      },
+      {
+        "index": 8,
+        "name": "hits",
+        "value": 0.693147
+      },
+      {
+        "index": 9,
+        "name": "hits_known",
+        "value": 1.0
+      },
+      {
+        "index": 13,
+        "name": "upgrade_level_known",
+        "value": 1.0
+      },
+      {
+        "index": 34,
+        "name": "playable",
+        "value": 1.0
+      },
+      {
+        "index": 35,
+        "name": "in_hand",
+        "value": 1.0
+      },
+      {
+        "index": 46,
+        "name": "can_upgrade",
+        "value": 1.0
+      },
+      {
+        "index": 59,
+        "name": "type:Attack",
+        "value": 1.0
+      },
+      {
+        "index": 65,
+        "name": "rarity:Basic",
+        "value": 1.0
+      },
+      {
+        "index": 76,
+        "name": "target:AnyEnemy",
+        "value": 1.0
+      }
+    ]
+  },
+  "program": [
+    {
+      "position": 0,
+      "mechanics": {
+        "op": "damage",
+        "target": "enemy",
+        "count": 1,
+        "powered": true,
+        "amount": 8.0
+      },
+      "nonzero_features": [
+        {
+          "index": 1,
+          "name": "op:damage",
+          "value": 1.0
+        },
+        {
+          "index": 31,
+          "name": "target:enemy",
+          "value": 1.0
+        },
+        {
+          "index": 43,
+          "name": "event:none",
+          "value": 1.0
+        },
+        {
+          "index": 68,
+          "name": "phase:none",
+          "value": 1.0
+        },
+        {
+          "index": 82,
+          "name": "property:none",
+          "value": 1.0
+        },
+        {
+          "index": 115,
+          "name": "operator:none",
+          "value": 1.0
+        },
+        {
+          "index": 126,
+          "name": "scope:none",
+          "value": 1.0
+        },
+        {
+          "index": 140,
+          "name": "selection:none",
+          "value": 1.0
+        },
+        {
+          "index": 148,
+          "name": "filter:none",
+          "value": 1.0
+        },
+        {
+          "index": 175,
+          "name": "pool:none",
+          "value": 1.0
+        },
+        {
+          "index": 180,
+          "name": "source:none",
+          "value": 1.0
+        },
+        {
+          "index": 193,
+          "name": "destination:none",
+          "value": 1.0
+        },
+        {
+          "index": 203,
+          "name": "reference:none",
+          "value": 1.0
+        },
+        {
+          "index": 211,
+          "name": "condition:none",
+          "value": 1.0
+        },
+        {
+          "index": 233,
+          "name": "amount",
+          "value": 2.197225
+        },
+        {
+          "index": 234,
+          "name": "amount_known",
+          "value": 1.0
+        },
+        {
+          "index": 235,
+          "name": "count",
+          "value": 0.693147
+        },
+        {
+          "index": 236,
+          "name": "count_known",
+          "value": 1.0
+        },
+        {
+          "index": 255,
+          "name": "powered",
+          "value": 1.0
+        }
+      ],
+      "terms": []
+    },
+    {
+      "position": 1,
+      "mechanics": {
+        "op": "status",
+        "target": "enemy",
+        "property": "vulnerable",
+        "operator": "add",
+        "scope": "turn",
+        "amount": 2.0
+      },
+      "nonzero_features": [
+        {
+          "index": 11,
+          "name": "op:status",
+          "value": 1.0
+        },
+        {
+          "index": 31,
+          "name": "target:enemy",
+          "value": 1.0
+        },
+        {
+          "index": 43,
+          "name": "event:none",
+          "value": 1.0
+        },
+        {
+          "index": 68,
+          "name": "phase:none",
+          "value": 1.0
+        },
+        {
+          "index": 85,
+          "name": "property:vulnerable",
+          "value": 1.0
+        },
+        {
+          "index": 116,
+          "name": "operator:add",
+          "value": 1.0
+        },
+        {
+          "index": 130,
+          "name": "scope:turn",
+          "value": 1.0
+        },
+        {
+          "index": 140,
+          "name": "selection:none",
+          "value": 1.0
+        },
+        {
+          "index": 148,
+          "name": "filter:none",
+          "value": 1.0
+        },
+        {
+          "index": 175,
+          "name": "pool:none",
+          "value": 1.0
+        },
+        {
+          "index": 180,
+          "name": "source:none",
+          "value": 1.0
+        },
+        {
+          "index": 193,
+          "name": "destination:none",
+          "value": 1.0
+        },
+        {
+          "index": 203,
+          "name": "reference:none",
+          "value": 1.0
+        },
+        {
+          "index": 211,
+          "name": "condition:none",
+          "value": 1.0
+        },
+        {
+          "index": 233,
+          "name": "amount",
+          "value": 1.098612
+        },
+        {
+          "index": 234,
+          "name": "amount_known",
+          "value": 1.0
+        }
+      ],
+      "terms": []
+    }
+  ]
+}

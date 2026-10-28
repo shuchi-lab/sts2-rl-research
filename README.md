@@ -1,18 +1,26 @@
-# STS2 Two-Agent Benchmark · v1.0.0
+# STS2 RL Research
+
+Reinforcement learning research for Slay the Spire 2, with a reproducible
+two-agent benchmark and experimental card representations.
+
+| Start here | Status | Contents |
+| --- | --- | --- |
+| [Two-agent benchmark](docs/RUNNING.md) | Released · v1.0.0 | Selected models, evaluation instructions, and recorded evidence |
+| [Semantic card encoding](research/semantic_card_v1/README.md) | Experimental · schema v1 | Feature positions and meanings, mechanics catalog, and runnable examples |
+
+## Released benchmark · v1.0.0
 
 **26.6% best observed validation win rate for Ironclad at Ascension 2 across all three acts: 68 victories in 256 simulator runs.**
 
 Two learned agents play together. The **Battle agent** chooses combat actions and targets. The **Choice agent** makes decisions between combats, including route, rewards, shops and events.
 
-This release contains the selected agent pair, its recorded benchmark evidence, and the matching simulator runtime.
+The benchmark contains the selected agent pair, its recorded evidence, and the matching simulator runtime. The result below belongs to this released pair; the semantic card module has no published performance result here.
 
 ## Overview
 
 ![STS2 system architecture](docs/figures/system-overview.png)
 
-![Battle agent architecture](docs/figures/battle-agent-architecture.png)
-
-![Choice agent architecture](docs/figures/choice-agent-architecture.png)
+See [the detailed Battle and Choice architectures](docs/ARCHITECTURE.md).
 
 ## Result
 
@@ -22,9 +30,6 @@ This release contains the selected agent pair, its recorded benchmark evidence, 
 | Run length | Three acts |
 | Victories | **68 / 256 (26.5625%)** |
 | Battle turn limits | 4, counted as nonwins |
- |
-
-
 
 See [the result report](docs/RESULTS.md), [per-run outcomes](results/runs.jsonl), [evaluation conditions](results/evaluation_config.json), and [checkpoint identities](results/model_identities.json).
 
@@ -39,6 +44,7 @@ simulator/    Matching C# emulator/worker source and pinned assemblies
 results/      Recorded outcomes, validation seeds, configuration and provenance
 scripts/      Artifact verification and evaluation entry points
 docs/         Results, execution instructions and verification record
+research/     Experimental representations, feature documentation and examples
 ```
 
 The evaluated release scope is Ironclad only.
@@ -96,7 +102,7 @@ This checks result-file provenance, unique seed coverage and the 68/256 result. 
 
 - The simulator approximates the supported game version. Matching this benchmark is not certification of every game mechanic.
 - A battle is limited to 100 turns. Those limit outcomes remain in the win-rate denominator.
-- Only the selected pair is included. Training datasets, replay buffers, other experiments and cloud launch infrastructure are omitted.
+- Only the selected model pair is included. Training datasets, replay buffers and cloud launch infrastructure are omitted; the experimental research module publishes encoding code and examples.
 - The original checkpoint bytes and pinned simulator assemblies are retained. Rebuilding source can change assembly identities; follow [the simulator notes](simulator/README.md).
 - Checkpoint files are PyTorch artifacts. Load only copies whose hashes match this release.
 

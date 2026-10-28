@@ -1,0 +1,5963 @@
+{
+  "schema": "semantic_card.source_metadata/v1",
+  "source_version": "v0.111.0-24724944",
+  "cards": [
+    {
+      "name": "Abundance",
+      "entry": "ABUNDANCE",
+      "engine_id": 548,
+      "type": "Skill",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Abundance.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Aggression",
+      "entry": "AGGRESSION",
+      "engine_id": 9,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Aggression.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Alchemize",
+      "entry": "ALCHEMIZE",
+      "engine_id": 10,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Alchemize.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Anger",
+      "entry": "ANGER",
+      "engine_id": 13,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 6.0
+      },
+      "upgraded_scalars": {
+        "Damage": 8.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Anger.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Anointed",
+      "entry": "ANOINTED",
+      "engine_id": 14,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Anointed.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Apotheosis",
+      "entry": "APOTHEOSIS",
+      "engine_id": 16,
+      "type": "Skill",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust",
+        "Innate"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Apotheosis.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Apparition",
+      "entry": "APPARITION",
+      "engine_id": 17,
+      "type": "Skill",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Ethereal",
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "IntangiblePower": 1.0,
+        "Intangible": 1.0
+      },
+      "upgraded_scalars": {
+        "IntangiblePower": 1.0,
+        "Intangible": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Apparition.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Armaments",
+      "entry": "ARMAMENTS",
+      "engine_id": 18,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 5.0
+      },
+      "upgraded_scalars": {
+        "Block": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Armaments.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "AscendersBane",
+      "entry": "ASCENDERS_BANE",
+      "engine_id": 10001,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Eternal",
+        "Unplayable",
+        "Ethereal"
+      ],
+      "upgraded_keywords": [
+        "Eternal",
+        "Ethereal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/AscendersBane.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "AshenStrike",
+      "entry": "ASHEN_STRIKE",
+      "engine_id": 20,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 6.0,
+        "ExtraDamage": 3.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 6.0,
+        "ExtraDamage": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/AshenStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Automation",
+      "entry": "AUTOMATION",
+      "engine_id": 23,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 1.0
+      },
+      "upgraded_scalars": {
+        "Energy": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Automation.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "BadLuck",
+      "entry": "BAD_LUCK",
+      "engine_id": 10021,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Eternal",
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Eternal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "HpLoss": 13.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 13.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BadLuck.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Barricade",
+      "entry": "BARRICADE",
+      "engine_id": 29,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Barricade.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Bash",
+      "entry": "BASH",
+      "engine_id": 30,
+      "type": "Attack",
+      "rarity": "Basic",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 8.0,
+        "VulnerablePower": 2.0,
+        "Vulnerable": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 10.0,
+        "VulnerablePower": 3.0,
+        "Vulnerable": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bash.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "BattleTrance",
+      "entry": "BATTLE_TRANCE",
+      "engine_id": 31,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Cards": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BattleTrance.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "BeatDown",
+      "entry": "BEAT_DOWN",
+      "engine_id": 34,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "RandomEnemy",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Cards": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BeatDown.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Beckon",
+      "entry": "BECKON",
+      "engine_id": 36,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "HpLoss": 6.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Beckon.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "BloodWall",
+      "entry": "BLOOD_WALL",
+      "engine_id": 46,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "HpLoss": 2.0,
+        "Block": 16.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 2.0,
+        "Block": 20.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BloodWall.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Bloodletting",
+      "entry": "BLOODLETTING",
+      "engine_id": 45,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "HpLoss": 3.0,
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 3.0,
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bloodletting.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Bludgeon",
+      "entry": "BLUDGEON",
+      "engine_id": 47,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 32.0
+      },
+      "upgraded_scalars": {
+        "Damage": 42.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bludgeon.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "BodySlam",
+      "entry": "BODY_SLAM",
+      "engine_id": 50,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 0.0,
+        "ExtraDamage": 1.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 0.0,
+        "ExtraDamage": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BodySlam.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Bolas",
+      "entry": "BOLAS",
+      "engine_id": 51,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bolas.cs",
+      "source_methods": [
+        "OnPlay",
+        "BeforeHandDraw",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Brand",
+      "entry": "BRAND",
+      "engine_id": 58,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "HpLoss": 1.0,
+        "StrengthPower": 1.0,
+        "Strength": 1.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 1.0,
+        "StrengthPower": 2.0,
+        "Strength": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Brand.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Break",
+      "entry": "BREAK",
+      "engine_id": 59,
+      "type": "Attack",
+      "rarity": "Ancient",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 20.0,
+        "VulnerablePower": 5.0,
+        "Vulnerable": 5.0
+      },
+      "upgraded_scalars": {
+        "Damage": 30.0,
+        "VulnerablePower": 7.0,
+        "Vulnerable": 7.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Break.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Breakthrough",
+      "entry": "BREAKTHROUGH",
+      "engine_id": 60,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AllEnemies",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 9.0,
+        "HpLoss": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 13.0,
+        "HpLoss": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Breakthrough.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "BrightestFlame",
+      "entry": "BRIGHTEST_FLAME",
+      "engine_id": 61,
+      "type": "Skill",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "MaxHp": 2.0,
+        "Energy": 2.0,
+        "Cards": 2.0
+      },
+      "upgraded_scalars": {
+        "MaxHp": 2.0,
+        "Energy": 3.0,
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BrightestFlame.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Bully",
+      "entry": "BULLY",
+      "engine_id": 66,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 4.0,
+        "ExtraDamage": 2.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 4.0,
+        "ExtraDamage": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Bully.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Burn",
+      "entry": "BURN",
+      "engine_id": 10009,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Damage": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Burn.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "BurningPact",
+      "entry": "BURNING_PACT",
+      "engine_id": 69,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 2.0
+      },
+      "upgraded_scalars": {
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/BurningPact.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "ByrdSwoop",
+      "entry": "BYRD_SWOOP",
+      "engine_id": 72,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 14.0
+      },
+      "upgraded_scalars": {
+        "Damage": 18.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ByrdSwoop.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "ByrdonisEgg",
+      "entry": "BYRDONIS_EGG",
+      "engine_id": 10022,
+      "type": "Quest",
+      "rarity": "Quest",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ByrdonisEgg.cs",
+      "source_methods": [
+        "TryModifyRestSiteOptions"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Calamity",
+      "entry": "CALAMITY",
+      "engine_id": 73,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Calamity.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Caltrops",
+      "entry": "CALTROPS",
+      "engine_id": 77,
+      "type": "Power",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "ThornsPower": 3.0,
+        "Thorns": 3.0
+      },
+      "upgraded_scalars": {
+        "ThornsPower": 5.0,
+        "Thorns": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Caltrops.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Cascade",
+      "entry": "CASCADE",
+      "engine_id": 546,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": true,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Cascade.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Catastrophe",
+      "entry": "CATASTROPHE",
+      "engine_id": 80,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 2.0
+      },
+      "upgraded_scalars": {
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Catastrophe.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Cinder",
+      "entry": "CINDER",
+      "engine_id": 87,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 18.0
+      },
+      "upgraded_scalars": {
+        "Damage": 24.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Cinder.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Clash",
+      "entry": "CLASH",
+      "engine_id": 88,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 14.0
+      },
+      "upgraded_scalars": {
+        "Damage": 18.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Clash.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Clumsy",
+      "entry": "CLUMSY",
+      "engine_id": 10023,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable",
+        "Ethereal"
+      ],
+      "upgraded_keywords": [
+        "Ethereal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Clumsy.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Colossus",
+      "entry": "COLOSSUS",
+      "engine_id": 95,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 4.0,
+        "Colossus": 1.0
+      },
+      "upgraded_scalars": {
+        "Block": 7.0,
+        "Colossus": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Colossus.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Conflagration",
+      "entry": "CONFLAGRATION",
+      "engine_id": 99,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AllEnemies",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 2.0,
+        "Repeat": 4.0
+      },
+      "upgraded_scalars": {
+        "Damage": 2.0,
+        "Repeat": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Conflagration.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Corruption",
+      "entry": "CORRUPTION",
+      "engine_id": 107,
+      "type": "Power",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Power": 1.0,
+        "": 1.0
+      },
+      "upgraded_scalars": {
+        "Power": 1.0,
+        "": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Corruption.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "CrimsonMantle",
+      "entry": "CRIMSON_MANTLE",
+      "engine_id": 113,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CrimsonMantlePower": 7.0,
+        "CrimsonMantle": 7.0
+      },
+      "upgraded_scalars": {
+        "CrimsonMantlePower": 10.0,
+        "CrimsonMantle": 10.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/CrimsonMantle.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Cruelty",
+      "entry": "CRUELTY",
+      "engine_id": 114,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CrueltyPower": 25.0,
+        "Cruelty": 25.0
+      },
+      "upgraded_scalars": {
+        "CrueltyPower": 50.0,
+        "Cruelty": 50.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Cruelty.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "CurseOfTheBell",
+      "entry": "CURSE_OF_THE_BELL",
+      "engine_id": 10024,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Eternal",
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Eternal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/CurseOfTheBell.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "DarkEmbrace",
+      "entry": "DARK_EMBRACE",
+      "engine_id": 119,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DarkEmbrace.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "DarkShackles",
+      "entry": "DARK_SHACKLES",
+      "engine_id": 121,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "StrengthLoss": 9.0
+      },
+      "upgraded_scalars": {
+        "StrengthLoss": 15.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DarkShackles.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Dazed",
+      "entry": "DAZED",
+      "engine_id": 10002,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Ethereal",
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Ethereal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dazed.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Debris",
+      "entry": "DEBRIS",
+      "engine_id": 128,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Debris.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Debt",
+      "entry": "DEBT",
+      "engine_id": 10025,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Gold": 10.0
+      },
+      "upgraded_scalars": {
+        "Gold": 10.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Debt.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Decay",
+      "entry": "DECAY",
+      "engine_id": 10026,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Damage": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Decay.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "DefendIronclad",
+      "entry": "DEFEND_IRONCLAD",
+      "engine_id": 131,
+      "type": "Skill",
+      "rarity": "Basic",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Defend"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 5.0
+      },
+      "upgraded_scalars": {
+        "Block": 8.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DefendIronclad.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "DemonForm",
+      "entry": "DEMON_FORM",
+      "engine_id": 141,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "StrengthPower": 3.0,
+        "Strength": 3.0
+      },
+      "upgraded_scalars": {
+        "StrengthPower": 4.0,
+        "Strength": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DemonForm.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Discovery",
+      "entry": "DISCOVERY",
+      "engine_id": 146,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Discovery.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade",
+        "MockSelectedCard"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Disintegration",
+      "entry": "DISINTEGRATION",
+      "engine_id": 10010,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "DisintegrationPower": 6.0,
+        "Disintegration": 6.0
+      },
+      "upgraded_scalars": {
+        "DisintegrationPower": 6.0,
+        "Disintegration": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Disintegration.cs",
+      "source_methods": [
+        "OnChosen"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Dismantle",
+      "entry": "DISMANTLE",
+      "engine_id": 147,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 8.0
+      },
+      "upgraded_scalars": {
+        "Damage": 10.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dismantle.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Distraction",
+      "entry": "DISTRACTION",
+      "engine_id": 148,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Distraction.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Dominate",
+      "entry": "DOMINATE",
+      "engine_id": 150,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "VulnerablePower": 1.0,
+        "StrengthPerVulnerable": 1.0,
+        "Vulnerable": 1.0
+      },
+      "upgraded_scalars": {
+        "VulnerablePower": 2.0,
+        "StrengthPerVulnerable": 1.0,
+        "Vulnerable": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dominate.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Doubt",
+      "entry": "DOUBT",
+      "engine_id": 10027,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "WeakPower": 1.0,
+        "Weak": 1.0
+      },
+      "upgraded_scalars": {
+        "WeakPower": 1.0,
+        "Weak": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Doubt.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Dowsing",
+      "entry": "DOWSING",
+      "engine_id": 566,
+      "type": "Quest",
+      "rarity": "Quest",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Rooms": 5.0
+      },
+      "upgraded_scalars": {
+        "Rooms": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Dowsing.cs",
+      "source_methods": [
+        "BeforeRoomEntered"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "DramaticEntrance",
+      "entry": "DRAMATIC_ENTRANCE",
+      "engine_id": 153,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust",
+        "Innate"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 11.0
+      },
+      "upgraded_scalars": {
+        "Damage": 15.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DramaticEntrance.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "DrumOfBattle",
+      "entry": "DRUM_OF_BATTLE",
+      "engine_id": 155,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 2.0,
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "Cards": 2.0,
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DrumOfBattle.cs",
+      "source_methods": [
+        "OnPlay",
+        "AfterCardExhausted",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "DualWield",
+      "entry": "DUAL_WIELD",
+      "engine_id": 157,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Cards": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/DualWield.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Enlightenment",
+      "entry": "ENLIGHTENMENT",
+      "engine_id": 165,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Enlightenment.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Enthralled",
+      "entry": "ENTHRALLED",
+      "engine_id": 166,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Eternal"
+      ],
+      "upgraded_keywords": [
+        "Eternal"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Enthralled.cs",
+      "source_methods": [
+        "ShouldPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Entrench",
+      "entry": "ENTRENCH",
+      "engine_id": 167,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Entrench.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Entropy",
+      "entry": "ENTROPY",
+      "engine_id": 168,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Cards": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Entropy.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Equilibrium",
+      "entry": "EQUILIBRIUM",
+      "engine_id": 170,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 13.0,
+        "Equilibrium": 1.0
+      },
+      "upgraded_scalars": {
+        "Block": 16.0,
+        "Equilibrium": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Equilibrium.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "EternalArmor",
+      "entry": "ETERNAL_ARMOR",
+      "engine_id": 173,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "PlatingPower": 9.0,
+        "Plating": 9.0
+      },
+      "upgraded_scalars": {
+        "PlatingPower": 12.0,
+        "Plating": 12.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/EternalArmor.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "EvilEye",
+      "entry": "EVIL_EYE",
+      "engine_id": 174,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 8.0
+      },
+      "upgraded_scalars": {
+        "Block": 11.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/EvilEye.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "ExpectAFight",
+      "entry": "EXPECT_A_FIGHT",
+      "engine_id": 175,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 15.0,
+        "CalculationExtra": 5.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 16.0,
+        "CalculationExtra": 8.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ExpectAFight.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Exterminate",
+      "entry": "EXTERMINATE",
+      "engine_id": 178,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AllEnemies",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 3.0,
+        "Repeat": 4.0
+      },
+      "upgraded_scalars": {
+        "Damage": 4.0,
+        "Repeat": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Exterminate.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Fasten",
+      "entry": "FASTEN",
+      "engine_id": 181,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "ExtraBlock": 4.0
+      },
+      "upgraded_scalars": {
+        "ExtraBlock": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Fasten.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Feed",
+      "entry": "FEED",
+      "engine_id": 183,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 10.0,
+        "MaxHp": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 12.0,
+        "MaxHp": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Feed.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "FeedingFrenzy",
+      "entry": "FEEDING_FRENZY",
+      "engine_id": 184,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "StrengthPower": 5.0,
+        "Strength": 5.0
+      },
+      "upgraded_scalars": {
+        "StrengthPower": 7.0,
+        "Strength": 7.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FeedingFrenzy.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "FeelNoPain",
+      "entry": "FEEL_NO_PAIN",
+      "engine_id": 185,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Power": 3.0,
+        "": 3.0
+      },
+      "upgraded_scalars": {
+        "Power": 4.0,
+        "": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FeelNoPain.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "FiendFire",
+      "entry": "FIEND_FIRE",
+      "engine_id": 188,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 7.0
+      },
+      "upgraded_scalars": {
+        "Damage": 10.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FiendFire.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "FightMe",
+      "entry": "FIGHT_ME",
+      "engine_id": 189,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0,
+        "Repeat": 2.0,
+        "StrengthPower": 3.0,
+        "EnemyStrength": 1.0,
+        "Strength": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 6.0,
+        "Repeat": 2.0,
+        "StrengthPower": 4.0,
+        "EnemyStrength": 1.0,
+        "Strength": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FightMe.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Finesse",
+      "entry": "FINESSE",
+      "engine_id": 191,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 4.0,
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Block": 7.0,
+        "Cards": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Finesse.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Fisticuffs",
+      "entry": "FISTICUFFS",
+      "engine_id": 193,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 7.0
+      },
+      "upgraded_scalars": {
+        "Damage": 9.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Fisticuffs.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "FlameBarrier",
+      "entry": "FLAME_BARRIER",
+      "engine_id": 195,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 12.0,
+        "DamageBack": 4.0
+      },
+      "upgraded_scalars": {
+        "Block": 16.0,
+        "DamageBack": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FlameBarrier.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "FlashOfSteel",
+      "entry": "FLASH_OF_STEEL",
+      "engine_id": 197,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0,
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 8.0,
+        "Cards": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FlashOfSteel.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Folly",
+      "entry": "FOLLY",
+      "engine_id": 10028,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable",
+        "Eternal",
+        "Innate",
+        "Ethereal"
+      ],
+      "upgraded_keywords": [
+        "Eternal",
+        "Ethereal",
+        "Innate",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Folly.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "ForgottenRitual",
+      "entry": "FORGOTTEN_RITUAL",
+      "engine_id": 205,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 3.0
+      },
+      "upgraded_scalars": {
+        "Energy": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ForgottenRitual.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "FranticEscape",
+      "entry": "FRANTIC_ESCAPE",
+      "engine_id": 206,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/FranticEscape.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Fuel",
+      "entry": "FUEL",
+      "engine_id": 209,
+      "type": "Skill",
+      "rarity": "Token",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 1.0
+      },
+      "upgraded_scalars": {
+        "Energy": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Fuel.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "GiantRock",
+      "entry": "GIANT_ROCK",
+      "engine_id": 217,
+      "type": "Attack",
+      "rarity": "Token",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 20.0
+      },
+      "upgraded_scalars": {
+        "Damage": 24.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/GiantRock.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "GoldAxe",
+      "entry": "GOLD_AXE",
+      "engine_id": 225,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 0.0,
+        "ExtraDamage": 1.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 0.0,
+        "ExtraDamage": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/GoldAxe.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Greed",
+      "entry": "GREED",
+      "engine_id": 10029,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Eternal",
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Eternal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Greed.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Guilty",
+      "entry": "GUILTY",
+      "engine_id": 10030,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Combats": 5.0
+      },
+      "upgraded_scalars": {
+        "Combats": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Guilty.cs",
+      "source_methods": [
+        "AfterCombatEnd"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "HandOfGreed",
+      "entry": "HAND_OF_GREED",
+      "engine_id": 234,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 20.0,
+        "Gold": 20.0
+      },
+      "upgraded_scalars": {
+        "Damage": 25.0,
+        "Gold": 25.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HandOfGreed.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Havoc",
+      "entry": "HAVOC",
+      "engine_id": 238,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Havoc.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Headbutt",
+      "entry": "HEADBUTT",
+      "engine_id": 240,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 9.0
+      },
+      "upgraded_scalars": {
+        "Damage": 12.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Headbutt.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "HelloWorld",
+      "entry": "HELLO_WORLD",
+      "engine_id": 245,
+      "type": "Power",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HelloWorld.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Hellraiser",
+      "entry": "HELLRAISER",
+      "engine_id": 246,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Hellraiser.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnEnqueuePlayVfx",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Hemokinesis",
+      "entry": "HEMOKINESIS",
+      "engine_id": 247,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "HpLoss": 2.0,
+        "Damage": 15.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 2.0,
+        "Damage": 20.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Hemokinesis.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "HiddenGem",
+      "entry": "HIDDEN_GEM",
+      "engine_id": 250,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Replay": 2.0
+      },
+      "upgraded_scalars": {
+        "Replay": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HiddenGem.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "HowlFromBeyond",
+      "entry": "HOWL_FROM_BEYOND",
+      "engine_id": 254,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 18.0
+      },
+      "upgraded_scalars": {
+        "Damage": 24.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/HowlFromBeyond.cs",
+      "source_methods": [
+        "OnPlay",
+        "AfterAutoPostPlayPhaseEntered",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Impatience",
+      "entry": "IMPATIENCE",
+      "engine_id": 260,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 2.0
+      },
+      "upgraded_scalars": {
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Impatience.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Impervious",
+      "entry": "IMPERVIOUS",
+      "engine_id": 261,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 30.0
+      },
+      "upgraded_scalars": {
+        "Block": 40.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Impervious.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Infection",
+      "entry": "INFECTION",
+      "engine_id": 10008,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Damage": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Infection.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "InfernalBlade",
+      "entry": "INFERNAL_BLADE",
+      "engine_id": 262,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/InfernalBlade.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Inferno",
+      "entry": "INFERNO",
+      "engine_id": 263,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "InfernoPower": 6.0,
+        "Inferno": 6.0
+      },
+      "upgraded_scalars": {
+        "InfernoPower": 9.0,
+        "Inferno": 9.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Inferno.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Inflame",
+      "entry": "INFLAME",
+      "engine_id": 265,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "StrengthPower": 2.0,
+        "Strength": 2.0
+      },
+      "upgraded_scalars": {
+        "StrengthPower": 3.0,
+        "Strength": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Inflame.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnEnqueuePlayVfx",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Injury",
+      "entry": "INJURY",
+      "engine_id": 10031,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Injury.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "IronWave",
+      "entry": "IRON_WAVE",
+      "engine_id": 268,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0,
+        "Block": 5.0
+      },
+      "upgraded_scalars": {
+        "Damage": 7.0,
+        "Block": 7.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/IronWave.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "JackOfAllTrades",
+      "entry": "JACK_OF_ALL_TRADES",
+      "engine_id": 270,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Cards": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/JackOfAllTrades.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Jackpot",
+      "entry": "JACKPOT",
+      "engine_id": 271,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 25.0,
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 30.0,
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Jackpot.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Juggernaut",
+      "entry": "JUGGERNAUT",
+      "engine_id": 272,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "JuggernautPower": 6.0,
+        "Juggernaut": 6.0
+      },
+      "upgraded_scalars": {
+        "JuggernautPower": 8.0,
+        "Juggernaut": 8.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Juggernaut.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Juggling",
+      "entry": "JUGGLING",
+      "engine_id": 273,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Juggling.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "LanternKey",
+      "entry": "LANTERN_KEY",
+      "engine_id": 10032,
+      "type": "Quest",
+      "rarity": "Quest",
+      "target": "Self",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/LanternKey.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Luminesce",
+      "entry": "LUMINESCE",
+      "engine_id": 289,
+      "type": "Skill",
+      "rarity": "Token",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust",
+        "Retain"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Luminesce.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "MadScience",
+      "entry": "MAD_SCIENCE",
+      "engine_id": 292,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 12.0,
+        "Block": 8.0,
+        "SappingWeak": 2.0,
+        "SappingVulnerable": 2.0,
+        "ViolenceHits": 3.0,
+        "ChokingDamage": 6.0,
+        "EnergizedEnergy": 2.0,
+        "WisdomCards": 3.0,
+        "ExpertiseStrength": 2.0,
+        "ExpertiseDexterity": 2.0,
+        "CuriousReduction": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 12.0,
+        "Block": 8.0,
+        "SappingWeak": 2.0,
+        "SappingVulnerable": 2.0,
+        "ViolenceHits": 3.0,
+        "ChokingDamage": 6.0,
+        "EnergizedEnergy": 2.0,
+        "WisdomCards": 3.0,
+        "ExpertiseStrength": 2.0,
+        "ExpertiseDexterity": 2.0,
+        "CuriousReduction": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MadScience.cs",
+      "source_methods": [
+        "OnPlay",
+        "ExecuteAttack",
+        "ExecuteSkill",
+        "ExecutePower",
+        "OnUpgrade",
+        "AddExtraArgsToDescription",
+        "ExecuteRider",
+        "MockChaosCard"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Mangle",
+      "entry": "MANGLE",
+      "engine_id": 295,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 20.0,
+        "StrengthLoss": 10.0
+      },
+      "upgraded_scalars": {
+        "Damage": 26.0,
+        "StrengthLoss": 15.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Mangle.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "MasterOfStrategy",
+      "entry": "MASTER_OF_STRATEGY",
+      "engine_id": 297,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Cards": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MasterOfStrategy.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Maul",
+      "entry": "MAUL",
+      "engine_id": 299,
+      "type": "Attack",
+      "rarity": "Ancient",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0,
+        "Increase": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 6.0,
+        "Increase": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Maul.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade",
+        "AfterDowngraded",
+        "BuffFromMaulPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Mayhem",
+      "entry": "MAYHEM",
+      "engine_id": 300,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Mayhem.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Metamorphosis",
+      "entry": "METAMORPHOSIS",
+      "engine_id": 303,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Cards": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Metamorphosis.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "MindBlast",
+      "entry": "MIND_BLAST",
+      "engine_id": 307,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Innate"
+      ],
+      "upgraded_keywords": [
+        "Innate"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 0.0,
+        "ExtraDamage": 1.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 0.0,
+        "ExtraDamage": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MindBlast.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "MindRot",
+      "entry": "MIND_ROT",
+      "engine_id": 10033,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "MindRotPower": 1.0,
+        "MindRot": 1.0
+      },
+      "upgraded_scalars": {
+        "MindRotPower": 1.0,
+        "MindRot": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MindRot.cs",
+      "source_methods": [
+        "OnChosen"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "MoltenFist",
+      "entry": "MOLTEN_FIST",
+      "engine_id": 313,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 10.0
+      },
+      "upgraded_scalars": {
+        "Damage": 14.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/MoltenFist.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "NeowsFury",
+      "entry": "NEOWS_FURY",
+      "engine_id": 321,
+      "type": "Attack",
+      "rarity": "Ancient",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 10.0,
+        "Cards": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 14.0,
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/NeowsFury.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Normality",
+      "entry": "NORMALITY",
+      "engine_id": 10034,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "CalculationBase": 3.0,
+        "CalculationExtra": -1.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 3.0,
+        "CalculationExtra": -1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Normality.cs",
+      "source_methods": [
+        "ShouldPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Nostalgia",
+      "entry": "NOSTALGIA",
+      "engine_id": 327,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Nostalgia.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "NotYet",
+      "entry": "NOT_YET",
+      "engine_id": 328,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Heal": 10.0
+      },
+      "upgraded_scalars": {
+        "Heal": 13.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/NotYet.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Offering",
+      "entry": "OFFERING",
+      "engine_id": 332,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "HpLoss": 6.0,
+        "Energy": 2.0,
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "HpLoss": 6.0,
+        "Energy": 2.0,
+        "Cards": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Offering.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Omnislice",
+      "entry": "OMNISLICE",
+      "engine_id": 333,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 8.0
+      },
+      "upgraded_scalars": {
+        "Damage": 11.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Omnislice.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "OneTwoPunch",
+      "entry": "ONE_TWO_PUNCH",
+      "engine_id": 334,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Attacks": 1.0
+      },
+      "upgraded_scalars": {
+        "Attacks": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/OneTwoPunch.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Outmaneuver",
+      "entry": "OUTMANEUVER",
+      "engine_id": 337,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Outmaneuver.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "PactsEnd",
+      "entry": "PACTS_END",
+      "engine_id": 339,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AllEnemies",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 18.0,
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 24.0,
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PactsEnd.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Panache",
+      "entry": "PANACHE",
+      "engine_id": 342,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "PanacheDamage": 10.0
+      },
+      "upgraded_scalars": {
+        "PanacheDamage": 14.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Panache.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "PanicButton",
+      "entry": "PANIC_BUTTON",
+      "engine_id": 343,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 30.0,
+        "Turns": 2.0
+      },
+      "upgraded_scalars": {
+        "Block": 40.0,
+        "Turns": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PanicButton.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Peck",
+      "entry": "PECK",
+      "engine_id": 348,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 2.0,
+        "Repeat": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 2.0,
+        "Repeat": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Peck.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "PerfectedStrike",
+      "entry": "PERFECTED_STRIKE",
+      "engine_id": 349,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 6.0,
+        "ExtraDamage": 2.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 6.0,
+        "ExtraDamage": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PerfectedStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Pillage",
+      "entry": "PILLAGE",
+      "engine_id": 353,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 6.0
+      },
+      "upgraded_scalars": {
+        "Damage": 9.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Pillage.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "PommelStrike",
+      "entry": "POMMEL_STRIKE",
+      "engine_id": 358,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 9.0,
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 10.0,
+        "Cards": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PommelStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "PoorSleep",
+      "entry": "POOR_SLEEP",
+      "engine_id": 10035,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable",
+        "Retain"
+      ],
+      "upgraded_keywords": [
+        "Retain",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PoorSleep.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "PrepTime",
+      "entry": "PREP_TIME",
+      "engine_id": 363,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "PrepTimePower": 4.0,
+        "PrepTime": 4.0
+      },
+      "upgraded_scalars": {
+        "PrepTimePower": 6.0,
+        "PrepTime": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PrepTime.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "PrimalForce",
+      "entry": "PRIMAL_FORCE",
+      "engine_id": 364,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/PrimalForce.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Production",
+      "entry": "PRODUCTION",
+      "engine_id": 365,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Production.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Prolong",
+      "entry": "PROLONG",
+      "engine_id": 366,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Prolong.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Prowess",
+      "entry": "PROWESS",
+      "engine_id": 369,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "StrengthPower": 1.0,
+        "DexterityPower": 1.0,
+        "Strength": 1.0,
+        "Dexterity": 1.0
+      },
+      "upgraded_scalars": {
+        "StrengthPower": 2.0,
+        "DexterityPower": 2.0,
+        "Strength": 2.0,
+        "Dexterity": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Prowess.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Purity",
+      "entry": "PURITY",
+      "engine_id": 372,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Retain",
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Cards": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Purity.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Pyre",
+      "entry": "PYRE",
+      "engine_id": 374,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Energy": 1.0
+      },
+      "upgraded_scalars": {
+        "Energy": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Pyre.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnEnqueuePlayVfx",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Rage",
+      "entry": "RAGE",
+      "engine_id": 378,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Power": 3.0,
+        "": 3.0
+      },
+      "upgraded_scalars": {
+        "Power": 5.0,
+        "": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rage.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Rampage",
+      "entry": "RAMPAGE",
+      "engine_id": 381,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 10.0,
+        "Increase": 5.0
+      },
+      "upgraded_scalars": {
+        "Damage": 10.0,
+        "Increase": 10.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rampage.cs",
+      "source_methods": [
+        "OnPlay",
+        "AfterDowngraded",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Rebound",
+      "entry": "REBOUND",
+      "engine_id": 388,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 9.0
+      },
+      "upgraded_scalars": {
+        "Damage": 12.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rebound.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Regret",
+      "entry": "REGRET",
+      "engine_id": 10036,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Regret.cs",
+      "source_methods": [
+        "BeforeSideTurnEnd",
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Relax",
+      "entry": "RELAX",
+      "engine_id": 393,
+      "type": "Skill",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 16.0,
+        "Cards": 2.0,
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "Block": 18.0,
+        "Cards": 3.0,
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Relax.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Rend",
+      "entry": "REND",
+      "engine_id": 394,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 10.0,
+        "ExtraDamage": 5.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 12.0,
+        "ExtraDamage": 8.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rend.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Restlessness",
+      "entry": "RESTLESSNESS",
+      "engine_id": 396,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Retain"
+      ],
+      "upgraded_keywords": [
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 2.0,
+        "Energy": 2.0
+      },
+      "upgraded_scalars": {
+        "Cards": 3.0,
+        "Energy": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Restlessness.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "RipAndTear",
+      "entry": "RIP_AND_TEAR",
+      "engine_id": 399,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "RandomEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 7.0
+      },
+      "upgraded_scalars": {
+        "Damage": 9.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/RipAndTear.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "RollingBoulder",
+      "entry": "ROLLING_BOULDER",
+      "engine_id": 401,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "RollingBoulderPower": 5.0,
+        "IncrementAmount": 5.0,
+        "RollingBoulder": 5.0
+      },
+      "upgraded_scalars": {
+        "RollingBoulderPower": 10.0,
+        "IncrementAmount": 5.0,
+        "RollingBoulder": 10.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/RollingBoulder.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Rupture",
+      "entry": "RUPTURE",
+      "engine_id": 404,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "StrengthPower": 1.0,
+        "Strength": 1.0
+      },
+      "upgraded_scalars": {
+        "StrengthPower": 2.0,
+        "Strength": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Rupture.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Salvo",
+      "entry": "SALVO",
+      "engine_id": 406,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 12.0
+      },
+      "upgraded_scalars": {
+        "Damage": 16.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Salvo.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Scrawl",
+      "entry": "SCRAWL",
+      "engine_id": 411,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Scrawl.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "SecondWind",
+      "entry": "SECOND_WIND",
+      "engine_id": 414,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 5.0
+      },
+      "upgraded_scalars": {
+        "Block": 7.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SecondWind.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "SecretTechnique",
+      "entry": "SECRET_TECHNIQUE",
+      "engine_id": 415,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SecretTechnique.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "SecretWeapon",
+      "entry": "SECRET_WEAPON",
+      "engine_id": 416,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SecretWeapon.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "SeekerStrike",
+      "entry": "SEEKER_STRIKE",
+      "engine_id": 417,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 9.0,
+        "Cards": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 12.0,
+        "Cards": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SeekerStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "SetupStrike",
+      "entry": "SETUP_STRIKE",
+      "engine_id": 421,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 7.0,
+        "StrengthPower": 3.0,
+        "Strength": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 9.0,
+        "StrengthPower": 4.0,
+        "Strength": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SetupStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Shame",
+      "entry": "SHAME",
+      "engine_id": 10037,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Frail": 1.0
+      },
+      "upgraded_scalars": {
+        "Frail": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Shame.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Shiv",
+      "entry": "SHIV",
+      "engine_id": 430,
+      "type": "Attack",
+      "rarity": "Token",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [
+        "Shiv"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 4.0
+      },
+      "upgraded_scalars": {
+        "Damage": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Shiv.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Shockwave",
+      "entry": "SHOCKWAVE",
+      "engine_id": 431,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Power": 3.0,
+        "": 3.0
+      },
+      "upgraded_scalars": {
+        "Power": 5.0,
+        "": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Shockwave.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "ShrugItOff",
+      "entry": "SHRUG_IT_OFF",
+      "engine_id": 433,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 8.0,
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Block": 11.0,
+        "Cards": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ShrugItOff.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Slimed",
+      "entry": "SLIMED",
+      "engine_id": 440,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Cards": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Slimed.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Sloth",
+      "entry": "SLOTH",
+      "engine_id": 10038,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "SlothPower": 3.0,
+        "Sloth": 3.0
+      },
+      "upgraded_scalars": {
+        "SlothPower": 3.0,
+        "Sloth": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Sloth.cs",
+      "source_methods": [
+        "OnChosen"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Soot",
+      "entry": "SOOT",
+      "engine_id": 10039,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Soot.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Spite",
+      "entry": "SPITE",
+      "engine_id": 454,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0,
+        "Repeat": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 5.0,
+        "Repeat": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Spite.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Splash",
+      "entry": "SPLASH",
+      "engine_id": 455,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Splash.cs",
+      "source_methods": [
+        "OnPlay",
+        "MockGeneratedCard"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "SpoilsMap",
+      "entry": "SPOILS_MAP",
+      "engine_id": 10020,
+      "type": "Quest",
+      "rarity": "Quest",
+      "target": "Self",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Gold": 600.0
+      },
+      "upgraded_scalars": {
+        "Gold": 600.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SpoilsMap.cs",
+      "source_methods": [
+        "AfterCreated",
+        "AfterMapGenerated",
+        "BeforeCardRemoved",
+        "OnQuestComplete"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "SporeMind",
+      "entry": "SPORE_MIND",
+      "engine_id": 457,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SporeMind.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Squash",
+      "entry": "SQUASH",
+      "engine_id": 459,
+      "type": "Attack",
+      "rarity": "Event",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 10.0,
+        "VulnerablePower": 2.0,
+        "Vulnerable": 2.0
+      },
+      "upgraded_scalars": {
+        "Damage": 12.0,
+        "VulnerablePower": 3.0,
+        "Vulnerable": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Squash.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Stack",
+      "entry": "STACK",
+      "engine_id": 461,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "CalculationBase": 0.0,
+        "CalculationExtra": 1.0
+      },
+      "upgraded_scalars": {
+        "CalculationBase": 3.0,
+        "CalculationExtra": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stack.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Stampede",
+      "entry": "STAMPEDE",
+      "engine_id": 462,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Power": 1.0,
+        "": 1.0
+      },
+      "upgraded_scalars": {
+        "Power": 1.0,
+        "": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stampede.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Stoke",
+      "entry": "STOKE",
+      "engine_id": 464,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stoke.cs",
+      "source_methods": [
+        "OnPlay"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Stomp",
+      "entry": "STOMP",
+      "engine_id": 465,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "cost": 3,
+      "upgrade_cost": 3,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 12.0
+      },
+      "upgraded_scalars": {
+        "Damage": 15.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stomp.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade",
+        "AfterCardEnteredCombat",
+        "BeforeCardPlayed",
+        "ReduceCostBy"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "StoneArmor",
+      "entry": "STONE_ARMOR",
+      "engine_id": 466,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "PlatingPower": 4.0,
+        "Plating": 4.0
+      },
+      "upgraded_scalars": {
+        "PlatingPower": 6.0,
+        "Plating": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/StoneArmor.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Stratagem",
+      "entry": "STRATAGEM",
+      "engine_id": 470,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Stratagem.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "StrikeIronclad",
+      "entry": "STRIKE_IRONCLAD",
+      "engine_id": 472,
+      "type": "Attack",
+      "rarity": "Basic",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 6.0
+      },
+      "upgraded_scalars": {
+        "Damage": 9.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/StrikeIronclad.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "SwordBoomerang",
+      "entry": "SWORD_BOOMERANG",
+      "engine_id": 486,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "RandomEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 3.0,
+        "Repeat": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 3.0,
+        "Repeat": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/SwordBoomerang.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Taunt",
+      "entry": "TAUNT",
+      "engine_id": 493,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 6.0,
+        "VulnerablePower": 1.0,
+        "Vulnerable": 1.0
+      },
+      "upgraded_scalars": {
+        "Block": 7.0,
+        "VulnerablePower": 2.0,
+        "Vulnerable": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Taunt.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "TearAsunder",
+      "entry": "TEAR_ASUNDER",
+      "engine_id": 494,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0,
+        "Repeat": 1.0,
+        "CalculationBase": 0.0,
+        "CalculationExtra": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 7.0,
+        "Repeat": 1.0,
+        "CalculationBase": 0.0,
+        "CalculationExtra": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TearAsunder.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "TheBomb",
+      "entry": "THE_BOMB",
+      "engine_id": 498,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Turns": 3.0,
+        "BombDamage": 40.0
+      },
+      "upgraded_scalars": {
+        "Turns": 3.0,
+        "BombDamage": 50.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TheBomb.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "TheGambit",
+      "entry": "THE_GAMBIT",
+      "engine_id": 499,
+      "type": "Skill",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 50.0
+      },
+      "upgraded_scalars": {
+        "Block": 75.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TheGambit.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "ThinkingAhead",
+      "entry": "THINKING_AHEAD",
+      "engine_id": 504,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 2.0
+      },
+      "upgraded_scalars": {
+        "Cards": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ThinkingAhead.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Thrash",
+      "entry": "THRASH",
+      "engine_id": 505,
+      "type": "Attack",
+      "rarity": "Rare",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 4.0
+      },
+      "upgraded_scalars": {
+        "Damage": 6.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Thrash.cs",
+      "source_methods": [
+        "OnPlay",
+        "AfterDowngraded",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "ThrummingHatchet",
+      "entry": "THRUMMING_HATCHET",
+      "engine_id": 506,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 11.0
+      },
+      "upgraded_scalars": {
+        "Damage": 14.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ThrummingHatchet.cs",
+      "source_methods": [
+        "OnPlay",
+        "BeforeHandDraw",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Thunderclap",
+      "entry": "THUNDERCLAP",
+      "engine_id": 508,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AllEnemies",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 4.0,
+        "VulnerablePower": 1.0,
+        "Vulnerable": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 7.0,
+        "VulnerablePower": 1.0,
+        "Vulnerable": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Thunderclap.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "ToricToughness",
+      "entry": "TORIC_TOUGHNESS",
+      "engine_id": 511,
+      "type": "Skill",
+      "rarity": "Event",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Turns": 2.0,
+        "Block": 5.0
+      },
+      "upgraded_scalars": {
+        "Turns": 2.0,
+        "Block": 7.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/ToricToughness.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Toxic",
+      "entry": "TOXIC",
+      "engine_id": 512,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Damage": 5.0
+      },
+      "upgraded_scalars": {
+        "Damage": 5.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Toxic.cs",
+      "source_methods": [
+        "OnTurnEndInHand"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Tremble",
+      "entry": "TREMBLE",
+      "engine_id": 516,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "VulnerablePower": 3.0,
+        "Vulnerable": 3.0
+      },
+      "upgraded_scalars": {
+        "VulnerablePower": 4.0,
+        "Vulnerable": 4.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Tremble.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "TrueGrit",
+      "entry": "TRUE_GRIT",
+      "engine_id": 517,
+      "type": "Skill",
+      "rarity": "Common",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 7.0
+      },
+      "upgraded_scalars": {
+        "Block": 9.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TrueGrit.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "TwinStrike",
+      "entry": "TWIN_STRIKE",
+      "engine_id": 519,
+      "type": "Attack",
+      "rarity": "Common",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0
+      },
+      "upgraded_scalars": {
+        "Damage": 7.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/TwinStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "UltimateDefend",
+      "entry": "ULTIMATE_DEFEND",
+      "engine_id": 521,
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Defend"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Block": 11.0
+      },
+      "upgraded_scalars": {
+        "Block": 15.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/UltimateDefend.cs",
+      "source_methods": [
+        "OnUpgrade",
+        "OnPlay"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "UltimateStrike",
+      "entry": "ULTIMATE_STRIKE",
+      "engine_id": 522,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [
+        "Strike"
+      ],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 14.0
+      },
+      "upgraded_scalars": {
+        "Damage": 20.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/UltimateStrike.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "Unmovable",
+      "entry": "UNMOVABLE",
+      "engine_id": 525,
+      "type": "Power",
+      "rarity": "Rare",
+      "target": "Self",
+      "cost": 2,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Unmovable.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Unrelenting",
+      "entry": "UNRELENTING",
+      "engine_id": 526,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 14.0
+      },
+      "upgraded_scalars": {
+        "Damage": 20.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Unrelenting.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Uppercut",
+      "entry": "UPPERCUT",
+      "engine_id": 529,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 13.0,
+        "Power": 1.0,
+        "": 1.0
+      },
+      "upgraded_scalars": {
+        "Damage": 13.0,
+        "Power": 2.0,
+        "": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Uppercut.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Vicious",
+      "entry": "VICIOUS",
+      "engine_id": 533,
+      "type": "Power",
+      "rarity": "Uncommon",
+      "target": "Self",
+      "cost": 1,
+      "upgrade_cost": 1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Cards": 1.0
+      },
+      "upgraded_scalars": {
+        "Cards": 2.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Vicious.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Void",
+      "entry": "VOID",
+      "engine_id": 10040,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable",
+        "Ethereal"
+      ],
+      "upgraded_keywords": [
+        "Ethereal",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Energy": 1.0
+      },
+      "upgraded_scalars": {
+        "Energy": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Void.cs",
+      "source_methods": [
+        "AfterCardDrawn"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Volley",
+      "entry": "VOLLEY",
+      "engine_id": 535,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "RandomEnemy",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": true,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 10.0
+      },
+      "upgraded_scalars": {
+        "Damage": 14.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Volley.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "colorless"
+    },
+    {
+      "name": "WasteAway",
+      "entry": "WASTE_AWAY",
+      "engine_id": 10041,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "WasteAwayPower": 1.0,
+        "WasteAway": 1.0
+      },
+      "upgraded_scalars": {
+        "WasteAwayPower": 1.0,
+        "WasteAway": 1.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/WasteAway.cs",
+      "source_methods": [
+        "OnChosen"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Whirlwind",
+      "entry": "WHIRLWIND",
+      "engine_id": 538,
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "target": "AllEnemies",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": true,
+      "keywords": [],
+      "upgraded_keywords": [],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 5.0
+      },
+      "upgraded_scalars": {
+        "Damage": 8.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Whirlwind.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "ironclad"
+    },
+    {
+      "name": "Whistle",
+      "entry": "WHISTLE",
+      "engine_id": 539,
+      "type": "Attack",
+      "rarity": "Ancient",
+      "target": "AnyEnemy",
+      "cost": 2,
+      "upgrade_cost": 2,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {
+        "Damage": 33.0
+      },
+      "upgraded_scalars": {
+        "Damage": 44.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Whistle.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Wish",
+      "entry": "WISH",
+      "engine_id": 541,
+      "type": "Skill",
+      "rarity": "Ancient",
+      "target": "Self",
+      "cost": 0,
+      "upgrade_cost": 0,
+      "cost_x": false,
+      "keywords": [
+        "Exhaust"
+      ],
+      "upgraded_keywords": [
+        "Exhaust",
+        "Retain"
+      ],
+      "tags": [],
+      "can_upgrade": true,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Wish.cs",
+      "source_methods": [
+        "OnPlay",
+        "OnUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Wither",
+      "entry": "WITHER",
+      "engine_id": 10012,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {
+        "Damage": 3.0
+      },
+      "upgraded_scalars": {
+        "Damage": 3.0
+      },
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Wither.cs",
+      "source_methods": [
+        "OnTurnEndInHand",
+        "FakeUpgrade"
+      ],
+      "scope": "neutral"
+    },
+    {
+      "name": "Wound",
+      "entry": "WOUND",
+      "engine_id": 10011,
+      "type": "Status",
+      "rarity": "Status",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Wound.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    },
+    {
+      "name": "Writhe",
+      "entry": "WRITHE",
+      "engine_id": 10042,
+      "type": "Curse",
+      "rarity": "Curse",
+      "target": "None",
+      "cost": -1,
+      "upgrade_cost": -1,
+      "cost_x": false,
+      "keywords": [
+        "Innate",
+        "Unplayable"
+      ],
+      "upgraded_keywords": [
+        "Innate",
+        "Unplayable"
+      ],
+      "tags": [],
+      "can_upgrade": false,
+      "scalars": {},
+      "upgraded_scalars": {},
+      "source": "MegaCrit.Sts2.Core.Models.Cards/Writhe.cs",
+      "source_methods": [],
+      "scope": "neutral"
+    }
+  ]
+}

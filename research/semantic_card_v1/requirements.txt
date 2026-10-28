@@ -1,0 +1,2 @@
+# The inspector and tests require only NumPy. Tested with NumPy 2.4.6.
+numpy>=1.26,<3
