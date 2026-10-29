@@ -1,0 +1,3085 @@
+{
+  "schema": "current_hand_lethality.experiment_extract/v1",
+  "source": {
+    "origin": "combat_rl/behavior_eval_v1/runs/current-hand-lethality-allpoints-20261028-v1/summary.json",
+    "sha256": "6d6ab09722c2ec2f1ea0e303eac29057f3e74392dd47bd05c5bc5eff33b33bfd",
+    "recorded_at_utc": "2026-10-29T03:48:26.560624+00:00"
+  },
+  "scope": "Derived aggregate extract of all regular checkpoints from one matched training seed. Not raw trajectories or a self-contained evaluation reproduction.",
+  "training_seed": 2026102201,
+  "warmup_fights": 2000,
+  "initial_mixed_updates": 2000,
+  "stage1_fights_per_arm": 20000,
+  "stage2_fights": 0,
+  "parameters_per_model": 1658346,
+  "new_whole_turn_attempts": 78336,
+  "reused_battle_attempts": 80000,
+  "behavior_errors": 0,
+  "rows": [
+    {
+      "id": "masked_baseline-s2026102201-stage1-002500",
+      "arm": "masked_baseline",
+      "stage1_fights": 2500,
+      "accepted_updates": 4479,
+      "checkpoint_sha256": "9fc3c2ece7ea99a9a7ed65d4711249fd96e0a0044bae77842865659edddae4be",
+      "primary_whole_turn": {
+        "optimal": 463,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 248,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 64,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 90,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 36,
+        "survivable_cases": 306,
+        "total_deaths": 242
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3369,
+          "outcomes": {
+            "win": 3369,
+            "loss": 1627,
+            "turn_limit": 4
+          },
+          "mean_reward": 0.28715680919504205,
+          "mean_hp_ratio": 0.5827436149846948,
+          "potion_uses": 2659,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 529,
+          "outcomes": {
+            "win": 529,
+            "loss": 1267,
+            "turn_limit": 4
+          },
+          "mean_reward": 0.02955555555555554,
+          "mean_hp_ratio": 0.26509770504771063,
+          "potion_uses": 1810,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 492,
+            "outcomes": {
+              "win": 492,
+              "loss": 8
+            },
+            "mean_reward": 0.638991882602192,
+            "mean_hp_ratio": 0.7995726988844895,
+            "potion_uses": 28,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 413,
+            "outcomes": {
+              "win": 413,
+              "loss": 87
+            },
+            "mean_reward": 0.3011496856132804,
+            "mean_hp_ratio": 0.48160488775375043,
+            "potion_uses": 176,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 201,
+            "outcomes": {
+              "loss": 299,
+              "win": 201
+            },
+            "mean_reward": -0.196,
+            "mean_hp_ratio": 0.24985334057999428,
+            "potion_uses": 437,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 470,
+            "outcomes": {
+              "win": 470,
+              "loss": 30
+            },
+            "mean_reward": 0.47367585185213373,
+            "mean_hp_ratio": 0.7365123980846383,
+            "potion_uses": 69,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 495,
+            "outcomes": {
+              "win": 495,
+              "loss": 105
+            },
+            "mean_reward": 0.3431104365847462,
+            "mean_hp_ratio": 0.5384162055853701,
+            "potion_uses": 217,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 189,
+            "outcomes": {
+              "win": 189,
+              "loss": 411
+            },
+            "mean_reward": 0.04100000000000001,
+            "mean_hp_ratio": 0.29712255068357896,
+            "potion_uses": 408,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 475,
+            "outcomes": {
+              "win": 475,
+              "loss": 25
+            },
+            "mean_reward": 0.5469311803791522,
+            "mean_hp_ratio": 0.7692112650072941,
+            "potion_uses": 59,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 495,
+            "outcomes": {
+              "win": 495,
+              "loss": 105
+            },
+            "mean_reward": 0.32723913966830553,
+            "mean_hp_ratio": 0.5104682155085398,
+            "potion_uses": 300,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 139,
+            "outcomes": {
+              "loss": 557,
+              "win": 139,
+              "turn_limit": 4
+            },
+            "mean_reward": 0.18085714285714286,
+            "mean_hp_ratio": 0.24359713981628547,
+            "potion_uses": 965,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 130220,
+          "search_nodes": 0,
+          "enemies": 181081,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 492047,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-002500/row_result.json",
+          "bytes": 53858,
+          "sha256": "cfe9247a4e4f6a7ad8d7b0a20893c0311fc707ce3701486e8379c479059a6ff9"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-002500/cases.jsonl",
+          "bytes": 7246660,
+          "sha256": "564cc14fa78bbe4f6cec8edc3b627205f060b1cb5ae8f4d9f226589169276e55"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-005000",
+      "arm": "masked_baseline",
+      "stage1_fights": 5000,
+      "accepted_updates": 7311,
+      "checkpoint_sha256": "1d352c9baa6ea7a9334d01a943fd0e34746623ca3bed39a83578deeb5820b867",
+      "primary_whole_turn": {
+        "optimal": 457,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 318,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 204,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 92,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 36,
+        "survivable_cases": 306,
+        "total_deaths": 242
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3602,
+          "outcomes": {
+            "win": 3602,
+            "loss": 1392,
+            "turn_limit": 5,
+            "truncated": 1
+          },
+          "mean_reward": 0.36378190171010577,
+          "mean_hp_ratio": 0.5933552660573008,
+          "potion_uses": 3389,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 701,
+          "outcomes": {
+            "win": 701,
+            "loss": 1095,
+            "turn_limit": 3,
+            "truncated": 1
+          },
+          "mean_reward": 0.19611111111111112,
+          "mean_hp_ratio": 0.33989412958558735,
+          "potion_uses": 2054,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 491,
+            "outcomes": {
+              "loss": 7,
+              "win": 491,
+              "turn_limit": 2
+            },
+            "mean_reward": 0.5668738582984482,
+            "mean_hp_ratio": 0.7754444139953651,
+            "potion_uses": 66,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 422,
+            "outcomes": {
+              "win": 422,
+              "loss": 78
+            },
+            "mean_reward": 0.3341978847910757,
+            "mean_hp_ratio": 0.4858223028765738,
+            "potion_uses": 233,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 236,
+            "outcomes": {
+              "win": 236,
+              "loss": 264
+            },
+            "mean_reward": -0.056,
+            "mean_hp_ratio": 0.31900029843397176,
+            "potion_uses": 546,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 485,
+            "outcomes": {
+              "win": 485,
+              "loss": 15
+            },
+            "mean_reward": 0.5316737997496697,
+            "mean_hp_ratio": 0.7483136448832874,
+            "potion_uses": 112,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 513,
+            "outcomes": {
+              "win": 513,
+              "loss": 87
+            },
+            "mean_reward": 0.38169493383824155,
+            "mean_hp_ratio": 0.556811856597441,
+            "potion_uses": 339,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 291,
+            "outcomes": {
+              "win": 291,
+              "loss": 309
+            },
+            "mean_reward": 0.279,
+            "mean_hp_ratio": 0.36408509072519346,
+            "potion_uses": 524,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 487,
+            "outcomes": {
+              "win": 487,
+              "loss": 13
+            },
+            "mean_reward": 0.6035004961882743,
+            "mean_hp_ratio": 0.7868826042683311,
+            "potion_uses": 120,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 503,
+            "outcomes": {
+              "win": 503,
+              "loss": 97
+            },
+            "mean_reward": 0.3646158812230836,
+            "mean_hp_ratio": 0.5595452006594499,
+            "potion_uses": 465,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 174,
+            "outcomes": {
+              "loss": 522,
+              "win": 174,
+              "turn_limit": 3,
+              "truncated": 1
+            },
+            "mean_reward": 0.30514285714285716,
+            "mean_hp_ratio": 0.32777559200027684,
+            "potion_uses": 984,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 139571,
+          "search_nodes": 0,
+          "enemies": 192773,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 523713,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-005000/row_result.json",
+          "bytes": 54021,
+          "sha256": "eb52a5f854d65d5761c9b589cf05496069ca0bc3d7a24c3af60e6cc1a9839d25"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-005000/cases.jsonl",
+          "bytes": 7403084,
+          "sha256": "1b6b80ca5626a13b92ccf2ee3fce921d019198011417d1124c3067cb3cb74e6e"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-007500",
+      "arm": "masked_baseline",
+      "stage1_fights": 7500,
+      "accepted_updates": 10519,
+      "checkpoint_sha256": "fe33a0875648865dcf866c1560e8d7350525d92227deb2f6bcb8de0f6fe5c3bf",
+      "primary_whole_turn": {
+        "optimal": 455,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 388,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 212,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 82,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 38,
+        "survivable_cases": 306,
+        "total_deaths": 244
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3545,
+          "outcomes": {
+            "win": 3545,
+            "loss": 1455
+          },
+          "mean_reward": 0.36376870710839815,
+          "mean_hp_ratio": 0.5930367219329576,
+          "potion_uses": 3910,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 674,
+          "outcomes": {
+            "win": 674,
+            "loss": 1126
+          },
+          "mean_reward": 0.204,
+          "mean_hp_ratio": 0.3615789708529936,
+          "potion_uses": 2904,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 493,
+            "outcomes": {
+              "win": 493,
+              "loss": 7
+            },
+            "mean_reward": 0.6586638581064163,
+            "mean_hp_ratio": 0.8129146134368773,
+            "potion_uses": 36,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 418,
+            "outcomes": {
+              "win": 418,
+              "loss": 82
+            },
+            "mean_reward": 0.33139046650712073,
+            "mean_hp_ratio": 0.48117310985104184,
+            "potion_uses": 186,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 262,
+            "outcomes": {
+              "win": 262,
+              "loss": 238
+            },
+            "mean_reward": 0.048,
+            "mean_hp_ratio": 0.3611345922112229,
+            "potion_uses": 915,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 484,
+            "outcomes": {
+              "win": 484,
+              "loss": 16
+            },
+            "mean_reward": 0.5265202782095659,
+            "mean_hp_ratio": 0.7352647656298685,
+            "potion_uses": 73,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 508,
+            "outcomes": {
+              "win": 508,
+              "loss": 92
+            },
+            "mean_reward": 0.36172931771873407,
+            "mean_hp_ratio": 0.5327083638147984,
+            "potion_uses": 275,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 229,
+            "outcomes": {
+              "win": 229,
+              "loss": 371
+            },
+            "mean_reward": 0.13433333333333336,
+            "mean_hp_ratio": 0.38090302691679606,
+            "potion_uses": 681,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 484,
+            "outcomes": {
+              "win": 484,
+              "loss": 16
+            },
+            "mean_reward": 0.5828595897284624,
+            "mean_hp_ratio": 0.771852590859555,
+            "potion_uses": 80,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 484,
+            "outcomes": {
+              "win": 484,
+              "loss": 116
+            },
+            "mean_reward": 0.3081480810582796,
+            "mean_hp_ratio": 0.5302748743729405,
+            "potion_uses": 356,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 183,
+            "outcomes": {
+              "loss": 517,
+              "win": 183
+            },
+            "mean_reward": 0.3751428571428571,
+            "mean_hp_ratio": 0.33803371601984156,
+            "potion_uses": 1308,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 128341,
+          "search_nodes": 0,
+          "enemies": 181901,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 524289,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-007500/row_result.json",
+          "bytes": 53590,
+          "sha256": "575947d6ad5f84f6bcb45926b536897db81b09c726274092d9a55e9ecf51f0fc"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-007500/cases.jsonl",
+          "bytes": 7500614,
+          "sha256": "8732e5358a6976ac34a2f9fc240f700a582477a65170cd01c1669026f80e785f"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-010000",
+      "arm": "masked_baseline",
+      "stage1_fights": 10000,
+      "accepted_updates": 13890,
+      "checkpoint_sha256": "13ddd7efe3b1d7292f6199c62f6537dc67c22af86ebe2a483b901b1c3275e2de",
+      "primary_whole_turn": {
+        "optimal": 500,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 324,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 174,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 82,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 42,
+        "survivable_cases": 306,
+        "total_deaths": 248
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3746,
+          "outcomes": {
+            "win": 3746,
+            "loss": 1251,
+            "turn_limit": 3
+          },
+          "mean_reward": 0.4266091100444606,
+          "mean_hp_ratio": 0.5989610890600271,
+          "potion_uses": 3890,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 783,
+          "outcomes": {
+            "win": 783,
+            "loss": 1015,
+            "turn_limit": 2
+          },
+          "mean_reward": 0.29033333333333333,
+          "mean_hp_ratio": 0.3465710159301314,
+          "potion_uses": 2802,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 493,
+            "outcomes": {
+              "win": 493,
+              "loss": 7
+            },
+            "mean_reward": 0.6886706879655901,
+            "mean_hp_ratio": 0.8307399863637115,
+            "potion_uses": 48,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 438,
+            "outcomes": {
+              "win": 438,
+              "loss": 62
+            },
+            "mean_reward": 0.3912896246488825,
+            "mean_hp_ratio": 0.5004381797593124,
+            "potion_uses": 199,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 282,
+            "outcomes": {
+              "win": 282,
+              "loss": 218
+            },
+            "mean_reward": 0.128,
+            "mean_hp_ratio": 0.3846906388805323,
+            "potion_uses": 924,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 491,
+            "outcomes": {
+              "win": 491,
+              "loss": 9
+            },
+            "mean_reward": 0.5635251759169085,
+            "mean_hp_ratio": 0.7544153913418282,
+            "potion_uses": 72,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 528,
+            "outcomes": {
+              "win": 528,
+              "loss": 72
+            },
+            "mean_reward": 0.4034027051339704,
+            "mean_hp_ratio": 0.5730577654960736,
+            "potion_uses": 340,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 305,
+            "outcomes": {
+              "win": 305,
+              "loss": 295
+            },
+            "mean_reward": 0.31166666666666665,
+            "mean_hp_ratio": 0.361259477048137,
+            "potion_uses": 775,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 489,
+            "outcomes": {
+              "win": 489,
+              "loss": 11
+            },
+            "mean_reward": 0.6093693025147272,
+            "mean_hp_ratio": 0.7861677694196566,
+            "potion_uses": 76,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 524,
+            "outcomes": {
+              "win": 524,
+              "loss": 75,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.40329421936477855,
+            "mean_hp_ratio": 0.5461219495356945,
+            "potion_uses": 353,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 196,
+            "outcomes": {
+              "win": 196,
+              "loss": 502,
+              "turn_limit": 2
+            },
+            "mean_reward": 0.38799999999999996,
+            "mean_hp_ratio": 0.2688683918841888,
+            "potion_uses": 1103,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 144057,
+          "search_nodes": 0,
+          "enemies": 199559,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 537062,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-010000/row_result.json",
+          "bytes": 53907,
+          "sha256": "69ca882b0ea0264e2281858c6afa3b222a2d29dea51dbd906223b80378473d12"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-010000/cases.jsonl",
+          "bytes": 7503520,
+          "sha256": "82585d549880db5f895f12fbcaa6ebb574df7b2605680872eac014ba86701e2a"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-012500",
+      "arm": "masked_baseline",
+      "stage1_fights": 12500,
+      "accepted_updates": 17471,
+      "checkpoint_sha256": "0100cfca8bfd805f53fd91bf0d8061912e0a9586f695aa5d79f9825882d0fab8",
+      "primary_whole_turn": {
+        "optimal": 511,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 350,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 146,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 98,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 36,
+        "survivable_cases": 306,
+        "total_deaths": 242
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3710,
+          "outcomes": {
+            "win": 3710,
+            "loss": 1288,
+            "turn_limit": 2
+          },
+          "mean_reward": 0.4240940010182967,
+          "mean_hp_ratio": 0.5884464901364097,
+          "potion_uses": 3844,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 774,
+          "outcomes": {
+            "win": 774,
+            "loss": 1024,
+            "turn_limit": 2
+          },
+          "mean_reward": 0.29233333333333333,
+          "mean_hp_ratio": 0.2936075324298095,
+          "potion_uses": 2860,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 495,
+            "outcomes": {
+              "loss": 5,
+              "win": 495
+            },
+            "mean_reward": 0.6712791668870116,
+            "mean_hp_ratio": 0.8131971916488396,
+            "potion_uses": 28,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 433,
+            "outcomes": {
+              "win": 433,
+              "loss": 67
+            },
+            "mean_reward": 0.38795638382117825,
+            "mean_hp_ratio": 0.4991199650490608,
+            "potion_uses": 177,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 289,
+            "outcomes": {
+              "win": 289,
+              "loss": 211
+            },
+            "mean_reward": 0.156,
+            "mean_hp_ratio": 0.2852895938237273,
+            "potion_uses": 891,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 485,
+            "outcomes": {
+              "win": 485,
+              "loss": 15
+            },
+            "mean_reward": 0.5285083125193074,
+            "mean_hp_ratio": 0.7310650906196887,
+            "potion_uses": 67,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 518,
+            "outcomes": {
+              "win": 518,
+              "loss": 82
+            },
+            "mean_reward": 0.40720365979273576,
+            "mean_hp_ratio": 0.5751973954399116,
+            "potion_uses": 279,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 274,
+            "outcomes": {
+              "win": 274,
+              "loss": 326
+            },
+            "mean_reward": 0.23933333333333337,
+            "mean_hp_ratio": 0.2969774640038318,
+            "potion_uses": 715,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 485,
+            "outcomes": {
+              "win": 485,
+              "loss": 15
+            },
+            "mean_reward": 0.62853641058482,
+            "mean_hp_ratio": 0.8032501758564553,
+            "potion_uses": 61,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 520,
+            "outcomes": {
+              "win": 520,
+              "loss": 80
+            },
+            "mean_reward": 0.40301278718280525,
+            "mean_hp_ratio": 0.5675721894118935,
+            "potion_uses": 372,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 211,
+            "outcomes": {
+              "win": 211,
+              "loss": 487,
+              "turn_limit": 2
+            },
+            "mean_reward": 0.43514285714285716,
+            "mean_hp_ratio": 0.3006242291401207,
+            "potion_uses": 1254,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 142512,
+          "search_nodes": 0,
+          "enemies": 195179,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 548429,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-012500/row_result.json",
+          "bytes": 53695,
+          "sha256": "f71924048f71aa47fdea841d2415b2bd0f01351a8a8f7329be8d50f87522f4e9"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-012500/cases.jsonl",
+          "bytes": 7490694,
+          "sha256": "612a2fafbd30972939d6abca2469c95f43058f8bea90056a855334bc6e8f3722"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-015000",
+      "arm": "masked_baseline",
+      "stage1_fights": 15000,
+      "accepted_updates": 21210,
+      "checkpoint_sha256": "02690503c13fc154f4e8946a466639da1bed155fdd16999d6897e28dfd7dd960",
+      "primary_whole_turn": {
+        "optimal": 487,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 326,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 138,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 96,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 38,
+        "survivable_cases": 306,
+        "total_deaths": 244
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3633,
+          "outcomes": {
+            "win": 3633,
+            "loss": 1367
+          },
+          "mean_reward": 0.39203498188532043,
+          "mean_hp_ratio": 0.566854208207167,
+          "potion_uses": 3153,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 705,
+          "outcomes": {
+            "win": 705,
+            "loss": 1095
+          },
+          "mean_reward": 0.21355555555555555,
+          "mean_hp_ratio": 0.26310973078104277,
+          "potion_uses": 2422,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 492,
+            "outcomes": {
+              "win": 492,
+              "loss": 8
+            },
+            "mean_reward": 0.6697146939113725,
+            "mean_hp_ratio": 0.8186615831108924,
+            "potion_uses": 25,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 433,
+            "outcomes": {
+              "win": 433,
+              "loss": 67
+            },
+            "mean_reward": 0.38454387666187523,
+            "mean_hp_ratio": 0.476907013029007,
+            "potion_uses": 147,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 237,
+            "outcomes": {
+              "win": 237,
+              "loss": 263
+            },
+            "mean_reward": -0.052,
+            "mean_hp_ratio": 0.2489503057748986,
+            "potion_uses": 703,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 483,
+            "outcomes": {
+              "win": 483,
+              "loss": 17
+            },
+            "mean_reward": 0.5446430044921884,
+            "mean_hp_ratio": 0.7378264488807563,
+            "potion_uses": 48,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 526,
+            "outcomes": {
+              "win": 526,
+              "loss": 74
+            },
+            "mean_reward": 0.4208037049024108,
+            "mean_hp_ratio": 0.5391347491772817,
+            "potion_uses": 235,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 299,
+            "outcomes": {
+              "win": 299,
+              "loss": 301
+            },
+            "mean_reward": 0.2976666666666667,
+            "mean_hp_ratio": 0.29992451723918123,
+            "potion_uses": 673,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 484,
+            "outcomes": {
+              "win": 484,
+              "loss": 16
+            },
+            "mean_reward": 0.5864948442717096,
+            "mean_hp_ratio": 0.7674233048476403,
+            "potion_uses": 50,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 510,
+            "outcomes": {
+              "win": 510,
+              "loss": 90
+            },
+            "mean_reward": 0.3843241280276382,
+            "mean_hp_ratio": 0.4965074710999409,
+            "potion_uses": 226,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 169,
+            "outcomes": {
+              "loss": 531,
+              "win": 169
+            },
+            "mean_reward": 0.33114285714285707,
+            "mean_hp_ratio": 0.2178325862572129,
+            "potion_uses": 1046,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 137354,
+          "search_nodes": 0,
+          "enemies": 189337,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 521842,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-015000/row_result.json",
+          "bytes": 53562,
+          "sha256": "28056b84a5161d67f850ee359eaaf883688b94d6cf1ffff9746dc0d73e0f9e3a"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-015000/cases.jsonl",
+          "bytes": 7360236,
+          "sha256": "0a4a4eef0bb0eef998280588e7be1f94ad6a1cc867b1ee68f27aec68a1d09d87"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-017500",
+      "arm": "masked_baseline",
+      "stage1_fights": 17500,
+      "accepted_updates": 25058,
+      "checkpoint_sha256": "958b2c4f499c941fc8e622706fe460b485baad416cdc2d7b436864843bb73a2e",
+      "primary_whole_turn": {
+        "optimal": 513,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 328,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 150,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 98,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 38,
+        "survivable_cases": 306,
+        "total_deaths": 244
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3761,
+          "outcomes": {
+            "win": 3761,
+            "loss": 1225,
+            "turn_limit": 12,
+            "truncated": 2
+          },
+          "mean_reward": 0.4075227694591569,
+          "mean_hp_ratio": 0.5662446564429293,
+          "potion_uses": 4303,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 821,
+          "outcomes": {
+            "win": 821,
+            "loss": 974,
+            "turn_limit": 3,
+            "truncated": 2
+          },
+          "mean_reward": 0.3235555555555555,
+          "mean_hp_ratio": 0.2840298959428268,
+          "potion_uses": 3292,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 482,
+            "outcomes": {
+              "win": 482,
+              "turn_limit": 8,
+              "loss": 10
+            },
+            "mean_reward": 0.4644602536461565,
+            "mean_hp_ratio": 0.8014728797770501,
+            "potion_uses": 51,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 435,
+            "outcomes": {
+              "win": 435,
+              "loss": 65
+            },
+            "mean_reward": 0.3741796082758015,
+            "mean_hp_ratio": 0.49873404137770233,
+            "potion_uses": 202,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 298,
+            "outcomes": {
+              "win": 298,
+              "loss": 202
+            },
+            "mean_reward": 0.192,
+            "mean_hp_ratio": 0.2835752541591651,
+            "potion_uses": 884,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 482,
+            "outcomes": {
+              "win": 482,
+              "loss": 17,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.4873808963543241,
+            "mean_hp_ratio": 0.7261666185855189,
+            "potion_uses": 81,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 530,
+            "outcomes": {
+              "win": 530,
+              "loss": 70
+            },
+            "mean_reward": 0.437504548502896,
+            "mean_hp_ratio": 0.5649922570725796,
+            "potion_uses": 261,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 319,
+            "outcomes": {
+              "win": 319,
+              "loss": 281
+            },
+            "mean_reward": 0.34433333333333327,
+            "mean_hp_ratio": 0.2860605742962337,
+            "potion_uses": 832,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 487,
+            "outcomes": {
+              "win": 487,
+              "loss": 13
+            },
+            "mean_reward": 0.5863404828232136,
+            "mean_hp_ratio": 0.7735695368479704,
+            "potion_uses": 75,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 524,
+            "outcomes": {
+              "win": 524,
+              "loss": 76
+            },
+            "mean_reward": 0.3942174960738317,
+            "mean_hp_ratio": 0.5095645065063154,
+            "potion_uses": 341,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 204,
+            "outcomes": {
+              "win": 204,
+              "loss": 491,
+              "turn_limit": 3,
+              "truncated": 2
+            },
+            "mean_reward": 0.39971428571428563,
+            "mean_hp_ratio": 0.28151860602515205,
+            "potion_uses": 1576,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 154447,
+          "search_nodes": 0,
+          "enemies": 212053,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 597471,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-017500/row_result.json",
+          "bytes": 54252,
+          "sha256": "32ee144af4c6aae9e40f7e14901e10da328c5de87a65e9ab76c009dbe1bb9fab"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-017500/cases.jsonl",
+          "bytes": 7585465,
+          "sha256": "405a75282d3508140a0c9082582f76099e4e7595b809cbb489c877650dd19e71"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_baseline-s2026102201-stage1-020000",
+      "arm": "masked_baseline",
+      "stage1_fights": 20000,
+      "accepted_updates": 28935,
+      "checkpoint_sha256": "a35712f7b186169e087ca7f69e38b3ed53222bc28cf5bf859194cb42a0993e71",
+      "primary_whole_turn": {
+        "optimal": 464,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 336,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 136,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 84,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 40,
+        "survivable_cases": 306,
+        "total_deaths": 246
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3798,
+          "outcomes": {
+            "win": 3798,
+            "loss": 1190,
+            "turn_limit": 12
+          },
+          "mean_reward": 0.44165690128477664,
+          "mean_hp_ratio": 0.5700461903886503,
+          "potion_uses": 3609,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 861,
+          "outcomes": {
+            "win": 861,
+            "loss": 937,
+            "turn_limit": 2
+          },
+          "mean_reward": 0.37133333333333324,
+          "mean_hp_ratio": 0.30034166349067093,
+          "potion_uses": 3021,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 489,
+            "outcomes": {
+              "loss": 7,
+              "win": 489,
+              "turn_limit": 4
+            },
+            "mean_reward": 0.5649802827991234,
+            "mean_hp_ratio": 0.8048897622107758,
+            "potion_uses": 28,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 445,
+            "outcomes": {
+              "win": 445,
+              "loss": 55
+            },
+            "mean_reward": 0.44772990645533534,
+            "mean_hp_ratio": 0.49282656971354355,
+            "potion_uses": 107,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 327,
+            "outcomes": {
+              "win": 327,
+              "loss": 173
+            },
+            "mean_reward": 0.308,
+            "mean_hp_ratio": 0.30263905999042034,
+            "potion_uses": 682,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 486,
+            "outcomes": {
+              "win": 486,
+              "loss": 13,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.5255086425110335,
+            "mean_hp_ratio": 0.7315087903921859,
+            "potion_uses": 34,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 518,
+            "outcomes": {
+              "win": 518,
+              "loss": 82
+            },
+            "mean_reward": 0.4387820795217203,
+            "mean_hp_ratio": 0.5478504677752011,
+            "potion_uses": 144,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 326,
+            "outcomes": {
+              "win": 326,
+              "loss": 274
+            },
+            "mean_reward": 0.36066666666666664,
+            "mean_hp_ratio": 0.3354698751630842,
+            "potion_uses": 788,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 489,
+            "outcomes": {
+              "win": 489,
+              "loss": 11
+            },
+            "mean_reward": 0.6187522850771283,
+            "mean_hp_ratio": 0.781276095749019,
+            "potion_uses": 42,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 510,
+            "outcomes": {
+              "win": 510,
+              "loss": 85,
+              "turn_limit": 5
+            },
+            "mean_reward": 0.33021616714923435,
+            "mean_hp_ratio": 0.5337225810345155,
+            "potion_uses": 233,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 208,
+            "outcomes": {
+              "loss": 490,
+              "win": 208,
+              "turn_limit": 2
+            },
+            "mean_reward": 0.4257142857142857,
+            "mean_hp_ratio": 0.2416731747376669,
+            "potion_uses": 1551,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 144293,
+          "search_nodes": 0,
+          "enemies": 198546,
+          "lethal_enemies": 0,
+          "complete_enemies": 0,
+          "card_actions": 537788,
+          "lethal_actions": 0,
+          "known_immediate": 0,
+          "complete_actions": 0
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-020000/row_result.json",
+          "bytes": 53972,
+          "sha256": "5ad5bbf00d426df28eeb9b19a1f6fe719aa50c714a1b51a7f78a42818c158e23"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_baseline-s2026102201-stage1-020000/cases.jsonl",
+          "bytes": 7459522,
+          "sha256": "3181b3bc701dc2fc0795402ec9d3bafc2b0eaefb28fe522bcda027e91d301a45"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-002500",
+      "arm": "masked_lethality",
+      "stage1_fights": 2500,
+      "accepted_updates": 4477,
+      "checkpoint_sha256": "f68672c67cd66e24d56815808a87b9ed5a5ab00aca0ae193bb4b07c104236735",
+      "primary_whole_turn": {
+        "optimal": 536,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 236,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 442,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 118,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3465,
+          "outcomes": {
+            "win": 3465,
+            "loss": 1532,
+            "turn_limit": 2,
+            "truncated": 1
+          },
+          "mean_reward": 0.33039279998774956,
+          "mean_hp_ratio": 0.5978229041028726,
+          "potion_uses": 2574,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 590,
+          "outcomes": {
+            "win": 590,
+            "loss": 1207,
+            "turn_limit": 2,
+            "truncated": 1
+          },
+          "mean_reward": 0.10766666666666666,
+          "mean_hp_ratio": 0.28518120121959406,
+          "potion_uses": 1704,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 489,
+            "outcomes": {
+              "loss": 11,
+              "win": 489
+            },
+            "mean_reward": 0.6794309586779959,
+            "mean_hp_ratio": 0.8425526540631795,
+            "potion_uses": 50,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 425,
+            "outcomes": {
+              "win": 425,
+              "loss": 75
+            },
+            "mean_reward": 0.3663859901937883,
+            "mean_hp_ratio": 0.5193566064943484,
+            "potion_uses": 153,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 228,
+            "outcomes": {
+              "win": 228,
+              "loss": 272
+            },
+            "mean_reward": -0.088,
+            "mean_hp_ratio": 0.2815821890549417,
+            "potion_uses": 508,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 480,
+            "outcomes": {
+              "win": 480,
+              "loss": 20
+            },
+            "mean_reward": 0.5133225382597553,
+            "mean_hp_ratio": 0.749742896129236,
+            "potion_uses": 64,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 493,
+            "outcomes": {
+              "loss": 107,
+              "win": 493
+            },
+            "mean_reward": 0.31650819384272194,
+            "mean_hp_ratio": 0.5354747649628538,
+            "potion_uses": 246,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 199,
+            "outcomes": {
+              "win": 199,
+              "loss": 401
+            },
+            "mean_reward": 0.06433333333333335,
+            "mean_hp_ratio": 0.30853101838082153,
+            "potion_uses": 363,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 483,
+            "outcomes": {
+              "win": 483,
+              "loss": 17
+            },
+            "mean_reward": 0.579195364416942,
+            "mean_hp_ratio": 0.7783217769927077,
+            "potion_uses": 49,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 505,
+            "outcomes": {
+              "win": 505,
+              "loss": 95
+            },
+            "mean_reward": 0.33181942976479034,
+            "mean_hp_ratio": 0.5359793680073315,
+            "potion_uses": 308,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 163,
+            "outcomes": {
+              "loss": 534,
+              "win": 163,
+              "turn_limit": 2,
+              "truncated": 1
+            },
+            "mean_reward": 0.28457142857142853,
+            "mean_hp_ratio": 0.2617085702898791,
+            "potion_uses": 833,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 128484,
+          "search_nodes": 3748931,
+          "enemies": 174961,
+          "lethal_enemies": 16379,
+          "complete_enemies": 79429,
+          "card_actions": 497044,
+          "lethal_actions": 44043,
+          "known_immediate": 391920,
+          "complete_actions": 174548
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-002500/row_result.json",
+          "bytes": 53929,
+          "sha256": "44e7244df433a7d86cee361635c9c84e52c4ab838e47ed63146ce14fc53f1593"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-002500/cases.jsonl",
+          "bytes": 7231223,
+          "sha256": "5db62a7eb0a208a9f738aaa46e46993d8830d59634bd159f5c474abafbc44556"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-005000",
+      "arm": "masked_lethality",
+      "stage1_fights": 5000,
+      "accepted_updates": 7310,
+      "checkpoint_sha256": "fedff9f1a9f9f692717c0586c4e31a9711dc6ea46b0ba60c11ae535b47dabca0",
+      "primary_whole_turn": {
+        "optimal": 520,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 212,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 350,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 118,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3495,
+          "outcomes": {
+            "win": 3495,
+            "loss": 1501,
+            "turn_limit": 3,
+            "truncated": 1
+          },
+          "mean_reward": 0.34116036632138164,
+          "mean_hp_ratio": 0.5977468162963335,
+          "potion_uses": 2596,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 622,
+          "outcomes": {
+            "win": 622,
+            "loss": 1175,
+            "turn_limit": 2,
+            "truncated": 1
+          },
+          "mean_reward": 0.12833333333333333,
+          "mean_hp_ratio": 0.3197371362815391,
+          "potion_uses": 1735,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 488,
+            "outcomes": {
+              "loss": 12,
+              "win": 488
+            },
+            "mean_reward": 0.6359751615759739,
+            "mean_hp_ratio": 0.8045058305467555,
+            "potion_uses": 30,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 421,
+            "outcomes": {
+              "win": 421,
+              "loss": 79
+            },
+            "mean_reward": 0.3409444337164583,
+            "mean_hp_ratio": 0.49600801880234946,
+            "potion_uses": 185,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 202,
+            "outcomes": {
+              "loss": 298,
+              "win": 202
+            },
+            "mean_reward": -0.192,
+            "mean_hp_ratio": 0.2645177999286311,
+            "potion_uses": 483,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 476,
+            "outcomes": {
+              "win": 476,
+              "loss": 24
+            },
+            "mean_reward": 0.5099133191721786,
+            "mean_hp_ratio": 0.7435849788195851,
+            "potion_uses": 64,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 507,
+            "outcomes": {
+              "loss": 93,
+              "win": 507
+            },
+            "mean_reward": 0.3570838162346942,
+            "mean_hp_ratio": 0.5434070403818314,
+            "potion_uses": 267,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 247,
+            "outcomes": {
+              "win": 247,
+              "loss": 353
+            },
+            "mean_reward": 0.17633333333333334,
+            "mean_hp_ratio": 0.3752445953491416,
+            "potion_uses": 477,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 476,
+            "outcomes": {
+              "win": 476,
+              "loss": 24
+            },
+            "mean_reward": 0.5926760686540568,
+            "mean_hp_ratio": 0.7950644131049535,
+            "potion_uses": 48,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 505,
+            "outcomes": {
+              "win": 505,
+              "loss": 94,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.3679950838445969,
+            "mean_hp_ratio": 0.5562889563094923,
+            "potion_uses": 267,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 173,
+            "outcomes": {
+              "win": 173,
+              "loss": 524,
+              "turn_limit": 2,
+              "truncated": 1
+            },
+            "mean_reward": 0.316,
+            "mean_hp_ratio": 0.3049623591346581,
+            "potion_uses": 775,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 145582,
+          "search_nodes": 4112633,
+          "enemies": 200135,
+          "lethal_enemies": 14919,
+          "complete_enemies": 95198,
+          "card_actions": 549668,
+          "lethal_actions": 39794,
+          "known_immediate": 435681,
+          "complete_actions": 198430
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-005000/row_result.json",
+          "bytes": 54082,
+          "sha256": "59b5ceb37317abf2d694492952f43485c27b8e7986b5bcb05546c5bd354ac651"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-005000/cases.jsonl",
+          "bytes": 7237635,
+          "sha256": "15ee2a15f8e8bdd81e105a87711f2e876c3c797bac210b8508c162579f82f85e"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-007500",
+      "arm": "masked_lethality",
+      "stage1_fights": 7500,
+      "accepted_updates": 10567,
+      "checkpoint_sha256": "5fb57d132b1e19069948f0a38a5704535ca94e4ad39552b400b2b6567d36b72d",
+      "primary_whole_turn": {
+        "optimal": 456,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 226,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 368,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 116,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3820,
+          "outcomes": {
+            "win": 3820,
+            "loss": 1178,
+            "turn_limit": 2
+          },
+          "mean_reward": 0.4810673087239478,
+          "mean_hp_ratio": 0.6078087507184295,
+          "potion_uses": 4173,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 869,
+          "outcomes": {
+            "win": 869,
+            "loss": 930,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.4021111111111111,
+          "mean_hp_ratio": 0.3575122037762855,
+          "potion_uses": 3316,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 495,
+            "outcomes": {
+              "win": 495,
+              "loss": 5
+            },
+            "mean_reward": 0.73028682084488,
+            "mean_hp_ratio": 0.8555094462694143,
+            "potion_uses": 40,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 443,
+            "outcomes": {
+              "win": 443,
+              "loss": 57
+            },
+            "mean_reward": 0.44312621161073656,
+            "mean_hp_ratio": 0.5330857987125508,
+            "potion_uses": 130,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 311,
+            "outcomes": {
+              "win": 311,
+              "loss": 189
+            },
+            "mean_reward": 0.244,
+            "mean_hp_ratio": 0.33846947734744154,
+            "potion_uses": 808,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 487,
+            "outcomes": {
+              "win": 487,
+              "loss": 13
+            },
+            "mean_reward": 0.5716122432728684,
+            "mean_hp_ratio": 0.7664872650043683,
+            "potion_uses": 78,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 516,
+            "outcomes": {
+              "win": 516,
+              "loss": 84
+            },
+            "mean_reward": 0.3859773059980063,
+            "mean_hp_ratio": 0.5572751241282216,
+            "potion_uses": 280,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 295,
+            "outcomes": {
+              "win": 295,
+              "loss": 305
+            },
+            "mean_reward": 0.28833333333333333,
+            "mean_hp_ratio": 0.39971393534608657,
+            "potion_uses": 927,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 487,
+            "outcomes": {
+              "win": 487,
+              "loss": 13
+            },
+            "mean_reward": 0.6504041787646857,
+            "mean_hp_ratio": 0.8144412329529517,
+            "potion_uses": 48,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 523,
+            "outcomes": {
+              "win": 523,
+              "loss": 76,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.4203923879572492,
+            "mean_hp_ratio": 0.5622389968918007,
+            "potion_uses": 281,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 263,
+            "outcomes": {
+              "loss": 436,
+              "win": 263,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.6125714285714285,
+            "mean_hp_ratio": 0.33269386577734683,
+            "potion_uses": 1581,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 141557,
+          "search_nodes": 4169638,
+          "enemies": 193808,
+          "lethal_enemies": 15402,
+          "complete_enemies": 89892,
+          "card_actions": 541777,
+          "lethal_actions": 42408,
+          "known_immediate": 429162,
+          "complete_actions": 188089
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-007500/row_result.json",
+          "bytes": 53932,
+          "sha256": "c00b4e268b1a56cd529f3c4bda0fc9dfcf7d4a5d75e0d9c54ac73ca01e4f2930"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-007500/cases.jsonl",
+          "bytes": 7559745,
+          "sha256": "356970857d0c15d874cb6bdb51fb9eb27b969c1222793d94287ac088a26a0366"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-010000",
+      "arm": "masked_lethality",
+      "stage1_fights": 10000,
+      "accepted_updates": 13948,
+      "checkpoint_sha256": "b2fbc609184396d8983ab03f796547a906ebb7ccdbbc2bc1af08524d2c88eab1",
+      "primary_whole_turn": {
+        "optimal": 602,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 298,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 370,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 118,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3527,
+          "outcomes": {
+            "win": 3527,
+            "loss": 1471,
+            "truncated": 1,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.37779825703125847,
+          "mean_hp_ratio": 0.6016330281894241,
+          "potion_uses": 3119,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 627,
+          "outcomes": {
+            "win": 627,
+            "loss": 1171,
+            "truncated": 1,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.1504444444444444,
+          "mean_hp_ratio": 0.29662628226820104,
+          "potion_uses": 2460,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 489,
+            "outcomes": {
+              "loss": 11,
+              "win": 489
+            },
+            "mean_reward": 0.7042509202964525,
+            "mean_hp_ratio": 0.8465167501039569,
+            "potion_uses": 23,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 434,
+            "outcomes": {
+              "win": 434,
+              "loss": 66
+            },
+            "mean_reward": 0.39578048909791186,
+            "mean_hp_ratio": 0.49038078081985637,
+            "potion_uses": 140,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 263,
+            "outcomes": {
+              "win": 263,
+              "loss": 237
+            },
+            "mean_reward": 0.052,
+            "mean_hp_ratio": 0.28993614112982463,
+            "potion_uses": 834,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 488,
+            "outcomes": {
+              "win": 488,
+              "loss": 12
+            },
+            "mean_reward": 0.5906561737986041,
+            "mean_hp_ratio": 0.7695929801030319,
+            "potion_uses": 40,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 495,
+            "outcomes": {
+              "win": 495,
+              "loss": 105
+            },
+            "mean_reward": 0.34224922225255655,
+            "mean_hp_ratio": 0.5330677701354047,
+            "potion_uses": 224,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 208,
+            "outcomes": {
+              "win": 208,
+              "loss": 392
+            },
+            "mean_reward": 0.08533333333333334,
+            "mean_hp_ratio": 0.3315044969695729,
+            "potion_uses": 563,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 489,
+            "outcomes": {
+              "win": 489,
+              "loss": 11
+            },
+            "mean_reward": 0.6605664270320715,
+            "mean_hp_ratio": 0.8113691242294421,
+            "potion_uses": 25,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 505,
+            "outcomes": {
+              "win": 505,
+              "loss": 95
+            },
+            "mean_reward": 0.3953579111537305,
+            "mean_hp_ratio": 0.5406210683362018,
+            "potion_uses": 207,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 156,
+            "outcomes": {
+              "win": 156,
+              "loss": 542,
+              "truncated": 1,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.2765714285714285,
+            "mean_hp_ratio": 0.2614008877906859,
+            "potion_uses": 1063,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 140345,
+          "search_nodes": 4354392,
+          "enemies": 193936,
+          "lethal_enemies": 17096,
+          "complete_enemies": 92606,
+          "card_actions": 559137,
+          "lethal_actions": 47216,
+          "known_immediate": 452881,
+          "complete_actions": 211072
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-010000/row_result.json",
+          "bytes": 53917,
+          "sha256": "9d8085df14d30ab2ab1bcab61ab8f2e608a243e02e0add8fc11aaa9ee0223141"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-010000/cases.jsonl",
+          "bytes": 7348736,
+          "sha256": "3240c4d3f4b9c35c215fd88accbfd9d7966d20df4d1aa38e4c42f04b43d24ff9"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-012500",
+      "arm": "masked_lethality",
+      "stage1_fights": 12500,
+      "accepted_updates": 17536,
+      "checkpoint_sha256": "412276516716ae5e7c98302fd5d8189acecd352fe76c0ecbe8af6c0a7fbc42ca",
+      "primary_whole_turn": {
+        "optimal": 648,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 320,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 304,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 114,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3777,
+          "outcomes": {
+            "win": 3777,
+            "loss": 1222,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.45522204038305847,
+          "mean_hp_ratio": 0.585893748059437,
+          "potion_uses": 4085,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 851,
+          "outcomes": {
+            "win": 851,
+            "loss": 948,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.35866666666666663,
+          "mean_hp_ratio": 0.30084148350818257,
+          "potion_uses": 3251,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 493,
+            "outcomes": {
+              "win": 493,
+              "loss": 7
+            },
+            "mean_reward": 0.7136299882203704,
+            "mean_hp_ratio": 0.8467140749904969,
+            "potion_uses": 31,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 436,
+            "outcomes": {
+              "win": 436,
+              "loss": 64
+            },
+            "mean_reward": 0.39138686578507864,
+            "mean_hp_ratio": 0.5015619019182832,
+            "potion_uses": 163,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 304,
+            "outcomes": {
+              "win": 304,
+              "loss": 196
+            },
+            "mean_reward": 0.216,
+            "mean_hp_ratio": 0.3199600003648592,
+            "potion_uses": 720,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 481,
+            "outcomes": {
+              "win": 481,
+              "loss": 19
+            },
+            "mean_reward": 0.5558155638900846,
+            "mean_hp_ratio": 0.7592843345913766,
+            "potion_uses": 68,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 515,
+            "outcomes": {
+              "win": 515,
+              "loss": 85
+            },
+            "mean_reward": 0.40263122045939503,
+            "mean_hp_ratio": 0.5502776370995778,
+            "potion_uses": 237,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 345,
+            "outcomes": {
+              "win": 345,
+              "loss": 255
+            },
+            "mean_reward": 0.405,
+            "mean_hp_ratio": 0.3181401381771305,
+            "potion_uses": 895,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 483,
+            "outcomes": {
+              "win": 483,
+              "loss": 17
+            },
+            "mean_reward": 0.6413458406070043,
+            "mean_hp_ratio": 0.8142190623895541,
+            "potion_uses": 34,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 518,
+            "outcomes": {
+              "win": 518,
+              "loss": 82
+            },
+            "mean_reward": 0.39640390064731007,
+            "mean_hp_ratio": 0.5384498080491394,
+            "potion_uses": 301,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 202,
+            "outcomes": {
+              "loss": 497,
+              "win": 202,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.4208571428571428,
+            "mean_hp_ratio": 0.2425243301160202,
+            "potion_uses": 1636,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 138979,
+          "search_nodes": 4192824,
+          "enemies": 192824,
+          "lethal_enemies": 16955,
+          "complete_enemies": 94532,
+          "card_actions": 543037,
+          "lethal_actions": 46753,
+          "known_immediate": 439446,
+          "complete_actions": 200373
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-012500/row_result.json",
+          "bytes": 53854,
+          "sha256": "88a92a1afa5387903dadc1b26eee794f5baeb71435403040dca835769578125d"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-012500/cases.jsonl",
+          "bytes": 7538036,
+          "sha256": "5b27be012ef2042da5b42ec78529b11120ed161ea9ca0c2b9133d0bb88163d0c"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-015000",
+      "arm": "masked_lethality",
+      "stage1_fights": 15000,
+      "accepted_updates": 21318,
+      "checkpoint_sha256": "17228e535e2d351b77571d3b04c0acc127ee6f39b2538a45409ede3ca7eff506",
+      "primary_whole_turn": {
+        "optimal": 586,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 278,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 328,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 112,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3515,
+          "outcomes": {
+            "win": 3515,
+            "loss": 1484,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.3510495984974864,
+          "mean_hp_ratio": 0.5633121078610219,
+          "potion_uses": 3991,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 683,
+          "outcomes": {
+            "win": 683,
+            "loss": 1116,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.1928888888888889,
+          "mean_hp_ratio": 0.2566896603015521,
+          "potion_uses": 3193,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 485,
+            "outcomes": {
+              "win": 485,
+              "loss": 15
+            },
+            "mean_reward": 0.6596848491806384,
+            "mean_hp_ratio": 0.8238437335244015,
+            "potion_uses": 31,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 398,
+            "outcomes": {
+              "win": 398,
+              "loss": 102
+            },
+            "mean_reward": 0.2685285029475269,
+            "mean_hp_ratio": 0.45763959999549264,
+            "potion_uses": 166,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 216,
+            "outcomes": {
+              "win": 216,
+              "loss": 284
+            },
+            "mean_reward": -0.136,
+            "mean_hp_ratio": 0.2566890445441137,
+            "potion_uses": 779,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 480,
+            "outcomes": {
+              "win": 480,
+              "loss": 20
+            },
+            "mean_reward": 0.4978787087150355,
+            "mean_hp_ratio": 0.7236523390562638,
+            "potion_uses": 63,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 495,
+            "outcomes": {
+              "win": 495,
+              "loss": 105
+            },
+            "mean_reward": 0.3376778828044537,
+            "mean_hp_ratio": 0.5192321455718547,
+            "potion_uses": 247,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 278,
+            "outcomes": {
+              "win": 278,
+              "loss": 322
+            },
+            "mean_reward": 0.24866666666666665,
+            "mean_hp_ratio": 0.2761897286865007,
+            "potion_uses": 963,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 475,
+            "outcomes": {
+              "win": 475,
+              "loss": 25
+            },
+            "mean_reward": 0.5658269967606345,
+            "mean_hp_ratio": 0.7751353360898072,
+            "potion_uses": 48,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 499,
+            "outcomes": {
+              "win": 499,
+              "loss": 101
+            },
+            "mean_reward": 0.3491362233380701,
+            "mean_hp_ratio": 0.5019156916638436,
+            "potion_uses": 243,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 189,
+            "outcomes": {
+              "loss": 510,
+              "win": 189,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.38,
+            "mean_hp_ratio": 0.22800772375441453,
+            "potion_uses": 1451,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 153068,
+          "search_nodes": 4725347,
+          "enemies": 214648,
+          "lethal_enemies": 21376,
+          "complete_enemies": 102911,
+          "card_actions": 618480,
+          "lethal_actions": 60434,
+          "known_immediate": 499881,
+          "complete_actions": 228526
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-015000/row_result.json",
+          "bytes": 53832,
+          "sha256": "c06f771b3e701ccd09153839972aa98496766def27fa649dca2923cc01302d57"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-015000/cases.jsonl",
+          "bytes": 7515450,
+          "sha256": "c781bebcd0625dd39d231949be03fd91fd2ddd2c3dac280621497107835f7d4e"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-017500",
+      "arm": "masked_lethality",
+      "stage1_fights": 17500,
+      "accepted_updates": 25213,
+      "checkpoint_sha256": "7d88e290ef3a9e3fa979969dafb446c9dc80037babf43820a719173465049f08",
+      "primary_whole_turn": {
+        "optimal": 569,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 294,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 376,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 112,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3931,
+          "outcomes": {
+            "win": 3931,
+            "loss": 1067,
+            "truncated": 1,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.5131119989433611,
+          "mean_hp_ratio": 0.5845332903124709,
+          "potion_uses": 4032,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 956,
+          "outcomes": {
+            "win": 956,
+            "loss": 842,
+            "truncated": 1,
+            "turn_limit": 1
+          },
+          "mean_reward": 0.46922222222222215,
+          "mean_hp_ratio": 0.30435540928103233,
+          "potion_uses": 3247,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 495,
+            "outcomes": {
+              "win": 495,
+              "loss": 5
+            },
+            "mean_reward": 0.7169152737144846,
+            "mean_hp_ratio": 0.8483584245897009,
+            "potion_uses": 46,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 439,
+            "outcomes": {
+              "win": 439,
+              "loss": 61
+            },
+            "mean_reward": 0.4268715052198542,
+            "mean_hp_ratio": 0.5236242506457239,
+            "potion_uses": 141,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 333,
+            "outcomes": {
+              "win": 333,
+              "loss": 167
+            },
+            "mean_reward": 0.332,
+            "mean_hp_ratio": 0.3110760754000384,
+            "potion_uses": 799,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 491,
+            "outcomes": {
+              "win": 491,
+              "loss": 9
+            },
+            "mean_reward": 0.5835742533850221,
+            "mean_hp_ratio": 0.7583484044825622,
+            "potion_uses": 50,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 528,
+            "outcomes": {
+              "win": 528,
+              "loss": 72
+            },
+            "mean_reward": 0.44375009673583615,
+            "mean_hp_ratio": 0.5616324016565274,
+            "potion_uses": 221,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 378,
+            "outcomes": {
+              "win": 378,
+              "loss": 222
+            },
+            "mean_reward": 0.482,
+            "mean_hp_ratio": 0.3245046535709885,
+            "potion_uses": 968,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 490,
+            "outcomes": {
+              "win": 490,
+              "loss": 10
+            },
+            "mean_reward": 0.6557689405929097,
+            "mean_hp_ratio": 0.8099115513366686,
+            "potion_uses": 44,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 532,
+            "outcomes": {
+              "win": 532,
+              "loss": 68
+            },
+            "mean_reward": 0.43857491703194784,
+            "mean_hp_ratio": 0.54751972163483,
+            "potion_uses": 283,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 245,
+            "outcomes": {
+              "win": 245,
+              "loss": 453,
+              "truncated": 1,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.5562857142857143,
+            "mean_hp_ratio": 0.2641333841413082,
+            "potion_uses": 1480,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 148648,
+          "search_nodes": 4106832,
+          "enemies": 200236,
+          "lethal_enemies": 16571,
+          "complete_enemies": 93834,
+          "card_actions": 547448,
+          "lethal_actions": 46187,
+          "known_immediate": 432569,
+          "complete_actions": 194107
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-017500/row_result.json",
+          "bytes": 53938,
+          "sha256": "0cde1b36c52f7b4f04ebdf03b6c8bd81a7f009877849113ca98d15b11a8b1ae7"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-017500/cases.jsonl",
+          "bytes": 7538099,
+          "sha256": "99b96977219aa28f58cb751ac829f96c88eb2573acc8d0f121ff6baa8c3c6136"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    },
+    {
+      "id": "masked_lethality-s2026102201-stage1-020000",
+      "arm": "masked_lethality",
+      "stage1_fights": 20000,
+      "accepted_updates": 29085,
+      "checkpoint_sha256": "2e1f82cf0ed5767d086015990d2e139a3310ca0722ddcd408eb877b6e2d73c61",
+      "primary_whole_turn": {
+        "optimal": 620,
+        "cases": 800
+      },
+      "high_hp_damage": {
+        "optimal": 376,
+        "cases": 480
+      },
+      "ordering_required_kills": {
+        "converted": 424,
+        "cases": 480
+      },
+      "focused_available_wins": {
+        "converted": 112,
+        "attainable": 118,
+        "panel_cases": 512
+      },
+      "focused_safety": {
+        "avoidable_deaths": 0,
+        "survivable_cases": 306,
+        "total_deaths": 206
+      },
+      "battle": {
+        "overall": {
+          "n": 5000,
+          "wins": 3847,
+          "outcomes": {
+            "win": 3847,
+            "loss": 1149,
+            "turn_limit": 3,
+            "truncated": 1
+          },
+          "mean_reward": 0.4908967311357821,
+          "mean_hp_ratio": 0.585367098854284,
+          "potion_uses": 3473,
+          "zero_action_starts": 0
+        },
+        "boss": {
+          "n": 1800,
+          "wins": 921,
+          "outcomes": {
+            "win": 921,
+            "loss": 876,
+            "turn_limit": 2,
+            "truncated": 1
+          },
+          "mean_reward": 0.43466666666666665,
+          "mean_hp_ratio": 0.30816134470070244,
+          "potion_uses": 2876,
+          "zero_action_starts": 0
+        },
+        "cells": {
+          "1_normal": {
+            "n": 500,
+            "wins": 490,
+            "outcomes": {
+              "win": 490,
+              "loss": 10
+            },
+            "mean_reward": 0.7025758183734797,
+            "mean_hp_ratio": 0.8425701526480344,
+            "potion_uses": 31,
+            "zero_action_starts": 0
+          },
+          "1_elite": {
+            "n": 500,
+            "wins": 434,
+            "outcomes": {
+              "win": 434,
+              "loss": 66
+            },
+            "mean_reward": 0.4218852314401547,
+            "mean_hp_ratio": 0.5233236195067165,
+            "potion_uses": 109,
+            "zero_action_starts": 0
+          },
+          "1_boss": {
+            "n": 500,
+            "wins": 318,
+            "outcomes": {
+              "loss": 182,
+              "win": 318
+            },
+            "mean_reward": 0.272,
+            "mean_hp_ratio": 0.3081714116573581,
+            "potion_uses": 734,
+            "zero_action_starts": 0
+          },
+          "2_normal": {
+            "n": 500,
+            "wins": 486,
+            "outcomes": {
+              "win": 486,
+              "loss": 14
+            },
+            "mean_reward": 0.5828326702975842,
+            "mean_hp_ratio": 0.760842630598923,
+            "potion_uses": 46,
+            "zero_action_starts": 0
+          },
+          "2_elite": {
+            "n": 600,
+            "wins": 516,
+            "outcomes": {
+              "win": 516,
+              "loss": 84
+            },
+            "mean_reward": 0.4163427598017831,
+            "mean_hp_ratio": 0.5487170847914146,
+            "potion_uses": 173,
+            "zero_action_starts": 0
+          },
+          "2_boss": {
+            "n": 600,
+            "wins": 351,
+            "outcomes": {
+              "win": 351,
+              "loss": 249
+            },
+            "mean_reward": 0.419,
+            "mean_hp_ratio": 0.3400875596872594,
+            "potion_uses": 738,
+            "zero_action_starts": 0
+          },
+          "3_normal": {
+            "n": 500,
+            "wins": 486,
+            "outcomes": {
+              "win": 486,
+              "loss": 14
+            },
+            "mean_reward": 0.64081936042447,
+            "mean_hp_ratio": 0.8035333138637702,
+            "potion_uses": 31,
+            "zero_action_starts": 0
+          },
+          "3_elite": {
+            "n": 600,
+            "wins": 514,
+            "outcomes": {
+              "win": 514,
+              "loss": 85,
+              "turn_limit": 1
+            },
+            "mean_reward": 0.41370243254999434,
+            "mean_hp_ratio": 0.5538600785960942,
+            "potion_uses": 207,
+            "zero_action_starts": 0
+          },
+          "3_boss": {
+            "n": 700,
+            "wins": 252,
+            "outcomes": {
+              "loss": 445,
+              "win": 252,
+              "turn_limit": 2,
+              "truncated": 1
+            },
+            "mean_reward": 0.5642857142857143,
+            "mean_hp_ratio": 0.26367998457174197,
+            "potion_uses": 1404,
+            "zero_action_starts": 0
+          }
+        },
+        "feature_stats": {
+          "observations": 148190,
+          "search_nodes": 4286557,
+          "enemies": 204664,
+          "lethal_enemies": 18762,
+          "complete_enemies": 97471,
+          "card_actions": 571523,
+          "lethal_actions": 52243,
+          "known_immediate": 456800,
+          "complete_actions": 210843
+        },
+        "source": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-020000/row_result.json",
+          "bytes": 53995,
+          "sha256": "19dae95f9b3d4f93777c86108b23983b073eec82659aef57022a21c768306ffc"
+        },
+        "cases": {
+          "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/rows/masked_lethality-s2026102201-stage1-020000/cases.jsonl",
+          "bytes": 7430856,
+          "sha256": "a892a63cb23227202a4a34d51dfc8dbd35673c627266cdffbf153878d768e47e"
+        },
+        "inference_policy": "Reused Windows CPU evaluator: float32 greedy; MHA fastpath state was not explicitly pinned or retained. Behavior tests pin fastpath off. No cross-panel numerical equivalence claimed."
+      }
+    }
+  ]
+}

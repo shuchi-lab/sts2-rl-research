@@ -1,12 +1,13 @@
 # STS2 RL Research
 
 Reinforcement learning research for Slay the Spire 2, with a reproducible
-two-agent benchmark and experimental card representations.
+two-agent benchmark and experimental card, state, and action representations.
 
 | Start here | Status | Contents |
 | --- | --- | --- |
 | [Two-agent benchmark](docs/RUNNING.md) | Released · v1.0.0 | Selected models, evaluation instructions, and recorded evidence |
 | [Semantic card encoding](research/semantic_card_v1/README.md) | Experimental · schema v1 | Feature positions and meanings, mechanics catalog, and runnable examples |
+| [Current-hand lethality](research/current_hand_lethality_v1/README.md) | Experimental · v1 | Enemy HP masking, kill signals, worked example, and experiment summary |
 
 ## Released benchmark · v1.0.0
 
@@ -14,7 +15,7 @@ two-agent benchmark and experimental card representations.
 
 Two learned agents play together. The **Battle agent** chooses combat actions and targets. The **Choice agent** makes decisions between combats, including route, rewards, shops and events.
 
-The benchmark contains the selected agent pair, its recorded evidence, and the matching simulator runtime. The result below belongs to this released pair; the semantic card module has no published performance result here.
+The benchmark contains the selected agent pair, its recorded evidence, and the matching simulator runtime. The result below belongs to this released pair. Each research module documents its own scope and available evidence.
 
 ## Overview
 
@@ -102,7 +103,7 @@ This checks result-file provenance, unique seed coverage and the 68/256 result. 
 
 - The simulator approximates the supported game version. Matching this benchmark is not certification of every game mechanic.
 - A battle is limited to 100 turns. Those limit outcomes remain in the win-rate denominator.
-- Only the selected model pair is included. Training datasets, replay buffers and cloud launch infrastructure are omitted; the experimental research module publishes encoding code and examples.
+- Only the selected model pair is included. Training datasets, replay buffers and cloud launch infrastructure are omitted; research modules publish representation code, examples, and available experiment summaries.
 - The original checkpoint bytes and pinned simulator assemblies are retained. Rebuilding source can change assembly identities; follow [the simulator notes](simulator/README.md).
 - Checkpoint files are PyTorch artifacts. Load only copies whose hashes match this release.
 
