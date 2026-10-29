@@ -1,0 +1,283 @@
+{
+  "fixture_schema": "current_hand_lethality.recorded_example/v1",
+  "case_id": "b168-ordering_lethal-p0",
+  "source": {
+    "origin": "combat_rl/behavior_eval_v1/runs/current-hand-lethality-allpoints-20261028-v1/oracles/signal/1684.json.gz",
+    "sha256": "80c33051f6aacadbcfb711184306477bf90d06859ef7a6b0aed1ee98538b2691",
+    "node": ""
+  },
+  "scope": "Selected fields from a retained native observation and two native paths; no policy output. Base dense rows reconstructed from the frozen base-adapter formulas for this exact state.",
+  "setup": {
+    "hand": [
+      {
+        "def_id": 30,
+        "upgraded": false
+      },
+      {
+        "def_id": 472,
+        "upgraded": false
+      }
+    ],
+    "draw_pile": [
+      {
+        "def_id": 472,
+        "upgraded": false
+      },
+      {
+        "def_id": 472,
+        "upgraded": false
+      },
+      {
+        "def_id": 472,
+        "upgraded": false
+      },
+      {
+        "def_id": 472,
+        "upgraded": false
+      },
+      {
+        "def_id": 131,
+        "upgraded": false
+      },
+      {
+        "def_id": 131,
+        "upgraded": false
+      },
+      {
+        "def_id": 131,
+        "upgraded": false
+      },
+      {
+        "def_id": 131,
+        "upgraded": false
+      }
+    ],
+    "energy": 3,
+    "player_hp": 8,
+    "player_max_hp": 80,
+    "player_block": 0,
+    "player_buffs": [],
+    "relics": [],
+    "enemies": [
+      {
+        "def_id": 69,
+        "hp": 15,
+        "max_hp": 160,
+        "block": 0,
+        "buffs": [],
+        "intent_damage": 0,
+        "intent_hits": 1
+      }
+    ]
+  },
+  "hand_labels": [
+    "Bash",
+    "Strike"
+  ],
+  "action_labels": [
+    "Bash -> enemy 0",
+    "Strike -> enemy 0",
+    "end_turn"
+  ],
+  "observation": {
+    "enemies": [
+      {
+        "def_id": 69,
+        "hp": 15,
+        "max_hp": 160,
+        "block": 0,
+        "buffs": [],
+        "hardened_shell_hp_lost_this_side": 0,
+        "extra": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "stolen_card": null
+      }
+    ],
+    "legal": [
+      {
+        "o": 0,
+        "kind": "play_card",
+        "action": 0,
+        "target": 0,
+        "hand_index": 0,
+        "target_type": "AnyEnemy"
+      },
+      {
+        "o": 1,
+        "kind": "play_card",
+        "action": 1,
+        "target": 0,
+        "hand_index": 1,
+        "target_type": "AnyEnemy"
+      },
+      {
+        "o": 2,
+        "kind": "end_turn",
+        "action": 2,
+        "target": -1
+      }
+    ],
+    "current_hand_lethality": {
+      "schema": "current-hand-lethality/v1",
+      "enemies": [
+        {
+          "Found": true,
+          "Complete": true
+        }
+      ],
+      "actions": [
+        {
+          "Option": 0,
+          "Hand": 0,
+          "Target": 0,
+          "Immediate": [
+            false
+          ],
+          "Found": [
+            true
+          ],
+          "ImmediateKnown": true,
+          "Complete": true
+        },
+        {
+          "Option": 1,
+          "Hand": 1,
+          "Target": 0,
+          "Immediate": [
+            false
+          ],
+          "Found": [
+            false
+          ],
+          "ImmediateKnown": true,
+          "Complete": true
+        }
+      ],
+      "nodes": 4
+    }
+  },
+  "base_enemy_features": [
+    [
+      2.7725887298583984,
+      5.081404209136963,
+      0.09375,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "base_action_features": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "native_paths": [
+    {
+      "order": "Bash -> Strike",
+      "steps": [
+        {
+          "action": "Bash",
+          "status": "running",
+          "enemy_hp": [
+            7
+          ],
+          "player_hp": 8,
+          "energy": 1
+        },
+        {
+          "action": "Strike",
+          "status": "win",
+          "enemy_hp": [],
+          "player_hp": 8,
+          "energy": 0
+        }
+      ]
+    },
+    {
+      "order": "Strike -> Bash",
+      "steps": [
+        {
+          "action": "Strike",
+          "status": "running",
+          "enemy_hp": [
+            9
+          ],
+          "player_hp": 8,
+          "energy": 2
+        },
+        {
+          "action": "Bash",
+          "status": "running",
+          "enemy_hp": [
+            1
+          ],
+          "player_hp": 8,
+          "energy": 0
+        }
+      ]
+    }
+  ]
+}
