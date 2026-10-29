@@ -7,7 +7,7 @@ two-agent benchmark and experimental card, state, and action representations.
 | --- | --- | --- |
 | [Two-agent benchmark](docs/RUNNING.md) | Released · v1.0.0 | Selected models, evaluation instructions, and recorded evidence |
 | [Semantic card encoding](research/semantic_card_v1/README.md) | Experimental · schema v1 | Feature positions and meanings, mechanics catalog, and runnable examples |
-| [Current-hand lethality](research/current_hand_lethality_v1/README.md) | Experimental · v1 | Enemy HP masking, kill signals, worked example, and experiment summary |
+| [Current-hand lethality](research/current_hand_lethality_v1/README.md) | Experimental · v1 | Address inconsistent card ordering with explicit kill signals; HP masking, comparisons, and a worked example |
 
 ## Released benchmark · v1.0.0
 

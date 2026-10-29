@@ -36,6 +36,14 @@
     {
       "path": "combat_rl/behavior_eval_v1/runs/current-hand-lethality-allpoints-20261028-v1/oracles/signal/1684.json.gz",
       "sha256": "80c33051f6aacadbcfb711184306477bf90d06859ef7a6b0aed1ee98538b2691"
+    },
+    {
+      "path": "combat_rl/behavior_eval_v1/runs/current-hand-lethality-allpoints-20261028-v1/report-v1/family-grid.png",
+      "sha256": "73ee1da121b6515fe6e58357bc70a7029eb466c1cb86e81e0edb6a3774d604f1"
+    },
+    {
+      "path": "combat_rl/outputs/current_hand_lethality_all_checkpoints_validation5000_20261028_v1/figures/current_hand_lethality_all_checkpoints_new5000_heatmap.png",
+      "sha256": "75422bc6a9070365a3f2cb4801d03e46c056ee513337a428ca23766447756fa6"
     }
   ],
   "adaptations": [
@@ -43,10 +51,11 @@
     "encoding.py preserves feature_profile.py target aggregation and zero-baseline semantics; adds explicit input validation and a non-mutating public array interface.",
     "examples/bash_strike.json selects observation fields and native path states from oracle 1684; dense base inputs use the frozen adapter formulas for that state.",
     "results/checkpoints.json extracts all 16 regular checkpoint aggregates and identities from the reviewed analysis; no new model evaluation.",
-    "Original artifact paths are relative to the STS2_ML archive root, not machine-specific absolute paths or files bundled in this repository."
+    "Original artifact paths are relative to the STS2_ML archive root, not machine-specific absolute paths or files bundled in this repository.",
+    "Comparison figures are copied unchanged from the retained reports at original resolution; their decoded pixels match the two user-supplied figures."
   ],
   "packaged_sha256": {
-    "README.md": "38638fc81974653b9c8d4d777454dfaf33b72859c6d1b589cb16ebc3f48a2eae",
+    "README.md": "a0a36f98744bd34f8c3e99ed5d4e6787b86aca57eb2ca5a1d1c2cfb6d7c20672",
     "__init__.py": "a695f55b1f9683cdcf878ecfd26de67eb6f698d08bd083ec5c2b1f84cdde8f1a",
     "docs/experiment.md": "aee8c3fe71da491ac4cc445729a4fa23fc3002e57ad384178bc0536cb46a47b5",
     "docs/feature-reference.md": "dc61bd139f28eb80f8aeb5c291f169296fbe8b11a4f8f4ef9cf53355144c0047",
@@ -54,6 +63,8 @@
     "encoding.py": "fc1cca456889d6e0d067445ceeefc9ce27ac67d90f1cbabb5a6dcb77340de397",
     "examples/bash_strike.json": "18d5ec2ac9e90a4cdd95a493b453db029ae999263d808e0d85c061b7d883694a",
     "examples/inspect_features.py": "c948ff9786dae29d9c1c615a5c81d28e882b369aac3ab713fb2019d9404a8324",
+    "figures/battle-win-rate-comparison.png": "75422bc6a9070365a3f2cb4801d03e46c056ee513337a428ca23766447756fa6",
+    "figures/behavior-family-comparison.png": "73ee1da121b6515fe6e58357bc70a7029eb466c1cb86e81e0edb6a3774d604f1",
     "requirements.txt": "a83a2a4ed7ab2e022b9b8a83cfa2b8cf52cc243006c597e8b96f90a8365590ac",
     "results/checkpoints.json": "709e16783969ffb1b7bd6075feb0a4bde04160e6684588d87a9c1ea5efd4035b",
     "schema.py": "707906f04a527130cc47bdf9611f4755ad0ea217ddcdc6e73e4ad76f6df0e0b3",

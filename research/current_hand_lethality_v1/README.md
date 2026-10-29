@@ -4,10 +4,12 @@
 model's inputs, then add explicit signals about kills reachable with the current
 hand. Current enemy HP remains available.
 
-The question is whether a small combat policy can use these signals to recognize
-a killing opportunity and choose a useful first card. The signals come from a
-bounded native search, computed at each decision during training and inference.
-The policy still chooses its own action.
+**Motivation:** In this experiment, the baseline struggles to learn reliable card
+ordering, motivating explicit killability signals that identify lethal sequences
+and useful first actions.
+
+The signals come from a bounded native search, computed at each decision during
+training and inference. The policy still chooses its own action.
 
 This folder publishes the field definitions, masking/encoding code, a recorded
 native example, and a compact experiment summary. The Python example requires
@@ -21,6 +23,31 @@ change the repository's released benchmark models.
 | [Method and limitations](docs/method.md) | Search scope, unknown results, and integration contract |
 | [Experiment](docs/experiment.md) | One matched training seed, all eight checkpoint pairs, and limitations |
 | [Source record](SOURCE.json) | Original source identities, adaptations, and packaged file hashes |
+
+## What the comparison shows
+
+Both learners mask enemy maximum HP and HP fraction. **Base** receives zero in
+the added feature columns; **+ Kill** receives the current-hand lethality signals.
+The figures show all eight regular checkpoints per learner, from 2.5k to 20k
+stage-one fights. Click either figure to open it at full resolution.
+
+[![Whole-turn correctness by behavior family for the masked baseline and the learner with killability features across eight training checkpoints](figures/behavior-family-comparison.png)](figures/behavior-family-comparison.png)
+
+**Figure 1. Card combinations and targets.** At 20k fights, lethal-family
+whole-turn correctness increases from **75.0% to 98.8%**, and target-family
+correctness from **70.0% to 91.2%**. Improvements vary by family; the added
+signals do not solve every ordering problem.
+
+[![Boss, elite, normal-fight, and overall win rates for both learners at every checkpoint on the same 5,000-case panel](figures/battle-win-rate-comparison.png)](figures/battle-win-rate-comparison.png)
+
+**Figure 2. Transfer to complete fights.** At 20k fights, pooled boss win rate
+increases from **47.8% to 51.2%**. The feature learner leads on bosses at five of
+eight checkpoints, with remaining variation across training. These are individual
+combat win rates, not three-act game win rates.
+
+These comparisons use **one matched training seed** and diagnostic evaluation
+panels. See the [experiment report](docs/experiment.md) for counts, the full
+protocol, and limitations.
 
 ## Try the recorded example
 
