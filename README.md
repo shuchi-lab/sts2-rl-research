@@ -3,6 +3,17 @@
 Reinforcement learning research for Slay the Spire 2, with a reproducible
 two-agent benchmark and experimental card, state, and action representations.
 
+Both STS1 and STS2 have battle solvers that simulate future outcomes to search for
+the best moves, similar to a player using save and load (S&L). But I am interested
+in learning to play the game without knowing the future. This project explores
+that question with traditional reinforcement learning, rather than the LLM agent-based player.
+
+**Watch the agents play in the real game**
+
+[![Neow opening with the Choice agent’s action preferences — click to watch the demo](docs/figures/gameplay-demo-preview.png)](docs/videos/gameplay-demo.mp4?raw=true)
+
+[▶ Watch or download the demo (2:51)](docs/videos/gameplay-demo.mp4?raw=true)
+
 | Start here | Status | Contents |
 | --- | --- | --- |
 | [Two-agent benchmark](docs/RUNNING.md) | Released · v1.0.0 | Selected models, evaluation instructions, and recorded evidence |
