@@ -10,7 +10,7 @@ that question with traditional reinforcement learning, rather than the LLM agent
 
 **Watch the agents play in the real game**
 
-[![Neow opening with the Choice agent’s action preferences — click to watch the demo](docs/figures/gameplay-demo-preview.png)](docs/videos/gameplay-demo.mp4?raw=true)
+https://github.com/user-attachments/assets/8ebba53a-5ea4-4cbc-ab3f-88c1921eb661
 
 [▶ Watch or download the demo (2:51)](docs/videos/gameplay-demo.mp4?raw=true)
 
