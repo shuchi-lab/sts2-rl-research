@@ -8,6 +8,7 @@ two-agent benchmark and experimental card, state, and action representations.
 | [Two-agent benchmark](docs/RUNNING.md) | Released · v1.0.0 | Selected models, evaluation instructions, and recorded evidence |
 | [Semantic card encoding](research/semantic_card_v1/README.md) | Experimental · schema v1 | Feature positions and meanings, mechanics catalog, and runnable examples |
 | [Current-hand lethality](research/current_hand_lethality_v1/README.md) | Experimental · v1 | Address inconsistent card ordering with explicit kill signals; HP masking, comparisons, and a worked example |
+| [Four mechanism features](research/startup_mechanisms_v1/README.md) | Experimental · v1 | Help the Battle agent learn Rupture, Demon Form, Exhaust/Ashen, and Hellraiser interactions through card roles and combat-state features |
 
 ## Released benchmark · v1.0.0
 

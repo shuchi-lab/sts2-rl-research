@@ -1,0 +1,302 @@
+{
+  "scope": "Hand-authored illustrative public states, not recorded native trajectories or model decisions. Card programs are source-derived. Legality is supplied explicitly.",
+  "scenarios": [
+    {
+      "id": "rupture_before",
+      "mechanism": "rupture",
+      "note": "Illustrative state: Rupture is owned but inactive; attacks are already available.",
+      "cards": [
+        {
+          "name": "Rupture",
+          "pile": "hand"
+        },
+        {
+          "name": "Bloodletting",
+          "pile": "hand"
+        },
+        {
+          "name": "SwordBoomerang",
+          "pile": "hand"
+        },
+        {
+          "name": "Headbutt",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "discard"
+        }
+      ],
+      "buffs": {},
+      "legal_hand_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "rupture_online",
+      "mechanism": "rupture",
+      "note": "After activating ordinary Rupture: rate 1, current Strength 0.",
+      "cards": [
+        {
+          "name": "Bloodletting",
+          "pile": "hand"
+        },
+        {
+          "name": "SwordBoomerang",
+          "pile": "hand"
+        },
+        {
+          "name": "Headbutt",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "discard"
+        }
+      ],
+      "buffs": {
+        "Rupture": 1
+      },
+      "legal_hand_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "rupture_after_trigger",
+      "mechanism": "rupture",
+      "note": "After one qualifying Bloodletting HP-loss event: current Strength 1; rate remains 1.",
+      "cards": [
+        {
+          "name": "SwordBoomerang",
+          "pile": "hand"
+        },
+        {
+          "name": "Headbutt",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "discard"
+        },
+        {
+          "name": "Bloodletting",
+          "pile": "discard"
+        }
+      ],
+      "buffs": {
+        "Rupture": 1,
+        "Strength": 1
+      },
+      "legal_hand_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "demon_form_online",
+      "mechanism": "demon_form",
+      "note": "Demon Form is active with rate 2; no Strength has yet accrued in this illustrative state.",
+      "cards": [
+        {
+          "name": "SwordBoomerang",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        }
+      ],
+      "buffs": {
+        "DemonForm": 2
+      },
+      "legal_hand_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "demon_form_next_turn",
+      "mechanism": "demon_form",
+      "note": "One turn-start trigger later: Strength 2, Demon Form rate still 2.",
+      "cards": [
+        {
+          "name": "SwordBoomerang",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        }
+      ],
+      "buffs": {
+        "DemonForm": 2,
+        "Strength": 2
+      },
+      "legal_hand_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "exhaust_two",
+      "mechanism": "exhaust_ashen",
+      "note": "Ashen Strike is present; two cards in the current exhaust pile are below the v1 online threshold.",
+      "cards": [
+        {
+          "name": "AshenStrike",
+          "pile": "hand"
+        },
+        {
+          "name": "BurningPact",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "exhaust"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "exhaust"
+        }
+      ],
+      "buffs": {},
+      "legal_hand_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "exhaust_three",
+      "mechanism": "exhaust_ashen",
+      "note": "Three cards currently in exhaust cross the v1 heuristic threshold; this is not a lifetime counter.",
+      "cards": [
+        {
+          "name": "AshenStrike",
+          "pile": "hand"
+        },
+        {
+          "name": "BurningPact",
+          "pile": "discard"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "exhaust"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "exhaust"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "exhaust"
+        }
+      ],
+      "buffs": {},
+      "legal_hand_indices": [
+        0
+      ]
+    },
+    {
+      "id": "hellraiser_online",
+      "mechanism": "hellraiser",
+      "note": "Hellraiser is active; Pommel Strike is both a draw producer and a Strike-tagged payoff.",
+      "cards": [
+        {
+          "name": "PommelStrike",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "draw"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "draw"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "draw"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "discard"
+        }
+      ],
+      "buffs": {
+        "Hellraiser": 1
+      },
+      "legal_hand_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "hellraiser_no_draw",
+      "mechanism": "hellraiser",
+      "note": "NoDraw suppresses effect draws now; the draw capability flag remains 1.",
+      "cards": [
+        {
+          "name": "PommelStrike",
+          "pile": "hand"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "hand"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "draw"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "draw"
+        },
+        {
+          "name": "DefendIronclad",
+          "pile": "draw"
+        },
+        {
+          "name": "StrikeIronclad",
+          "pile": "discard"
+        }
+      ],
+      "buffs": {
+        "Hellraiser": 1,
+        "NoDraw": 1
+      },
+      "legal_hand_indices": [
+        0,
+        1
+      ]
+    }
+  ]
+}

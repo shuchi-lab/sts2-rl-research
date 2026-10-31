@@ -1,0 +1,317 @@
+{
+  "source_version": "v0.111.0-24724944",
+  "scope": "Eleven ordinary unupgraded card programs extracted from the frozen v1 runtime; no enchantments or instance modifiers.",
+  "cards": {
+    "Rupture": {
+      "name": "Rupture",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "rule_begin",
+          "event": "unblocked_damage",
+          "scope": "combat",
+          "condition": "owner_turn",
+          "phase": "card_completion"
+        },
+        {
+          "op": "status",
+          "target": "self",
+          "property": "strength",
+          "operator": "add",
+          "amount": 1.0
+        },
+        {
+          "op": "rule_end"
+        }
+      ]
+    },
+    "DemonForm": {
+      "name": "DemonForm",
+      "type": "Power",
+      "rarity": "Rare",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "rule_begin",
+          "event": "turn_start",
+          "scope": "combat",
+          "phase": "before_draw"
+        },
+        {
+          "op": "status",
+          "target": "self",
+          "property": "strength",
+          "operator": "add",
+          "amount": 3.0
+        },
+        {
+          "op": "rule_end"
+        }
+      ]
+    },
+    "AshenStrike": {
+      "name": "AshenStrike",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "tags": [
+        "Strike"
+      ],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "damage",
+          "target": "enemy",
+          "count": 1,
+          "powered": true,
+          "terms": [
+            {
+              "op": "add",
+              "arity": 2
+            },
+            {
+              "op": "constant",
+              "value": 6.0,
+              "known": 1
+            },
+            {
+              "op": "multiply",
+              "arity": 2
+            },
+            {
+              "op": "constant",
+              "value": 3.0,
+              "known": 1
+            },
+            {
+              "op": "state",
+              "ref": "exhaust_count",
+              "coefficient": 1
+            }
+          ]
+        }
+      ]
+    },
+    "Hellraiser": {
+      "name": "Hellraiser",
+      "type": "Power",
+      "rarity": "Rare",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "rule_begin",
+          "event": "draw",
+          "scope": "combat",
+          "filter": "strike",
+          "phase": "before"
+        },
+        {
+          "op": "autoplay",
+          "target": "event_card",
+          "source": "event_card",
+          "cost_free": true
+        },
+        {
+          "op": "rule_end"
+        }
+      ]
+    },
+    "Bloodletting": {
+      "name": "Bloodletting",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "lose_hp",
+          "target": "self",
+          "unpowered": true,
+          "amount": 3.0
+        },
+        {
+          "op": "energy",
+          "target": "self",
+          "amount": 2.0
+        }
+      ]
+    },
+    "SwordBoomerang": {
+      "name": "SwordBoomerang",
+      "type": "Attack",
+      "rarity": "Common",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "damage",
+          "target": "random_enemy",
+          "count": 3.0,
+          "powered": true,
+          "terms": [],
+          "stochastic": true,
+          "amount": 3.0
+        }
+      ]
+    },
+    "Headbutt": {
+      "name": "Headbutt",
+      "type": "Attack",
+      "rarity": "Common",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "damage",
+          "target": "enemy",
+          "count": 1,
+          "powered": true,
+          "amount": 9.0
+        },
+        {
+          "op": "move",
+          "source": "discard",
+          "destination": "draw_top",
+          "filter": "any",
+          "selection": "chosen",
+          "count": 1,
+          "target": "chosen_card"
+        }
+      ]
+    },
+    "DefendIronclad": {
+      "name": "DefendIronclad",
+      "type": "Skill",
+      "rarity": "Basic",
+      "tags": [
+        "Defend"
+      ],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "block",
+          "target": "self",
+          "powered": true,
+          "amount": 5.0
+        }
+      ]
+    },
+    "StrikeIronclad": {
+      "name": "StrikeIronclad",
+      "type": "Attack",
+      "rarity": "Basic",
+      "tags": [
+        "Strike"
+      ],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "damage",
+          "target": "enemy",
+          "count": 1,
+          "powered": true,
+          "amount": 6.0
+        }
+      ]
+    },
+    "BurningPact": {
+      "name": "BurningPact",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "tags": [],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "exhaust",
+          "source": "hand",
+          "destination": "exhaust",
+          "count": 1,
+          "selection": "chosen",
+          "filter": "any",
+          "target": "chosen_card"
+        },
+        {
+          "op": "draw",
+          "target": "self",
+          "source": "draw",
+          "destination": "hand",
+          "phase": "after_selection",
+          "amount": 2.0
+        }
+      ]
+    },
+    "PommelStrike": {
+      "name": "PommelStrike",
+      "type": "Attack",
+      "rarity": "Common",
+      "tags": [
+        "Strike"
+      ],
+      "flags": {
+        "exhaust": false,
+        "ethereal": false,
+        "eternal": false
+      },
+      "steps": [
+        {
+          "op": "damage",
+          "target": "enemy",
+          "count": 1,
+          "powered": true,
+          "amount": 9.0
+        },
+        {
+          "op": "draw",
+          "target": "self",
+          "source": "draw",
+          "destination": "hand",
+          "amount": 1.0
+        }
+      ]
+    }
+  }
+}

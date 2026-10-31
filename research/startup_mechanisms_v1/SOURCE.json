@@ -1,0 +1,27 @@
+{
+  "schema": "startup_mechanisms.research_snapshot/v1",
+  "snapshot_date": "2026-10-31",
+  "origin": "Retained STS2_ML source and evaluation archive; paths below are relative to that archive, not bundled dependencies.",
+  "native_schema": "startup-mechanisms/v1",
+  "sources": [
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/mechanism_fields.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/mechanism_features.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/schema.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/features.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/model.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/mechanism_model.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/catalog.py",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/runtimes/s1/semantic_card_v1/source_metadata.json",
+    "combat_rl/experiments/trials/mechanism-focused-finetune-l3-2seed-20261030-v1/SPEC.md",
+    "combat_rl/outputs/mechanism_focused_finetune_l3_two_seed_all_checkpoints_validation5000_20261030_v1/SPEC.md",
+    "combat_rl/outputs/mechanism_focused_finetune_l3_two_seed_all_checkpoints_validation5000_20261030_v1/figures/mechanism_focused_finetune_l3_two_seed_all_checkpoints_new5000_all32rows.csv"
+  ],
+  "adaptations": [
+    "schema.py preserves exact 16-card/24-global field order and exhaust threshold 3.",
+    "encoding.py adapts the original calculations to named buffs and per-instance card programs/flags in four visible owned piles. Native adapter, non-pile nodes, simulator and neural network are not packaged.",
+    "Known-top, known-bottom and unknown draw members are combined only for membership/count calculations; no hidden order is supplied.",
+    "Examples use eleven ordinary unupgraded source programs and nine hand-authored states. They are illustrative, not simulator trajectories. Expected outputs were computed using the retained source calculation.",
+    "Results extract all 32 completed checkpoints; the previous comparison is the best pooled-boss point from the already-published lethality arm. No new evaluations, checkpoint loads, or figures.",
+    "Growth counters and probability work are outside this experimentally evaluated v1 snapshot."
+  ]
+}
