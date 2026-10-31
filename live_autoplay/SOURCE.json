@@ -1,0 +1,43 @@
+{
+  "schema": "sts2.native_autoplay_package/v1",
+  "prepared": "2026-10-31",
+  "status": "experimental",
+  "upstream": {
+    "repository": "https://github.com/Gennadiyev/STS2MCP",
+    "author": "Yikun Ji (Kunologist / kunology)",
+    "license": "licenses/STS2MCP-MIT.txt"
+  },
+  "mod": {
+    "version": "0.4.2-autoplay",
+    "binary": "bin/STS2_MCP.dll",
+    "binary_bytes": 902656,
+    "binary_origin": "Retained from the working macOS native-game installation; no rebuild substituted during packaging",
+    "source": "mod/",
+    "source_files": 77,
+    "source_origin": "Unchanged C# sources from the working live-autoplay development checkout",
+    "game_assemblies_included": false
+  },
+  "models": {
+    "choice": "../models/choice.pt",
+    "choice_model_id": "n1-half-blue90-original-mac_a090000",
+    "battle": "../models/battle.pt",
+    "battle_model_id": "enemy_wide_deep_act3_ft_e032500"
+  },
+  "working_setup": {
+    "game": "Slay the Spire 2 v0.111.0",
+    "platform": "macOS arm64",
+    "character": "Ironclad",
+    "ascensions": [1, 2],
+    "singleplayer": true,
+    "run_modifiers": false
+  },
+  "packaging_changes": [
+    "Resolve frozen models, metadata and runtime from this repository",
+    "Use the published-v1 model pair as the only bundled preset",
+    "Add portable .NET discovery, offline checking and an explicit installer",
+    "Stop a game-launched Python service when its parent game process exits",
+    "Relocate four informational file paths in the installed contract; preserve all mappings and encoder fields",
+    "Retain controller, transport, journaling, process lease and native-potion adapter unchanged"
+  ],
+  "provenance_note": "Historical source references within the contract are descriptive; the original training/decompilation folders are not runtime dependencies. No new full native-game run or native win-rate measurement was performed during packaging."
+}

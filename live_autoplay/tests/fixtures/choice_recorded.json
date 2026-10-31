@@ -1,0 +1,1093 @@
+{
+  "schema": "rs1/public_run_observation/v2",
+  "run_id": "rs1-mac-blue90000-n2half-s2026101012:t00004",
+  "decision_id": "rs1-mac-blue90000-n2half-s2026101012:t00004:d1",
+  "phase": "Ancient",
+  "scalars": {
+    "hp": 64,
+    "max_hp": 80,
+    "gold": 99,
+    "floor": 1,
+    "act_ordinal": 1,
+    "act_region": 2,
+    "ascension": 2,
+    "potion_capacity": 3,
+    "deck_size": 10,
+    "relic_count": 1,
+    "fights_won": 0,
+    "strategic_decisions": 0
+  },
+  "deck": [
+    {
+      "instance_id": 0,
+      "def_id": 472,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 1,
+      "def_id": 472,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 2,
+      "def_id": 472,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 3,
+      "def_id": 472,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 4,
+      "def_id": 472,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 5,
+      "def_id": 131,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 6,
+      "def_id": 131,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 7,
+      "def_id": 131,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 8,
+      "def_id": 131,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    },
+    {
+      "instance_id": 9,
+      "def_id": 30,
+      "upgraded": false,
+      "enchantment": 0,
+      "enchant_amount": 0,
+      "tinker_type": 6,
+      "tinker_rider": 0
+    }
+  ],
+  "relics": [
+    {
+      "def_id": 36,
+      "counter": 0,
+      "used_up": false,
+      "wax": false
+    }
+  ],
+  "potions": [
+    {
+      "slot": 0,
+      "potion_id": 0
+    },
+    {
+      "slot": 1,
+      "potion_id": 0
+    },
+    {
+      "slot": 2,
+      "potion_id": 0
+    }
+  ],
+  "history": {
+    "visited": [],
+    "fights": []
+  },
+  "screen": {
+    "ancient": "NEOW",
+    "awaiting_proceed": false
+  },
+  "candidates": [
+    {
+      "id": "ancient:231",
+      "kind": "ancient_relic",
+      "public": {
+        "relic_id": 231,
+        "slot": 0
+      }
+    },
+    {
+      "id": "ancient:89",
+      "kind": "ancient_relic",
+      "public": {
+        "relic_id": 89,
+        "slot": 1
+      }
+    },
+    {
+      "id": "ancient:129",
+      "kind": "ancient_relic",
+      "public": {
+        "relic_id": 129,
+        "slot": 2
+      }
+    }
+  ],
+  "declined": [],
+  "map": {
+    "map_digest": "f657c5fc456bce0e3583b249de3eca7a72585ec74869a57703ec126ba8f84c70",
+    "current": 0,
+    "awaiting_act_start": false,
+    "nodes": [
+      {
+        "col": 3,
+        "row": 0,
+        "node_type": 8,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": true,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 1,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 1,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 1,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 2,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 2,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 2,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 2,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 3,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 3,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 3,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 3,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 1,
+        "row": 4,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 4,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 4,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 4,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 4,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 5,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 5,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 5,
+        "row": 5,
+        "node_type": 4,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 1,
+        "row": 6,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 6,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 6,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 6,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 7,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 7,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 7,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 8,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 8,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 8,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 8,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 8,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 9,
+        "node_type": 5,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 9,
+        "node_type": 5,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 9,
+        "node_type": 5,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 5,
+        "row": 9,
+        "node_type": 5,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 10,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 10,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 5,
+        "row": 10,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 11,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 1,
+        "row": 11,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 11,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 11,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 12,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 1,
+        "row": 12,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 12,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 12,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 5,
+        "row": 12,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 0,
+        "row": 13,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 1,
+        "row": 13,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 13,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 13,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 13,
+        "node_type": 4,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 1,
+        "row": 14,
+        "node_type": 1,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 14,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 14,
+        "node_type": 4,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 14,
+        "node_type": 7,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 14,
+        "node_type": 2,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 2,
+        "row": 15,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 4,
+        "row": 15,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 6,
+        "row": 15,
+        "node_type": 3,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      },
+      {
+        "col": 3,
+        "row": 16,
+        "node_type": 6,
+        "fur_coat": false,
+        "quest": false,
+        "visited": false,
+        "current": false,
+        "option": -1
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        14
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        11,
+        16
+      ],
+      [
+        12,
+        17
+      ],
+      [
+        13,
+        17
+      ],
+      [
+        14,
+        18
+      ],
+      [
+        15,
+        19
+      ],
+      [
+        16,
+        19
+      ],
+      [
+        17,
+        21
+      ],
+      [
+        17,
+        20
+      ],
+      [
+        18,
+        22
+      ],
+      [
+        19,
+        22
+      ],
+      [
+        19,
+        23
+      ],
+      [
+        20,
+        24
+      ],
+      [
+        21,
+        25
+      ],
+      [
+        22,
+        25
+      ],
+      [
+        23,
+        26
+      ],
+      [
+        24,
+        27
+      ],
+      [
+        25,
+        29
+      ],
+      [
+        25,
+        28
+      ],
+      [
+        25,
+        30
+      ],
+      [
+        26,
+        31
+      ],
+      [
+        27,
+        32
+      ],
+      [
+        28,
+        33
+      ],
+      [
+        29,
+        34
+      ],
+      [
+        30,
+        35
+      ],
+      [
+        31,
+        35
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        33,
+        37
+      ],
+      [
+        34,
+        38
+      ],
+      [
+        35,
+        38
+      ],
+      [
+        36,
+        39
+      ],
+      [
+        37,
+        41
+      ],
+      [
+        37,
+        40
+      ],
+      [
+        38,
+        42
+      ],
+      [
+        39,
+        43
+      ],
+      [
+        40,
+        44
+      ],
+      [
+        41,
+        45
+      ],
+      [
+        42,
+        46
+      ],
+      [
+        42,
+        47
+      ],
+      [
+        43,
+        48
+      ],
+      [
+        44,
+        49
+      ],
+      [
+        45,
+        50
+      ],
+      [
+        46,
+        51
+      ],
+      [
+        47,
+        52
+      ],
+      [
+        48,
+        53
+      ],
+      [
+        49,
+        53
+      ],
+      [
+        50,
+        54
+      ],
+      [
+        51,
+        56
+      ],
+      [
+        51,
+        55
+      ],
+      [
+        52,
+        57
+      ],
+      [
+        53,
+        58
+      ],
+      [
+        54,
+        58
+      ],
+      [
+        55,
+        58
+      ],
+      [
+        56,
+        59
+      ],
+      [
+        57,
+        60
+      ],
+      [
+        58,
+        61
+      ],
+      [
+        59,
+        61
+      ],
+      [
+        60,
+        61
+      ]
+    ],
+    "act_ordinal": 1,
+    "act_region": 2,
+    "boss_encounter_id": 79
+  }
+}

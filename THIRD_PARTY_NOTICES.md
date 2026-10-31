@@ -43,6 +43,21 @@ The package's notices are preserved verbatim:
 The package third-party notice file is retained as supplied; its broad .NET
 component listing does not mean those components are all bundled here.
 
+## STS2MCP native-game bridge
+
+The source in `live_autoplay/mod/` and the supplied `STS2_MCP.dll` derive from
+[STS2MCP](https://github.com/Gennadiyev/STS2MCP), originally authored by Yikun Ji
+(Kunologist / kunology). The upstream MIT license is preserved in
+[live_autoplay/licenses/STS2MCP-MIT.txt](live_autoplay/licenses/STS2MCP-MIT.txt),
+including its copyright notice, `Copyright 2026 Yikun Ji (Kunologist)`.
+
+Local extensions include the frozen Battle/Choice agent interface, public-state
+projection, native action lifecycle, run-history tracking, recording, and in-game
+ratings and controls. The upstream mod identity is retained. The supplied assembly
+is this extended working mod, not an unmodified upstream release.
+The game-owned `sts2.dll`, `GodotSharp.dll` and `0Harmony.dll` references are read
+from the user's installation when building; they are not bundled in this package.
+
 ## Separately installed dependencies
 
 Python, NumPy, PyTorch, and the .NET runtime/SDK are installed separately and are

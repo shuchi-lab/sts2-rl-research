@@ -6,6 +6,7 @@ two-agent benchmark and experimental card, state, and action representations.
 | Start here | Status | Contents |
 | --- | --- | --- |
 | [Two-agent benchmark](docs/RUNNING.md) | Released · v1.0.0 | Selected models, evaluation instructions, and recorded evidence |
+| [Watch the agents play in the real game](live_autoplay/README.md) | Experimental · native game | Install the game mod, load the Battle and Choice agents together, and watch or control autoplay in the Steam game window |
 | [Semantic card encoding](research/semantic_card_v1/README.md) | Experimental · schema v1 | Feature positions and meanings, mechanics catalog, and runnable examples |
 | [Current-hand lethality](research/current_hand_lethality_v1/README.md) | Experimental · v1 | Address inconsistent card ordering with explicit kill signals; HP masking, comparisons, and a worked example |
 | [Four mechanism features](research/startup_mechanisms_v1/README.md) | Experimental · v1 | Help the Battle agent learn Rupture, Demon Form, Exhaust/Ashen, and Hellraiser interactions through card roles and combat-state features |
@@ -15,6 +16,8 @@ two-agent benchmark and experimental card, state, and action representations.
 **26.6% best observed validation win rate for Ironclad at Ascension 2 across all three acts: 68 victories in 256 simulator runs.**
 
 Two learned agents play together. The **Battle agent** chooses combat actions and targets. The **Choice agent** makes decisions between combats, including route, rewards, shops and events.
+
+To watch this pair play in your own Steam game, follow the [real-game autoplay guide](live_autoplay/README.md). The native bridge includes in-game ratings and Advice, Step, Auto and Pause controls; its current tested platform is macOS arm64.
 
 The benchmark contains the selected agent pair, its recorded evidence, and the matching simulator runtime. The result below belongs to this released pair. Each research module documents its own scope and available evidence.
 
@@ -47,6 +50,7 @@ results/      Recorded outcomes, validation seeds, configuration and provenance
 scripts/      Artifact verification and evaluation entry points
 docs/         Results, execution instructions and verification record
 research/     Experimental representations, feature documentation and examples
+live_autoplay/ Native game mod, two-agent launcher and installation guide
 ```
 
 The evaluated release scope is Ironclad only.

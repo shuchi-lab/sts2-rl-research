@@ -1,0 +1,10 @@
+{
+  "id": "STS2_MCP",
+  "name": "STS2 MCP",
+  "author": "kunology",
+  "description": "MCP game bridge, recorder and frozen RL autoplay with in-game action ratings",
+  "version": "0.4.2-autoplay",
+  "has_pck": false,
+  "has_dll": true,
+  "affects_gameplay": false
+}

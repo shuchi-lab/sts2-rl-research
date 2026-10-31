@@ -7,3 +7,6 @@ runs/
 simulator/**/obj/
 simulator/**/build-output/
 simulator/rebuilt/
+live_autoplay/.local/
+live_autoplay/mod/obj/
+live_autoplay/mod/bin/
